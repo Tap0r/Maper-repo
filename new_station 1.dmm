@@ -5,6 +5,7 @@
 "ae" = (/obj/structure/object_wall/mining{icon_state = "1-3"},/turf/environment/space,/area/shuttle/mining/station)
 "ag" = (/obj/structure/window/reinforced/shuttle/mining{icon_state = "1-4,6"},/turf/environment/space,/area/shuttle/mining/station)
 "ah" = (/obj/structure/object_wall/mining{icon_state = "1-5"},/turf/environment/space,/area/shuttle/mining/station)
+"ai" = (/obj/structure/table/glass,/turf/simulated/floor{dir = 6; icon_state = "neutral"},/area/space)
 "aj" = (/obj/structure/object_wall/mining{icon_state = "1-7"},/turf/environment/space,/area/shuttle/mining/station)
 "al" = (/obj/structure/object_wall/mining{icon_state = "1-8"},/turf/environment/space,/area/shuttle/mining/station)
 "am" = (/obj/structure/object_wall/mining{icon_state = "1-9"},/turf/environment/space,/area/shuttle/mining/station)
@@ -63,6 +64,7 @@
 "bP" = (/obj/item/device/radio/off{pixel_y = 6},/obj/item/device/radio/off{pixel_x = 6; pixel_y = 4},/obj/item/device/radio/off{pixel_x = -6; pixel_y = 4},/obj/item/device/radio/off,/obj/structure/rack,/turf/simulated/floor{dir = 4; icon_state = "darkblue"},/area/space)
 "bS" = (/obj/machinery/gateway{dir = 1},/turf/simulated/floor{dir = 8; icon_state = "vault"},/area/space)
 "bY" = (/obj/machinery/porta_turret/station_default{dir = 1},/turf/simulated/floor{dir = 8; icon_state = "vault"},/area/space)
+"cd" = (/turf/simulated/floor/plating,/area/space)
 "ce" = (/turf/simulated/floor{icon_state = "dark"},/area/space)
 "cf" = (/obj/machinery/gateway{dir = 10},/turf/simulated/floor{dir = 4; icon_state = "vault"},/area/space)
 "ch" = (/obj/machinery/status_display{layer = 3.3; pixel_y = -30; supply_display = 1},/turf/simulated/floor{dir = 6; icon_state = "warning"},/area/station/cargo/storage)
@@ -83,21 +85,21 @@
 "ez" = (/obj/structure/stool/bed/chair/comfy/brown{dir = 1},/turf/simulated/floor/carpet/blue,/area/space)
 "eB" = (/obj/structure/dispenser/oxygen,/turf/simulated/floor{icon_state = "dark"},/area/space)
 "eD" = (/obj/random/vending/cola,/turf/simulated/floor/wood,/area/space)
+"eJ" = (/obj/machinery/flasher{id = "HoP_flasher"},/turf/simulated/floor{dir = 8; icon_state = "vault"},/area/space)
 "eU" = (/obj/structure/table/woodentable,/obj/machinery/door_control{id = "Captain_private"; name = "Shutters Control"; req_access = list(20)},/turf/simulated/floor/wood{icon_state = "wood-broken6"},/area/space)
-"eV" = (/obj/structure/grille,/obj/machinery/door/firedoor,/obj/structure/window/reinforced{dir = 5},/obj/structure/sign/warning/airlock,/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
 "fp" = (/obj/structure/table,/obj/item/weapon/hand_labeler,/obj/item/weapon/packageWrap,/turf/simulated/floor/wood,/area/space)
 "fq" = (/obj/machinery/conveyor_switch/oneway{id = "QMLoad"},/turf/simulated/floor{dir = 4; icon_state = "warning"},/area/station/cargo/storage)
+"fA" = (/obj/machinery/door/airlock/security{name = "Security Checkpoint"; req_access = list(1)},/turf/simulated/floor{icon_state = "dark"},/area/space)
 "fD" = (/obj/machinery/door/airlock/highsecurity{name = "AI Upload Access"; req_access = list(16)},/turf/simulated/floor/whitegreed,/area/space)
-"fH" = (/turf/simulated/floor/plating,/area/space)
+"fH" = (/obj/machinery/door/firedoor,/obj/structure/grille,/obj/structure/window/reinforced{dir = 5},/obj/structure/sign/warning/securearea{desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'."; name = "KEEP CLEAR: DOCKING AREA"},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
 "fI" = (/obj/machinery/computer/station_alert,/turf/simulated/floor{dir = 9; icon_state = "darkbrown"},/area/space)
 "fJ" = (/obj/machinery/computer/communications,/obj/structure/sign/nanotrasen{pixel_y = 32},/turf/simulated/floor{dir = 1; icon_state = "darkbrown"},/area/space)
 "fM" = (/obj/machinery/hologram/holopad{pixel_y = -16},/turf/simulated/floor,/area/space)
-"fN" = (/obj/structure/stool/bed/chair/office/dark{dir = 8},/turf/environment/space,/area/space)
+"fN" = (/obj/machinery/door/firedoor,/obj/structure/grille,/obj/structure/window/reinforced{dir = 5},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
 "gj" = (/obj/machinery/computer/monitor,/turf/simulated/floor{dir = 1; icon_state = "darkbrown"},/area/space)
 "go" = (/obj/structure/stool{pixel_y = 8},/turf/simulated/floor{icon_state = "dark"},/area/space)
 "gt" = (/obj/item/weapon/flora/pottedplant/orientaltree,/turf/simulated/floor{dir = 1; icon_state = "darkblue"},/area/space)
 "gA" = (/turf/simulated/floor{dir = 1; icon_state = "darkblue"},/area/space)
-"gB" = (/obj/structure/table/reinforced,/turf/simulated/floor{icon_state = "dark"},/area/space)
 "gO" = (/obj/machinery/photocopier,/turf/simulated/floor{dir = 1; icon_state = "darkblue"},/area/space)
 "hr" = (/obj/machinery/computer/secure_data,/turf/simulated/floor{dir = 1; icon_state = "darkred"},/area/space)
 "hC" = (/obj/machinery/vending/cigarette,/turf/simulated/floor/wood,/area/space)
@@ -110,6 +112,7 @@
 "iP" = (/obj/structure/stool/bed/chair/office/dark{dir = 1},/turf/simulated/floor{icon_state = "dark"},/area/space)
 "iZ" = (/obj/structure/rack,/obj/item/device/gps/science{pixel_x = 2; pixel_y = 2},/obj/item/device/gps/science{pixel_x = -4},/turf/simulated/floor{dir = 8; icon_state = "darkblue"},/area/space)
 "je" = (/obj/structure/rack,/obj/item/weapon/storage/belt/utility,/obj/item/clothing/head/welding,/turf/simulated/floor{icon_state = "darkblue"},/area/space)
+"jh" = (/turf/simulated/floor{dir = 8; icon_state = "Stairs_wide"},/area/space)
 "jw" = (/obj/item/device/radio/beacon,/turf/simulated/floor{icon_state = "dark"},/area/space)
 "jC" = (/obj/structure/table/glass,/obj/machinery/recharger{pixel_y = 4},/obj/item/weapon/handcuffs,/turf/simulated/floor{dir = 4; icon_state = "darkred"},/area/space)
 "jI" = (/turf/simulated/wall,/area/space)
@@ -127,7 +130,6 @@
 "kD" = (/turf/simulated/floor{icon_state = "darkblue"},/area/space)
 "ld" = (/obj/structure/stool/bed/chair/comfy/brown,/turf/simulated/floor{icon_state = "darkblue"},/area/space)
 "lk" = (/turf/simulated/floor{dir = 8; icon_state = "darkbluecorners"},/area/space)
-"lp" = (/obj/structure/stool,/turf/simulated/floor,/area/space)
 "ls" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on,/turf/simulated/floor{icon_state = "dark"},/area/space)
 "lw" = (/turf/simulated/floor{dir = 4; icon_state = "darkbluecorners"},/area/space)
 "lF" = (/obj/item/weapon/storage/box/cups{pixel_y = 4},/obj/structure/table/glass,/turf/simulated/floor{dir = 5; icon_state = "darkblue"},/area/space)
@@ -136,11 +138,11 @@
 "lT" = (/turf/simulated/floor/wood,/area/space)
 "lU" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 8},/turf/simulated/floor,/area/space)
 "lX" = (/obj/machinery/gateway{dir = 4},/turf/simulated/floor{dir = 8; icon_state = "vault"},/area/space)
-"lY" = (/obj/machinery/door/firedoor,/obj/structure/grille,/obj/structure/window/reinforced{dir = 5},/obj/structure/sign/warning/securearea{desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'."; name = "KEEP CLEAR: DOCKING AREA"},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
+"lY" = (/obj/machinery/door/firedoor,/obj/structure/grille,/obj/structure/window/reinforced{dir = 5},/obj/structure/sign/warning/airlock,/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
 "ml" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor{dir = 8; icon_state = "warningcorner"},/area/station/cargo/storage)
-"ms" = (/obj/machinery/door/firedoor,/obj/structure/grille,/obj/structure/window/reinforced{dir = 5},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
+"ms" = (/obj/structure/table/glass,/turf/simulated/floor{dir = 9; icon_state = "neutral"},/area/space)
 "mI" = (/obj/structure/stool,/turf/simulated/floor{dir = 4; icon_state = "black"},/area/space)
-"mK" = (/obj/machinery/door/firedoor,/obj/structure/grille,/obj/structure/window/reinforced{dir = 5},/obj/structure/sign/warning/airlock,/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
+"mK" = (/turf/simulated/floor{dir = 1; icon_state = "neutral"},/area/space)
 "mL" = (/obj/structure/sign/nanotrasen{pixel_y = 32},/turf/simulated/floor{dir = 4; icon_state = "darkstairs_wide"},/area/space)
 "mT" = (/obj/structure/stool/bed/chair/metal/black{dir = 8},/turf/simulated/floor{dir = 1; icon_state = "darkblue"},/area/space)
 "nm" = (/obj/structure/closet/emcloset,/turf/simulated/floor{dir = 8; icon_state = "darkblue"},/area/space)
@@ -154,9 +156,7 @@
 "nU" = (/obj/machinery/door/poddoor{density = 0; icon_state = "pdoor0"; id = "gateway_blast"; name = "Gateway Chamber Blast Doors"; opacity = 0},/obj/machinery/door/airlock/command{name = "Gateway Access"; req_access = list(62)},/turf/simulated/floor{icon_state = "darkbluefull"},/area/space)
 "nV" = (/obj/machinery/door/airlock/external{dock_tag = "arrival_officer"; locked = 1; name = "Arrival Airlock"},/turf/simulated/floor/plating,/area/station/hallway/secondary/entry)
 "oj" = (/obj/structure/sign/warning/biohazard{pixel_x = 32},/obj/structure/rack,/obj/item/weapon/storage/briefcase/inflatable{pixel_y = 4},/turf/simulated/floor{dir = 4; icon_state = "darkblue"},/area/space)
-"op" = (/obj/machinery/door/airlock/security{name = "Security Checkpoint"; req_access = list(1)},/turf/simulated/floor{icon_state = "dark"},/area/space)
 "oB" = (/obj/structure/table/woodentable,/obj/item/weapon/storage/fancy/donut_box,/turf/simulated/floor{dir = 5; icon_state = "darkblue"},/area/space)
-"oD" = (/obj/machinery/light/small,/turf/simulated/floor/plating{dir = 8; icon_state = "warnplate"},/area/station/hallway/secondary/exit)
 "oG" = (/obj/structure/table/woodentable,/obj/item/weapon/paper_bin{pixel_y = 4},/obj/item/weapon/pen{pixel_y = 6},/turf/simulated/floor/wood{icon_state = "wood-broken6"},/area/space)
 "oN" = (/obj/structure/stool/bed/chair/office/dark{dir = 8},/turf/simulated/floor{dir = 8; icon_state = "darkblue"},/area/space)
 "oO" = (/obj/structure/reagent_dispensers/water_cooler,/turf/simulated/floor{dir = 4; icon_state = "darkblue"},/area/space)
@@ -164,15 +164,13 @@
 "pb" = (/turf/environment/space,/area/shuttle/specops/station)
 "pc" = (/obj/item/weapon/flora/random,/obj/structure/sign/warning/securearea{pixel_x = -32},/turf/simulated/floor{dir = 1; icon_state = "darkblue"},/area/space)
 "pi" = (/obj/structure/sign/nanotrasen{pixel_y = 32},/turf/simulated/floor{dir = 8; icon_state = "darkstairs2_wide"},/area/space)
-"pk" = (/obj/structure/table/glass,/turf/simulated/floor{dir = 9; icon_state = "neutral"},/area/space)
-"pu" = (/turf/simulated/floor{dir = 1; icon_state = "neutral"},/area/space)
-"py" = (/obj/structure/table/glass,/turf/simulated/floor{dir = 1; icon_state = "neutral"},/area/space)
-"pz" = (/obj/structure/table/glass,/turf/simulated/floor{dir = 5; icon_state = "neutral"},/area/space)
+"pk" = (/obj/structure/table/glass,/turf/simulated/floor{dir = 1; icon_state = "neutral"},/area/space)
+"pu" = (/obj/structure/table/glass,/turf/simulated/floor{dir = 5; icon_state = "neutral"},/area/space)
+"py" = (/obj/machinery/door/airlock/external{dock_tag = "arrival_escape"; locked = 1; name = "Escape Airlock"},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
+"pz" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating{dir = 8; icon_state = "warnplate"},/area/station/hallway/secondary/exit)
 "pG" = (/obj/structure/rack,/obj/item/weapon/storage/firstaid/regular{pixel_y = 8},/obj/item/weapon/storage/firstaid/toxin{pixel_y = 4},/turf/simulated/floor{icon_state = "dark"},/area/space)
 "pJ" = (/turf/simulated/floor{dir = 8; icon_state = "darkstairs_middle"},/area/space)
 "pT" = (/obj/machinery/door/airlock/command/glass{name = "Bridge"; req_access = list(19)},/turf/simulated/floor{icon_state = "dark"},/area/space)
-"pV" = (/obj/machinery/door/airlock/external{dock_tag = "arrival_escape"; locked = 1; name = "Escape Airlock"; req_access = list(1)},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
-"qi" = (/turf/simulated/floor/plating{dir = 8; icon_state = "warnplate"},/area/station/hallway/secondary/exit)
 "qj" = (/obj/structure/rack,/obj/item/clothing/shoes/magboots,/obj/item/clothing/suit/space/rig/engineering,/obj/item/clothing/mask/breath,/obj/item/clothing/head/helmet/space/rig/engineering,/turf/simulated/floor{dir = 4; icon_state = "darkyellow"},/area/space)
 "qu" = (/turf/simulated/floor{dir = 8; icon_state = "darkblue"},/area/space)
 "qE" = (/obj/structure/table/woodentable,/obj/item/weapon/book/manual/wiki/sop{pixel_y = 6},/turf/simulated/floor{dir = 8; icon_state = "darkblue"},/area/space)
@@ -184,7 +182,7 @@
 "rw" = (/turf/simulated/floor{dir = 5; icon_state = "warndark"},/area/space)
 "rx" = (/turf/simulated/floor{dir = 4; icon_state = "darkblue"},/area/space)
 "rz" = (/turf/simulated/floor{dir = 4; icon_state = "darkstairs_middle"},/area/space)
-"rA" = (/obj/machinery/door/airlock/external{dock_tag = "arrival_escape"; locked = 1; name = "Escape Airlock"},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
+"rA" = (/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
 "rI" = (/obj/machinery/idpainter,/turf/simulated/floor{dir = 1; icon_state = "darkblue"},/area/space)
 "rN" = (/obj/structure/sign/nanotrasen{pixel_y = -32},/turf/simulated/floor{dir = 4; icon_state = "darkstairs2_wide"},/area/space)
 "rR" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 5},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/station/hallway/secondary/entry)
@@ -192,7 +190,7 @@
 "so" = (/turf/simulated/floor{dir = 1; icon_state = "blue"},/area/space)
 "sz" = (/obj/machinery/light/small{dir = 4},/turf/simulated/floor/plating,/area/station/hallway/secondary/entry)
 "sC" = (/obj/item/weapon/flora/pottedplant/palm,/turf/simulated/floor{dir = 8; icon_state = "darkblue"},/area/space)
-"sG" = (/obj/structure/stool/bed/chair/comfy/black{dir = 4},/turf/simulated/floor/wood,/area/space)
+"sG" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
 "sL" = (/obj/item/weapon/crowbar,/obj/structure/rack,/turf/simulated/floor{dir = 8; icon_state = "darkblue"},/area/space)
 "sZ" = (/obj/structure/table/woodentable,/obj/item/device/taperecorder{pixel_x = -1; pixel_y = 6},/turf/simulated/floor{dir = 10; icon_state = "darkblue"},/area/space)
 "tk" = (/obj/machinery/door_control{id = "Gateway_shutters"; name = "Gateway Shutters"; pixel_y = 4; req_access = list(57)},/obj/structure/table/reinforced,/turf/simulated/floor{dir = 8; icon_state = "darkblue"},/area/space)
@@ -201,7 +199,6 @@
 "tK" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor{dir = 6; icon_state = "warning"},/area/station/cargo/storage)
 "tL" = (/obj/structure/table/woodentable,/obj/item/weapon/flora/deskferntrim{icon_state = "plant-34-alternative"; pixel_x = -8; pixel_y = 10},/obj/item/device/assembly/timer{pixel_x = 7; secured = 1},/turf/simulated/floor{dir = 6; icon_state = "darkblue"},/area/space)
 "tS" = (/obj/structure/closet/emcloset,/turf/simulated/floor{dir = 4; icon_state = "darkblue"},/area/space)
-"tU" = (/obj/structure/grille,/obj/machinery/door/firedoor,/obj/structure/window/reinforced{dir = 5},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
 "ua" = (/obj/structure/grille,/obj/machinery/door/firedoor,/obj/structure/window/reinforced{dir = 5},/obj/structure/sign/warning/securearea{desc = "A warning sign which reads 'EXTERNAL AIRLOCK'"; icon_state = "space"; layer = 4; name = "EXTERNAL AIRLOCK"},/turf/simulated/floor/plating,/area/station/cargo/storage)
 "ue" = (/obj/random/vending/snack,/turf/simulated/floor{icon_state = "darkblue"},/area/space)
 "ui" = (/obj/structure/table/woodentable,/obj/random/foods/donuts,/turf/simulated/floor/wood,/area/space)
@@ -219,7 +216,6 @@
 "ww" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 1},/turf/simulated/floor{icon_state = "dark"},/area/space)
 "wx" = (/obj/machinery/gateway{dir = 8},/turf/simulated/floor{dir = 8; icon_state = "vault"},/area/space)
 "wD" = (/obj/machinery/door/airlock/command/glass{name = "E.V.A."; req_one_access = list(1,5,11,18,24)},/turf/simulated/floor,/area/space)
-"wJ" = (/turf/simulated/floor{dir = 8; icon_state = "Stairs_wide"},/area/space)
 "wM" = (/obj/structure/rack,/obj/item/device/aicard,/turf/simulated/floor{dir = 6; icon_state = "darkblue"},/area/space)
 "wR" = (/turf/environment/space,/area/space)
 "wW" = (/obj/machinery/door/airlock/command{name = "Head of Personnel"; req_access = list(57)},/turf/simulated/floor{icon_state = "darkbluefull"},/area/space)
@@ -228,12 +224,11 @@
 "xk" = (/obj/machinery/door_control{id = "Gateway_shutters_entrance"; name = "Gateway Shutters"; pixel_x = 26; req_access = list(57)},/obj/structure/closet/firecloset,/turf/simulated/floor{dir = 1; icon_state = "vault"},/area/space)
 "xv" = (/obj/structure/toilet{dir = 4},/obj/structure/dryer{dir = 8; pixel_x = 6},/turf/simulated/floor{icon_state = "freezerfloor2"},/area/space)
 "xx" = (/obj/machinery/door/airlock/external{dock_tag = "arrival_admin"; locked = 1; name = "Arrival Airlock"},/turf/simulated/floor/plating,/area/station/hallway/secondary/entry)
-"xB" = (/obj/structure/table/woodentable,/turf/simulated/floor/wood,/area/space)
-"xD" = (/turf/simulated/floor{dir = 4; icon_state = "neutral"},/area/space)
+"xB" = (/obj/machinery/door/firedoor,/turf/simulated/floor{dir = 1; icon_state = "neutral"},/area/space)
 "xE" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 5},/obj/structure/sign/directions/dock_tablo/tablo3,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/station/hallway/secondary/entry)
 "xF" = (/obj/structure/rack,/obj/item/weapon/tank/oxygen,/obj/item/clothing/mask/gas/coloured,/turf/simulated/floor/plating{icon_state = "platebot"},/area/space)
 "xL" = (/turf/simulated/floor{dir = 4; icon_state = "warndark"},/area/space)
-"xR" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating{dir = 8; icon_state = "warnplate"},/area/station/hallway/secondary/exit)
+"xR" = (/turf/simulated/floor{dir = 8; icon_state = "Stairs2_wide"},/area/space)
 "xZ" = (/obj/machinery/computer/teleporter,/turf/simulated/floor/plating{icon_state = "platebot"},/area/space)
 "ym" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating,/area/station/cargo/storage)
 "yn" = (/obj/machinery/teleport/station,/turf/simulated/floor/plating{icon_state = "platebot"},/area/space)
@@ -248,7 +243,6 @@
 "Ac" = (/obj/structure/table/glass,/obj/item/weapon/storage/firstaid/regular,/turf/simulated/floor{dir = 8; icon_state = "darkgreen"},/area/space)
 "Af" = (/obj/structure/stool/bed/chair/office/dark,/turf/simulated/floor{icon_state = "dark"},/area/space)
 "AD" = (/obj/machinery/door/airlock/external{name = "Arrival Airlock"},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/station/hallway/secondary/entry)
-"AF" = (/obj/machinery/door/firedoor,/turf/simulated/floor,/area/space)
 "AI" = (/obj/structure/table/glass,/obj/item/weapon/storage/box/PDAs{pixel_x = 4; pixel_y = 5},/obj/item/weapon/storage/box/ids{pixel_y = -8},/turf/simulated/floor{dir = 4; icon_state = "darkbrown"},/area/space)
 "AJ" = (/obj/item/weapon/flora/random,/turf/simulated/floor/wood{icon_state = "wood-broken5"},/area/space)
 "AU" = (/obj/item/device/radio/intercom{name = "Station Intercom (General)"; pixel_y = 22},/obj/machinery/pdapainter,/turf/simulated/floor{dir = 1; icon_state = "darkblue"},/area/space)
@@ -257,12 +251,10 @@
 "Bx" = (/obj/structure/table,/obj/item/weapon/paper_bin{pixel_y = 4},/obj/item/weapon/pen{pixel_y = 6},/turf/simulated/floor{icon_state = "dark"},/area/space)
 "BE" = (/obj/machinery/vending/coffee,/turf/simulated/floor/wood{icon_state = "wood-broken4"},/area/space)
 "BG" = (/obj/machinery/light/small{dir = 4},/turf/simulated/floor/plating,/area/station/cargo/storage)
-"BN" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/external{name = "Escape Airlock"; req_access = list(1)},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
 "BQ" = (/obj/structure/stool/bed/chair/metal/blue{dir = 4},/turf/simulated/floor/carpet/blue2,/area/space)
 "BY" = (/obj/structure/sign/warning/securearea{pixel_x = 32},/turf/simulated/floor{dir = 1; icon_state = "darkblue"},/area/space)
 "BZ" = (/obj/structure/closet/l3closet/scientist,/turf/simulated/floor{dir = 8; icon_state = "darkblue"},/area/space)
-"Cl" = (/obj/structure/table/glass,/turf/simulated/floor{dir = 6; icon_state = "neutral"},/area/space)
-"Cv" = (/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
+"Cv" = (/turf/simulated/floor{dir = 8; icon_state = "neutral"},/area/space)
 "CA" = (/obj/structure/table/reinforced,/obj/item/stack/cable_coil/random,/obj/item/stack/cable_coil/random{pixel_y = -4},/obj/item/weapon/screwdriver,/turf/simulated/floor{dir = 8; icon_state = "black"},/area/space)
 "CE" = (/turf/simulated/floor{dir = 1; icon_state = "warndark"},/area/space)
 "CI" = (/obj/machinery/door/poddoor{id = "QMLoaddoor2"; name = "Supply Dock Loading Door"},/obj/structure/plasticflaps/mining,/obj/machinery/conveyor{dir = 1; id = "QMLoad2"},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/station/cargo/storage)
@@ -275,6 +267,7 @@
 "DY" = (/obj/machinery/gateway{dir = 9},/turf/simulated/floor{dir = 1; icon_state = "vault"},/area/space)
 "Eb" = (/obj/structure/sign/warning/securearea{desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'."; name = "KEEP CLEAR: DOCKING AREA"},/turf/simulated/wall,/area/station/hallway/secondary/entry)
 "Ek" = (/obj/machinery/computer/crew,/obj/structure/sign/nanotrasen{pixel_y = -32},/turf/simulated/floor{icon_state = "darkgreen"},/area/space)
+"Er" = (/obj/structure/table/reinforced,/turf/simulated/floor{icon_state = "dark"},/area/space)
 "Ez" = (/obj/machinery/door/airlock/command{name = "Captain's Quarters"; req_access = list(20)},/turf/simulated/floor/wood,/area/space)
 "EG" = (/obj/structure/table/woodentable,/obj/item/weapon/paper_bin,/obj/item/weapon/pen/blue{pixel_x = -5; pixel_y = -1},/obj/item/weapon/pen/red{pixel_x = -1; pixel_y = 3},/obj/item/weapon/pen,/turf/simulated/floor/carpet/blue2,/area/space)
 "Fd" = (/obj/machinery/computer/med_data,/turf/simulated/floor{icon_state = "darkgreen"},/area/space)
@@ -301,6 +294,7 @@
 "GX" = (/obj/machinery/door/airlock/command{name = "Teleport Access"; req_access = list(17)},/turf/simulated/floor{icon_state = "dark"},/area/space)
 "Hc" = (/obj/machinery/door/airlock/vault{locked = 1; req_access = list(53)},/turf/simulated/floor{icon_state = "dark"},/area/space)
 "Hj" = (/obj/machinery/vending/cigarette,/turf/simulated/floor{dir = 1; icon_state = "darkblue"},/area/space)
+"Hk" = (/obj/structure/grille,/obj/machinery/door/firedoor,/obj/structure/window/reinforced{dir = 5},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
 "Hl" = (/turf/simulated/floor{icon_state = "warndark"},/area/space)
 "Hp" = (/turf/simulated/wall/r_wall,/area/space)
 "HC" = (/obj/structure/rack,/obj/item/stack/sheet/metal{amount = 50},/obj/item/stack/sheet/metal{amount = 50},/obj/item/stack/sheet/metal{amount = 50},/turf/simulated/floor{icon_state = "green"},/area/space)
@@ -316,11 +310,10 @@
 "Iu" = (/obj/machinery/conveyor{id = "QMLoad"},/turf/simulated/floor/plating,/area/station/cargo/storage)
 "Iw" = (/turf/simulated/floor{dir = 10; icon_state = "warning"},/area/station/cargo/storage)
 "IP" = (/obj/structure/filingcabinet,/turf/simulated/floor/wood,/area/space)
-"IX" = (/obj/machinery/flasher{id = "HoP_flasher"},/turf/simulated/floor{dir = 8; icon_state = "vault"},/area/space)
+"IX" = (/turf/simulated/floor{dir = 4; icon_state = "neutral"},/area/space)
 "Jv" = (/obj/structure/closet/emcloset,/turf/simulated/floor{dir = 8; icon_state = "vault"},/area/space)
 "JC" = (/turf/simulated/floor,/area/space)
 "JK" = (/obj/machinery/vending/coffee,/turf/simulated/floor{icon_state = "darkblue"},/area/space)
-"JR" = (/obj/machinery/door/firedoor,/turf/simulated/floor{icon_state = "neutral"},/area/space)
 "JS" = (/obj/machinery/gateway,/turf/simulated/floor{dir = 8; icon_state = "vault"},/area/space)
 "JV" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
 "Ke" = (/obj/structure/rack,/obj/random/tools/tool,/obj/random/tools/tool,/obj/item/stack/cable_coil/random,/turf/simulated/floor{icon_state = "darkblue"},/area/space)
@@ -329,8 +322,10 @@
 "KB" = (/obj/structure/table,/obj/item/weapon/hand_tele{pixel_y = 6},/turf/simulated/floor{icon_state = "darkblue"},/area/space)
 "KK" = (/obj/structure/safe,/obj/item/stack/sheet/mineral/gold{pixel_x = -1; pixel_y = 5},/obj/item/stack/sheet/mineral/gold{pixel_y = 2},/obj/item/stack/sheet/mineral/gold{pixel_x = 1; pixel_y = -2},/obj/item/clothing/under/color/yellow,/obj/item/toy/katana,/turf/simulated/floor{dir = 8; icon_state = "vault"},/area/space)
 "KO" = (/obj/structure/table/woodentable,/obj/item/weapon/folder/blue{pixel_y = 4},/obj/item/weapon/stamp/captain{pixel_y = 4},/turf/simulated/floor/wood,/area/space)
+"KT" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
 "KW" = (/turf/simulated/floor{dir = 6; icon_state = "vault"},/area/space)
 "Ld" = (/obj/machinery/gateway/center/station,/turf/simulated/floor{icon_state = "dark"},/area/space)
+"Lp" = (/obj/structure/table/glass,/turf/simulated/floor{dir = 10; icon_state = "neutral"},/area/space)
 "Lu" = (/obj/structure/table/woodentable,/obj/machinery/faxmachine{department = "Captain's Office"},/turf/simulated/floor/wood,/area/space)
 "Lw" = (/turf/simulated/floor{icon_state = "vault"},/area/space)
 "LJ" = (/obj/structure/table/reinforced,/obj/machinery/door_control{id = "gateway_blast"; name = "Door Bolt Control"; pixel_y = 4; req_access = list(7)},/turf/simulated/floor{icon_state = "dark"},/area/space)
@@ -341,13 +336,14 @@
 "MJ" = (/obj/structure/table,/obj/item/weapon/folder/blue{pixel_y = 4},/obj/item/weapon/stamp/hop{pixel_y = 4},/turf/simulated/floor{icon_state = "dark"},/area/space)
 "MN" = (/obj/structure/table,/obj/item/device/megaphone{pixel_y = 4},/turf/simulated/floor{icon_state = "dark"},/area/space)
 "MS" = (/turf/simulated/floor{icon_state = "yellow"},/area/space)
-"MT" = (/turf/simulated/floor{icon_state = "neutral"},/area/space)
 "MU" = (/obj/machinery/hologram/holopad,/turf/simulated/floor{icon_state = "dark"},/area/space)
 "MV" = (/obj/structure/filingcabinet/chestdrawer/black,/turf/simulated/floor{dir = 4; icon_state = "darkblue"},/area/space)
 "Nn" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
-"Nq" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
+"Nq" = (/turf/simulated/floor/plating{dir = 8; icon_state = "warnplate"},/area/station/hallway/secondary/exit)
 "NF" = (/obj/machinery/door/airlock/external{dock_tag = "arrival_specops"; locked = 1; name = "Arrival Airlock"},/turf/simulated/floor/plating,/area/station/hallway/secondary/entry)
 "NK" = (/obj/structure/rack,/obj/item/clothing/head/helmet/space/unathi/helmet_cheap,/obj/item/clothing/mask/breath,/obj/item/clothing/suit/space/unathi/rig_cheap,/turf/simulated/floor{dir = 8; icon_state = "darkblue"},/area/space)
+"NS" = (/obj/structure/grille,/obj/machinery/door/firedoor,/obj/structure/window/reinforced{dir = 5},/obj/structure/sign/warning/airlock,/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
+"NU" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/external{name = "Escape Airlock"; req_access = list(1)},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
 "Oa" = (/obj/structure/rack,/obj/item/weapon/tank/emergency_oxygen/engi,/obj/item/clothing/mask/gas/coloured,/turf/simulated/floor{icon_state = "darkblue"},/area/space)
 "Op" = (/obj/structure/rack,/obj/item/clothing/head/helmet/space/skrell/black,/obj/item/clothing/mask/breath,/obj/item/clothing/suit/space/skrell/black,/obj/item/clothing/head/helmet/space/skrell/white,/obj/item/clothing/mask/breath,/obj/item/clothing/suit/space/skrell/white,/turf/simulated/floor{icon_state = "dark"},/area/space)
 "Or" = (/obj/structure/rack,/obj/item/clothing/shoes/magboots,/obj/item/device/suit_cooling_unit,/obj/item/weapon/tank/jetpack/carbondioxide,/turf/simulated/floor{dir = 4; icon_state = "darkblue"},/area/space)
@@ -370,9 +366,9 @@
 "Qn" = (/obj/structure/closet/secure_closet/exile,/turf/simulated/floor{dir = 4; icon_state = "darkblue"},/area/space)
 "Qr" = (/obj/structure/table/reinforced,/obj/item/device/flashlight,/obj/item/device/multitool{pixel_x = -3; pixel_y = -2},/turf/simulated/floor{dir = 5; icon_state = "vault"},/area/space)
 "Qt" = (/obj/structure/closet/secure_closet/hop2,/turf/simulated/floor{dir = 6; icon_state = "darkblue"},/area/space)
-"QA" = (/obj/machinery/door/firedoor,/turf/simulated/floor{dir = 1; icon_state = "neutral"},/area/space)
+"QA" = (/obj/machinery/door/firedoor,/turf/simulated/floor,/area/space)
 "QB" = (/obj/structure/table/woodentable,/obj/item/weapon/flora/deskleaf{pixel_x = -6; pixel_y = 7},/obj/item/ashtray/plastic{pixel_x = 4; pixel_y = 6},/obj/item/toy/figure/ian{pixel_x = 11; pixel_y = 1},/obj/machinery/newscaster/security_unit{pixel_x = -28},/turf/simulated/floor/wood,/area/space)
-"QC" = (/turf/simulated/floor{dir = 8; icon_state = "Stairs2_wide"},/area/space)
+"QC" = (/turf/simulated/floor{dir = 4; icon_state = "stairs_middle"},/area/space)
 "QS" = (/obj/structure/closet/secure_closet/personal,/turf/simulated/floor{dir = 8; icon_state = "darkred"},/area/space)
 "Rg" = (/turf/simulated/floor,/area/station/cargo/storage)
 "Rl" = (/obj/structure/stool,/turf/simulated/floor{icon_state = "dark"},/area/space)
@@ -389,13 +385,13 @@
 "SK" = (/mob/living/simple_animal/mouse/brown/Tom,/turf/simulated/floor{icon_state = "vault"},/area/space)
 "SY" = (/obj/item/weapon/coin/silver{pixel_x = 7; pixel_y = 12},/obj/item/weapon/coin/silver{pixel_x = 12; pixel_y = 7},/obj/item/weapon/coin/silver{pixel_x = 4; pixel_y = 8},/obj/item/weapon/coin/silver{pixel_x = -6; pixel_y = 5},/obj/item/weapon/coin/silver{pixel_x = 5; pixel_y = -8},/obj/structure/closet/crate{name = "Silver Crate"},/turf/simulated/floor{dir = 8; icon_state = "vault"},/area/space)
 "Tg" = (/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor{dir = 1; icon_state = "blue"},/area/space)
-"Tk" = (/turf/simulated/floor{dir = 4; icon_state = "stairs_middle"},/area/space)
 "Tr" = (/obj/structure/rack,/obj/item/weapon/tank/jetpack/oxygen,/obj/item/clothing/mask/gas/coloured,/obj/item/clothing/suit/armor/captain,/obj/item/clothing/head/helmet/space/capspace,/turf/simulated/floor/wood{icon_state = "wood-broken7"},/area/space)
 "Ts" = (/obj/structure/rack,/obj/item/clothing/shoes/magboots,/obj/item/clothing/suit/space/rig/atmos,/obj/item/clothing/mask/breath,/obj/item/clothing/head/helmet/space/rig/atmos,/turf/simulated/floor{dir = 4; icon_state = "darkyellow"},/area/space)
 "TG" = (/obj/structure/table/reinforced,/obj/item/weapon/storage/briefcase/inflatable{pixel_y = 4},/obj/item/weapon/storage/briefcase/inflatable,/turf/simulated/floor{dir = 5; icon_state = "vault"},/area/space)
 "TX" = (/turf/simulated/floor{dir = 8; icon_state = "warndarkcorners"},/area/space)
 "TZ" = (/obj/machinery/computer/communications{dir = 8},/turf/simulated/floor/wood,/area/space)
 "Uf" = (/turf/simulated/floor/wood{icon_state = "wood-broken"},/area/space)
+"Ug" = (/obj/machinery/door/airlock/external{dock_tag = "arrival_escape"; locked = 1; name = "Escape Airlock"; req_access = list(1)},/turf/simulated/floor/plating,/area/station/hallway/secondary/exit)
 "Ul" = (/obj/structure/stool/bed/chair/comfy/brown,/turf/simulated/floor{dir = 1; icon_state = "darkblue"},/area/space)
 "Uu" = (/obj/structure/rack,/obj/item/stack/sheet/rglass{amount = 50},/obj/item/stack/rods{amount = 50},/turf/simulated/floor{icon_state = "black"},/area/space)
 "UA" = (/obj/item/device/gps/science{pixel_x = -6; pixel_y = 6},/obj/item/device/gps/science{pixel_x = 2; pixel_y = -1},/obj/structure/rack,/turf/simulated/floor{dir = 5; icon_state = "vault"},/area/space)
@@ -405,8 +401,8 @@
 "Vk" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/wood,/area/space)
 "Vz" = (/turf/simulated/floor/wood{icon_state = "wood-broken4"},/area/space)
 "VC" = (/obj/structure/closet/secure_closet/hop,/obj/machinery/keycard_auth{pixel_x = 28},/turf/simulated/floor/wood{icon_state = "wood-broken7"},/area/space)
-"VH" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
-"VL" = (/turf/simulated/floor{dir = 8; icon_state = "neutral"},/area/space)
+"VH" = (/turf/simulated/floor{icon_state = "neutral"},/area/space)
+"VL" = (/obj/machinery/door/firedoor,/turf/simulated/floor{icon_state = "neutral"},/area/space)
 "VW" = (/obj/machinery/suit_storage_unit/standard_unit,/turf/simulated/floor{dir = 4; icon_state = "darkblue"},/area/space)
 "Wd" = (/obj/structure/table/woodentable,/obj/item/toy/plushie/space_whale,/turf/simulated/floor/carpet/blue,/area/space)
 "Wp" = (/obj/structure/closet/secure_closet/freezer/money,/turf/simulated/floor{dir = 4; icon_state = "vault"},/area/space)
@@ -423,6 +419,7 @@
 "XE" = (/turf/simulated/floor{dir = 4; icon_state = "black"},/area/space)
 "XJ" = (/obj/machinery/door/airlock/security/glass{name = "Security Hardsuits"; req_access = list(1)},/turf/simulated/floor{icon_state = "darkred"},/area/space)
 "XS" = (/obj/machinery/door/airlock/command/glass{name = "E.V.A."; req_one_access = list(1,5,11,18,24)},/turf/simulated/floor{icon_state = "darkblue"},/area/space)
+"XV" = (/obj/machinery/light/small,/turf/simulated/floor/plating{dir = 8; icon_state = "warnplate"},/area/station/hallway/secondary/exit)
 "Ye" = (/obj/machinery/computer/security/mining,/turf/simulated/floor/wood,/area/space)
 "Yg" = (/obj/structure/stool/bed,/obj/item/weapon/bedsheet/captain,/turf/simulated/floor/carpet/blue,/area/space)
 "Yy" = (/obj/machinery/account_database,/turf/simulated/floor/carpet/blue2,/area/space)
@@ -430,12 +427,12 @@
 "YL" = (/obj/structure/stool/bed/chair/comfy/teal,/mob/living/carbon/ian,/turf/simulated/floor/carpet/blue2,/area/space)
 "YU" = (/obj/structure/stool/bed/chair/comfy/teal,/turf/simulated/floor/carpet/blue2,/area/space)
 "YZ" = (/obj/structure/table/woodentable,/obj/item/weapon/book/manual/wiki/possible_threats,/obj/structure/sign/poster/official/ian{pixel_x = 32},/turf/simulated/floor/wood,/area/space)
-"Zc" = (/obj/structure/table/glass,/turf/simulated/floor{icon_state = "neutral"},/area/space)
 "Zj" = (/obj/structure/grille,/obj/machinery/door/firedoor,/obj/structure/window/reinforced{dir = 5},/obj/structure/sign/directions/dock_tablo/tablo4,/turf/simulated/floor/plating,/area/station/hallway/secondary/entry)
 "Zo" = (/obj/machinery/disposal,/turf/simulated/floor{dir = 9; icon_state = "red"},/area/space)
 "Zw" = (/obj/structure/grille,/obj/structure/sign/warning/securearea{desc = "A warning sign which reads 'EXTERNAL AIRLOCK'"; icon_state = "space"; layer = 4; name = "EXTERNAL AIRLOCK"},/obj/machinery/door/firedoor,/obj/structure/window/reinforced{dir = 5},/turf/simulated/floor/plating,/area/station/hallway/secondary/entry)
-"ZC" = (/obj/structure/table/glass,/turf/simulated/floor{dir = 10; icon_state = "neutral"},/area/space)
+"ZB" = (/obj/structure/table/glass,/turf/simulated/floor{icon_state = "neutral"},/area/space)
 "ZD" = (/turf/simulated/floor{dir = 1; icon_state = "red"},/area/space)
+"ZF" = (/obj/structure/stool,/turf/simulated/floor,/area/space)
 "ZH" = (/obj/machinery/vending/eva,/turf/simulated/floor{icon_state = "dark"},/area/space)
 "ZL" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor{dir = 1; icon_state = "red"},/area/space)
 "ZW" = (/obj/structure/stool/bed/chair/comfy/brown,/turf/simulated/floor/carpet/blue2,/area/space)
@@ -561,24 +558,24 @@ wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
 wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIwRwRwRwRwRwRwRwRxieUZWZWXoXoXojUFxHpwRHpbYcebLcebYHpwRHpwRwRwRwRwRwRwRwRHpwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
 wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIwRwRwRwRwRwRwRwRxiLuOCdqkkXolMlTvEHpeoHpHpHpfDHpHpHpeoHpwRwRwRwRwRwRwRwRHpwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
 wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIwRwRwRwRwRwRwRwRHpWDuxuxXoBQEGGCTZHpfIfJgjgtgAgOhrhUiiHpwRwRwRwRwRwRwRwRHpwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRjIwRwRjIjIwRjIwRjIHphCAJlTlTBEKOIPHpHpiwiPcecejwceceiPjCHpHpwRwRwRwRwRwRwRHpjIwRjIwRjIjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDlYmsmsmKwRwRwRwRwRjIjIjIjIjIjIjIjIpkpupypupzHpHpHpHpnFHpHpHpHpjWkbkhkvkDldkDlklslwlFHpHpHpHpHpHpHpHpHplTlTlTlTlTjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDrAxRCvNqwRwRwRwRwRpupupupupupuQAQCVLJCJCJCxDmLBYeoHjgAegPmmTHpnmcecenAnGnQoBoNceceoOHpoQUlgAgAgAeopcpilTlTlTlTlTjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDrAqiCvNqwRwRwRwRwRjIJCJCJCJCJCAFTkVLJCJCJCxDpJcepTcececececepTqucecenAqEqQrboNcecerxpTcececececepTcerzlTlTlTlTlTjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDmsmsmsmswRwRwRwRwRMTMTMTMTMTMTJRwJVLJCJCJCxDrNkDeoseujkDkDJKHpsCcecenAsZtqtLoNcecetSHpsekDSkSkueeoujurlTlTlTlTlTjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDrAqiCvNqwRwRwRwRwRjIcececejIjIjIjIZCMTZcMTClHpHpHpHpHpHpuuHpHpuKlkvPlwwlwlwlkbwwkvwMHpHpwWHpHpHpHpjIjIlTlTlTlTlTjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDrAoDCvNqwRwRwRwRwRjIjIopjIjIgBgBjIjIJCjIJCjIHpxFxZynyFyRgAzGHpHpAcAfcececececeAfAIHpHpgOgArIAUBsHpBxjIlTlTlTlTlTxBwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDmsmsmsmswRwRwRwRwRjIgBcecececegBjIJCJCJCJCJCHpCECECECECOceCSCSHpDgEkFdFtkDFyFzGaGsHpGtceceGxcenAGyzAGSlTlTlTlTsGxBfNwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRopcecececececeopJCJCJCJCJCGXcejwcecececeCSCSHpeoHpHpHpHcHpHpHpeoHpquHKcececeHSHWIXJVlTlTlTlTlTxBwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDmsmsmstUwRwRwRwRwRjIgBgBgBgBgBgBjIJCJCJCJCJCHpKeKmKBujHpHpHpHpHpwRHpKKKWLwLVMrHpwRHpMHMJMNMUceMVHWGPNnlTlTlTlTlTxBwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDpVxRCvBNwRwRwRwRwRjIjIjIjIjIjIjIjIJCJCJCJCJCHpHpHpHpHpHpNKOpOrHpbuHpOwONOTPrPXHpbuHpQcQlkDkDkDQtHpGPNnlTlTlTlTlTjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDlYmsmseVwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCHpQSRlceROHpquceOrHpwRHpGPKWSKLVSYHpwRHpfpUflTVkVzVCHpIXVHlTlTlTlTlTjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCHpQSRlceROHpquceVWHpbuHpHpWpGPWHHpHpbuHpXlXoXoXoXoXDHpGPGSlTlTlTlTlTjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCHpHpHpXJHpHpHpXSHpHpwRwRHpHpHpHpHpwRwRHpYeYyYzYLYUYZHpjIjIlTlTlTlTlTjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCJCHpZoZDZLSITgsoOMHpHpbubuwRbuwRbubuHpHpHpHpHpQBoGuiHpfHjIjIwRjIwRjIjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCJCwDGhJCJCJCJClUXEOAHpwRHpHpHpHpHpwRHpWABxriHpHpHpHpHpjIjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRjIwRwRjIjIwRjIwRjIHphCAJlTlTBEKOIPHpHpiwiPcecejwceceiPjCHpHpwRwRwRwRwRwRwRHpwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDfHfNfNlYwRwRwRwRwRjIjIjIjIjIjIjIjImsmKpkmKpuHpHpHpHpnFHpHpHpHpjWkbkhkvkDldkDlklslwlFHpHpHpHpHpHpHpHpHpwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDpypzrAsGwRwRwRwRwRmKmKmKmKmKmKxBxRCvJCJCJCIXmLBYeoHjgAegPmmTHpnmcecenAnGnQoBoNceceoOHpoQUlgAgAgAeopcpiwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDpyNqrAsGwRwRwRwRwRjIJCJCJCJCJCQAQCCvJCJCJCIXpJcepTcececececepTqucecenAqEqQrboNcecerxpTcececececepTcerzwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDfNfNfNfNwRwRwRwRwRVHVHVHVHVHVHVLjhCvJCJCJCIXrNkDeoseujkDkDJKHpsCcecenAsZtqtLoNcecetSHpsekDSkSkueeoujurwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDpyNqrAsGwRwRwRwRwRjIcececejIjIjIjILpVHZBVHaiHpHpHpHpHpHpuuHpHpuKlkvPlwwlwlwlkbwwkvwMHpHpwWHpHpHpHpjIjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDpyXVrAsGwRwRwRwRwRjIjIfAjIjIErErjIjIJCjIJCjIHpxFxZynyFyRgAzGHpHpAcAfcececececeAfAIHpHpgOgArIAUBsHpBxjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDfNfNfNfNwRwRwRwRwRjIErcecececeErjIJCJCJCJCJCHpCECECECECOceCSCSHpDgEkFdFtkDFyFzGaGsHpGtceceGxcenAGyzAGSwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRfAcecececececefAJCJCJCJCJCGXcejwcecececeCSCSHpeoHpHpHpHcHpHpHpeoHpquHKcececeHSHWGPJVwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDfNfNfNHkwRwRwRwRwRjIErErErErErErjIJCJCJCJCJCHpKeKmKBujHpHpHpHpHpwRHpKKKWLwLVMrHpwRHpMHMJMNMUceMVHWeJNnwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDUgpzrANUwRwRwRwRwRjIjIjIjIjIjIjIjIJCJCJCJCJCHpHpHpHpHpHpNKOpOrHpbuHpOwONOTPrPXHpbuHpQcQlkDkDkDQtHpGPKTwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDfHfNfNNSwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCHpQSRlceROHpquceOrHpwRHpGPKWSKLVSYHpwRHpfpUflTVkVzVCHpGPGSwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCHpQSRlceROHpquceVWHpbuHpHpWpGPWHHpHpbuHpXlXoXoXoXoXDHpjIjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCHpHpHpXJHpHpHpXSHpHpwRwRHpHpHpHpHpwRwRHpYeYyYzYLYUYZHpcdjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCJCHpZoZDZLSITgsoOMHpHpbubuwRbuwRbubuHpHpHpHpHpQBoGuiHpjIjIwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCJCwDGhJCJCJCJClUXEOAHpwRHpHpHpHpHpwRHpWABxriHpHpHpHpHpwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
 wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCJCHpCAJCXEZHGhfMmITGHpHpHpDYbSzjHpHpHpsLkBceQnHpwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
-wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCJCHpHElpXEeBGhJCXEQrHpiZuvwxLdlXxLbPSnDxceceQnHpwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
+wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCJCHpHEZFXEeBGhJCXEQrHpiZuvwxLdlXxLbPSnDxceceQnHpwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
 wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCJCwDGhJCJCJCJCtIXEUAHpBZuvcfJSwvxLrxnUqucecerxKuwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
 wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCJCHpifMSPDUuHCjODryJHpGgSxTXcexazorxSntkLJSytSHpwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
 wRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRdDdDdDdDdDdDdDwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRjIJCJCJCJCJCHpHpHpadHpHpHpkrHpHpHpbHceSxHlzoceojHpSnSnSnHpHpwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwRwR
