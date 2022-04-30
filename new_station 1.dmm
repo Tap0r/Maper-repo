@@ -259,7 +259,7 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/space)
+/area/station/civilian/hydroponics)
 "aP" = (
 /obj/machinery/door/window{
 	dir = 4;
@@ -774,10 +774,22 @@
 	icon_state = "red"
 	},
 /area/space)
+"cV" = (
+/obj/machinery/kitchen_machine/candymaker,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "cW" = (
 /obj/structure/flora/ausbushes,
 /turf/simulated/floor/grass,
 /area/space)
+"cX" = (
+/turf/simulated/floor{
+	icon_state = "showroomfloor"
+	},
+/area/station/civilian/cold_room)
 "cY" = (
 /obj/structure/closet/secure_closet/brig{
 	id = "Cell 4";
@@ -827,7 +839,7 @@
 	dir = 5;
 	icon_state = "cafeteria"
 	},
-/area/space)
+/area/station/civilian/kitchen)
 "dq" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/carpet/blue2,
@@ -914,6 +926,17 @@
 	icon_state = "red"
 	},
 /area/space)
+"dY" = (
+/obj/structure/table,
+/obj/machinery/kitchen_machine/microwave{
+	pixel_x = -3;
+	pixel_y = 6
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "eb" = (
 /obj/item/weapon/kitchen/utensil/spoon,
 /obj/item/weapon/kitchen/utensil/fork{
@@ -963,6 +986,16 @@
 	icon_state = "darkblue"
 	},
 /area/space)
+"ei" = (
+/obj/machinery/chem_master/condimaster{
+	name = "CondiMaster Neo";
+	pixel_x = -5
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "el" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor,
@@ -1077,6 +1110,16 @@
 	},
 /turf/simulated/floor/carpet/red,
 /area/space)
+"eF" = (
+/obj/machinery/door/airlock/glass{
+	name = "Hydroponics Pasture";
+	req_access = list(28)
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/hydroponics)
 "eH" = (
 /obj/machinery/computer/secure_data{
 	dir = 8
@@ -1201,7 +1244,7 @@
 	id = "kitchen"
 	},
 /turf/simulated/floor/plating,
-/area/space)
+/area/station/civilian/kitchen)
 "fp" = (
 /obj/structure/table,
 /obj/item/weapon/hand_labeler,
@@ -1496,7 +1539,7 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/space)
+/area/station/civilian/hydroponics)
 "gK" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/grass,
@@ -1702,7 +1745,7 @@
 "hN" = (
 /obj/structure/closet/secure_closet/hydroponics,
 /turf/simulated/floor/grass,
-/area/space)
+/area/station/civilian/hydroponics)
 "hS" = (
 /obj/machinery/computer/arcade,
 /turf/simulated/floor{
@@ -1752,6 +1795,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/space)
+"hZ" = (
+/mob/living/simple_animal/cow{
+	name = "Betsy"
+	},
+/turf/simulated/floor/grass,
+/area/station/civilian/hydroponics)
 "ib" = (
 /turf/simulated/floor{
 	icon_state = "white"
@@ -1899,11 +1948,12 @@
 	dir = 8;
 	id = "kitchen"
 	},
+/obj/item/weapon/reagent_containers/food/snacks/pie,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
 	},
-/area/space)
+/area/station/civilian/kitchen)
 "iF" = (
 /obj/item/device/radio/off{
 	pixel_x = -9;
@@ -1915,6 +1965,20 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"iG" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window/eastleft{
+	dir = 1;
+	name = "Hydroponics";
+	req_access = list(35)
+	},
+/turf/simulated/floor{
+	icon_state = "delivery"
+	},
+/area/station/civilian/hydroponics)
 "iH" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -2268,6 +2332,12 @@
 	icon_state = "cafeteria"
 	},
 /area/space)
+"kp" = (
+/mob/living/simple_animal/chicken{
+	name = "Commander Clucky"
+	},
+/turf/simulated/floor/grass,
+/area/station/civilian/hydroponics)
 "kr" = (
 /obj/machinery/door/airlock/medical/glass{
 	name = "Medical Hardsuits";
@@ -2423,7 +2493,7 @@
 /obj/machinery/smartfridge,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/space)
+/area/station/civilian/kitchen)
 "lk" = (
 /turf/simulated/floor{
 	dir = 8;
@@ -2449,6 +2519,13 @@
 	},
 /turf/simulated/floor/carpet/red,
 /area/space)
+"lr" = (
+/obj/machinery/icecream_vat,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "ls" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/simulated/floor{
@@ -2621,6 +2698,10 @@
 	icon_state = "vault"
 	},
 /area/space)
+"mj" = (
+/obj/structure/sign/double/barsign,
+/turf/simulated/wall,
+/area/space)
 "mk" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor{
@@ -2737,6 +2818,13 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"mR" = (
+/obj/structure/sink/puddle,
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = 6
+	},
+/turf/simulated/floor/grass,
+/area/station/civilian/hydroponics)
 "mS" = (
 /obj/machinery/disposal,
 /turf/simulated/floor{
@@ -3065,6 +3153,13 @@
 	icon_state = "darkblue"
 	},
 /area/space)
+"op" = (
+/obj/machinery/disposal,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "oq" = (
 /obj/item/weapon/storage/box/cups{
 	pixel_y = 4
@@ -3462,6 +3557,21 @@
 	icon_state = "vault"
 	},
 /area/space)
+"qs" = (
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=1";
+	freq = 1400;
+	location = "Hydroponics"
+	},
+/obj/structure/plasticflaps{
+	opacity = 1
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "bot"
+	},
+/area/station/civilian/hydroponics)
 "qu" = (
 /turf/simulated/floor{
 	dir = 8;
@@ -3582,6 +3692,24 @@
 	icon_state = "darkredfull"
 	},
 /area/space)
+"qP" = (
+/obj/item/weapon/reagent_containers/food/condiment/enzyme{
+	pixel_x = 10
+	},
+/obj/structure/table,
+/obj/structure/condiment_shelf{
+	pixel_y = 32
+	},
+/obj/item/weapon/reagent_containers/food/condiment/saltshaker,
+/obj/item/weapon/reagent_containers/food/condiment/sugar,
+/obj/item/weapon/reagent_containers/food/condiment/peppermill,
+/obj/item/weapon/reagent_containers/food/condiment/rice,
+/obj/item/weapon/reagent_containers/food/condiment/ketchup,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "qQ" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor{
@@ -3773,6 +3901,12 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"rP" = (
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "rR" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -3787,6 +3921,11 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"rW" = (
+/turf/simulated/floor{
+	icon_state = "green"
+	},
+/area/station/civilian/hydroponics)
 "sd" = (
 /turf/simulated/floor{
 	dir = 9;
@@ -3840,6 +3979,9 @@
 	icon_state = "vault"
 	},
 /area/station/hallway/secondary/arrival)
+"sj" = (
+/turf/simulated/floor,
+/area/station/civilian/hydroponics)
 "sl" = (
 /obj/structure/closet/secure_closet/brig{
 	id = "Cell 5";
@@ -4306,6 +4448,14 @@
 	icon_state = "darkblue"
 	},
 /area/space)
+"uL" = (
+/obj/structure/table,
+/obj/item/weapon/reagent_containers/food/snacks/mint,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "uM" = (
 /obj/machinery/shower{
 	dir = 4
@@ -4488,6 +4638,12 @@
 	icon_state = "dark"
 	},
 /area/space)
+"vQ" = (
+/obj/structure/closet/crate/freezer,
+/turf/simulated/floor{
+	icon_state = "showroomfloor"
+	},
+/area/station/civilian/cold_room)
 "vR" = (
 /obj/structure/stool/bed/chair/comfy/beige{
 	dir = 1
@@ -4524,7 +4680,7 @@
 	dir = 8;
 	icon_state = "green"
 	},
-/area/space)
+/area/station/civilian/hydroponics)
 "wa" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -4560,7 +4716,7 @@
 	eftpos_name = "Kitchen EFTPOS scanner"
 	},
 /turf/simulated/floor,
-/area/space)
+/area/station/civilian/cold_room)
 "wf" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -4662,12 +4818,14 @@
 	},
 /area/space)
 "wA" = (
-/obj/structure/closet/secure_closet/freezer/kitchen,
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "cafeteria"
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/westleft{
+	dir = 4;
+	name = "Hydroponics";
+	req_access = list(35)
 	},
-/area/space)
+/turf/simulated/floor,
+/area/station/civilian/hydroponics)
 "wB" = (
 /obj/structure/stool/bed,
 /turf/simulated/floor{
@@ -4706,6 +4864,13 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"wJ" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Hydroponics Maintenance";
+	req_one_access = list(35,28)
+	},
+/turf/simulated/floor/plating,
+/area/station/civilian/hydroponics)
 "wM" = (
 /obj/structure/rack,
 /obj/item/device/aicard,
@@ -4768,7 +4933,7 @@
 	dir = 1;
 	icon_state = "bot"
 	},
-/area/space)
+/area/station/civilian/cold_room)
 "wW" = (
 /obj/machinery/door/airlock/command{
 	name = "Head of Personnel";
@@ -5027,6 +5192,12 @@
 	icon_state = "platebot"
 	},
 /area/space)
+"yf" = (
+/turf/simulated/wall,
+/area/station/civilian/kitchen)
+"yg" = (
+/turf/simulated/floor/grass,
+/area/station/civilian/hydroponics)
 "yl" = (
 /obj/item/device/radio/intercom{
 	frequency = 1449;
@@ -5096,6 +5267,12 @@
 	icon_state = "whiteblue"
 	},
 /area/space)
+"yC" = (
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "warning"
+	},
+/area/station/civilian/cold_room)
 "yD" = (
 /obj/structure/table,
 /obj/item/weapon/storage/secure/briefcase{
@@ -5127,7 +5304,7 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/space)
+/area/station/civilian/hydroponics)
 "yJ" = (
 /obj/item/device/gps/engineering{
 	pixel_x = -3;
@@ -5200,7 +5377,7 @@
 	dir = 1;
 	icon_state = "green"
 	},
-/area/space)
+/area/station/civilian/hydroponics)
 "yR" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -5305,7 +5482,7 @@
 	dir = 1;
 	icon_state = "warning"
 	},
-/area/space)
+/area/station/civilian/cold_room)
 "zG" = (
 /obj/structure/closet/crate,
 /turf/simulated/floor{
@@ -5374,6 +5551,14 @@
 	icon_state = "whitered"
 	},
 /area/space)
+"Aa" = (
+/obj/structure/table,
+/obj/machinery/reagentgrinder,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "Ac" = (
 /obj/structure/table/glass,
 /obj/item/weapon/storage/firstaid/regular,
@@ -5401,8 +5586,22 @@
 /area/space)
 "Al" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plating,
-/area/space)
+/obj/machinery/door/firedoor,
+/obj/machinery/door/window/westleft{
+	dir = 2;
+	name = "Kitchen";
+	req_access = list(28)
+	},
+/obj/machinery/door/window/westleft{
+	dir = 1;
+	name = "Hydroponics";
+	req_access = list(35)
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "Ao" = (
 /obj/machinery/computer/mine_sci_shuttle,
 /turf/simulated/floor{
@@ -5679,9 +5878,9 @@
 	},
 /area/space)
 "BB" = (
-/obj/structure/table/glass,
+/obj/item/weapon/flora/pottedplant/minitree,
 /turf/simulated/floor,
-/area/space)
+/area/station/civilian/hydroponics)
 "BE" = (
 /obj/machinery/vending/coffee,
 /turf/simulated/floor/wood{
@@ -5759,6 +5958,20 @@
 	icon_state = "darkblue"
 	},
 /area/space)
+"Cd" = (
+/obj/structure/table/glass,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/station/civilian/hydroponics)
+"Ce" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/item/device/guitar,
+/obj/structure/rack,
+/turf/simulated/floor/wood,
+/area/space)
 "Cf" = (
 /obj/machinery/door/window/brigdoor/westleft{
 	dir = 2;
@@ -5823,6 +6036,21 @@
 	icon_state = "dark"
 	},
 /area/space)
+"Cx" = (
+/obj/structure/table,
+/obj/item/weapon/storage/box/donkpockets{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/weapon/packageWrap,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
+"Cy" = (
+/turf/simulated/wall,
+/area/station/civilian/cold_room)
 "CA" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/cable_coil/random,
@@ -5966,6 +6194,19 @@
 	icon_state = "darkgreen"
 	},
 /area/space)
+"Dh" = (
+/obj/item/weapon/hand_labeler,
+/obj/item/weapon/packageWrap,
+/obj/structure/table/glass,
+/obj/item/weapon/book/manual/wiki/hydroponics,
+/obj/item/device/eftpos{
+	eftpos_name = "Botany EFTPOS scanner"
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "green"
+	},
+/area/station/civilian/hydroponics)
 "Di" = (
 /obj/item/weapon/folder{
 	pixel_x = -4
@@ -6063,6 +6304,14 @@
 	icon_state = "darkredfull"
 	},
 /area/space)
+"DC" = (
+/obj/structure/table,
+/obj/item/weapon/book/manual/wiki/chefs_recipes,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "DD" = (
 /obj/structure/closet/coffin,
 /obj/structure/window/reinforced{
@@ -6315,7 +6564,7 @@
 "EZ" = (
 /obj/machinery/vending/hydroseeds,
 /turf/simulated/floor,
-/area/space)
+/area/station/civilian/hydroponics)
 "Fa" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/simulated/floor/wood,
@@ -6669,6 +6918,13 @@
 /obj/structure/sign/warning/airlock,
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/exit)
+"GB" = (
+/obj/machinery/kitchen_machine/oven,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "GC" = (
 /obj/structure/stool/bed/chair/comfy/brown{
 	dir = 8
@@ -6906,6 +7162,17 @@
 /obj/item/clothing/head/witchwig,
 /turf/simulated/floor/wood,
 /area/space)
+"HO" = (
+/obj/structure/table,
+/obj/item/weapon/kitchen/rollingpin,
+/obj/item/weapon/reagent_containers/glass/beaker{
+	pixel_x = 5
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "HQ" = (
 /obj/machinery/door/airlock/glass{
 	name = "Kitchen";
@@ -6915,7 +7182,7 @@
 	dir = 5;
 	icon_state = "cafeteria"
 	},
-/area/space)
+/area/station/civilian/kitchen)
 "HS" = (
 /obj/item/weapon/paper_bin{
 	pixel_y = 4
@@ -7044,6 +7311,10 @@
 	icon_state = "vault"
 	},
 /area/space)
+"Ix" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/simulated/floor/grass,
+/area/station/civilian/hydroponics)
 "Iy" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -7252,7 +7523,7 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/space)
+/area/station/civilian/hydroponics)
 "JC" = (
 /turf/simulated/floor,
 /area/space)
@@ -7375,7 +7646,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
-/area/space)
+/area/station/civilian/cold_room)
 "Ke" = (
 /obj/structure/rack,
 /obj/random/tools/tool,
@@ -7520,6 +7791,12 @@
 	icon_state = "vault"
 	},
 /area/space)
+"KM" = (
+/obj/structure/flora/ausbushes/ppflowers{
+	pixel_x = 11
+	},
+/turf/simulated/floor/grass,
+/area/station/civilian/hydroponics)
 "KO" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/folder/blue{
@@ -7634,6 +7911,13 @@
 	icon_state = "black"
 	},
 /area/space)
+"LC" = (
+/obj/machinery/kitchen_machine/grill,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "LF" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -7663,12 +7947,18 @@
 	},
 /area/space)
 "LL" = (
-/obj/machinery/vending/cigarette,
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "vault"
+/obj/structure/closet/crate/hydroponics,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/screwdriver,
+/obj/item/weapon/shovel/spade,
+/obj/item/weapon/wrench,
+/obj/item/weapon/minihoe{
+	pixel_x = 3
 	},
-/area/space)
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/station/civilian/hydroponics)
 "LM" = (
 /obj/item/weapon/reagent_containers/food/snacks/soap/nanotrasen,
 /turf/simulated/floor/plating,
@@ -7741,12 +8031,26 @@
 	icon_state = "vault"
 	},
 /area/space)
+"Mt" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "Mv" = (
 /obj/machinery/disposal,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/space)
+"Mw" = (
+/obj/structure/flora/rock/jungle,
+/turf/simulated/floor/grass,
+/area/station/civilian/hydroponics)
 "MB" = (
 /obj/machinery/conveyor{
 	id = "QMLoad"
@@ -7861,6 +8165,11 @@
 "Nc" = (
 /turf/simulated/floor/carpet/purple,
 /area/space)
+"Nd" = (
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/station/civilian/hydroponics)
 "Nm" = (
 /obj/machinery/door/firedoor,
 /turf/simulated/floor{
@@ -7996,7 +8305,7 @@
 	dir = 4;
 	icon_state = "green"
 	},
-/area/space)
+/area/station/civilian/hydroponics)
 "NQ" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Bar Maintenance";
@@ -8005,12 +8314,27 @@
 /turf/simulated/floor/plating,
 /area/space)
 "NR" = (
+/obj/item/weapon/reagent_containers/spray/plantbgone{
+	pixel_y = 3
+	},
+/obj/item/weapon/reagent_containers/spray/plantbgone{
+	pixel_y = 3
+	},
+/obj/item/weapon/reagent_containers/spray/plantbgone{
+	pixel_x = 8;
+	pixel_y = 8
+	},
+/obj/item/weapon/reagent_containers/spray/plantbgone{
+	pixel_x = 13;
+	pixel_y = 5
+	},
 /obj/structure/table/glass,
+/obj/item/weapon/book/manual/hydroponics_beekeeping,
 /turf/simulated/floor{
-	dir = 6;
+	dir = 4;
 	icon_state = "green"
 	},
-/area/space)
+/area/station/civilian/hydroponics)
 "NS" = (
 /obj/structure/stool/bed/chair/comfy/black{
 	dir = 8
@@ -8455,7 +8779,7 @@
 	dir = 4;
 	icon_state = "green"
 	},
-/area/space)
+/area/station/civilian/hydroponics)
 "PU" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/grass,
@@ -8548,13 +8872,20 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
+"Qy" = (
+/obj/machinery/vending/cigarette,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/space)
 "Qz" = (
 /obj/machinery/door/airlock/glass{
 	name = "Hydroponics";
 	req_access = list(35)
 	},
 /turf/simulated/floor,
-/area/space)
+/area/station/civilian/hydroponics)
 "QA" = (
 /obj/machinery/door/firedoor,
 /turf/simulated/floor,
@@ -8615,7 +8946,7 @@
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
-/area/space)
+/area/station/civilian/cold_room)
 "QQ" = (
 /obj/machinery/sleeper{
 	dir = 8
@@ -8851,6 +9182,13 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"RZ" = (
+/obj/structure/table,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "Sc" = (
 /obj/structure/stool/bed/chair/metal/red,
 /turf/simulated/floor{
@@ -8931,6 +9269,9 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
+"Sv" = (
+/turf/simulated/wall,
+/area/station/civilian/hydroponics)
 "Sx" = (
 /turf/simulated/floor{
 	dir = 10;
@@ -8961,7 +9302,7 @@
 	req_access = list(35)
 	},
 /turf/simulated/floor/grass,
-/area/space)
+/area/station/civilian/hydroponics)
 "SI" = (
 /obj/structure/reagent_dispensers/aqueous_foam_tank,
 /turf/simulated/floor{
@@ -9100,7 +9441,7 @@
 	dir = 5;
 	icon_state = "green"
 	},
-/area/space)
+/area/station/civilian/hydroponics)
 "Tl" = (
 /obj/structure/rack,
 /obj/item/clothing/mask/breath,
@@ -9295,6 +9636,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
+"Ud" = (
+/obj/structure/flora/junglebush/large,
+/turf/simulated/floor/grass,
+/area/station/civilian/hydroponics)
 "Uf" = (
 /turf/simulated/floor/wood{
 	icon_state = "wood-broken"
@@ -9371,7 +9716,7 @@
 	dir = 5;
 	icon_state = "cafeteria"
 	},
-/area/space)
+/area/station/civilian/kitchen)
 "UF" = (
 /obj/machinery/vending/hydroseeds,
 /turf/simulated/floor{
@@ -9527,20 +9872,17 @@
 /area/space)
 "VF" = (
 /obj/machinery/door/window/westright{
-	dir = 2;
+	dir = 1;
 	name = "Kitchen Maintenance";
 	req_access = list(28)
 	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
 /turf/simulated/floor{
 	icon_state = "delivery"
 	},
-/area/space)
+/area/station/civilian/cold_room)
 "VG" = (
 /obj/structure/stool/bed,
 /obj/item/weapon/bedsheet/brown,
@@ -9639,6 +9981,13 @@
 /obj/item/toy/plushie/space_whale,
 /turf/simulated/floor/carpet/blue,
 /area/space)
+"We" = (
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "Wf" = (
 /obj/structure/drain,
 /turf/simulated/floor{
@@ -9662,6 +10011,15 @@
 /obj/structure/stool/bed/chair/comfy/brown,
 /turf/simulated/floor/carpet/red,
 /area/space)
+"Wm" = (
+/obj/machinery/door/airlock{
+	name = "Kitchen Cold Room";
+	req_access = list(28)
+	},
+/turf/simulated/floor{
+	icon_state = "showroomfloor"
+	},
+/area/station/civilian/cold_room)
 "Wp" = (
 /obj/structure/closet/secure_closet/freezer/money,
 /turf/simulated/floor{
@@ -9788,12 +10146,19 @@
 /obj/item/device/megaphone,
 /turf/simulated/floor/carpet/black,
 /area/space)
+"Xf" = (
+/obj/machinery/processor,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "Xi" = (
 /turf/simulated/floor{
 	dir = 10;
 	icon_state = "green"
 	},
-/area/space)
+/area/station/civilian/hydroponics)
 "Xl" = (
 /obj/item/weapon/flora/pottedplant/thinbush,
 /turf/simulated/floor/wood,
@@ -10080,11 +10445,6 @@
 	icon_state = "vault"
 	},
 /area/space)
-"YH" = (
-/turf/simulated/floor{
-	icon_state = "showroomfloor"
-	},
-/area/space)
 "YJ" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor/wood,
@@ -10104,7 +10464,7 @@
 "YO" = (
 /obj/machinery/vending/hydronutrients,
 /turf/simulated/floor,
-/area/space)
+/area/station/civilian/hydroponics)
 "YP" = (
 /obj/structure/closet/secure_closet/security,
 /turf/simulated/floor{
@@ -10205,12 +10565,28 @@
 	icon_state = "white"
 	},
 /area/space)
+"Zq" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/sign/departments/botany,
+/turf/simulated/floor/plating,
+/area/station/civilian/hydroponics)
 "Zv" = (
 /obj/structure/kitchenspike,
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
-/area/space)
+/area/station/civilian/cold_room)
 "Zw" = (
 /obj/structure/grille,
 /obj/structure/sign/warning/securearea{
@@ -10251,8 +10627,11 @@
 /area/space)
 "ZE" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/turf/simulated/floor,
-/area/space)
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "warning"
+	},
+/area/station/civilian/cold_room)
 "ZF" = (
 /obj/structure/stool,
 /turf/simulated/floor,
@@ -10275,7 +10654,7 @@
 	dir = 5;
 	icon_state = "cafeteria"
 	},
-/area/space)
+/area/station/civilian/kitchen)
 "ZL" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor{
@@ -10326,6 +10705,13 @@
 	icon_state = "whiteblue"
 	},
 /area/space)
+"ZV" = (
+/obj/machinery/deepfryer,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/station/civilian/kitchen)
 "ZW" = (
 /obj/structure/stool/bed/chair/comfy/brown,
 /turf/simulated/floor/carpet/blue2,
@@ -39472,13 +39858,13 @@ cd
 cd
 cd
 cd
-jI
-jI
-cd
-jI
-jI
-jI
-jI
+Sv
+wJ
+qs
+Sv
+Cy
+Cy
+Cy
 Kd
 wV
 jI
@@ -39722,20 +40108,20 @@ cd
 cd
 cd
 cd
-jI
-jI
-jI
-jI
-jI
-jI
-jI
-jI
-zq
-zq
-zq
-jI
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+Sv
+yg
+iG
+mR
+Cy
 QP
-YH
+cX
 zB
 VF
 jI
@@ -39978,21 +40364,21 @@ cd
 cd
 cd
 cd
-jI
-jI
+Sv
+Sv
 yH
 yH
 yH
 yH
 yH
-jI
-zq
-zq
-zq
-zq
-jI
+Sv
+hN
+yg
+kp
+Ud
+Cy
 Zv
-YH
+cX
 zB
 we
 jI
@@ -40235,22 +40621,22 @@ cd
 cd
 cd
 cd
-jI
+Sv
 yH
 vZ
 vZ
 vZ
 Xi
-ce
+Nd
 SE
-zq
-zq
-zq
-zq
-jI
-Zv
-YH
-zB
+yg
+KM
+hZ
+Mw
+Wm
+cX
+cX
+yC
 ZE
 jI
 Ht
@@ -40491,24 +40877,24 @@ jI
 cd
 cd
 cd
-jI
-jI
+Sv
+Sv
 yH
-JC
-JC
-JC
-jO
+sj
+sj
+sj
+rW
 JA
-jI
+Sv
 hN
 hN
-hN
-jI
-jI
-jI
-jI
-YH
-jI
+Ix
+yg
+Cy
+Zv
+cX
+vQ
+Cy
 jI
 Ht
 JC
@@ -40748,24 +41134,24 @@ jI
 cd
 cd
 cd
-jI
+Sv
 yH
 yQ
-JC
-JC
-JC
-jO
+sj
+LL
+sj
+rW
 yH
-jI
-jI
-jI
-jI
-jI
-HF
-HF
-HF
-ko
-HF
+Sv
+Sv
+Sv
+Sv
+eF
+yf
+yf
+yf
+yf
+yf
 jI
 Ht
 JC
@@ -41005,24 +41391,24 @@ cd
 cd
 cd
 cd
-jI
+Sv
 yH
 yQ
-JC
+sj
 YO
-JC
-jO
+sj
+rW
 yH
-jI
-HF
-HF
+yf
+qP
+We
 UD
-wA
-ko
-ko
-ko
-ko
-HF
+rP
+dY
+dY
+GB
+ZV
+LC
 jI
 Ht
 JC
@@ -41262,24 +41648,24 @@ cd
 cd
 cd
 cd
-jI
+Sv
 yH
 yQ
-JC
+sj
 EZ
-JC
-jO
+sj
+rW
 yH
-jI
-ko
-ko
-ko
-ko
-ko
-ko
-ko
-ko
-HF
+yf
+rP
+rP
+rP
+rP
+rP
+rP
+rP
+rP
+rP
 jI
 Ht
 JC
@@ -41519,24 +41905,24 @@ cd
 cd
 cd
 cd
-jI
+Sv
 aO
 yQ
-JC
+sj
 BB
-JC
-jO
-ce
+sj
+rW
+Nd
 Al
-ko
-ko
-HF
-ko
-ko
-HF
-HF
-ko
-HF
+rP
+lr
+ei
+cV
+RZ
+DC
+Aa
+rP
+Cx
 jI
 Ht
 Ht
@@ -41776,24 +42162,24 @@ cd
 cd
 cd
 cd
-jI
+Sv
 gH
 yQ
-JC
-JC
-JC
-jO
-ce
+sj
+sj
+sj
+rW
+Nd
 li
-ko
-ko
-HF
-ko
-ko
-ko
-ko
-ko
-HF
+rP
+rP
+rP
+rP
+rP
+rP
+rP
+rP
+uL
 jI
 jI
 jI
@@ -42033,24 +42419,24 @@ jI
 jI
 XG
 jI
-jI
-eu
+Sv
+Cd
 Ti
 NP
 PO
 NP
 NR
-eu
-jI
-vi
-ko
-ko
-ko
-HF
-HF
-HF
-ko
-HF
+Dh
+yf
+Xf
+rP
+rP
+rP
+op
+Mt
+rP
+rP
+HO
 jI
 cd
 jI
@@ -42290,24 +42676,24 @@ jI
 JC
 JC
 JC
-jI
-jI
-jI
+Sv
+Sv
+Sv
+wA
+Zq
 Qz
-fZ
-Qz
-jI
-jI
-jI
-jI
+Sv
+Sv
+yf
+yf
 ZK
 do
 iD
 fn
-jI
+yf
 fn
 HQ
-jI
+yf
 jI
 jI
 jI
@@ -42556,7 +42942,7 @@ JC
 JC
 JC
 jI
-Rt
+Qy
 ce
 zA
 ce
@@ -43072,7 +43458,7 @@ JC
 fZ
 Xn
 ce
-LL
+zA
 hg
 zk
 MU
@@ -43840,7 +44226,7 @@ jI
 IW
 jI
 jI
-jI
+mj
 Xt
 CF
 NN
@@ -44362,7 +44748,7 @@ jc
 TY
 Xn
 FU
-St
+Ce
 Vz
 lT
 iu
