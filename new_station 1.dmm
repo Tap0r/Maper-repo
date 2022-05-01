@@ -3223,8 +3223,8 @@
 	},
 /area/space)
 "nv" = (
-/obj/structure/stool/bed/chair/comfy/black{
-	dir = 4
+/obj/machinery/newscaster{
+	pixel_x = 30
 	},
 /turf/simulated/floor{
 	icon_state = "grimy"
@@ -4140,10 +4140,7 @@
 /turf/environment/space,
 /area/space)
 "qN" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/storage/fancy/candle_box{
-	pixel_y = 10
-	},
+/obj/machinery/vending/coffee,
 /turf/simulated/floor{
 	icon_state = "grimy"
 	},
@@ -6852,12 +6849,6 @@
 /obj/structure/flora/ausbushes/reedbush,
 /turf/simulated/floor/grass,
 /area/space)
-"BO" = (
-/obj/machinery/hydroponics/soil,
-/obj/item/seeds/harebell,
-/obj/item/weapon/reagent_containers/glass/bucket,
-/turf/simulated/floor/grass,
-/area/space)
 "BQ" = (
 /obj/structure/stool/bed/chair/metal/blue{
 	dir = 4
@@ -7400,6 +7391,12 @@
 	dir = 1;
 	icon_state = "darkred"
 	},
+/area/space)
+"Ej" = (
+/obj/machinery/hydroponics/soil,
+/obj/item/seeds/harebell,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/turf/simulated/floor/grass,
 /area/space)
 "Ek" = (
 /obj/machinery/computer/crew,
@@ -9074,18 +9071,8 @@
 	},
 /area/space)
 "Lg" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen/blue{
-	pixel_x = -4
-	},
-/obj/item/weapon/pen/red{
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/obj/item/weapon/pen{
-	pixel_x = 2;
-	pixel_y = 6
+/obj/machinery/requests_console/chapel{
+	pixel_x = 30
 	},
 /turf/simulated/floor{
 	icon_state = "grimy"
@@ -9769,6 +9756,15 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkblue"
+	},
+/area/space)
+"Os" = (
+/obj/structure/table/woodentable,
+/obj/item/device/flashlight/lamp{
+	pixel_x = -4
+	},
+/turf/simulated/floor{
+	icon_state = "grimy"
 	},
 /area/space)
 "Ov" = (
@@ -10530,8 +10526,7 @@
 	},
 /area/space)
 "RE" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/holywater,
+/obj/machinery/hologram/holopad,
 /turf/simulated/floor{
 	icon_state = "grimy"
 	},
@@ -10554,9 +10549,8 @@
 /area/station/security/checkpoint)
 "RJ" = (
 /obj/structure/table/woodentable,
-/obj/item/device/flashlight/lamp{
-	pixel_x = -4
-	},
+/obj/item/weapon/reagent_containers/food/drinks/bottle/wine,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/holywater,
 /turf/simulated/floor{
 	icon_state = "grimy"
 	},
@@ -10852,7 +10846,19 @@
 	},
 /area/space)
 "SQ" = (
-/obj/machinery/hologram/holopad,
+/obj/structure/table/woodentable,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen/blue{
+	pixel_x = -4
+	},
+/obj/item/weapon/pen/red{
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/item/weapon/pen{
+	pixel_x = 2;
+	pixel_y = 6
+	},
 /turf/simulated/floor{
 	icon_state = "grimy"
 	},
@@ -11783,6 +11789,10 @@
 /area/station/hallway/secondary/entry)
 "Ws" = (
 /obj/structure/table/woodentable,
+/obj/item/weapon/nullrod{
+	pixel_x = -8
+	},
+/obj/item/weapon/reagent_containers/food/drinks/drinkingglass,
 /turf/simulated/floor{
 	icon_state = "grimy"
 	},
@@ -11914,10 +11924,9 @@
 	},
 /area/station/civilian/hydroponics)
 "Xj" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/wine,
-/obj/machinery/requests_console/chapel{
-	pixel_x = 30
+/obj/machinery/door/airlock{
+	name = "Crematorium";
+	req_access = list(27)
 	},
 /turf/simulated/floor{
 	icon_state = "grimy"
@@ -12276,13 +12285,8 @@
 	},
 /area/space)
 "YI" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/nullrod{
-	pixel_x = -8
-	},
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass,
-/obj/machinery/newscaster{
-	pixel_x = 30
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 8
 	},
 /turf/simulated/floor{
 	icon_state = "grimy"
@@ -49231,7 +49235,7 @@ Kv
 Kv
 zq
 Tz
-BO
+Ej
 eM
 bX
 lZ
@@ -49436,11 +49440,11 @@ GP
 Fm
 jI
 TI
-tb
+RE
 SQ
-tb
+Os
 jI
-wR
+cd
 cd
 cd
 jI
@@ -49694,10 +49698,10 @@ GP
 jI
 qN
 tb
-tb
+YI
 Ws
 jI
-wR
+cd
 cd
 cd
 jI
@@ -49954,7 +49958,7 @@ tb
 nv
 RJ
 jI
-wR
+cd
 cd
 cd
 jI
@@ -50208,10 +50212,10 @@ jI
 jI
 jI
 Xj
-YI
-RE
 jI
-wR
+jI
+jI
+cd
 cd
 cd
 eO
@@ -50463,12 +50467,12 @@ wR
 wR
 wR
 wR
-jI
-jI
-jI
-jI
-jI
 wR
+wR
+wR
+wR
+jI
+cd
 cd
 cd
 jI
