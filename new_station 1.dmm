@@ -1007,6 +1007,13 @@
 	icon_state = "red"
 	},
 /area/space)
+"dX" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/box/bodybags,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space)
 "dY" = (
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave{
@@ -2955,6 +2962,14 @@
 	icon_state = "neutralcorner"
 	},
 /area/station/hallway/secondary/entry)
+"mi" = (
+/obj/structure/morgue{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space)
 "mj" = (
 /obj/structure/sign/double/barsign,
 /turf/simulated/wall,
@@ -10186,6 +10201,12 @@
 	icon_state = "vault"
 	},
 /area/space)
+"PZ" = (
+/obj/structure/crematorium,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space)
 "Qc" = (
 /obj/structure/table,
 /obj/machinery/requests_console/hop{
@@ -10991,6 +11012,13 @@
 	dir = 4;
 	icon_state = "white"
 	},
+/area/space)
+"Tk" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Crematorium Maintenance";
+	req_access = list(27)
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "Tl" = (
 /obj/structure/rack,
@@ -50467,10 +50495,10 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
-wR
+jI
+tb
+tb
+mi
 jI
 cd
 cd
@@ -50724,11 +50752,11 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
-wR
-wR
+jI
+tb
+tb
+tb
+Tk
 wR
 cd
 cd
@@ -50981,11 +51009,11 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
-wR
-wR
+jI
+PZ
+tb
+dX
+jI
 wR
 cd
 cd
@@ -51238,11 +51266,11 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
-wR
-wR
+jI
+jI
+jI
+jI
+jI
 wR
 cd
 cd
