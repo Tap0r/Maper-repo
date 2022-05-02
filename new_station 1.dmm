@@ -1257,6 +1257,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/entry)
+"fl" = (
+/obj/machinery/door/window/eastleft{
+	dir = 1;
+	req_access = list(25)
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "delivery"
+	},
+/area/space)
 "fn" = (
 /obj/machinery/door/airlock/external{
 	name = "Arrival Airlock"
@@ -2764,6 +2776,18 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"ml" = (
+/obj/structure/closet/gmcloset{
+	name = "formal wardrobe"
+	},
+/obj/item/weapon/book/manual/wiki/barman_recipes{
+	pixel_y = 10
+	},
+/obj/item/device/eftpos{
+	eftpos_name = "Bar EFTPOS scanner"
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "mm" = (
 /obj/structure/table/woodentable,
 /obj/item/device/detective_scanner,
@@ -2847,6 +2871,15 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkstairs_wide"
+	},
+/area/space)
+"mM" = (
+/obj/machinery/door/airlock{
+	name = "Bar Backroom";
+	req_access = list(25)
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space)
 "mP" = (
@@ -4217,6 +4250,13 @@
 	icon_state = "dark"
 	},
 /area/space)
+"ub" = (
+/obj/structure/sign/monkey_painting{
+	pixel_y = 32
+	},
+/obj/structure/reagent_dispensers/beerkeg,
+/turf/simulated/floor/wood,
+/area/space)
 "uc" = (
 /obj/structure/cable,
 /obj/structure/table/glass,
@@ -4521,6 +4561,17 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"vA" = (
+/obj/structure/closet/secure_closet/bar,
+/obj/item/weapon/gun/projectile/revolver/doublebarrel,
+/obj/item/weapon/paper{
+	info = "This permit signifies that the Bartender is permitted to posess this firearm in the bar, and ONLY the bar. Failure to adhere to this permit will result in confiscation of the weapon and possibly arrest.";
+	name = "Shotgun permit"
+	},
+/obj/item/clothing/suit/armor/vest,
+/obj/item/weapon/storage/firstaid/regular,
+/turf/simulated/floor/wood,
 /area/space)
 "vB" = (
 /obj/machinery/door/airlock/security{
@@ -4927,6 +4978,20 @@
 /obj/item/clothing/mask/gas/coloured,
 /turf/simulated/floor/plating{
 	icon_state = "platebot"
+	},
+/area/space)
+"xH" = (
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=1";
+	freq = 1400;
+	location = "Bar"
+	},
+/obj/structure/plasticflaps{
+	opacity = 1
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "bot"
 	},
 /area/space)
 "xI" = (
@@ -6914,6 +6979,12 @@
 	icon_state = "dark"
 	},
 /area/space)
+"IX" = (
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "Jc" = (
 /obj/structure/rack,
 /obj/structure/window/reinforced{
@@ -6961,6 +7032,13 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"Jk" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Bar Maintenance";
+	req_one_access = list(25)
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "Jo" = (
 /turf/simulated/floor{
@@ -8125,6 +8203,14 @@
 	dir = 4;
 	icon_state = "vault"
 	},
+/area/space)
+"PZ" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12
+	},
+/mob/living/carbon/monkey/punpun,
+/turf/simulated/floor/wood,
 /area/space)
 "Qc" = (
 /obj/structure/table,
@@ -44242,7 +44328,7 @@ wR
 jI
 jI
 jI
-ce
+mM
 jI
 jI
 cd
@@ -44497,10 +44583,10 @@ wR
 wR
 wR
 jI
+ub
+PZ
 lT
-lT
-lT
-lT
+ox
 jI
 cd
 cd
@@ -44754,10 +44840,10 @@ wR
 wR
 wR
 jI
+ml
 lT
 lT
-lT
-lT
+IX
 jI
 cd
 cd
@@ -45011,9 +45097,9 @@ wR
 wR
 wR
 jI
+vA
 lT
-lT
-lT
+fl
 jI
 jI
 cd
@@ -45269,8 +45355,8 @@ wR
 wR
 jI
 jI
-jI
-jI
+Jk
+xH
 jI
 cd
 cd
