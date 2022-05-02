@@ -311,14 +311,12 @@
 	},
 /area/station/hallway/secondary/mine_sci_shuttle)
 "be" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 12
+/obj/machinery/door/airlock/glass{
+	name = "Diner"
 	},
-/obj/structure/sign/monkey_painting{
-	pixel_y = 24
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
-/turf/simulated/floor/wood,
 /area/space)
 "bg" = (
 /obj/machinery/vending/cigarette,
@@ -454,10 +452,7 @@
 	},
 /area/station/cargo/storage)
 "bB" = (
-/obj/structure/table,
-/obj/machinery/chem_dispenser/soda{
-	dir = 8
-	},
+/obj/structure/stool/bar,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -576,15 +571,14 @@
 	},
 /area/space)
 "bR" = (
-/obj/structure/closet/gmcloset{
-	name = "formal wardrobe"
+/obj/structure/closet/secure_closet/bar,
+/obj/item/weapon/gun/projectile/revolver/doublebarrel,
+/obj/item/weapon/paper{
+	info = "This permit signifies that the Bartender is permitted to posess this firearm in the bar, and ONLY the bar. Failure to adhere to this permit will result in confiscation of the weapon and possibly arrest.";
+	name = "Shotgun permit"
 	},
-/obj/item/weapon/book/manual/wiki/barman_recipes{
-	pixel_y = 10
-	},
-/obj/item/device/eftpos{
-	eftpos_name = "Bar EFTPOS scanner"
-	},
+/obj/item/clothing/suit/armor/vest,
+/obj/item/weapon/storage/firstaid/regular,
 /turf/simulated/floor/wood,
 /area/space)
 "bS" = (
@@ -642,10 +636,14 @@
 	},
 /area/space)
 "ca" = (
-/obj/structure/sign/poster/official/high_class_martini{
-	pixel_x = 30
+/obj/machinery/door_control{
+	id = "bar";
+	name = "Privacy shutter";
+	pixel_x = -7;
+	pixel_y = -5;
+	req_access = list(25,1)
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/wall,
 /area/space)
 "cc" = (
 /obj/structure/stool/bed/chair/comfy/black,
@@ -873,15 +871,6 @@
 	icon_state = "dark"
 	},
 /area/space)
-"dm" = (
-/obj/machinery/door_control{
-	id = "bar";
-	name = "Privacy shutter";
-	pixel_x = -24;
-	pixel_y = 5
-	},
-/turf/simulated/floor/wood,
-/area/space)
 "dn" = (
 /obj/structure/table/woodentable,
 /obj/machinery/computer/security/bodycam,
@@ -896,8 +885,10 @@
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/arrival)
 "dp" = (
-/obj/structure/table/reinforced,
-/obj/structure/window/reinforced,
+/obj/machinery/door/window/southright{
+	name = "Bar Door";
+	req_one_access = list(25)
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -1704,22 +1695,20 @@
 	},
 /area/space)
 "gX" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/machinery/door/airlock/glass{
+	name = "Private Room"
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = "bar-m";
-	name = "Bar Shutters"
+	density = 0;
+	icon_state = "shutter0";
+	id = "bar";
+	name = "Bar Shutters";
+	opacity = 0
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
 /area/space)
 "gY" = (
 /obj/machinery/door/firedoor,
@@ -1887,13 +1876,14 @@
 	},
 /area/space)
 "hH" = (
-/obj/machinery/door/airlock{
-	name = "Bar Backroom";
-	req_access = list(25)
+/obj/structure/table/woodentable,
+/obj/item/weapon/lighter/zippo{
+	pixel_x = -5;
+	pixel_y = 5
 	},
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
+/obj/item/ashtray/bronze,
+/obj/item/device/flashlight/lamp,
+/turf/simulated/floor/wood,
 /area/space)
 "hI" = (
 /obj/structure/table,
@@ -2464,10 +2454,16 @@
 	},
 /area/space)
 "jP" = (
-/obj/structure/stool/bed/chair/comfy/brown{
-	dir = 1
+/obj/structure/window/reinforced{
+	dir = 8
 	},
-/turf/simulated/floor/wood,
+/obj/machinery/door/window/eastleft{
+	dir = 1;
+	req_access = list(25)
+	},
+/turf/simulated/floor{
+	icon_state = "delivery"
+	},
 /area/space)
 "jQ" = (
 /obj/structure/table/reinforced,
@@ -2525,14 +2521,13 @@
 	},
 /area/space)
 "kd" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/flora/pottedplant/shoot{
-	pixel_x = -8;
-	pixel_y = 16
+/obj/machinery/door_control{
+	id = "bar";
+	name = "Privacy shutter";
+	pixel_x = -24;
+	pixel_y = 5
 	},
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
+/turf/simulated/floor/wood,
 /area/space)
 "ke" = (
 /obj/machinery/computer/secure_data{
@@ -2663,19 +2658,18 @@
 	},
 /area/space)
 "kM" = (
-/obj/structure/table/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1
+/obj/machinery/door/window/southright{
+	dir = 1;
+	name = "Bar Door";
+	req_one_access = list(25)
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/space)
 "kQ" = (
-/obj/machinery/door/window/southright{
-	name = "Bar Door";
-	req_one_access = list(25)
-	},
+/obj/structure/window/reinforced,
+/obj/machinery/media/jukebox/bar,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -3884,11 +3878,14 @@
 	},
 /area/space)
 "qJ" = (
-/obj/machinery/door/window/southright{
-	dir = 1;
-	name = "Bar Door";
-	req_one_access = list(25)
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
+/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
+	pixel_y = 8
+	},
+/obj/item/weapon/reagent_containers/glass/rag,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -4043,7 +4040,8 @@
 	},
 /area/space)
 "rD" = (
-/obj/structure/reagent_dispensers/beerkeg,
+/obj/structure/table/reinforced,
+/obj/item/clothing/head/cakehat,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -4732,11 +4730,13 @@
 	},
 /area/space)
 "vj" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Bar Maintenance";
-	req_one_access = list(12,25,28)
+/obj/structure/table,
+/obj/machinery/chem_dispenser/soda{
+	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "vm" = (
 /obj/structure/flora/tree/jungle,
@@ -4814,23 +4814,26 @@
 /turf/simulated/floor/wood,
 /area/space)
 "vH" = (
-/obj/structure/closet/secure_closet/bar,
-/obj/item/weapon/gun/projectile/revolver/doublebarrel,
-/obj/item/weapon/paper{
-	info = "This permit signifies that the Bartender is permitted to posess this firearm in the bar, and ONLY the bar. Failure to adhere to this permit will result in confiscation of the weapon and possibly arrest.";
-	name = "Shotgun permit"
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
 	},
-/obj/item/clothing/suit/armor/vest,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/structure/sign/monkey_painting{
+	pixel_y = 24
+	},
 /turf/simulated/floor/wood,
 /area/space)
 "vN" = (
-/obj/machinery/door/airlock/glass{
-	name = "Diner"
+/obj/structure/closet/gmcloset{
+	name = "formal wardrobe"
 	},
-/turf/simulated/floor{
-	icon_state = "dark"
+/obj/item/weapon/book/manual/wiki/barman_recipes{
+	pixel_y = 10
 	},
+/obj/item/device/eftpos{
+	eftpos_name = "Bar EFTPOS scanner"
+	},
+/turf/simulated/floor/wood,
 /area/space)
 "vO" = (
 /obj/structure/stool/bed/chair/metal/red{
@@ -5216,11 +5219,11 @@
 	},
 /area/space)
 "xE" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Bar Maintenance";
-	req_one_access = list(25)
+/obj/structure/table/reinforced,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
 	},
-/turf/simulated/floor/plating,
 /area/space)
 "xF" = (
 /obj/structure/rack,
@@ -5237,15 +5240,16 @@
 	},
 /area/space)
 "xJ" = (
-/obj/structure/window/reinforced{
-	dir = 8
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=CHW";
+	location = "Bar"
 	},
-/obj/machinery/door/window/eastleft{
-	dir = 1;
-	req_access = list(25)
+/obj/structure/plasticflaps{
+	opacity = 1
 	},
 /turf/simulated/floor{
-	icon_state = "delivery"
+	dir = 1;
+	icon_state = "bot"
 	},
 /area/space)
 "xL" = (
@@ -5321,9 +5325,13 @@
 /area/space)
 "yc" = (
 /obj/structure/table/reinforced,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen/blue{
+	pixel_x = 2;
+	pixel_y = 6
+	},
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "cafeteria"
+	icon_state = "dark"
 	},
 /area/space)
 "ye" = (
@@ -6043,8 +6051,10 @@
 	},
 /area/space)
 "Cd" = (
-/obj/structure/table/reinforced,
-/obj/item/ashtray/plastic,
+/obj/structure/table,
+/obj/machinery/chem_dispenser/beer{
+	dir = 8
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -6144,7 +6154,10 @@
 /turf/simulated/wall/r_wall,
 /area/space)
 "CG" = (
-/obj/structure/stool/bar,
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -6847,15 +6860,12 @@
 	},
 /area/space)
 "Gq" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen/blue{
-	pixel_x = 2;
-	pixel_y = 6
+/mob/living/carbon/monkey/punpun,
+/obj/machinery/requests_console/bar{
+	pixel_x = -30;
+	pixel_y = -1
 	},
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
+/turf/simulated/floor/wood,
 /area/space)
 "Gs" = (
 /obj/structure/table/glass,
@@ -6976,17 +6986,10 @@
 	},
 /area/space)
 "GR" = (
-/obj/structure/table/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1
+/obj/structure/sign/poster/official/high_class_martini{
+	pixel_x = 30
 	},
-/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
-	pixel_y = 8
-	},
-/obj/item/weapon/reagent_containers/glass/rag,
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
+/turf/simulated/floor/wood,
 /area/space)
 "GS" = (
 /obj/machinery/door/poddoor/shutters{
@@ -7289,13 +7292,12 @@
 /area/space)
 "Ip" = (
 /obj/machinery/door_control{
-	id = "bar";
-	name = "Privacy shutter";
-	pixel_x = -7;
-	pixel_y = -5;
-	req_access = list(25,1)
+	id = "bar-m";
+	name = "Maintenance Shutters";
+	pixel_x = -24;
+	pixel_y = -5
 	},
-/turf/simulated/wall,
+/turf/simulated/floor/wood,
 /area/space)
 "Is" = (
 /obj/machinery/flasher/portable,
@@ -7368,12 +7370,11 @@
 /turf/simulated/wall/r_wall,
 /area/space)
 "IO" = (
-/mob/living/carbon/monkey/punpun,
-/obj/machinery/requests_console/bar{
-	pixel_x = -30;
-	pixel_y = -1
+/obj/structure/table/reinforced,
+/obj/item/ashtray/plastic,
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
-/turf/simulated/floor/wood,
 /area/space)
 "IP" = (
 /obj/structure/filingcabinet,
@@ -7525,16 +7526,12 @@
 	},
 /area/space)
 "JR" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=CHW";
-	location = "Bar"
-	},
-/obj/structure/plasticflaps{
-	opacity = 1
+/obj/machinery/door/airlock{
+	name = "Bar Backroom";
+	req_access = list(25)
 	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "bot"
+	icon_state = "dark"
 	},
 /area/space)
 "JS" = (
@@ -8647,14 +8644,22 @@
 	},
 /area/space)
 "PN" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/lighter/zippo{
-	pixel_x = -5;
-	pixel_y = 5
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
 	},
-/obj/item/ashtray/bronze,
-/obj/item/device/flashlight/lamp,
-/turf/simulated/floor/wood,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "bar-m";
+	name = "Bar Shutters"
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "PP" = (
 /obj/structure/rack,
@@ -8889,12 +8894,7 @@
 /turf/simulated/floor/plating,
 /area/space)
 "Rk" = (
-/obj/machinery/door_control{
-	id = "bar-m";
-	name = "Maintenance Shutters";
-	pixel_x = -24;
-	pixel_y = -5
-	},
+/obj/structure/stool/bed/chair/comfy/brown,
 /turf/simulated/floor/wood,
 /area/space)
 "Rl" = (
@@ -8910,10 +8910,11 @@
 	},
 /area/space)
 "Rq" = (
-/obj/machinery/vending/boozeomat,
-/turf/simulated/floor{
-	icon_state = "dark"
+/obj/machinery/door/airlock/maintenance{
+	name = "Bar Maintenance";
+	req_one_access = list(25)
 	},
+/turf/simulated/floor/plating,
 /area/space)
 "Rw" = (
 /obj/machinery/light/small/emergency{
@@ -8960,15 +8961,8 @@
 	},
 /area/space)
 "RG" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/obj/machinery/light/small,
-/obj/item/weapon/lighter/zippo{
-	pixel_x = -5;
-	pixel_y = 5
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 1
 	},
 /turf/simulated/floor/wood,
 /area/space)
@@ -9428,6 +9422,13 @@
 	icon_state = "warndarkcorners"
 	},
 /area/space)
+"TY" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Bar Maintenance";
+	req_one_access = list(12,25,28)
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "TZ" = (
 /obj/machinery/computer/communications{
 	dir = 8
@@ -9446,18 +9447,8 @@
 /turf/simulated/floor/wood,
 /area/space)
 "Un" = (
-/obj/machinery/door/airlock/glass{
-	name = "Private Room"
-	},
-/obj/machinery/door/poddoor/shutters{
-	density = 0;
-	icon_state = "shutter0";
-	id = "bar";
-	name = "Bar Shutters";
-	opacity = 0
-	},
+/obj/machinery/vending/boozeomat,
 /turf/simulated/floor{
-	dir = 4;
 	icon_state = "dark"
 	},
 /area/space)
@@ -9581,9 +9572,10 @@
 	},
 /area/space)
 "UN" = (
-/obj/structure/table,
-/obj/machinery/chem_dispenser/beer{
-	dir = 8
+/obj/structure/table/reinforced,
+/obj/item/weapon/flora/pottedplant/shoot{
+	pixel_x = -8;
+	pixel_y = 16
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -9594,8 +9586,7 @@
 /turf/simulated/floor/grass,
 /area/space)
 "UT" = (
-/obj/structure/table/reinforced,
-/obj/item/clothing/head/cakehat,
+/obj/structure/reagent_dispensers/beerkeg,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -9925,7 +9916,16 @@
 	},
 /area/space)
 "WQ" = (
-/obj/structure/stool/bed/chair/comfy/brown,
+/obj/structure/table/woodentable,
+/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/machinery/light/small,
+/obj/item/weapon/lighter/zippo{
+	pixel_x = -5;
+	pixel_y = 5
+	},
 /turf/simulated/floor/wood,
 /area/space)
 "WR" = (
@@ -10404,8 +10404,8 @@
 	},
 /area/space)
 "ZV" = (
+/obj/structure/table/reinforced,
 /obj/structure/window/reinforced,
-/obj/machinery/media/jukebox/bar,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -40848,16 +40848,16 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
-wR
-wR
-wR
-cd
-cd
-cd
-cd
+jI
+jI
+jI
+jI
+jI
+jI
+jI
+jI
+jI
+jI
 jI
 hm
 JC
@@ -41106,15 +41106,15 @@ wR
 wR
 wR
 jI
-jI
-jI
-jI
-jI
-jI
-jI
-jI
-jI
-jI
+ko
+ko
+ko
+ko
+ko
+ko
+ko
+ko
+ko
 jI
 hm
 JC
@@ -41886,7 +41886,7 @@ ko
 ko
 ko
 ko
-ko
+jI
 JC
 JC
 hm
@@ -42134,17 +42134,17 @@ wR
 wR
 wR
 jI
-ko
-ko
-ko
-ko
-ko
-ko
+jI
+xE
+xE
+xE
+jI
+jI
 ko
 ko
 ko
 jI
-JC
+jI
 JC
 jI
 JC
@@ -42385,21 +42385,21 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
-wR
-wR
+JC
 jI
 jI
-yc
-yc
-yc
 jI
 jI
-ko
-ko
-ko
+jI
+pW
+ce
+ce
+ce
+pW
+jI
+jI
+jI
+jI
 jI
 hm
 JC
@@ -42644,19 +42644,19 @@ JC
 JC
 JC
 jI
-jI
-jI
-jI
-jI
+bB
 pW
-ce
-ce
-ce
+bB
 pW
-jI
-jI
-jI
-jI
+bB
+ce
+ce
+ce
+bB
+pW
+bB
+pW
+bB
 jI
 hm
 JC
@@ -42900,21 +42900,21 @@ JC
 JC
 JC
 JC
-jI
-CG
-pW
-CG
-pW
-CG
+be
 ce
 ce
 ce
-CG
-pW
-CG
-pW
-CG
-jI
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+be
 JC
 JC
 JC
@@ -43157,7 +43157,8 @@ JC
 JC
 JC
 JC
-vN
+jI
+Wx
 ce
 ce
 ce
@@ -43169,10 +43170,9 @@ ce
 ce
 ce
 ce
-ce
-ce
-vN
-JC
+Wx
+jI
+hm
 JC
 hm
 JC
@@ -43414,8 +43414,7 @@ JC
 JC
 JC
 JC
-jI
-Wx
+be
 ce
 ce
 ce
@@ -43427,8 +43426,9 @@ ce
 ce
 ce
 ce
-Wx
-jI
+ce
+ce
+be
 JC
 JC
 JC
@@ -43670,23 +43670,23 @@ wR
 JC
 JC
 JC
-JC
-vN
+wR
+jI
+pW
 ce
 ce
 ce
+bB
+bB
+bB
+bB
+bB
 ce
 ce
 ce
-ce
-ce
-ce
-ce
-ce
-ce
-ce
-vN
-JC
+pW
+jI
+hm
 JC
 JC
 JC
@@ -43932,13 +43932,13 @@ jI
 pW
 ce
 ce
-ce
-CG
-CG
-CG
-CG
-CG
-ce
+bB
+rD
+yc
+IO
+Er
+UN
+bB
 ce
 ce
 pW
@@ -44190,12 +44190,12 @@ pW
 ce
 ce
 CG
-UT
-Gq
-Cd
 Er
-kd
-CG
+ce
+ce
+ce
+Er
+ZV
 ce
 ce
 pW
@@ -44447,11 +44447,11 @@ pW
 ce
 ce
 kM
-Er
 ce
 ce
 ce
-Er
+ce
+ce
 dp
 ce
 ce
@@ -44704,11 +44704,11 @@ pW
 ce
 ce
 qJ
+vj
+Cd
 ce
-ce
-ce
-ce
-ce
+Un
+UT
 kQ
 ce
 ce
@@ -44959,14 +44959,14 @@ wR
 jI
 pW
 ce
-ce
-GR
-bB
-UN
-ce
-Rq
-rD
-ZV
+QE
+jI
+jI
+jI
+JR
+jI
+jI
+jI
 ce
 ce
 pW
@@ -45214,19 +45214,19 @@ wR
 wR
 wR
 jI
-pW
-ce
-QE
+ca
+gX
 jI
 jI
+vN
+Gq
+lT
+ox
+WQ
 jI
-hH
 jI
+TY
 jI
-jI
-ce
-ce
-pW
 jI
 nV
 xI
@@ -45472,18 +45472,18 @@ wR
 wR
 jI
 Ip
-Un
-jI
+lT
+kd
 jI
 bR
-IO
 lT
-ox
+lT
+lT
 RG
 jI
-jI
-vj
-jI
+cd
+cd
+cd
 jI
 uJ
 xI
@@ -45729,11 +45729,11 @@ wR
 wR
 jI
 Rk
-lT
-dm
+hH
+RG
 jI
 vH
-lT
+GR
 lT
 lT
 jP
@@ -45985,14 +45985,14 @@ wR
 wR
 wR
 jI
-WQ
-PN
-jP
 jI
-be
-ca
-lT
-lT
+PN
+jI
+jI
+jI
+jI
+Rq
+jI
 xJ
 jI
 cd
@@ -46241,17 +46241,17 @@ wR
 wR
 wR
 wR
-jI
-jI
-gX
-jI
-jI
-jI
-jI
-xE
-jI
-JR
-jI
+wR
+wR
+wR
+wR
+wR
+cd
+cd
+cd
+cd
+cd
+cd
 cd
 cd
 cd
