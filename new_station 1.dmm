@@ -1257,6 +1257,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/entry)
+"fl" = (
+/obj/machinery/door/airlock{
+	name = "Bar Backroom";
+	req_access = list(25)
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "fn" = (
 /obj/machinery/door/airlock/external{
 	name = "Arrival Airlock"
@@ -1312,6 +1321,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/entry)
+"fv" = (
+/obj/structure/closet/gmcloset{
+	name = "formal wardrobe"
+	},
+/obj/item/weapon/book/manual/wiki/barman_recipes{
+	pixel_y = 10
+	},
+/obj/item/device/eftpos{
+	eftpos_name = "Bar EFTPOS scanner"
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "fy" = (
 /obj/structure/closet/secure_closet/warden,
 /turf/simulated/floor{
@@ -2135,6 +2156,13 @@
 	dir = 9;
 	icon_state = "darkblue"
 	},
+/area/space)
+"iS" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Bar Maintenance";
+	req_one_access = list(25)
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "iU" = (
 /obj/machinery/door/airlock/external{
@@ -3480,6 +3508,18 @@
 /obj/item/device/camera,
 /turf/simulated/floor/wood,
 /area/space)
+"pY" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/window/eastleft{
+	dir = 1;
+	req_access = list(25)
+	},
+/turf/simulated/floor{
+	icon_state = "delivery"
+	},
+/area/space)
 "pZ" = (
 /obj/machinery/door/window/brigdoor{
 	name = "Range Access";
@@ -4001,6 +4041,14 @@
 	icon_state = "freezerfloor2"
 	},
 /area/space)
+"sY" = (
+/mob/living/carbon/monkey/punpun,
+/obj/machinery/requests_console/bar{
+	pixel_x = -30;
+	pixel_y = -1
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "sZ" = (
 /obj/structure/table/woodentable,
 /obj/item/device/taperecorder{
@@ -4448,6 +4496,19 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"ve" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/machinery/light/small,
+/obj/item/weapon/lighter/zippo{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/turf/simulated/floor/wood,
 /area/space)
 "vf" = (
 /obj/structure/stool/bed,
@@ -4905,6 +4966,17 @@
 	dir = 4;
 	icon_state = "darkred"
 	},
+/area/space)
+"xC" = (
+/obj/structure/closet/secure_closet/bar,
+/obj/item/weapon/gun/projectile/revolver/doublebarrel,
+/obj/item/weapon/paper{
+	info = "This permit signifies that the Bartender is permitted to posess this firearm in the bar, and ONLY the bar. Failure to adhere to this permit will result in confiscation of the weapon and possibly arrest.";
+	name = "Shotgun permit"
+	},
+/obj/item/clothing/suit/armor/vest,
+/obj/item/weapon/storage/firstaid/regular,
+/turf/simulated/floor/wood,
 /area/space)
 "xD" = (
 /obj/structure/table/woodentable/poker,
@@ -7718,6 +7790,16 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"Oi" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/obj/structure/sign/monkey_painting{
+	pixel_y = 24
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "Ol" = (
 /obj/structure/stool/bed/chair/schair/wagon/bench,
 /turf/simulated/floor/grass,
@@ -8274,6 +8356,12 @@
 /obj/item/weapon/flora/random,
 /turf/simulated/floor,
 /area/space)
+"QZ" = (
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "Ra" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor{
@@ -8544,6 +8632,12 @@
 	dir = 8;
 	icon_state = "vault"
 	},
+/area/space)
+"ST" = (
+/obj/structure/sign/poster/official/high_class_martini{
+	pixel_x = 30
+	},
+/turf/simulated/floor/wood,
 /area/space)
 "SV" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -9451,6 +9545,19 @@
 "Yz" = (
 /obj/machinery/disposal,
 /turf/simulated/floor/carpet/blue2,
+/area/space)
+"YA" = (
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=CHW";
+	location = "Bar"
+	},
+/obj/structure/plasticflaps{
+	opacity = 1
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "bot"
+	},
 /area/space)
 "YC" = (
 /obj/structure/table,
@@ -44482,7 +44589,7 @@ pW
 jI
 jI
 jI
-ce
+fl
 jI
 jI
 jI
@@ -44737,11 +44844,11 @@ jI
 jI
 jI
 jI
-ce
-ce
-ce
-ce
-ce
+fv
+sY
+lT
+ox
+ve
 jI
 jI
 jI
@@ -44994,11 +45101,11 @@ wR
 wR
 wR
 jI
-ce
-ce
-ce
-ce
-ce
+xC
+lT
+lT
+lT
+QZ
 jI
 cd
 cd
@@ -45251,11 +45358,11 @@ wR
 wR
 wR
 jI
-ce
-ce
-ce
-ce
-ce
+Oi
+ST
+lT
+lT
+pY
 jI
 cd
 cd
@@ -45510,9 +45617,9 @@ wR
 jI
 jI
 jI
+iS
 jI
-jI
-jI
+YA
 jI
 cd
 cd
