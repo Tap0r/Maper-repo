@@ -5324,6 +5324,9 @@
 /area/space)
 "vN" = (
 /obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -8320,6 +8323,17 @@
 "JC" = (
 /turf/simulated/floor,
 /area/space)
+"JI" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/random/foods/food_with_garbage,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/space)
 "JK" = (
 /obj/machinery/vending/coffee,
 /turf/simulated/floor{
@@ -11223,6 +11237,19 @@
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "blue"
+	},
+/area/space)
+"Yd" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/eastright{
+	dir = 8;
+	name = "Kitchen";
+	req_access = list(28)
+	},
+/obj/item/weapon/bell,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
 	},
 /area/space)
 "Ye" = (
@@ -42012,12 +42039,12 @@ wR
 jI
 jI
 jI
+ko
 jI
 jI
 jI
 jI
-jI
-jI
+ko
 jI
 jI
 hm
@@ -42267,17 +42294,17 @@ wR
 wR
 wR
 jI
+HF
 ko
 ko
 ko
-ko
-ko
-ko
+HF
+HF
 ko
 ko
 ko
 jI
-hm
+JC
 JC
 hm
 JC
@@ -42524,6 +42551,7 @@ wR
 wR
 wR
 jI
+HF
 ko
 ko
 ko
@@ -42533,8 +42561,7 @@ ko
 ko
 ko
 ko
-jI
-hm
+JC
 JC
 JC
 JC
@@ -42781,6 +42808,7 @@ wR
 wR
 wR
 jI
+HF
 ko
 ko
 ko
@@ -42788,8 +42816,7 @@ ko
 ko
 ko
 ko
-ko
-ko
+HF
 jI
 JC
 JC
@@ -43038,15 +43065,15 @@ wR
 wR
 wR
 jI
+HF
 ko
 ko
 ko
+HF
+HF
 ko
 ko
-ko
-ko
-ko
-ko
+HF
 jI
 JC
 JC
@@ -43297,13 +43324,13 @@ wR
 jI
 jI
 vN
-vN
-vN
+Yd
+JI
 jI
 jI
-ko
-ko
-ko
+HF
+HF
+HF
 jI
 jI
 JC
