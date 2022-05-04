@@ -1318,6 +1318,13 @@
 	icon_state = "dark"
 	},
 /area/space)
+"eQ" = (
+/obj/item/weapon/flora/random,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "neutral"
+	},
+/area/space)
 "eT" = (
 /turf/simulated/wall,
 /area/station/hallway/secondary/entry)
@@ -1545,6 +1552,12 @@
 	},
 /turf/simulated/floor,
 /area/space)
+"fN" = (
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "neutral"
+	},
+/area/space)
 "fO" = (
 /obj/structure/stool/bed,
 /obj/item/weapon/bedsheet/brown,
@@ -1644,6 +1657,13 @@
 	icon_state = "darkbrown"
 	},
 /area/space)
+"gl" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/space)
 "gn" = (
 /obj/machinery/washing_machine,
 /turf/simulated/floor{
@@ -1718,7 +1738,8 @@
 	dir = 4
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "gz" = (
@@ -2186,6 +2207,7 @@
 /area/space)
 "ie" = (
 /obj/structure/table/woodentable,
+/obj/item/device/camera,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "darkred"
@@ -2430,6 +2452,15 @@
 "iU" = (
 /obj/item/weapon/bikehorn/rubberducky,
 /turf/simulated/floor/beach/water/waterpool,
+/area/space)
+"iV" = (
+/obj/structure/stool/bed/chair/metal/black{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "vault"
+	},
 /area/space)
 "iW" = (
 /obj/machinery/door/airlock/security{
@@ -4024,9 +4055,12 @@
 /turf/simulated/floor/grass,
 /area/space)
 "pW" = (
-/obj/structure/table/woodentable,
+/obj/machinery/door/airlock/glass{
+	name = "Diner"
+	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "pX" = (
@@ -4277,7 +4311,8 @@
 	pixel_y = 7
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "qZ" = (
@@ -4420,6 +4455,7 @@
 /area/space)
 "rC" = (
 /obj/structure/table/woodentable,
+/obj/item/device/camera,
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
@@ -5137,10 +5173,10 @@
 /turf/simulated/floor/plating,
 /area/space)
 "uO" = (
-/obj/structure/stool/bed/chair/comfy/black{
-	dir = 4
+/turf/simulated/floor{
+	dir = 9;
+	icon_state = "neutral"
 	},
-/turf/simulated/floor/carpet/red,
 /area/space)
 "uP" = (
 /obj/machinery/door/airlock/security/glass{
@@ -5692,6 +5728,12 @@
 	icon_state = "vault"
 	},
 /area/space)
+"xm" = (
+/obj/machinery/vending/coffee,
+/turf/simulated/floor{
+	icon_state = "darkred"
+	},
+/area/space)
 "xn" = (
 /obj/structure/rack,
 /obj/item/clothing/mask/gas/sechailer,
@@ -5893,9 +5935,11 @@
 /turf/simulated/floor,
 /area/space)
 "yf" = (
-/obj/structure/table,
+/obj/structure/closet/emcloset,
 /turf/environment/space,
-/turf/simulated/floor,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "yl" = (
 /obj/item/device/radio/intercom{
@@ -6327,7 +6371,7 @@
 /obj/structure/stool/bed/chair/office/dark{
 	dir = 8
 	},
-/turf/simulated/floor/carpet/red,
+/turf/simulated/floor/carpet,
 /area/space)
 "Av" = (
 /obj/structure/filingcabinet,
@@ -6513,7 +6557,7 @@
 /obj/structure/stool/bed/chair/lectern{
 	dir = 1
 	},
-/turf/simulated/floor/carpet,
+/turf/simulated/floor/carpet/red,
 /area/space)
 "Bs" = (
 /obj/machinery/computer/card,
@@ -6596,7 +6640,7 @@
 /obj/structure/stool/bed/chair/wood/normal{
 	dir = 1
 	},
-/turf/simulated/floor/carpet,
+/turf/simulated/floor/carpet/red,
 /area/space)
 "BK" = (
 /obj/machinery/door/airlock{
@@ -6913,7 +6957,7 @@
 "CZ" = (
 /obj/structure/table/woodentable,
 /obj/item/ashtray/glass,
-/turf/simulated/floor/carpet/red,
+/turf/simulated/floor/carpet,
 /area/space)
 "Da" = (
 /obj/structure/table/woodentable/poker,
@@ -7142,7 +7186,7 @@
 /obj/item/weapon/pen{
 	pixel_y = 6
 	},
-/turf/simulated/floor/carpet/red,
+/turf/simulated/floor/carpet,
 /area/space)
 "Eg" = (
 /obj/machinery/door/window/brigdoor{
@@ -7510,7 +7554,9 @@
 	name = "Internal Affairs";
 	req_access = list(38)
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "FL" = (
 /obj/structure/sink{
@@ -7874,7 +7920,7 @@
 "Hk" = (
 /obj/machinery/computer/message_monitor,
 /turf/simulated/floor{
-	icon_state = "dark"
+	icon_state = "vault"
 	},
 /area/space)
 "Hl" = (
@@ -7963,7 +8009,8 @@
 	dir = 4
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "HH" = (
@@ -8157,6 +8204,12 @@
 	icon_state = "vault"
 	},
 /area/space)
+"Ix" = (
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "neutralcorner"
+	},
+/area/space)
 "Iy" = (
 /obj/structure/table,
 /obj/item/weapon/wrench,
@@ -8173,6 +8226,13 @@
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
+	},
+/area/space)
+"IE" = (
+/obj/item/weapon/flora/random,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "neutral"
 	},
 /area/space)
 "IG" = (
@@ -8877,6 +8937,12 @@
 	icon_state = "vault"
 	},
 /area/space)
+"Mn" = (
+/turf/simulated/floor{
+	dir = 10;
+	icon_state = "neutral"
+	},
+/area/space)
 "Mp" = (
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/exit)
@@ -9152,9 +9218,31 @@
 	icon_state = "dark"
 	},
 /area/space)
+"ND" = (
+/obj/structure/table/woodentable,
+/obj/item/device/camera_film{
+	pixel_x = 5;
+	pixel_y = 10
+	},
+/obj/item/device/camera_film{
+	pixel_x = -3;
+	pixel_y = 1
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkred"
+	},
+/area/space)
 "NE" = (
 /obj/structure/flora/bush,
 /turf/simulated/floor/grass,
+/area/space)
+"NF" = (
+/obj/structure/stool/bed/chair/metal/red,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
 /area/space)
 "NH" = (
 /obj/structure/table,
@@ -9250,6 +9338,12 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"Oh" = (
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "neutral"
+	},
+/area/space)
 "Ol" = (
 /obj/structure/stool/bed/chair/schair/wagon/bench,
 /turf/simulated/floor/grass,
@@ -9280,7 +9374,9 @@
 /obj/machinery/door/airlock/security/glass{
 	name = "Security Lobby"
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "Or" = (
 /obj/structure/rack,
@@ -9652,6 +9748,13 @@
 	icon_state = "dark"
 	},
 /area/space)
+"PJ" = (
+/obj/machinery/vending/cigarette,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/space)
 "PL" = (
 /obj/structure/stool/bed/chair/office/dark{
 	dir = 1
@@ -9788,6 +9891,14 @@
 "Qv" = (
 /turf/simulated/floor/carpet,
 /area/space)
+"Qw" = (
+/obj/structure/stool/bed/chair/metal/black{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "Qx" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/hand_labeler{
@@ -9895,7 +10006,8 @@
 	pixel_y = 5
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "QW" = (
@@ -10232,7 +10344,8 @@
 "SA" = (
 /obj/machinery/vending/donut,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "SI" = (
@@ -10571,11 +10684,19 @@
 	icon_state = "wood-broken"
 	},
 /area/space)
+"Uj" = (
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "neutralcorner"
+	},
+/area/space)
 "Ul" = (
 /obj/machinery/door/airlock{
 	name = "Private Office"
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "Un" = (
 /obj/structure/table/reinforced,
@@ -10755,7 +10876,11 @@
 	dir = 8
 	},
 /obj/item/weapon/storage/secure/briefcase{
-	pixel_y = 4
+	pixel_y = 7
+	},
+/obj/item/device/taperecorder{
+	pixel_x = -1;
+	pixel_y = -4
 	},
 /turf/simulated/floor/wood,
 /area/space)
@@ -11103,7 +11228,11 @@
 	},
 /area/space)
 "WJ" = (
-/obj/random/vending/cola,
+/obj/structure/table/woodentable,
+/obj/item/device/taperecorder{
+	pixel_x = -4;
+	pixel_y = 2
+	},
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
@@ -11642,7 +11771,7 @@
 	},
 /area/space)
 "ZP" = (
-/obj/structure/table/woodentable,
+/obj/structure/closet/emcloset,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -11667,6 +11796,13 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whiteblue"
+	},
+/area/space)
+"ZU" = (
+/obj/item/weapon/flora/random,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "neutral"
 	},
 /area/space)
 "ZV" = (
@@ -43411,7 +43547,7 @@ HF
 jI
 jI
 JC
-jI
+Zh
 JC
 jI
 Hp
@@ -43666,11 +43802,11 @@ jI
 jI
 jI
 jI
-hm
-JC
-hm
-JC
-hm
+vz
+uO
+IE
+Mn
+ZP
 Hp
 bu
 bu
@@ -43910,7 +44046,7 @@ JC
 JC
 JC
 jI
-ZP
+TQ
 iS
 pd
 xJ
@@ -43920,14 +44056,14 @@ zA
 iS
 pd
 xJ
-TQ
+ZP
 jI
-hm
-hm
+nb
+zA
+dE
 JC
-JC
-JC
-hm
+bh
+Qw
 Hp
 wR
 Hp
@@ -44178,13 +44314,13 @@ zA
 ce
 zA
 ce
-be
+pW
+uO
+uZ
+Ix
 JC
-JC
-JC
-JC
-JC
-hm
+bh
+PJ
 Hp
 bu
 Hp
@@ -44436,12 +44572,12 @@ zA
 ce
 Mm
 Zh
-hm
+ZU
 JC
 JC
-hm
 JC
-hm
+bh
+Mv
 Hp
 wR
 Hp
@@ -44692,13 +44828,13 @@ zA
 ce
 zA
 ce
-be
+pW
+Oh
+tj
+Uj
 JC
-JC
-JC
-JC
-JC
-hm
+bh
+wo
 Hp
 bu
 Hp
@@ -44950,12 +45086,12 @@ zA
 ce
 zA
 jI
-hm
-hm
+uf
+zA
+dE
 JC
-JC
-JC
-hm
+bh
+eu
 Hp
 wR
 Hp
@@ -45209,10 +45345,10 @@ ce
 jI
 jI
 yf
-JC
-hm
-JC
-hm
+Oh
+eQ
+fN
+ZP
 Hp
 bu
 bu
@@ -45467,7 +45603,7 @@ QE
 jI
 jI
 vY
-jI
+Zh
 vY
 jI
 Hp
@@ -45967,7 +46103,7 @@ wR
 jI
 bB
 zA
-Wx
+ce
 qJ
 rD
 yc
@@ -46222,7 +46358,7 @@ wR
 wR
 wR
 jI
-ZP
+Mm
 ce
 ZP
 jI
@@ -48041,7 +48177,7 @@ kK
 gP
 RT
 ie
-ie
+ND
 Hp
 Hp
 Hp
@@ -48299,9 +48435,9 @@ ce
 ce
 ce
 ce
-pW
-Lf
-XK
+ce
+vz
+xm
 jI
 Qx
 im
@@ -48309,14 +48445,14 @@ lT
 Vz
 Vv
 jI
-QE
+PJ
 ce
-ce
+zA
 ce
 qX
 vz
 Ia
-Hq
+gl
 hJ
 SA
 Ia
@@ -48810,9 +48946,9 @@ ce
 ce
 ce
 ce
-Fc
-Fc
-Fc
+iV
+iV
+iV
 ce
 ce
 Ro
@@ -49324,7 +49460,7 @@ rA
 UX
 ho
 Wx
-ce
+Lw
 BG
 BG
 BG
@@ -49332,9 +49468,9 @@ ce
 lN
 jI
 dw
-uO
-uO
-jc
+kR
+kR
+Qv
 XD
 jI
 BS
@@ -49342,13 +49478,13 @@ ZD
 JC
 Ps
 Mv
-Wx
+Mm
 ce
 gx
 ce
-ce
+zA
 nb
-vz
+ZP
 jI
 zq
 Tz
@@ -49581,7 +49717,7 @@ wS
 iK
 Kf
 Fg
-ce
+Lw
 BG
 BG
 BG
@@ -49591,14 +49727,14 @@ PW
 Xm
 Ef
 CZ
-jc
+Qv
 Bq
 jI
-Sc
+NF
 ZD
 el
 Ps
-Lf
+wo
 Pu
 mz
 GM
@@ -49838,17 +49974,17 @@ wS
 ks
 qx
 jY
-ce
+Lw
 Br
-Qv
-Qv
+jc
+jc
 ce
 WJ
 mA
 PG
 At
-jc
-jc
+Qv
+Qv
 lK
 jI
 Sc
@@ -50095,7 +50231,7 @@ wS
 iK
 Kf
 Xb
-ce
+Lw
 BG
 BG
 BG
@@ -50108,7 +50244,7 @@ lT
 Uv
 pX
 jI
-Sc
+NF
 ZD
 JC
 Ps
@@ -50352,12 +50488,12 @@ ZN
 lT
 lT
 Cf
-ce
+Lw
 BG
 BG
 BG
 ce
-rC
+XK
 jI
 mm
 Md
@@ -50622,11 +50758,11 @@ jI
 cd
 cd
 jI
-vz
+ZP
 dV
 Mb
 VO
-hg
+Cj
 jI
 wU
 ce
