@@ -513,6 +513,12 @@
 	icon_state = "darkblue"
 	},
 /area/space)
+"bI" = (
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/space)
 "bJ" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor{
@@ -945,7 +951,7 @@
 	req_one_access = list(25)
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	icon_state = "darkred"
 	},
 /area/space)
 "dq" = (
@@ -1792,6 +1798,18 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"gR" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/window/eastleft{
+	dir = 1;
+	req_access = list(25)
+	},
+/turf/simulated/floor{
+	icon_state = "delivery"
+	},
+/area/space)
 "gS" = (
 /obj/item/weapon/clipboard,
 /obj/item/weapon/book/manual/wiki/security_space_law{
@@ -2404,15 +2422,7 @@
 	},
 /area/space)
 "iS" = (
-/obj/structure/table/woodentable/fancy/black,
-/obj/item/weapon/kitchen/utensil/spoon,
-/obj/item/weapon/kitchen/utensil/fork{
-	pixel_x = 4
-	},
-/obj/item/weapon/reagent_containers/food/condiment/saltshaker{
-	pixel_x = -3
-	},
-/obj/item/weapon/reagent_containers/food/condiment/peppermill,
+/obj/structure/stool/bed/chair/comfy/black,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -2629,15 +2639,12 @@
 	},
 /area/space)
 "jP" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/machinery/door/window/eastleft{
-	dir = 1;
-	req_access = list(25)
+/obj/structure/sign/double/barsign{
+	pixel_y = 32
 	},
 /turf/simulated/floor{
-	icon_state = "delivery"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "jQ" = (
@@ -2857,20 +2864,25 @@
 	req_one_access = list(25)
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 1;
+	icon_state = "darkred"
 	},
 /area/space)
 "kQ" = (
 /obj/structure/window/reinforced,
-/obj/machinery/media/jukebox/bar,
+/obj/structure/table/reinforced,
+/obj/machinery/reagentgrinder{
+	layer = 3.1;
+	pixel_y = 5
+	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 6;
+	icon_state = "darkred"
 	},
 /area/space)
 "kR" = (
-/obj/structure/table/woodentable,
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_y = -29
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 4
 	},
 /turf/simulated/floor/carpet,
 /area/space)
@@ -3260,8 +3272,11 @@
 /turf/simulated/floor/carpet/black,
 /area/space)
 "mF" = (
-/obj/structure/table/woodentable,
-/turf/simulated/floor/carpet,
+/obj/structure/device/piano/royal,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
 /area/space)
 "mH" = (
 /obj/structure/stool/bed/chair/comfy/teal{
@@ -3656,8 +3671,11 @@
 	},
 /area/space)
 "or" = (
-/obj/structure/stool/bed/chair/comfy/black{
-	dir = 8
+/obj/structure/table/woodentable,
+/obj/item/ashtray/glass,
+/obj/item/weapon/lighter/zippo{
+	pixel_x = -5;
+	pixel_y = 5
 	},
 /turf/simulated/floor/carpet,
 /area/space)
@@ -3826,13 +3844,11 @@
 	},
 /area/space)
 "pd" = (
-/obj/structure/stool/bed/chair/comfy/black{
-	dir = 4
+/obj/structure/table/woodentable/fancy/black,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
 	},
-/obj/structure/sign/double/barsign{
-	pixel_y = 32
-	},
-/turf/simulated/floor/carpet,
 /area/space)
 "pe" = (
 /obj/structure/table,
@@ -3946,9 +3962,9 @@
 /area/space)
 "pG" = (
 /obj/structure/table/reinforced,
-/obj/item/clothing/head/cakehat,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 9;
+	icon_state = "darkred"
 	},
 /area/space)
 "pH" = (
@@ -4216,7 +4232,8 @@
 	},
 /obj/item/weapon/reagent_containers/glass/rag,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "darkred"
 	},
 /area/space)
 "qK" = (
@@ -4290,6 +4307,17 @@
 	},
 /turf/simulated/floor{
 	icon_state = "wooden-2"
+	},
+/area/space)
+"rg" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/flora/pottedplant/shoot{
+	pixel_x = -8;
+	pixel_y = 16
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkredcorners"
 	},
 /area/space)
 "rh" = (
@@ -4397,12 +4425,13 @@
 	},
 /area/space)
 "rD" = (
-/obj/structure/table,
+/obj/structure/table/woodentable,
 /obj/machinery/chem_dispenser/soda{
-	dir = 8
+	pixel_y = 4
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space)
 "rI" = (
@@ -5159,6 +5188,14 @@
 	icon_state = "neutral"
 	},
 /area/space)
+"va" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/lighter/zippo{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "vb" = (
 /obj/machinery/door/poddoor{
 	id = "cell5";
@@ -5295,13 +5332,10 @@
 /turf/simulated/floor/wood,
 /area/space)
 "vH" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 12
-	},
 /obj/structure/sign/monkey_painting{
 	pixel_y = 24
 	},
+/obj/machinery/disposal,
 /turf/simulated/floor/wood,
 /area/space)
 "vM" = (
@@ -5735,13 +5769,10 @@
 /area/space)
 "xE" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen/blue{
-	pixel_x = 2;
-	pixel_y = 6
-	},
+/obj/item/ashtray/plastic,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "darkred"
 	},
 /area/space)
 "xF" = (
@@ -5759,16 +5790,11 @@
 	},
 /area/space)
 "xJ" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=CHW";
-	location = "Bar"
-	},
-/obj/structure/plasticflaps{
-	opacity = 1
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 1
 	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "bot"
+	icon_state = "dark"
 	},
 /area/space)
 "xL" = (
@@ -5853,12 +5879,13 @@
 	},
 /area/space)
 "yc" = (
-/obj/structure/table,
+/obj/structure/table/woodentable,
 /obj/machinery/chem_dispenser/beer{
-	dir = 8
+	pixel_y = 4
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space)
 "ye" = (
@@ -6653,7 +6680,6 @@
 	},
 /area/space)
 "Cd" = (
-/mob/living/carbon/monkey/punpun,
 /obj/machinery/requests_console/bar{
 	pixel_x = -30;
 	pixel_y = -1
@@ -6694,6 +6720,18 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "black"
+	},
+/area/space)
+"Cp" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen/blue{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkred"
 	},
 /area/space)
 "Cq" = (
@@ -6787,7 +6825,8 @@
 	dir = 1
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 9;
+	icon_state = "darkred"
 	},
 /area/space)
 "CI" = (
@@ -7421,6 +7460,10 @@
 	icon_state = "darkredfull"
 	},
 /area/space)
+"Fw" = (
+/obj/structure/stool/bed/chair/comfy/black,
+/turf/simulated/floor/carpet,
+/area/space)
 "Fx" = (
 /obj/structure/closet/secure_closet/captains,
 /turf/simulated/floor/wood,
@@ -7505,6 +7548,14 @@
 	icon_state = "dark"
 	},
 /area/space)
+"FU" = (
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "FX" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -7575,6 +7626,10 @@
 "Gq" = (
 /obj/structure/sign/poster/official/high_class_martini{
 	pixel_x = 30
+	},
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
 	},
 /turf/simulated/floor/wood,
 /area/space)
@@ -7723,9 +7778,9 @@
 /area/space)
 "GR" = (
 /obj/structure/table/reinforced,
-/obj/item/ashtray/plastic,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "darkred"
 	},
 /area/space)
 "GS" = (
@@ -8176,10 +8231,12 @@
 	},
 /area/space)
 "IS" = (
-/obj/structure/stool/bed/chair/comfy/black{
-	dir = 4
+/obj/structure/table/reinforced,
+/obj/item/clothing/head/cakehat,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkredcorners"
 	},
-/turf/simulated/floor/carpet,
 /area/space)
 "IT" = (
 /obj/structure/table/woodentable,
@@ -8193,6 +8250,13 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"IU" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Bar Maintenance";
+	req_one_access = list(12,25,28)
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "Jc" = (
 /obj/structure/rack,
@@ -8324,14 +8388,10 @@
 /turf/simulated/floor,
 /area/space)
 "JI" = (
-/obj/structure/table/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/random/foods/food_with_garbage,
+/obj/structure/stool/bar,
 /turf/simulated/floor{
 	dir = 5;
-	icon_state = "cafeteria"
+	icon_state = "vault"
 	},
 /area/space)
 "JK" = (
@@ -9887,9 +9947,10 @@
 	},
 /area/space)
 "Rq" = (
-/obj/machinery/vending/boozeomat,
+/obj/machinery/media/jukebox/bar,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space)
 "Rw" = (
@@ -10471,6 +10532,10 @@
 	icon_state = "brownold"
 	},
 /area/space)
+"TT" = (
+/mob/living/carbon/monkey/punpun,
+/turf/simulated/floor/wood,
+/area/space)
 "TU" = (
 /obj/structure/stool/bed,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -10514,12 +10579,9 @@
 /area/space)
 "Un" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/flora/pottedplant/shoot{
-	pixel_x = -8;
-	pixel_y = 16
-	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 10;
+	icon_state = "darkred"
 	},
 /area/space)
 "Uq" = (
@@ -10664,13 +10726,14 @@
 	},
 /area/space)
 "UN" = (
-/obj/structure/reagent_dispensers/beerkeg,
 /obj/machinery/status_display{
 	layer = 4;
 	pixel_x = 32
 	},
+/obj/machinery/vending/boozeomat,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space)
 "UR" = (
@@ -10684,10 +10747,6 @@
 	pixel_y = 5
 	},
 /obj/machinery/light/small,
-/obj/item/weapon/lighter/zippo{
-	pixel_x = -5;
-	pixel_y = 5
-	},
 /turf/simulated/floor/wood,
 /area/space)
 "UX" = (
@@ -10913,6 +10972,10 @@
 	icon_state = "dark"
 	},
 /area/space)
+"VZ" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/turf/simulated/floor/wood,
+/area/space)
 "Wb" = (
 /turf/simulated/floor{
 	icon_state = "freezerfloor"
@@ -11049,7 +11112,8 @@
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 10;
+	icon_state = "darkred"
 	},
 /area/space)
 "WR" = (
@@ -11432,6 +11496,19 @@
 	icon_state = "cafeteria"
 	},
 /area/space)
+"Zb" = (
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=CHW";
+	location = "Bar"
+	},
+/obj/structure/plasticflaps{
+	opacity = 1
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "bot"
+	},
+/area/space)
 "Zd" = (
 /obj/machinery/door/firedoor,
 /obj/structure/grille,
@@ -11565,9 +11642,10 @@
 	},
 /area/space)
 "ZP" = (
-/obj/structure/stool/bed/chair/comfy/brown,
+/obj/structure/table/woodentable,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "ZQ" = (
@@ -11592,11 +11670,10 @@
 	},
 /area/space)
 "ZV" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Bar Maintenance";
-	req_one_access = list(12,25,28)
+/obj/item/weapon/flora/monkey,
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
-/turf/simulated/floor/plating,
 /area/space)
 "ZW" = (
 /obj/structure/stool/bed/chair/comfy/brown,
@@ -43325,7 +43402,7 @@ jI
 jI
 vN
 Yd
-JI
+vN
 jI
 jI
 HF
@@ -43573,17 +43650,17 @@ wR
 wR
 wR
 wR
-JC
+wR
+wR
 jI
 jI
 jI
 jI
-jI
+Mm
 ce
+zA
 ce
-ce
-ce
-ce
+Mm
 jI
 jI
 jI
@@ -43831,21 +43908,21 @@ JC
 JC
 JC
 JC
+JC
 jI
-ce
 ZP
 iS
-gU
+pd
+xJ
+zA
 ce
-ce
-ce
-ce
-ce
-ZP
+zA
 iS
-gU
-ce
+pd
+xJ
+TQ
 jI
+hm
 hm
 JC
 JC
@@ -44088,21 +44165,21 @@ JC
 JC
 JC
 JC
+JC
 be
 ce
+zA
 ce
+zA
 ce
+zA
 ce
+zA
 ce
-ce
-ce
-ce
-ce
-ce
-ce
-ce
+zA
 ce
 be
+JC
 JC
 JC
 JC
@@ -44345,22 +44422,22 @@ JC
 JC
 JC
 JC
-jI
-Wx
+JC
+Zh
+Mm
 ce
+zA
 ce
+zA
+ZV
+zA
 ce
+zA
 ce
-ce
-ce
-ce
-ce
-ce
-ce
-ce
-Wx
-jI
+Mm
+Zh
 hm
+JC
 JC
 hm
 JC
@@ -44602,21 +44679,21 @@ JC
 JC
 JC
 JC
+JC
 be
 ce
+zA
 ce
+zA
 ce
+zA
 ce
+zA
 ce
-ce
-ce
-ce
-ce
-ce
-ce
-ce
+zA
 ce
 be
+JC
 JC
 JC
 JC
@@ -44858,22 +44935,22 @@ wR
 JC
 JC
 JC
-wR
+JC
+JC
 jI
+jP
 ce
-ce
-ce
-ce
+zA
 bB
+JI
 bB
+JI
 bB
-bB
-bB
+zA
 ce
-ce
-ce
-ce
+zA
 jI
+hm
 hm
 JC
 JC
@@ -45117,19 +45194,19 @@ wR
 wR
 wR
 jI
+jI
 ce
-ce
-ce
+zA
 bB
 pG
 xE
 GR
-Er
+Cp
 Un
 bB
+zA
 ce
-ce
-ce
+jI
 jI
 yf
 JC
@@ -45374,19 +45451,19 @@ wR
 wR
 wR
 jI
-pd
-ce
+hg
+zA
 ce
 CG
-Er
+IS
 ce
+FU
 ce
-ce
-Er
+rg
 WQ
 ce
-ce
-IS
+zA
+QE
 jI
 jI
 vY
@@ -45633,16 +45710,16 @@ wR
 jI
 mF
 ce
-ce
+zA
 kM
 ce
 ce
-ce
+MU
 ce
 ce
 dp
-ce
-ce
+zA
+Qv
 kR
 jI
 uh
@@ -45888,18 +45965,18 @@ wR
 wR
 wR
 jI
-or
-ce
-ce
+bB
+zA
+Wx
 qJ
 rD
 yc
-ce
+OS
 Rq
 UN
 kQ
 ce
-ce
+Fw
 or
 jI
 YJ
@@ -46145,9 +46222,9 @@ wR
 wR
 wR
 jI
+ZP
 ce
-ce
-QE
+ZP
 jI
 jI
 jI
@@ -46155,9 +46232,9 @@ IO
 jI
 jI
 jI
-ce
-ce
-ce
+zA
+Qv
+bI
 jI
 Hq
 xI
@@ -46409,11 +46486,11 @@ jI
 vj
 Cd
 lT
-ox
+VZ
 UT
 jI
+IU
 jI
-ZV
 jI
 jI
 nV
@@ -46665,9 +46742,9 @@ kd
 jI
 bR
 lT
-lT
-lT
-RG
+TT
+Rk
+va
 jI
 cd
 cd
@@ -46923,8 +47000,8 @@ jI
 vH
 Gq
 lT
-lT
-jP
+gR
+jI
 jI
 cd
 cd
@@ -47180,9 +47257,9 @@ jI
 jI
 jI
 JR
+Zb
 jI
-xJ
-jI
+cd
 cd
 cd
 cd
