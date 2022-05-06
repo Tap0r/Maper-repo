@@ -242,6 +242,10 @@
 	icon_state = "5-5"
 	},
 /area/shuttle/mining/station)
+"aP" = (
+/obj/machinery/vending/theater,
+/turf/simulated/floor/wood,
+/area/space)
 "aQ" = (
 /obj/structure/window/reinforced/shuttle/mining{
 	icon_state = "5-6"
@@ -334,7 +338,7 @@
 /area/station/hallway/secondary/mine_sci_shuttle)
 "be" = (
 /obj/machinery/door/airlock/glass{
-	name = "Diner"
+	name = "Bar"
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -608,7 +612,9 @@
 /area/space)
 "bR" = (
 /obj/structure/table/woodentable,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken5"
+	},
 /area/space)
 "bS" = (
 /obj/machinery/gateway{
@@ -705,6 +711,13 @@
 	dir = 4;
 	icon_state = "vault"
 	},
+/area/space)
+"cg" = (
+/obj/structure/stool/bed/chair/wood/normal{
+	dir = 4
+	},
+/obj/effect/landmark/start/clown,
+/turf/simulated/floor/carpet/purple,
 /area/space)
 "ch" = (
 /obj/structure/object_wall/mining{
@@ -999,7 +1012,9 @@
 	name = "Bar Door";
 	req_one_access = list(25)
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken"
+	},
 /area/space)
 "dq" = (
 /obj/structure/table/woodentable,
@@ -1007,6 +1022,21 @@
 	pixel_y = 5
 	},
 /turf/simulated/floor/carpet/blue2,
+/area/space)
+"dr" = (
+/obj/structure/table/woodentable,
+/obj/structure/mirror{
+	pixel_x = 28
+	},
+/obj/item/toy/sound_button{
+	pixel_x = 3;
+	pixel_y = 4
+	},
+/obj/item/weapon/coin/bananium{
+	pixel_x = -3;
+	pixel_y = -10
+	},
+/turf/simulated/floor/wood,
 /area/space)
 "ds" = (
 /obj/structure/stool/bed/chair/schair/wagon{
@@ -2066,6 +2096,16 @@
 "hg" = (
 /obj/structure/device/piano/royal,
 /turf/simulated/floor/wood,
+/area/space)
+"hj" = (
+/obj/structure/closet/theatrecloset,
+/obj/structure/sign/poster/contraband/clown{
+	pixel_y = 32
+	},
+/obj/random/randomtoy,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken6"
+	},
 /area/space)
 "hk" = (
 /obj/machinery/optable,
@@ -3512,6 +3552,12 @@
 	icon_state = "vault"
 	},
 /area/space)
+"mj" = (
+/obj/structure/closet/theatrecloset,
+/obj/random/randomtoy,
+/obj/item/device/violin,
+/turf/simulated/floor/wood,
+/area/space)
 "mk" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor{
@@ -3687,6 +3733,13 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"mQ" = (
+/obj/machinery/door/airlock{
+	name = "Honk Office";
+	req_access = list(46)
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "mS" = (
 /obj/machinery/disposal,
 /turf/simulated/floor{
@@ -3709,6 +3762,23 @@
 /turf/simulated/floor{
 	icon_state = "darkredfull"
 	},
+/area/space)
+"mY" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/lipstick/purple{
+	pixel_x = 7;
+	pixel_y = 7
+	},
+/obj/item/weapon/lipstick/jade{
+	pixel_x = 3;
+	pixel_y = 4
+	},
+/obj/item/weapon/coin/bananium{
+	pixel_x = -7;
+	pixel_y = 7
+	},
+/obj/random/randomtoy,
+/turf/simulated/floor/wood,
 /area/space)
 "mZ" = (
 /turf/simulated/floor{
@@ -4572,6 +4642,15 @@
 	icon_state = "neutral"
 	},
 /area/space)
+"qn" = (
+/obj/structure/table/woodentable,
+/obj/item/clothing/suit/batman,
+/obj/item/clothing/head/batman_helmet,
+/obj/item/clothing/suit/superman,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken5"
+	},
+/area/space)
 "qr" = (
 /obj/structure/stool/bed/chair/metal/white{
 	dir = 1
@@ -4769,7 +4848,9 @@
 	pixel_y = 8
 	},
 /obj/item/weapon/reagent_containers/glass/rag,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken3"
+	},
 /area/space)
 "qK" = (
 /obj/machinery/vending/barbervend,
@@ -4992,6 +5073,9 @@
 	pixel_y = 4
 	},
 /turf/simulated/floor/carpet/black,
+/area/space)
+"rH" = (
+/turf/simulated/floor/carpet/purple,
 /area/space)
 "rI" = (
 /obj/machinery/idpainter,
@@ -5860,6 +5944,12 @@
 	icon_state = "darkblue"
 	},
 /area/space)
+"uL" = (
+/obj/machinery/vending/cigarette,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken6"
+	},
+/area/space)
 "uM" = (
 /obj/machinery/shower{
 	dir = 4
@@ -5945,7 +6035,9 @@
 	},
 /obj/item/clothing/suit/armor/vest,
 /obj/item/weapon/storage/firstaid/regular,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken3"
+	},
 /area/space)
 "vb" = (
 /obj/machinery/door/poddoor{
@@ -6360,6 +6452,12 @@
 	dir = 1;
 	icon_state = "warning"
 	},
+/area/space)
+"wL" = (
+/obj/structure/closet/theatrecloset,
+/obj/random/randomtoy,
+/obj/item/device/guitar/electric,
+/turf/simulated/floor/wood,
 /area/space)
 "wM" = (
 /obj/structure/rack,
@@ -7259,6 +7357,12 @@
 /obj/structure/bookcase/manuals/research_and_development,
 /turf/simulated/floor{
 	icon_state = "dark"
+	},
+/area/space)
+"zN" = (
+/obj/item/weapon/flora/random,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken3"
 	},
 /area/space)
 "zO" = (
@@ -9213,6 +9317,12 @@
 	icon_state = "darkblue"
 	},
 /area/space)
+"GU" = (
+/obj/item/weapon/flora/pottedplant/orientaltree,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken"
+	},
+/area/space)
 "GV" = (
 /obj/structure/table,
 /obj/item/toy/cards,
@@ -9603,7 +9713,9 @@
 	pixel_x = -24;
 	pixel_y = -5
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken7"
+	},
 /area/space)
 "Is" = (
 /obj/machinery/flasher/portable,
@@ -10754,6 +10866,12 @@
 	icon_state = "vault"
 	},
 /area/space)
+"Nk" = (
+/obj/machinery/disposal,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken4"
+	},
+/area/space)
 "Nm" = (
 /obj/machinery/door/firedoor,
 /turf/simulated/floor{
@@ -10946,6 +11064,15 @@
 	icon_state = "cafeteria"
 	},
 /area/space)
+"NY" = (
+/obj/structure/table/woodentable,
+/obj/item/toy/prize/honk{
+	pixel_y = 2
+	},
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken7"
+	},
+/area/space)
 "NZ" = (
 /obj/machinery/door/window/brigdoor{
 	id = "Cell 4";
@@ -11087,6 +11214,13 @@
 /turf/simulated/floor{
 	icon_state = "chapel"
 	},
+/area/space)
+"Oz" = (
+/obj/machinery/door/airlock{
+	name = "Honk Office";
+	req_access = list(46)
+	},
+/turf/simulated/floor/wood,
 /area/space)
 "OA" = (
 /obj/structure/table/reinforced,
@@ -11487,6 +11621,16 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"PM" = (
+/obj/structure/mirror{
+	pixel_y = 28
+	},
+/obj/structure/table/woodentable,
+/obj/item/device/camera{
+	pixel_y = 3
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "PN" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -11513,6 +11657,13 @@
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
+/area/space)
+"PQ" = (
+/obj/structure/stool/bed/chair/wood/normal{
+	dir = 8
+	},
+/obj/effect/landmark/start/mime,
+/turf/simulated/floor/wood,
 /area/space)
 "PR" = (
 /obj/structure/dresser,
@@ -11910,7 +12061,9 @@
 /obj/structure/stool/bed/chair/comfy/brown{
 	dir = 1
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken4"
+	},
 /area/space)
 "RK" = (
 /obj/structure/closet/crate/scicrate,
@@ -12214,6 +12367,14 @@
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
+	},
+/area/space)
+"SH" = (
+/obj/item/cardboard_cutout{
+	icon_state = "cutout_clown"
+	},
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken3"
 	},
 /area/space)
 "SI" = (
@@ -12847,7 +13008,9 @@
 /obj/item/device/eftpos{
 	eftpos_name = "Bar EFTPOS scanner"
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken6"
+	},
 /area/space)
 "UX" = (
 /obj/structure/table/woodentable,
@@ -12946,6 +13109,14 @@
 "Vv" = (
 /obj/machinery/photocopier,
 /turf/simulated/floor/wood,
+/area/space)
+"Vw" = (
+/obj/machinery/door/airlock/glass{
+	name = "Cryogenic Storage"
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "Vx" = (
 /obj/structure/stool/bed/chair/metal/red,
@@ -13086,6 +13257,18 @@
 	icon_state = "floorgrime"
 	},
 /area/station/cargo/storage)
+"VU" = (
+/obj/structure/table/woodentable,
+/obj/item/device/flashlight/lamp/green{
+	on = 0;
+	pixel_x = -3;
+	pixel_y = 8
+	},
+/obj/item/weapon/poster/legit,
+/obj/item/weapon/poster/legit,
+/obj/item/weapon/poster/legit,
+/turf/simulated/floor/wood,
+/area/space)
 "VV" = (
 /obj/structure/stool,
 /turf/simulated/floor{
@@ -13326,6 +13509,15 @@
 	icon_state = "yellow"
 	},
 /area/space)
+"Xa" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/reagent_containers/spray/watergun,
+/obj/item/weapon/paper{
+	info = "Wherah is BANANAS?";
+	info_links = "Clown Memo"
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "Xb" = (
 /obj/structure/table/woodentable,
 /obj/structure/window/reinforced,
@@ -13430,6 +13622,12 @@
 /turf/simulated/floor/wood{
 	icon_state = "wood-broken"
 	},
+/area/space)
+"Xv" = (
+/obj/machinery/door/airlock/glass{
+	name = "Cryogenic Storage"
+	},
+/turf/simulated/floor,
 /area/space)
 "Xw" = (
 /obj/machinery/flasher{
@@ -13809,6 +14007,13 @@
 "YU" = (
 /obj/structure/stool/bed/chair/comfy/teal,
 /turf/simulated/floor/carpet/blue2,
+/area/space)
+"YW" = (
+/obj/structure/table/woodentable,
+/obj/item/clothing/suit/santa,
+/obj/item/clothing/head/santahat,
+/obj/item/weapon/storage/backpack/santabag,
+/turf/simulated/floor/wood,
 /area/space)
 "YZ" = (
 /obj/structure/table/woodentable,
@@ -44212,11 +44417,11 @@ es
 jI
 cd
 cd
-cd
-cd
-cd
-cd
-cd
+jI
+jI
+jI
+jI
+jI
 cd
 cd
 cd
@@ -44468,16 +44673,16 @@ eb
 bn
 jI
 cd
+cd
+jI
+VU
+qn
+mY
 jI
 jI
 jI
-jI
-jI
-jI
-jI
-jI
-jI
-jI
+cd
+cd
 cd
 cd
 jI
@@ -44726,15 +44931,15 @@ bn
 cd
 cd
 jI
-JC
-JC
-JC
-JC
-JC
-JC
-JC
-JC
 jI
+PM
+PQ
+lT
+Vz
+BV
+jI
+cd
+cd
 cd
 cd
 jI
@@ -44983,15 +45188,15 @@ bn
 cd
 cd
 jI
-JC
-JC
-JC
-JC
-JC
-JC
-JC
-JC
-jI
+mj
+lT
+rH
+rH
+rH
+lT
+mQ
+cd
+cd
 cd
 cd
 dB
@@ -45240,15 +45445,15 @@ jI
 cd
 cd
 jI
-JC
-JC
-JC
-JC
-JC
-JC
-JC
-JC
+hj
+Uf
+rH
+rH
+cg
+Xa
 jI
+cd
+cd
 cd
 cd
 jI
@@ -45497,15 +45702,15 @@ XG
 cd
 cd
 jI
-JC
-JC
-JC
-JC
-JC
-JC
-JC
-JC
+wL
+lT
+SH
+dr
+NY
+YW
 jI
+cd
+cd
 cd
 cd
 jI
@@ -45754,9 +45959,9 @@ jI
 jI
 cd
 jI
-JC
-JC
-JC
+GU
+lT
+aP
 jI
 jI
 jI
@@ -46012,7 +46217,7 @@ jI
 jI
 jI
 jI
-JC
+Oz
 jI
 jI
 Zz
@@ -46528,7 +46733,7 @@ JC
 JC
 JC
 JC
-JC
+Xv
 ji
 uZ
 uZ
@@ -46537,7 +46742,7 @@ uZ
 uZ
 uZ
 PB
-ce
+Vw
 ji
 uZ
 uZ
@@ -47042,7 +47247,7 @@ JC
 JC
 JC
 JC
-JC
+Xv
 zT
 tj
 tj
@@ -47051,7 +47256,7 @@ tj
 tj
 tj
 Up
-ce
+Vw
 zT
 tj
 tj
@@ -47842,7 +48047,7 @@ rg
 WQ
 tP
 lD
-hC
+uL
 jI
 jI
 vY
@@ -48077,7 +48282,7 @@ Qy
 jI
 Rp
 lT
-lT
+Uf
 gi
 zA
 Lz
@@ -48332,7 +48537,7 @@ tb
 tb
 Ra
 Zh
-Pq
+zN
 iK
 iK
 iR
@@ -48864,7 +49069,7 @@ jI
 jI
 vj
 Cd
-lT
+Uf
 VZ
 UT
 jI
@@ -49104,7 +49309,7 @@ tb
 Qy
 jI
 XQ
-lT
+Vz
 lT
 gi
 zA
@@ -49377,7 +49582,7 @@ hH
 RG
 jI
 vH
-ox
+Nk
 lT
 gR
 jI
