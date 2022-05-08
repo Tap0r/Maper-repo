@@ -2866,6 +2866,13 @@
 "jc" = (
 /turf/simulated/floor/carpet/red,
 /area/space)
+"jd" = (
+/obj/structure/sink/puddle,
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = 6
+	},
+/turf/simulated/floor/grass,
+/area/space)
 "je" = (
 /obj/structure/rack,
 /obj/item/weapon/storage/belt/utility,
@@ -3726,6 +3733,10 @@
 	icon_state = "whitehall"
 	},
 /area/space)
+"mi" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
+/area/space)
 "mj" = (
 /obj/structure/closet/theatrecloset,
 /obj/random/randomtoy,
@@ -4039,6 +4050,12 @@
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor,
 /area/station/civilian/fitness)
+"nx" = (
+/obj/structure/flora/ausbushes/grassybush{
+	pixel_x = -8
+	},
+/turf/simulated/floor/grass,
+/area/space)
 "ny" = (
 /obj/structure/table,
 /obj/machinery/recharger/wallcharger{
@@ -10456,6 +10473,13 @@
 	icon_state = "wood-broken7"
 	},
 /area/space)
+"Iq" = (
+/mob/living/simple_animal/cow{
+	name = "Betsy"
+	},
+/obj/structure/flora/junglebush,
+/turf/simulated/floor/grass,
+/area/space)
 "Is" = (
 /obj/machinery/flasher/portable,
 /turf/simulated/floor{
@@ -11688,6 +11712,12 @@
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
+/area/space)
+"MZ" = (
+/mob/living/simple_animal/chicken{
+	name = "Commander Clucky"
+	},
+/turf/simulated/floor/grass,
 /area/space)
 "Nb" = (
 /obj/structure/curtain/open/shower,
@@ -44623,7 +44653,7 @@ cd
 jI
 jI
 jI
-zq
+jd
 zq
 FN
 jI
@@ -44880,7 +44910,7 @@ cd
 jI
 CQ
 ms
-zq
+Iq
 zq
 rn
 jI
@@ -45137,9 +45167,9 @@ cd
 jI
 CQ
 zq
-zq
-zq
-zq
+MZ
+mi
+nx
 jI
 ZI
 jM
@@ -45395,7 +45425,7 @@ jI
 CQ
 kG
 zq
-zq
+gK
 zq
 yM
 JC
