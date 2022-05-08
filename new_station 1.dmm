@@ -321,6 +321,12 @@
 	icon_state = "vault"
 	},
 /area/station/hallway/secondary/arrival)
+"ba" = (
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space)
 "bb" = (
 /turf/simulated/floor{
 	icon_state = "delivery"
@@ -335,12 +341,6 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/secondary/mine_sci_shuttle)
-"bd" = (
-/obj/structure/flora/ausbushes/grassybush{
-	pixel_x = -8
-	},
-/turf/simulated/floor/grass,
-/area/space)
 "be" = (
 /obj/machinery/door/airlock/glass{
 	name = "Bar"
@@ -1020,6 +1020,10 @@
 	icon_state = "dark"
 	},
 /area/space)
+"dm" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
+/area/space)
 "dn" = (
 /obj/structure/table/woodentable,
 /obj/machinery/computer/security/bodycam,
@@ -1458,6 +1462,16 @@
 "eF" = (
 /turf/environment/space,
 /area/shuttle/transport1/station)
+"eG" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/holywater,
+/obj/item/weapon/storage/fancy/candle_box{
+	pixel_y = 10
+	},
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space)
 "eH" = (
 /obj/structure/sign/warning/securearea{
 	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
@@ -1565,13 +1579,6 @@
 	req_one_access = list(12,22)
 	},
 /turf/simulated/floor/plating,
-/area/space)
-"fd" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/holywater,
-/turf/simulated/floor{
-	icon_state = "grimy"
-	},
 /area/space)
 "fe" = (
 /obj/structure/closet/emcloset,
@@ -2430,6 +2437,19 @@
 	icon_state = "warndark"
 	},
 /area/space)
+"hR" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/nullrod{
+	pixel_x = -8
+	},
+/obj/item/weapon/reagent_containers/food/drinks/drinkingglass,
+/obj/machinery/requests_console/chapel{
+	pixel_x = -30
+	},
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space)
 "hS" = (
 /obj/item/weapon/storage/firstaid/regular{
 	pixel_y = 6
@@ -2657,12 +2677,6 @@
 /obj/structure/table,
 /obj/item/weapon/game_kit/random,
 /turf/simulated/floor,
-/area/space)
-"iB" = (
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor{
-	icon_state = "grimy"
-	},
 /area/space)
 "iC" = (
 /obj/structure/table/woodentable/poker,
@@ -2927,10 +2941,6 @@
 	icon_state = "freezerfloor2"
 	},
 /area/space)
-"jm" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/grass,
-/area/space)
 "jo" = (
 /obj/machinery/computer/message_monitor{
 	dir = 4
@@ -3030,28 +3040,6 @@
 	dir = 4;
 	icon_state = "neutral"
 	},
-/area/space)
-"jA" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/door/poddoor/shutters{
-	density = 0;
-	icon_state = "shutter0";
-	id = "chapel";
-	name = "Privacy Shutters";
-	opacity = 0
-	},
-/turf/simulated/floor/plating,
 /area/space)
 "jC" = (
 /obj/structure/table/glass,
@@ -3323,6 +3311,15 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"kA" = (
+/obj/structure/table/woodentable,
+/obj/item/device/flashlight/lamp{
+	pixel_x = -4
+	},
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space)
 "kB" = (
 /obj/structure/stool/bed/chair/office/light{
 	dir = 1
@@ -3582,19 +3579,6 @@
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
-	},
-/area/space)
-"lB" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/nullrod{
-	pixel_x = -8
-	},
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass,
-/obj/machinery/requests_console/chapel{
-	pixel_x = -30
-	},
-/turf/simulated/floor{
-	icon_state = "grimy"
 	},
 /area/space)
 "lD" = (
@@ -4624,6 +4608,28 @@
 	dir = 4;
 	icon_state = "darkred"
 	},
+/area/space)
+"pg" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id = "chapel";
+	name = "Privacy Shutters";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "pi" = (
 /obj/structure/sign/nanotrasen{
@@ -6092,24 +6098,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/simulated/floor,
 /area/station/civilian/fitness)
-"tY" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen/red{
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/obj/item/weapon/pen/blue{
-	pixel_x = -4
-	},
-/obj/item/weapon/pen{
-	pixel_x = 2;
-	pixel_y = 6
-	},
-/turf/simulated/floor{
-	icon_state = "grimy"
-	},
-/area/space)
 "ua" = (
 /obj/structure/table/glass,
 /obj/structure/sign/poster/official/soft_cap_pop_art{
@@ -7395,6 +7383,24 @@
 	icon_state = "dark"
 	},
 /area/space)
+"yh" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen/red{
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/item/weapon/pen/blue{
+	pixel_x = -4
+	},
+/obj/item/weapon/pen{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space)
 "yj" = (
 /obj/machinery/mecha_part_fabricator{
 	dir = 4
@@ -7544,15 +7550,6 @@
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
-	},
-/area/space)
-"yH" = (
-/obj/structure/table/woodentable,
-/obj/item/device/flashlight/lamp{
-	pixel_x = -4
-	},
-/turf/simulated/floor{
-	icon_state = "grimy"
 	},
 /area/space)
 "yI" = (
@@ -10264,6 +10261,13 @@
 	icon_state = "black"
 	},
 /area/space)
+"Hw" = (
+/mob/living/simple_animal/cow{
+	name = "Betsy"
+	},
+/obj/structure/flora/junglebush,
+/turf/simulated/floor/grass,
+/area/space)
 "Hx" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -10839,6 +10843,13 @@
 "Jw" = (
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/carpet/green,
+/area/space)
+"Jx" = (
+/obj/structure/sink/puddle,
+/obj/structure/flora/ausbushes/reedbush{
+	pixel_y = 6
+	},
+/turf/simulated/floor/grass,
 /area/space)
 "Jz" = (
 /obj/structure/toilet{
@@ -11579,6 +11590,12 @@
 	icon_state = "cafeteria"
 	},
 /area/space)
+"Mh" = (
+/obj/structure/flora/ausbushes/grassybush{
+	pixel_x = -8
+	},
+/turf/simulated/floor/grass,
+/area/space)
 "Mk" = (
 /obj/structure/table,
 /turf/simulated/floor{
@@ -11948,12 +11965,6 @@
 	dir = 5;
 	icon_state = "vault"
 	},
-/area/space)
-"Ny" = (
-/mob/living/simple_animal/chicken{
-	name = "Commander Clucky"
-	},
-/turf/simulated/floor/grass,
 /area/space)
 "Nz" = (
 /obj/structure/table/glass,
@@ -12469,13 +12480,6 @@
 	icon_state = "darkred"
 	},
 /area/space)
-"Pi" = (
-/obj/structure/sink/puddle,
-/obj/structure/flora/ausbushes/reedbush{
-	pixel_y = 6
-	},
-/turf/simulated/floor/grass,
-/area/space)
 "Pj" = (
 /obj/structure/table/woodentable,
 /obj/item/ashtray/bronze{
@@ -12895,7 +12899,6 @@
 	pixel_x = -30
 	},
 /obj/item/weapon/reagent_containers/food/drinks/bottle/wine,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/holywater,
 /turf/simulated/floor{
 	icon_state = "grimy"
 	},
@@ -14290,6 +14293,12 @@
 	icon_state = "dark"
 	},
 /area/space)
+"Vr" = (
+/mob/living/simple_animal/chicken{
+	name = "Commander Clucky"
+	},
+/turf/simulated/floor/grass,
+/area/space)
 "Vs" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor{
@@ -14928,13 +14937,6 @@
 /obj/structure/table/woodentable,
 /obj/item/weapon/book/manual/wiki/possible_threats,
 /turf/simulated/floor/wood,
-/area/space)
-"XC" = (
-/mob/living/simple_animal/cow{
-	name = "Betsy"
-	},
-/obj/structure/flora/junglebush,
-/turf/simulated/floor/grass,
 /area/space)
 "XD" = (
 /turf/simulated/floor/wood{
@@ -44748,7 +44750,7 @@ cd
 jI
 jI
 jI
-Pi
+Jx
 zq
 FN
 jI
@@ -45005,7 +45007,7 @@ cd
 jI
 CQ
 ms
-XC
+Hw
 zq
 rn
 jI
@@ -45262,9 +45264,9 @@ cd
 jI
 CQ
 zq
-Ny
-jm
-bd
+Vr
+dm
+Mh
 jI
 ZI
 jM
@@ -49362,8 +49364,8 @@ cd
 cd
 jI
 Qy
-lB
-yH
+hR
+kA
 jI
 jI
 jI
@@ -49620,7 +49622,7 @@ cd
 LC
 tb
 EH
-tY
+yh
 jI
 Rp
 lT
@@ -49878,7 +49880,7 @@ jI
 tb
 tb
 Ra
-jA
+pg
 zN
 iK
 iK
@@ -50133,7 +50135,7 @@ Nx
 jI
 Ra
 tb
-iB
+ba
 tb
 Ex
 lT
@@ -50392,7 +50394,7 @@ tb
 tb
 tb
 Pe
-jA
+pg
 Pq
 iK
 iK
@@ -50648,7 +50650,7 @@ jI
 pQ
 tb
 tb
-fd
+eG
 jI
 XQ
 Vz
