@@ -757,6 +757,24 @@
 	},
 /turf/environment/space,
 /area/shuttle/mining/station)
+"cn" = (
+/obj/structure/table/reinforced,
+/obj/item/clothing/mask/gas/coloured,
+/obj/item/clothing/mask/gas/coloured,
+/obj/item/clothing/mask/gas/coloured,
+/obj/item/taperoll/science,
+/obj/item/clothing/glasses/science{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/item/clothing/glasses/science{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/space)
 "cp" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor,
@@ -2932,6 +2950,15 @@
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
+	},
+/area/space)
+"jp" = (
+/obj/machinery/door/airlock/research{
+	name = "Miscellaneous Research";
+	req_access = list(47)
+	},
+/turf/simulated/floor{
+	icon_state = "white"
 	},
 /area/space)
 "jq" = (
@@ -5179,6 +5206,12 @@
 	icon_state = "dark"
 	},
 /area/space)
+"qO" = (
+/obj/structure/closet/l3closet/scientist,
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/space)
 "qP" = (
 /turf/simulated/floor{
 	dir = 6;
@@ -5989,6 +6022,12 @@
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
+	},
+/area/space)
+"tD" = (
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "yellowfull"
 	},
 /area/space)
 "tE" = (
@@ -8370,8 +8409,11 @@
 	},
 /area/space)
 "AS" = (
-/obj/machinery/shieldwallgen{
-	req_access = list(55)
+/obj/structure/disposalpipe/trunk{
+	dir = 2
+	},
+/obj/structure/disposaloutlet{
+	dir = 1
 	},
 /turf/simulated/floor/engine,
 /area/space)
@@ -8402,23 +8444,8 @@
 	},
 /area/space)
 "AW" = (
-/obj/machinery/door/poddoor{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "misclab";
-	name = "Test Chamber Blast Doors";
-	opacity = 0
-	},
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/machinery/shieldwallgen{
+	req_access = list(55)
 	},
 /turf/simulated/floor/engine,
 /area/space)
@@ -8599,21 +8626,23 @@
 	},
 /area/space)
 "BB" = (
-/obj/machinery/door/window/southleft{
-	dir = 1;
-	name = "Test Chamber";
-	req_access = list(47)
-	},
-/obj/machinery/door/window/southleft{
-	name = "Test Chamber";
-	req_access = list(47)
-	},
 /obj/machinery/door/poddoor{
 	density = 0;
 	icon_state = "pdoor0";
 	id = "misclab";
 	name = "Test Chamber Blast Doors";
 	opacity = 0
+	},
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
 	},
 /turf/simulated/floor/engine,
 /area/space)
@@ -8866,11 +8895,23 @@
 	},
 /area/space)
 "Cu" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Misc Research Maintenance";
+/obj/machinery/door/window/southleft{
+	dir = 1;
+	name = "Test Chamber";
 	req_access = list(47)
 	},
-/turf/simulated/floor/plating,
+/obj/machinery/door/window/southleft{
+	name = "Test Chamber";
+	req_access = list(47)
+	},
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "misclab";
+	name = "Test Chamber Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor/engine,
 /area/space)
 "Cw" = (
 /obj/structure/stool/bed/chair/office/dark{
@@ -9495,16 +9536,28 @@
 	},
 /area/station/cargo/storage)
 "Et" = (
-/obj/structure/table/reinforced,
-/obj/machinery/ignition_switch{
-	id = "Xenobio";
-	pixel_x = -6;
-	pixel_y = 4
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "misclab";
+	name = "Test Chamber Blast Doors";
+	opacity = 0
 	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "warning"
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/simulated/floor/engine,
 /area/space)
 "Ex" = (
 /obj/machinery/door/airlock/glass{
@@ -9968,10 +10021,11 @@
 	},
 /area/space)
 "FS" = (
-/obj/effect/decal/cleanable/blood/oil,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/obj/machinery/door/airlock/maintenance{
+	name = "Misc Research Maintenance";
+	req_access = list(47)
 	},
+/turf/simulated/floor/plating,
 /area/space)
 "FT" = (
 /obj/machinery/door/airlock/engineering/glass{
@@ -11511,9 +11565,19 @@
 	},
 /area/space)
 "Lh" = (
-/obj/structure/closet/l3closet/scientist,
+/obj/structure/table/reinforced,
+/obj/machinery/ignition_switch{
+	id = "Xenobio";
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 1;
+	icon_state = "warning"
 	},
 /area/space)
 "Li" = (
@@ -11521,9 +11585,13 @@
 /turf/simulated/floor/wood,
 /area/space)
 "Lj" = (
-/obj/machinery/portable_atmospherics/powered/scrubber,
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
 /turf/simulated/floor{
-	icon_state = "bot"
+	dir = 1;
+	icon_state = "warning"
 	},
 /area/space)
 "Lk" = (
@@ -11591,19 +11659,7 @@
 /turf/simulated/floor/wood,
 /area/space)
 "Lv" = (
-/obj/structure/table/reinforced,
-/obj/item/clothing/mask/gas/coloured,
-/obj/item/clothing/mask/gas/coloured,
-/obj/item/clothing/mask/gas/coloured,
-/obj/item/taperoll/science,
-/obj/item/clothing/glasses/science{
-	pixel_x = 2;
-	pixel_y = 6
-	},
-/obj/item/clothing/glasses/science{
-	pixel_x = 2;
-	pixel_y = 6
-	},
+/obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -12128,6 +12184,16 @@
 "Nr" = (
 /obj/machinery/smartfridge,
 /turf/simulated/wall,
+/area/space)
+"Nt" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Research Director";
+	req_access = list(30)
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "yellowfull"
+	},
 /area/space)
 "Nu" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
@@ -13778,6 +13844,12 @@
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
+	},
+/area/space)
+"SP" = (
+/obj/machinery/portable_atmospherics/powered/scrubber,
+/turf/simulated/floor{
+	icon_state = "bot"
 	},
 /area/space)
 "SQ" = (
@@ -15875,6 +15947,16 @@
 	req_access = list(20)
 	},
 /turf/simulated/floor/carpet/blue2,
+/area/space)
+"ZS" = (
+/obj/machinery/door/airlock/command{
+	name = "Research Director";
+	req_access = list(30)
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "yellowfull"
+	},
 /area/space)
 "ZT" = (
 /turf/simulated/floor{
@@ -36289,16 +36371,16 @@ wR
 wR
 wR
 wR
-Hp
-Hp
-Hp
-Hp
-Hp
-Cu
-Hp
-Hp
-Hp
-Hp
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -36545,17 +36627,17 @@ wR
 wR
 wR
 wR
-Hp
-Hp
-tt
-tt
-Hp
-AS
-Pb
-cd
-JC
-Lh
-Hp
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -36802,17 +36884,17 @@ wR
 wR
 wR
 wR
-Hp
-nI
-nI
-nI
-nI
-AW
-wH
-Vu
-JC
-Lj
-Hp
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -37059,17 +37141,17 @@ wR
 wR
 wR
 wR
-Hp
-nI
-nI
-nI
-nI
-BB
-wH
-JC
-Vu
-Lv
-Hp
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -37316,17 +37398,17 @@ wR
 wR
 wR
 wR
-Hp
-nI
-nI
-nI
-nI
-BB
-wH
-FS
-JC
-Hp
-Hp
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -37573,16 +37655,16 @@ wR
 wR
 wR
 wR
-Hp
-nI
-nI
-nI
-nI
-AW
-Et
-ZF
-JC
-Hp
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -37830,16 +37912,16 @@ wR
 wR
 wR
 wR
-Hp
-Hp
-wm
-yH
-Hp
-AS
-wH
-JC
-JC
-Ny
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -38088,15 +38170,15 @@ wR
 wR
 wR
 wR
-Hp
-Hp
-Hp
-Hp
-Pb
-JC
-cd
-JC
-Hp
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 cd
@@ -38348,12 +38430,12 @@ wR
 wR
 wR
 wR
-Hp
-Hp
-Hp
-Hp
-Hp
-Hp
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 cd
@@ -39115,17 +39197,17 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 cd
 cd
 cd
@@ -39372,17 +39454,17 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 Hp
 Hp
 Hp
@@ -39629,17 +39711,17 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
+wR
+wR
+wR
+Hp
+Hp
+Hp
+Hp
+Hp
+FS
+Hp
+Hp
 Hp
 uv
 TT
@@ -39886,17 +39968,17 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
+wR
+wR
+Hp
+Hp
+tt
+tt
+Hp
+AW
+Pb
+cd
+qO
 Hp
 Nf
 Hl
@@ -40143,17 +40225,17 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
+wR
+wR
+Hp
+nI
+nI
+nI
+nI
+BB
+wH
+Vu
+SP
 Hp
 xL
 UB
@@ -40400,19 +40482,19 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
+wR
+wR
 Hp
+nI
+nI
+nI
+nI
+Cu
+wH
+JC
+cn
 Hp
+Nt
 Hp
 YN
 ce
@@ -40657,19 +40739,19 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
+wR
+wR
+Hp
+nI
+nI
+nI
+nI
+Cu
+wH
+Lv
+JC
+ZS
+tD
 Hp
 tQ
 ce
@@ -40914,19 +40996,19 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
+wR
+wR
+Hp
+nI
+nI
+nI
+AS
+Et
+Lh
+ZF
+JC
+Hp
+Hp
 Hp
 uI
 Ls
@@ -41171,19 +41253,19 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
+wR
+wR
+Hp
+Hp
+wm
+yH
+Hp
+AW
+Lj
+JC
+JC
+JC
+JG
 Hp
 Hp
 Mg
@@ -41437,7 +41519,7 @@ Hp
 Hp
 Hp
 Hp
-Hp
+jp
 Hp
 Hp
 Hp
