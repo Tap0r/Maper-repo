@@ -2786,6 +2786,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/space)
+"iM" = (
+/obj/machinery/computer/telescience{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/space)
 "iN" = (
 /obj/item/weapon/storage/box/flashbangs{
 	pixel_y = 4
@@ -5859,6 +5867,17 @@
 	icon_state = "dark"
 	},
 /area/space)
+"sV" = (
+/obj/structure/rack,
+/obj/item/clothing/suit/space/rig/science,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/head/helmet/space/rig/science,
+/obj/item/device/suit_cooling_unit,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "whitepurplecorner"
+	},
+/area/space)
 "sW" = (
 /obj/structure/drain{
 	drainage = 2
@@ -6471,6 +6490,13 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"uS" = (
+/obj/machinery/door/poddoor{
+	id = "teles_blast2";
+	name = "Test Chamber Blast Doors"
+	},
+/turf/simulated/floor/engine,
 /area/space)
 "uT" = (
 /obj/structure/table,
@@ -9105,6 +9131,21 @@
 	icon_state = "darkgreen"
 	},
 /area/space)
+"Dh" = (
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "teles_blast1";
+	name = "Test Chamber Blast Doors";
+	opacity = 0
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 5
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "Di" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/paper_bin{
@@ -11349,6 +11390,12 @@
 	icon_state = "asteroid"
 	},
 /area/space)
+"Kw" = (
+/obj/machinery/suit_storage_unit/science,
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/space)
 "Kx" = (
 /obj/machinery/r_n_d/protolathe,
 /turf/simulated/floor{
@@ -11759,6 +11806,26 @@
 	},
 /turf/simulated/floor{
 	icon_state = "darkredfull"
+	},
+/area/space)
+"LQ" = (
+/obj/structure/table/reinforced,
+/obj/item/bluespace_crystal/artificial,
+/obj/item/bluespace_crystal/artificial,
+/obj/item/bluespace_crystal/artificial,
+/obj/item/clothing/glasses/science{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/item/clothing/glasses/science{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/item/device/gps/science,
+/obj/item/device/gps/science,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "warning"
 	},
 /area/space)
 "LU" = (
@@ -12333,6 +12400,14 @@
 /obj/structure/closet/crate,
 /turf/simulated/floor{
 	icon_state = "dark"
+	},
+/area/space)
+"NN" = (
+/obj/structure/table,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen,
+/turf/simulated/floor{
+	icon_state = "white"
 	},
 /area/space)
 "NP" = (
@@ -14284,6 +14359,15 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
+"Ud" = (
+/obj/machinery/door/airlock/research{
+	name = "Telescience Research Room";
+	req_access = list(7)
+	},
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/space)
 "Ue" = (
 /obj/structure/table,
 /turf/simulated/floor{
@@ -14932,6 +15016,10 @@
 	dir = 8;
 	icon_state = "vault"
 	},
+/area/space)
+"Wm" = (
+/obj/machinery/telepad,
+/turf/simulated/floor/engine,
 /area/space)
 "Wn" = (
 /obj/structure/table/glass,
@@ -42568,7 +42656,7 @@ Hp
 Hp
 Hp
 Hp
-Hp
+Ud
 Hp
 Hp
 Hp
@@ -42820,14 +42908,14 @@ ib
 ib
 ib
 ib
+Hp
+nI
+nI
+nI
+uS
 ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
+vu
+NN
 Hp
 zA
 ge
@@ -43077,14 +43165,14 @@ ib
 ib
 ib
 ib
+Hp
+nI
+nI
+nI
+Hp
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
+sV
 Hp
 DJ
 Fq
@@ -43334,12 +43422,12 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
+Hp
+nI
+nI
+nI
+Dh
+vu
 ib
 ib
 Hp
@@ -43591,14 +43679,14 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
-ib
+Hp
+nI
+Wm
+nI
+Dh
+iM
+LQ
+Kw
 Hp
 yS
 zA
@@ -43848,12 +43936,12 @@ ib
 ib
 ib
 ib
-ib
-ib
-ib
-ib
-ib
-ib
+Hp
+nI
+nI
+nI
+Hp
+Hp
 Hp
 Hp
 Hp
@@ -44110,8 +44198,8 @@ Hp
 Hp
 Hp
 Hp
-Hp
-Hp
+cd
+cd
 cd
 cd
 cd
