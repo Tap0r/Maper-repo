@@ -2204,17 +2204,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/entry)
-"hc" = (
-/obj/machinery/disposal,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "darkpurple"
-	},
-/area/space)
 "hd" = (
 /turf/simulated/floor{
 	dir = 4;
-	icon_state = "cautioncorner"
+	icon_state = "caution"
 	},
 /area/space)
 "hf" = (
@@ -2396,20 +2389,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
 /area/space)
-"hG" = (
-/obj/structure/rack,
-/obj/item/taperoll/science{
-	pixel_x = 2;
-	pixel_y = 4
-	},
-/obj/item/taperoll/science{
-	pixel_x = -2
-	},
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "warndark"
-	},
-/area/space)
 "hH" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/lighter/zippo{
@@ -2478,16 +2457,6 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "warndark"
-	},
-/area/space)
-"hR" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/space/rig/science,
-/obj/item/clothing/mask/breath,
-/obj/item/clothing/head/helmet/space/rig/science,
-/obj/item/device/suit_cooling_unit,
-/turf/simulated/floor{
-	icon_state = "white"
 	},
 /area/space)
 "hS" = (
@@ -2647,14 +2616,6 @@
 	},
 /area/space)
 "ip" = (
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the singularity chamber.";
-	dir = 4;
-	layer = 4;
-	name = "Singularity Engine Telescreen";
-	network = list("Singularity");
-	pixel_x = -30
-	},
 /obj/machinery/computer/general_air_control{
 	dir = 4;
 	frequency = 1443;
@@ -2663,8 +2624,8 @@
 	sensors = list("mair_in_meter" = "Mixed Air In", "air_sensor" = "Mixed Air Supply Tank", "mair_out_meter" = "Mixed Air Out", "dloop_atm_meter" = "Distribution Loop", "wloop_atm_meter" = "Waste Loop")
 	},
 /turf/simulated/floor{
-	dir = 9;
-	icon_state = "caution"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "iq" = (
@@ -3408,12 +3369,6 @@
 	icon_state = "darkblue"
 	},
 /area/space)
-"kE" = (
-/obj/structure/stool/bed/chair/metal,
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
-/area/space)
 "kG" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/simulated/floor/grass,
@@ -3860,6 +3815,21 @@
 	icon_state = "whitehall"
 	},
 /area/space)
+"mi" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "atmos";
+	name = "Atmos Blast Door";
+	opacity = 0
+	},
+/obj/machinery/door/airlock/maintenance{
+	name = "Engineering Maintainance";
+	req_access = list(71)
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "mj" = (
 /obj/structure/closet/theatrecloset,
 /obj/random/randomtoy,
@@ -3924,6 +3894,14 @@
 /turf/simulated/floor/plating{
 	dir = 5;
 	icon_state = "warnplate"
+	},
+/area/space)
+"mv" = (
+/obj/machinery/computer/monitor{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space)
 "my" = (
@@ -4167,6 +4145,9 @@
 	},
 /area/space)
 "nu" = (
+/obj/machinery/computer/security/engineering{
+	dir = 4
+	},
 /obj/machinery/computer/security/telescreen{
 	desc = "Used for watching the singularity chamber.";
 	dir = 4;
@@ -4175,12 +4156,8 @@
 	network = list("Singularity");
 	pixel_x = -30
 	},
-/obj/machinery/computer/monitor{
-	dir = 4
-	},
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "caution"
+	icon_state = "dark"
 	},
 /area/space)
 "nv" = (
@@ -4203,16 +4180,6 @@
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
-	},
-/area/space)
-"nz" = (
-/obj/structure/rack,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/tank/emergency_oxygen,
-/obj/item/clothing/mask/gas/coloured,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "caution"
 	},
 /area/space)
 "nA" = (
@@ -4718,6 +4685,16 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"ph" = (
+/obj/structure/rack,
+/obj/item/clothing/suit/space/rig/science,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/head/helmet/space/rig/science,
+/obj/item/device/suit_cooling_unit,
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/space)
 "pi" = (
 /obj/structure/sign/nanotrasen{
 	pixel_y = 32
@@ -5023,22 +5000,15 @@
 	},
 /area/space)
 "qi" = (
-/obj/machinery/requests_console/atmos{
-	pixel_x = 30
-	},
-/obj/machinery/alarm{
-	pixel_y = 20
-	},
-/obj/structure/table,
-/obj/item/weapon/storage/fancy/glowsticks{
-	pixel_y = 4
-	},
-/obj/item/weapon/storage/box/lights/mixed{
-	pixel_x = -3
+/obj/machinery/computer/general_air_control{
+	dir = 8;
+	frequency = 1441;
+	name = "Tank Monitor";
+	sensors = list("n2_sensor" = "Nitrogen", "o2_sensor" = "Oxygen", "co2_sensor" = "Carbon Dioxide", "tox_sensor" = "Toxins", "n2o_sensor" = "Nitrous Oxide", "waste_sensor" = "Gas Mix Tank")
 	},
 /turf/simulated/floor{
 	dir = 5;
-	icon_state = "caution"
+	icon_state = "vault"
 	},
 /area/space)
 "qj" = (
@@ -5057,25 +5027,6 @@
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "neutral"
-	},
-/area/space)
-"qm" = (
-/obj/item/bluespace_crystal/artificial,
-/obj/item/bluespace_crystal/artificial,
-/obj/item/bluespace_crystal/artificial,
-/obj/item/clothing/glasses/science{
-	pixel_x = 2;
-	pixel_y = 6
-	},
-/obj/item/clothing/glasses/science{
-	pixel_x = 2;
-	pixel_y = 6
-	},
-/obj/item/device/gps/science,
-/obj/item/device/gps/science,
-/obj/structure/table,
-/turf/simulated/floor{
-	icon_state = "white"
 	},
 /area/space)
 "qn" = (
@@ -5772,8 +5723,8 @@
 	dir = 4
 	},
 /turf/simulated/floor{
-	dir = 10;
-	icon_state = "caution"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "sy" = (
@@ -5811,13 +5762,6 @@
 /obj/machinery/cryopod,
 /turf/simulated/floor{
 	icon_state = "dark"
-	},
-/area/space)
-"sF" = (
-/obj/machinery/portable_atmospherics/canister,
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "warndark"
 	},
 /area/space)
 "sG" = (
@@ -6320,13 +6264,6 @@
 	icon_state = "dark"
 	},
 /area/space)
-"ug" = (
-/obj/machinery/portable_atmospherics/powered/scrubber,
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "darkpurple"
-	},
-/area/space)
 "uh" = (
 /obj/structure/closet/lasertag/blue,
 /turf/simulated/floor{
@@ -6689,9 +6626,14 @@
 /area/space)
 "vt" = (
 /obj/structure/table,
+/obj/item/weapon/storage/briefcase/inflatable{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/weapon/storage/briefcase/inflatable,
 /turf/simulated/floor{
-	dir = 6;
-	icon_state = "caution"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "vu" = (
@@ -6783,6 +6725,16 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkpurplefull"
+	},
+/area/space)
+"vL" = (
+/obj/structure/rack,
+/obj/item/weapon/tank/emergency_oxygen,
+/obj/item/weapon/tank/emergency_oxygen,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath,
+/turf/simulated/floor{
+	icon_state = "bot"
 	},
 /area/space)
 "vM" = (
@@ -7255,6 +7207,18 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "caution"
+	},
+/area/space)
+"xg" = (
+/obj/structure/table/reinforced,
+/obj/item/device/camera{
+	pixel_x = 13
+	},
+/obj/item/device/taperecorder{
+	pixel_x = -3
+	},
+/turf/simulated/floor{
+	icon_state = "darkpurple"
 	},
 /area/space)
 "xh" = (
@@ -7921,10 +7885,7 @@
 	},
 /area/space)
 "zb" = (
-/obj/structure/rack,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/tank/emergency_oxygen,
-/obj/item/clothing/mask/gas/coloured,
+/obj/structure/closet/secure_closet/atmos_personal,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "caution"
@@ -8172,6 +8133,18 @@
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
+	},
+/area/space)
+"zP" = (
+/obj/structure/rack,
+/obj/item/weapon/storage/fancy/glowsticks{
+	pixel_y = 4
+	},
+/obj/item/weapon/storage/box/lights/mixed{
+	pixel_x = -3
+	},
+/turf/simulated/floor{
+	icon_state = "bot"
 	},
 /area/space)
 "zS" = (
@@ -9098,11 +9071,7 @@
 	},
 /area/space)
 "CN" = (
-/obj/structure/table,
-/obj/machinery/kitchen_machine/microwave{
-	pixel_x = -3;
-	pixel_y = 6
-	},
+/obj/structure/closet/wardrobe/atmospherics_yellow,
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "caution"
@@ -9623,6 +9592,25 @@
 	icon_state = "warndark"
 	},
 /area/space)
+"Eu" = (
+/obj/item/bluespace_crystal/artificial,
+/obj/item/bluespace_crystal/artificial,
+/obj/item/bluespace_crystal/artificial,
+/obj/item/clothing/glasses/science{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/item/clothing/glasses/science{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/item/device/gps/science,
+/obj/item/device/gps/science,
+/obj/structure/table,
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/space)
 "Ex" = (
 /obj/machinery/door/airlock/glass{
 	name = "Chapel Office";
@@ -9690,6 +9678,15 @@
 	},
 /turf/simulated/floor{
 	icon_state = "grimy"
+	},
+/area/space)
+"EJ" = (
+/obj/structure/stool/bed/chair/office/dark{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "caution"
 	},
 /area/space)
 "EK" = (
@@ -9904,6 +9901,15 @@
 	},
 /turf/simulated/floor/carpet/black,
 /area/space)
+"Fh" = (
+/obj/machinery/computer/atmoscontrol{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/space)
 "Fi" = (
 /obj/machinery/door_control{
 	id = "Gateway_shutters_entrance";
@@ -9913,6 +9919,15 @@
 	},
 /obj/structure/closet/emcloset,
 /turf/simulated/floor,
+/area/space)
+"Fj" = (
+/obj/structure/stool/bed/chair/office/dark{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "caution"
+	},
 /area/space)
 "Fl" = (
 /obj/machinery/computer/aifixer,
@@ -10196,6 +10211,13 @@
 	icon_state = "black"
 	},
 /area/space)
+"Gi" = (
+/obj/structure/closet/firecloset,
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "darkpurple"
+	},
+/area/space)
 "Gm" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
@@ -10295,6 +10317,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/space)
+"Gz" = (
+/obj/machinery/disposal,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "caution"
+	},
+/area/space)
 "GA" = (
 /turf/simulated/floor{
 	dir = 1;
@@ -10315,7 +10344,7 @@
 /turf/simulated/floor/wood,
 /area/space)
 "GD" = (
-/obj/structure/closet/wardrobe/atmospherics_yellow,
+/obj/structure/closet/secure_closet/atmos_personal,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "caution"
@@ -10548,14 +10577,7 @@
 	},
 /area/space)
 "Hs" = (
-/obj/structure/sign/plaques/atmos{
-	pixel_y = -28
-	},
-/obj/machinery/computer/general_air_control{
-	frequency = 1441;
-	name = "Tank Monitor";
-	sensors = list("n2_sensor" = "Nitrogen", "o2_sensor" = "Oxygen", "co2_sensor" = "Carbon Dioxide", "tox_sensor" = "Toxins", "n2o_sensor" = "Nitrous Oxide", "waste_sensor" = "Gas Mix Tank")
-	},
+/obj/item/weapon/flora/random,
 /turf/simulated/floor{
 	icon_state = "caution"
 	},
@@ -10578,13 +10600,6 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/space)
-"Hy" = (
-/obj/structure/closet/firecloset,
-/turf/simulated/floor{
-	dir = 6;
-	icon_state = "darkpurple"
-	},
 /area/space)
 "HA" = (
 /obj/structure/sink{
@@ -10807,6 +10822,12 @@
 /obj/item/clothing/mask/gas/coloured,
 /turf/simulated/floor{
 	icon_state = "bot"
+	},
+/area/space)
+"Id" = (
+/obj/structure/stool/bed/chair/metal,
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space)
 "If" = (
@@ -11827,21 +11848,6 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/space)
-"LK" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/poddoor{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "atmos";
-	name = "Atmos Blast Door";
-	opacity = 0
-	},
-/obj/machinery/door/airlock/maintenance{
-	name = "Engineering Maintainance";
-	req_access = list(71)
-	},
-/turf/simulated/floor/plating,
 /area/space)
 "LL" = (
 /obj/structure/closet/emcloset,
@@ -13013,22 +13019,6 @@
 	icon_state = "greenbluefull"
 	},
 /area/space)
-"PA" = (
-/obj/structure/rack,
-/obj/item/clothing/mask/gas/coloured{
-	pixel_x = 2;
-	pixel_y = 4
-	},
-/obj/item/clothing/mask/gas/coloured{
-	pixel_y = 2
-	},
-/obj/item/clothing/mask/gas/coloured{
-	pixel_x = -2
-	},
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
-/area/space)
 "PB" = (
 /turf/simulated/floor{
 	dir = 10;
@@ -13202,9 +13192,12 @@
 	},
 /area/space)
 "Qb" = (
+/obj/machinery/door/airlock/research{
+	name = "Miscellaneous Research";
+	req_access = list(47)
+	},
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "cautioncorner"
+	icon_state = "white"
 	},
 /area/space)
 "Qc" = (
@@ -13458,6 +13451,22 @@
 	icon_state = "vault"
 	},
 /area/space)
+"QV" = (
+/obj/structure/rack,
+/obj/item/clothing/mask/gas/coloured{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/clothing/mask/gas/coloured{
+	pixel_y = 2
+	},
+/obj/item/clothing/mask/gas/coloured{
+	pixel_x = -2
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "QW" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor,
@@ -13613,6 +13622,14 @@
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "whiteblue"
+	},
+/area/space)
+"RC" = (
+/obj/machinery/computer/atmos_alert{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space)
 "RD" = (
@@ -14016,10 +14033,7 @@
 	},
 /area/space)
 "SR" = (
-/obj/machinery/door/airlock/research{
-	name = "Miscellaneous Research";
-	req_access = list(47)
-	},
+/obj/machinery/computer/telescience,
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -14138,6 +14152,17 @@
 /obj/structure/dresser,
 /turf/simulated/floor,
 /area/station/civilian/fitness)
+"Tm" = (
+/obj/structure/table,
+/obj/machinery/kitchen_machine/microwave{
+	pixel_x = -3;
+	pixel_y = 6
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/space)
 "Tn" = (
 /obj/structure/stool/bed/chair/office/dark{
 	dir = 4
@@ -14429,7 +14454,15 @@
 /area/space)
 "Ue" = (
 /obj/structure/table,
+/obj/structure/sign/plaques/atmos{
+	pixel_y = -28
+	},
+/obj/item/weapon/storage/toolbox/mechanical{
+	pixel_y = 5
+	},
+/obj/item/weapon/airlock_painter,
 /turf/simulated/floor{
+	dir = 6;
 	icon_state = "caution"
 	},
 /area/space)
@@ -14782,6 +14815,13 @@
 	icon_state = "whiteblue"
 	},
 /area/space)
+"Vo" = (
+/obj/machinery/disposal,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkpurple"
+	},
+/area/space)
 "Vq" = (
 /obj/machinery/door/airlock/glass{
 	name = "Prison"
@@ -15027,18 +15067,6 @@
 /obj/item/toy/plushie/space_whale,
 /turf/simulated/floor/carpet/blue,
 /area/space)
-"We" = (
-/obj/structure/table/reinforced,
-/obj/item/device/camera{
-	pixel_x = 13
-	},
-/obj/item/device/taperecorder{
-	pixel_x = -3
-	},
-/turf/simulated/floor{
-	icon_state = "darkpurple"
-	},
-/area/space)
 "Wf" = (
 /obj/structure/drain,
 /turf/simulated/floor{
@@ -15089,9 +15117,10 @@
 	},
 /area/space)
 "Wm" = (
-/obj/machinery/computer/telescience,
+/obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 8;
+	icon_state = "darkpurple"
 	},
 /area/space)
 "Wn" = (
@@ -15232,6 +15261,20 @@
 	},
 /turf/simulated/floor{
 	icon_state = "white"
+	},
+/area/space)
+"WO" = (
+/obj/structure/rack,
+/obj/item/taperoll/science{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/taperoll/science{
+	pixel_x = -2
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "warndark"
 	},
 /area/space)
 "WP" = (
@@ -15424,13 +15467,6 @@
 	icon_state = "wood-broken"
 	},
 /area/space)
-"Xs" = (
-/obj/machinery/disposal,
-/turf/simulated/floor{
-	dir = 9;
-	icon_state = "caution"
-	},
-/area/space)
 "Xv" = (
 /obj/machinery/door/airlock/glass{
 	name = "Cryogenic Storage"
@@ -15599,9 +15635,10 @@
 	},
 /area/space)
 "XU" = (
+/obj/item/weapon/flora/random,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "cautioncorner"
+	dir = 8;
+	icon_state = "caution"
 	},
 /area/space)
 "XW" = (
@@ -15879,6 +15916,13 @@
 /obj/item/clothing/head/santahat,
 /obj/item/weapon/storage/backpack/santabag,
 /turf/simulated/floor/wood,
+/area/space)
+"YX" = (
+/obj/machinery/portable_atmospherics/canister,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "warndark"
+	},
 /area/space)
 "YY" = (
 /obj/structure/table/reinforced,
@@ -39660,7 +39704,7 @@ Hp
 Hp
 FS
 zS
-ug
+Wm
 Hp
 Hp
 Hp
@@ -39918,7 +39962,7 @@ AW
 CE
 ce
 ce
-We
+xg
 Hp
 uv
 TT
@@ -40174,7 +40218,7 @@ yH
 BB
 Et
 ce
-kE
+Id
 YY
 Hp
 Nf
@@ -41205,7 +41249,7 @@ Rl
 ce
 cw
 CE
-PA
+QV
 Hp
 uI
 Ls
@@ -41459,10 +41503,10 @@ Hp
 AW
 HA
 Ls
-hc
-Hy
-sF
-hG
+Vo
+Gi
+YX
+WO
 Hp
 Hp
 Mg
@@ -41715,7 +41759,7 @@ Hp
 Hp
 Hp
 Hp
-SR
+Qb
 Hp
 Hp
 Hp
@@ -43517,7 +43561,7 @@ Lv
 Dh
 ib
 ib
-hR
+ph
 Hp
 zA
 ce
@@ -43771,7 +43815,7 @@ nI
 Ap
 nI
 Lv
-Wm
+SR
 iM
 ib
 Kw
@@ -44030,7 +44074,7 @@ nI
 Lv
 Dh
 Dh
-qm
+Eu
 Hp
 Hp
 gc
@@ -48478,7 +48522,7 @@ nu
 sv
 jI
 jI
-LK
+mi
 JP
 jI
 jI
@@ -48730,11 +48774,11 @@ rl
 gG
 jI
 CN
+Lm
+EJ
+Lm
+Gz
 XU
-sK
-Qb
-QW
-Xs
 Lm
 FD
 jI
@@ -49242,16 +49286,16 @@ Cq
 Ic
 JC
 ZZ
-jI
+uo
 Bv
 JC
 JC
-JC
-JC
+zP
+vL
 JC
 JC
 Hs
-jI
+uo
 DI
 DI
 DI
@@ -49759,11 +49803,11 @@ FM
 jI
 zb
 GD
-nz
+GD
 hd
-JC
-lr
-JC
+Fj
+Fj
+hd
 Ue
 jI
 DI
@@ -50018,9 +50062,9 @@ jI
 jI
 jI
 qi
-cZ
-xq
-CK
+mv
+Fh
+RC
 vt
 jI
 DI
@@ -50783,7 +50827,7 @@ Cc
 Cc
 Cc
 rc
-Eq
+Tm
 jI
 EP
 ok
