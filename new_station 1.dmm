@@ -2592,8 +2592,20 @@
 	},
 /area/space)
 "ip" = (
-/obj/machinery/computer/security/engineering{
-	dir = 4
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for watching the singularity chamber.";
+	dir = 4;
+	layer = 4;
+	name = "Singularity Engine Telescreen";
+	network = list("Singularity");
+	pixel_x = -30
+	},
+/obj/machinery/computer/general_air_control{
+	dir = 4;
+	frequency = 1443;
+	level = 3;
+	name = "Distribution and Waste Monitor";
+	sensors = list("mair_in_meter" = "Mixed Air In", "air_sensor" = "Mixed Air Supply Tank", "mair_out_meter" = "Mixed Air Out", "dloop_atm_meter" = "Distribution Loop", "wloop_atm_meter" = "Waste Loop")
 	},
 /turf/simulated/floor{
 	dir = 9;
@@ -4075,7 +4087,15 @@
 	},
 /area/space)
 "nu" = (
-/obj/machinery/computer/atmoscontrol{
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for watching the singularity chamber.";
+	dir = 4;
+	layer = 4;
+	name = "Singularity Engine Telescreen";
+	network = list("Singularity");
+	pixel_x = -30
+	},
+/obj/machinery/computer/monitor{
 	dir = 4
 	},
 /turf/simulated/floor{
@@ -4924,6 +4944,12 @@
 	pixel_y = 20
 	},
 /obj/structure/table,
+/obj/item/weapon/storage/fancy/glowsticks{
+	pixel_y = 4
+	},
+/obj/item/weapon/storage/box/lights/mixed{
+	pixel_x = -3
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "caution"
@@ -5637,7 +5663,7 @@
 	},
 /area/space)
 "sv" = (
-/obj/machinery/computer/atmos_alert{
+/obj/machinery/computer/station_alert{
 	dir = 4
 	},
 /turf/simulated/floor{
@@ -6833,21 +6859,7 @@
 	},
 /area/space)
 "wq" = (
-/obj/machinery/computer/general_air_control{
-	dir = 4;
-	frequency = 1443;
-	level = 3;
-	name = "Distribution and Waste Monitor";
-	sensors = list("mair_in_meter" = "Mixed Air In", "air_sensor" = "Mixed Air Supply Tank", "mair_out_meter" = "Mixed Air Out", "dloop_atm_meter" = "Distribution Loop", "wloop_atm_meter" = "Waste Loop")
-	},
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the singularity chamber.";
-	dir = 4;
-	layer = 4;
-	name = "Singularity Engine Telescreen";
-	network = list("Singularity");
-	pixel_x = -30
-	},
+/obj/machinery/disposal,
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "caution"
@@ -8184,21 +8196,19 @@
 	},
 /area/space)
 "Ap" = (
-/obj/machinery/computer/station_alert{
-	dir = 4
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "atmos";
+	name = "Atmos Blast Door";
+	opacity = 0
 	},
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the singularity chamber.";
-	dir = 4;
-	layer = 4;
-	name = "Singularity Engine Telescreen";
-	network = list("Singularity");
-	pixel_x = -30
+/obj/machinery/door/airlock/maintenance{
+	name = "Engineering Maintainance";
+	req_access = list(71)
 	},
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "caution"
-	},
+/turf/simulated/floor/plating,
 /area/space)
 "Aq" = (
 /obj/structure/stool/bed/chair/office/light{
@@ -8984,11 +8994,9 @@
 /area/space)
 "CN" = (
 /obj/structure/table,
-/obj/item/weapon/storage/fancy/glowsticks{
-	pixel_y = 4
-	},
-/obj/item/weapon/storage/box/lights/mixed{
-	pixel_x = -3
+/obj/machinery/kitchen_machine/microwave{
+	pixel_x = -3;
+	pixel_y = 6
 	},
 /turf/simulated/floor{
 	dir = 9;
@@ -10411,8 +10419,15 @@
 	},
 /area/space)
 "Hs" = (
+/obj/structure/sign/plaques/atmos{
+	pixel_y = -28
+	},
+/obj/machinery/computer/general_air_control{
+	frequency = 1441;
+	name = "Tank Monitor";
+	sensors = list("n2_sensor" = "Nitrogen", "o2_sensor" = "Oxygen", "co2_sensor" = "Carbon Dioxide", "tox_sensor" = "Toxins", "n2o_sensor" = "Nitrous Oxide", "waste_sensor" = "Gas Mix Tank")
+	},
 /turf/simulated/floor{
-	dir = 4;
 	icon_state = "caution"
 	},
 /area/space)
@@ -11181,15 +11196,6 @@
 	dir = 1
 	},
 /turf/simulated/floor,
-/area/space)
-"Kc" = (
-/obj/machinery/computer/monitor{
-	dir = 4
-	},
-/turf/simulated/floor{
-	dir = 10;
-	icon_state = "caution"
-	},
 /area/space)
 "Kd" = (
 /obj/structure/grille,
@@ -15414,12 +15420,6 @@
 /turf/simulated/floor{
 	icon_state = "whitebluefull"
 	},
-/area/space)
-"Ym" = (
-/obj/structure/stool/bed/chair/office/dark{
-	dir = 8
-	},
-/turf/simulated/floor,
 /area/space)
 "Yn" = (
 /obj/machinery/photocopier,
@@ -47942,8 +47942,8 @@ jI
 jI
 jI
 jI
-jI
-jI
+Ap
+JP
 jI
 cd
 cd
@@ -48199,8 +48199,8 @@ nu
 sv
 QW
 wq
-Ap
-Kc
+Lm
+FD
 jI
 jI
 jI
@@ -48452,11 +48452,11 @@ gG
 jI
 CN
 XU
-Ym
+sK
 Qb
 Lm
 XU
-Ym
+JC
 AL
 jI
 DI
@@ -48971,7 +48971,7 @@ JC
 JC
 JC
 JC
-SG
+Hs
 jI
 DI
 DI
@@ -49483,7 +49483,7 @@ GD
 nz
 hd
 JC
-JC
+lr
 JC
 Ue
 jI
@@ -49739,9 +49739,9 @@ jI
 jI
 jI
 qi
-Hs
-xe
-Hs
+cZ
+xq
+CK
 vt
 jI
 DI
