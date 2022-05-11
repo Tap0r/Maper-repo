@@ -841,7 +841,7 @@
 "cp" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/medical/glass{
-	name = "Medical Supplies";
+	name = "Supplies Maintenance";
 	req_access = list(72)
 	},
 /turf/simulated/floor/plating,
@@ -1252,11 +1252,11 @@
 	},
 /area/space)
 "dv" = (
-/obj/item/weapon/flora/random,
-/turf/simulated/floor{
-	dir = 6;
-	icon_state = "whiteblue"
+/obj/machinery/door/airlock/medical/glass{
+	name = "Break Room Maintenance";
+	req_access = list(5)
 	},
+/turf/simulated/floor/plating,
 /area/space)
 "dw" = (
 /obj/item/weapon/flora/random,
@@ -2011,9 +2011,9 @@
 	},
 /area/space)
 "fK" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Medbay Maintenance";
-	req_access = list(72)
+/obj/machinery/door/airlock/medical{
+	name = "Patients Maintenance";
+	req_access = list(12)
 	},
 /turf/simulated/floor/plating,
 /area/space)
@@ -2164,12 +2164,10 @@
 	},
 /area/space)
 "gf" = (
-/obj/machinery/computer/crew{
-	dir = 4
-	},
+/obj/random/vending/cola,
 /turf/simulated/floor{
 	dir = 5;
-	icon_state = "vault"
+	icon_state = "cafeteria"
 	},
 /area/space)
 "gg" = (
@@ -2554,6 +2552,12 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
+"hp" = (
+/obj/machinery/computer/med_data,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "hq" = (
 /turf/simulated/floor{
 	dir = 8;
@@ -2752,7 +2756,7 @@
 	},
 /area/space)
 "hO" = (
-/obj/structure/stool/bed/chair/comfy/teal,
+/obj/machinery/computer/med_data,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -3203,6 +3207,13 @@
 /obj/item/weapon/bikehorn/rubberducky,
 /turf/simulated/floor/beach/water/waterpool,
 /area/space)
+"iV" = (
+/obj/structure/bookcase/manuals/medical,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/space)
 "iW" = (
 /obj/machinery/door/airlock/security{
 	name = "Washroom";
@@ -3434,6 +3445,14 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkred"
+	},
+/area/space)
+"jD" = (
+/obj/structure/table/glass,
+/obj/random/foods/food_snack,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
 	},
 /area/space)
 "jE" = (
@@ -4008,6 +4027,15 @@
 	icon_state = "dark"
 	},
 /area/space)
+"lt" = (
+/obj/structure/stool/bed/chair/comfy/teal{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/space)
 "lu" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor{
@@ -4477,6 +4505,13 @@
 /turf/simulated/floor{
 	dir = 10;
 	icon_state = "warning"
+	},
+/area/space)
+"mN" = (
+/obj/structure/closet/secure_closet/personal/patient,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "mO" = (
@@ -5474,7 +5509,7 @@
 	pixel_y = 2
 	},
 /turf/simulated/floor{
-	dir = 8;
+	dir = 9;
 	icon_state = "warndark"
 	},
 /area/space)
@@ -5502,14 +5537,14 @@
 	},
 /area/space)
 "pE" = (
-/obj/structure/rack,
-/obj/item/weapon/storage/belt/medical,
-/obj/item/weapon/storage/belt/medical{
-	pixel_y = 4
+/obj/structure/table/glass,
+/obj/machinery/kitchen_machine/microwave{
+	pixel_x = -3;
+	pixel_y = 6
 	},
 /turf/simulated/floor{
 	dir = 5;
-	icon_state = "vault"
+	icon_state = "cafeteria"
 	},
 /area/space)
 "pF" = (
@@ -5992,7 +6027,8 @@
 "qL" = (
 /obj/machinery/chem_master,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "qM" = (
@@ -6435,7 +6471,7 @@
 	req_access = list(72)
 	},
 /turf/simulated/floor{
-	icon_state = "white"
+	icon_state = "dark"
 	},
 /area/space)
 "sj" = (
@@ -6706,6 +6742,13 @@
 	icon_state = "dark"
 	},
 /area/space)
+"sV" = (
+/obj/machinery/vending/coffee,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/space)
 "sW" = (
 /obj/structure/drain{
 	drainage = 2
@@ -6718,7 +6761,7 @@
 	},
 /area/space)
 "sX" = (
-/obj/structure/table/glass,
+/obj/random/vending/snack,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -6961,6 +7004,22 @@
 	dir = 8
 	},
 /turf/simulated/floor,
+/area/space)
+"tK" = (
+/obj/structure/rack,
+/obj/item/weapon/cane{
+	pixel_x = 3
+	},
+/obj/item/weapon/cane{
+	pixel_x = -3
+	},
+/obj/item/weapon/gun/syringe,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/mask/muzzle,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
 /area/space)
 "tL" = (
 /obj/structure/table/woodentable,
@@ -7429,19 +7488,38 @@
 	icon_state = "darkredfull"
 	},
 /area/space)
+"uU" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/box/cups,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/space)
 "uV" = (
 /obj/structure/rack,
-/obj/item/weapon/cane{
-	pixel_x = 3
+/obj/item/clothing/shoes/magboots,
+/obj/item/clothing/mask/gas/coloured,
+/obj/item/weapon/tank/emergency_oxygen/double,
+/obj/item/clothing/suit/space/rig/medical,
+/obj/item/weapon/medical/teleporter,
+/obj/item/clothing/head/helmet/space/rig/medical,
+/obj/item/clothing/glasses/hud/health,
+/obj/structure/window/reinforced{
+	dir = 8
 	},
-/obj/item/weapon/cane{
-	pixel_x = -3
+/obj/structure/window/reinforced{
+	dir = 4
 	},
-/obj/item/weapon/gun/syringe,
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/mask/muzzle,
+/obj/machinery/door/window/eastright{
+	dir = 2;
+	icon_state = "left";
+	name = "Paramedic equipment";
+	req_access = list(70)
+	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "uW" = (
@@ -7458,12 +7536,11 @@
 	},
 /area/space)
 "uY" = (
-/obj/machinery/computer/med_data{
-	dir = 4
-	},
+/obj/structure/table/glass,
+/obj/item/weapon/storage/box/donkpockets,
 /turf/simulated/floor{
 	dir = 5;
-	icon_state = "vault"
+	icon_state = "cafeteria"
 	},
 /area/space)
 "uZ" = (
@@ -7492,6 +7569,13 @@
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
+	},
+/area/space)
+"vc" = (
+/obj/structure/stool/bed/roller,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "vf" = (
@@ -7683,6 +7767,13 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
+/area/space)
+"vJ" = (
+/obj/structure/stool,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "whiteblue"
+	},
 /area/space)
 "vK" = (
 /obj/machinery/computer/mecha,
@@ -8239,6 +8330,17 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "caution"
+	},
+/area/space)
+"xf" = (
+/obj/machinery/door/airlock/medical/glass{
+	id_tag = "";
+	name = "Surgery";
+	req_access = list(5)
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "xg" = (
@@ -8986,6 +9088,17 @@
 	icon_state = "vault"
 	},
 /area/space)
+"ze" = (
+/obj/structure/table/glass,
+/obj/item/weapon/reagent_containers/food/snacks/sliceable/pizza/margherita,
+/obj/structure/sign/warning/smoking{
+	pixel_x = -32
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/space)
 "zf" = (
 /turf/simulated/floor{
 	dir = 9;
@@ -9614,7 +9727,8 @@
 	pixel_y = 1
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 1;
+	icon_state = "warndark"
 	},
 /area/space)
 "AP" = (
@@ -10104,12 +10218,26 @@
 	},
 /area/space)
 "Cl" = (
-/obj/structure/closet/crate/medical,
-/obj/item/roller,
-/obj/item/roller,
-/obj/item/roller,
-/obj/item/bodybag/cryobag,
-/obj/item/bodybag/cryobag,
+/obj/structure/rack,
+/obj/item/clothing/shoes/magboots,
+/obj/item/clothing/mask/gas/coloured,
+/obj/item/weapon/tank/emergency_oxygen/double,
+/obj/item/clothing/suit/space/rig/medical,
+/obj/item/weapon/medical/teleporter,
+/obj/item/clothing/head/helmet/space/rig/medical,
+/obj/machinery/door/window/eastright{
+	dir = 2;
+	icon_state = "left";
+	name = "Paramedic equipment";
+	req_access = list(70)
+	},
+/obj/item/clothing/glasses/hud/health,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -10248,7 +10376,7 @@
 /obj/item/weapon/packageWrap,
 /obj/item/weapon/airlock_painter,
 /turf/simulated/floor{
-	dir = 4;
+	dir = 6;
 	icon_state = "warndark"
 	},
 /area/space)
@@ -11991,7 +12119,7 @@
 	},
 /area/space)
 "Hh" = (
-/obj/structure/stool/bed/roller,
+/obj/item/weapon/flora/random,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "whiteblue"
@@ -12512,6 +12640,10 @@
 /area/space)
 "IC" = (
 /obj/structure/table/glass,
+/obj/item/weapon/reagent_containers/spray/cleaner{
+	pixel_x = 2;
+	pixel_y = 2
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whiteblue"
@@ -12799,7 +12931,8 @@
 	req_access = list(5)
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "JC" = (
@@ -12878,6 +13011,15 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/station/civilian/fitness)
+"JN" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/fancy/donut_box,
+/obj/random/foods/drink_bottle,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/space)
 "JO" = (
 /obj/structure/closet/emcloset,
 /turf/simulated/floor{
@@ -13135,19 +13277,20 @@
 "KE" = (
 /obj/structure/table/glass,
 /obj/item/weapon/storage/box/beakers{
-	pixel_x = 9;
-	pixel_y = 11
-	},
-/obj/item/weapon/storage/box/syringes{
-	pixel_x = -7;
+	pixel_x = 8;
 	pixel_y = 10
 	},
+/obj/item/weapon/storage/box/syringes{
+	pixel_x = -8;
+	pixel_y = 9
+	},
 /obj/item/weapon/storage/box/bodybags{
-	pixel_x = -7;
-	pixel_y = -1
+	pixel_x = -8;
+	pixel_y = -8
 	},
 /obj/item/weapon/storage/box/cdeathalarm_kit{
-	pixel_x = 9
+	pixel_x = 8;
+	pixel_y = -7
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -13320,7 +13463,7 @@
 	},
 /area/space)
 "KX" = (
-/obj/structure/stool/bed/chair/comfy/teal,
+/obj/machinery/computer/crew,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -13529,7 +13672,7 @@
 /area/space)
 "LN" = (
 /obj/machinery/door/airlock/medical/glass{
-	name = "Chemistry Lab";
+	name = "Chemistry Maintenance";
 	req_access = list(5,33)
 	},
 /turf/simulated/floor/plating,
@@ -14032,6 +14175,10 @@
 	pixel_x = -4;
 	pixel_y = 8
 	},
+/obj/item/weapon/reagent_containers/glass/beaker/teapot{
+	pixel_x = -2;
+	pixel_y = 4
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -14231,11 +14378,11 @@
 "NF" = (
 /obj/structure/table/glass,
 /obj/item/weapon/storage/box/masks{
-	pixel_x = -6;
+	pixel_x = -8;
 	pixel_y = -6
 	},
 /obj/item/weapon/storage/box/gloves{
-	pixel_x = 9;
+	pixel_x = 8;
 	pixel_y = -6
 	},
 /turf/simulated/floor{
@@ -14486,8 +14633,7 @@
 "Os" = (
 /obj/structure/stool/bed/roller,
 /turf/simulated/floor{
-	dir = 9;
-	icon_state = "whiteblue"
+	icon_state = "dark"
 	},
 /area/space)
 "Ot" = (
@@ -15348,27 +15494,13 @@
 	},
 /area/space)
 "QH" = (
-/obj/structure/window/reinforced,
 /obj/structure/rack,
-/obj/item/clothing/shoes/magboots,
-/obj/item/clothing/mask/gas/coloured,
-/obj/item/weapon/tank/emergency_oxygen/double,
-/obj/item/clothing/suit/space/rig/medical,
-/obj/item/weapon/medical/teleporter,
-/obj/item/clothing/head/helmet/space/rig/medical,
-/obj/machinery/door/window/eastright{
-	dir = 8;
-	icon_state = "left";
-	name = "Paramedic equipment";
-	req_access = list(70)
-	},
-/obj/item/clothing/glasses/hud/health,
-/obj/structure/window/reinforced{
-	dir = 1
+/obj/item/weapon/storage/belt/medical,
+/obj/item/weapon/storage/belt/medical{
+	pixel_y = 4
 	},
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "vault"
+	icon_state = "dark"
 	},
 /area/space)
 "QK" = (
@@ -15477,7 +15609,7 @@
 /obj/item/weapon/storage/firstaid/fire{
 	pixel_y = -6
 	},
-/obj/structure/table/glass,
+/obj/structure/rack,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whiteblue"
@@ -15641,26 +15773,15 @@
 	},
 /area/space)
 "Rx" = (
-/obj/structure/window/reinforced,
-/obj/structure/rack,
-/obj/item/clothing/shoes/magboots,
-/obj/item/clothing/mask/gas/coloured,
-/obj/item/weapon/tank/emergency_oxygen/double,
-/obj/item/clothing/suit/space/rig/medical,
-/obj/item/weapon/medical/teleporter,
-/obj/item/clothing/head/helmet/space/rig/medical,
-/obj/machinery/door/window/eastright{
-	dir = 8;
-	icon_state = "left";
-	name = "Paramedic equipment";
-	req_access = list(70)
-	},
-/obj/item/clothing/glasses/hud/health,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/closet/crate/medical,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/bodybag/cryobag,
+/obj/item/bodybag/cryobag,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "Ry" = (
@@ -16121,6 +16242,13 @@
 	icon_state = "dark"
 	},
 /area/space)
+"SM" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "cafeteria"
+	},
+/area/space)
 "SN" = (
 /obj/machinery/door/firedoor,
 /obj/structure/grille,
@@ -16283,6 +16411,15 @@
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "bot"
+	},
+/area/space)
+"Te" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "Break Room";
+	req_access = list(5)
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space)
 "Tf" = (
@@ -16986,6 +17123,20 @@
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "whiteblue"
+	},
+/area/space)
+"UW" = (
+/obj/item/weapon/reagent_containers/dropper/precision,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/dropper{
+	pixel_y = -4
+	},
+/obj/structure/table/glass,
+/obj/item/clothing/glasses/science{
+	pixel_y = 1
+	},
+/turf/simulated/floor{
+	icon_state = "warndark"
 	},
 /area/space)
 "UX" = (
@@ -17752,10 +17903,10 @@
 	},
 /area/space)
 "Xj" = (
-/obj/item/weapon/flora/random,
+/obj/structure/stool/bed/chair/wheelchair,
 /turf/simulated/floor{
-	dir = 10;
-	icon_state = "whiteblue"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "Xl" = (
@@ -17856,7 +18007,8 @@
 "XB" = (
 /obj/machinery/chem_dispenser,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "XD" = (
@@ -39360,9 +39512,9 @@ Hp
 Vn
 qL
 XB
-AO
-Hp
-eu
+UW
+PW
+hp
 ib
 ib
 ib
@@ -39618,8 +39770,8 @@ rw
 xL
 oM
 CD
-Hp
-eu
+mA
+KX
 ib
 ib
 ib
@@ -39875,7 +40027,7 @@ ib
 ib
 ib
 SP
-Hp
+wa
 eu
 ib
 ib
@@ -40132,7 +40284,7 @@ Sx
 ib
 ib
 mW
-ib
+ky
 Hm
 RB
 ib
@@ -40640,8 +40792,8 @@ jI
 jI
 Hp
 Hp
-Hp
-Hp
+gq
+hz
 HZ
 nz
 ky
@@ -40903,17 +41055,17 @@ Kk
 Kk
 Kk
 SS
-jI
-eu
+ZQ
+Wx
 RB
 ib
 qt
-uY
-gf
-jI
+eu
+ZP
+ZQ
 Os
-Kk
-Xj
+vc
+Wx
 jI
 tX
 Kk
@@ -41151,7 +41303,7 @@ cd
 cd
 cd
 cp
-ce
+zA
 RB
 ib
 ib
@@ -41164,13 +41316,13 @@ bq
 Kk
 tZ
 ib
-qt
-ce
-ce
+Wv
+Kk
+Kk
 JA
-RB
-ib
-qt
+Kk
+Kk
+rQ
 pt
 RB
 ib
@@ -41408,7 +41560,7 @@ cd
 cd
 cd
 jI
-pE
+ce
 RB
 ib
 ib
@@ -41421,11 +41573,11 @@ qS
 ZT
 gl
 ib
-qt
-zA
-zA
-jI
-Hh
+dc
+ZT
+ZT
+xf
+gl
 ib
 NQ
 PW
@@ -41674,14 +41826,14 @@ KE
 IC
 ZT
 Bj
-jI
+ZQ
 vz
 RB
 ib
 qt
 Wx
-jI
-jI
+eu
+ZQ
 Hh
 ib
 NQ
@@ -41923,12 +42075,12 @@ cd
 cd
 jI
 Cl
-ce
 zA
-eu
+ce
+Xj
 jI
-jI
-jI
+gq
+hz
 si
 jI
 jI
@@ -41938,7 +42090,7 @@ AP
 ZS
 jI
 jI
-LS
+jI
 RB
 ib
 NQ
@@ -42182,7 +42334,7 @@ jI
 jI
 Rx
 QH
-eu
+tK
 jI
 xu
 pP
@@ -42195,10 +42347,10 @@ ib
 qt
 uN
 PW
-LS
-RB
-ib
-qt
+mN
+vJ
+ZT
+IF
 CX
 RB
 ib
@@ -42453,9 +42605,9 @@ qt
 ZA
 Rf
 LS
-HR
-ZT
-dv
+Em
+ce
+Mm
 jI
 wt
 ZT
@@ -42709,10 +42861,10 @@ ib
 qt
 AN
 jI
-jI
-jI
+gq
+hz
 AC
-jI
+ZQ
 jI
 jI
 dW
@@ -43732,7 +43884,7 @@ jI
 jI
 jI
 jI
-yL
+RB
 ib
 dc
 ZT
@@ -43981,13 +44133,13 @@ cd
 cd
 jI
 sX
-sX
-sX
-sX
-sX
-sX
-sX
-jI
+my
+JN
+ze
+uU
+my
+sV
+PW
 KX
 RB
 ib
@@ -44237,14 +44389,14 @@ Hp
 cd
 cd
 jI
-sX
+gf
 ko
+lt
+lt
+lt
 ko
-ko
-ko
-ko
-sX
-jI
+SM
+wa
 hO
 RB
 ib
@@ -44493,7 +44645,7 @@ NA
 Hp
 cd
 cd
-cd
+dv
 ko
 ko
 ko
@@ -44501,7 +44653,7 @@ ko
 ko
 ko
 ko
-ko
+Te
 ce
 RB
 ib
@@ -44751,13 +44903,13 @@ Hp
 cd
 cd
 jI
-sX
+pE
 ko
 ko
 ko
 ko
-sX
-sX
+vA
+iV
 jI
 TQ
 HR
@@ -45008,8 +45160,8 @@ Hp
 cd
 cd
 jI
-sX
-sX
+uY
+jD
 jI
 Zh
 Xn
@@ -46810,6 +46962,7 @@ uZ
 uZ
 PB
 ce
+ji
 uZ
 uZ
 uZ
@@ -46818,8 +46971,7 @@ uZ
 uZ
 uZ
 uZ
-uZ
-uZ
+PB
 zi
 ge
 KM
@@ -47067,7 +47219,7 @@ JC
 JC
 hm
 Zh
-QW
+VD
 JC
 JC
 JC
@@ -47324,6 +47476,7 @@ tj
 tj
 Up
 ce
+zT
 tj
 tj
 tj
@@ -47332,8 +47485,7 @@ tj
 tj
 tj
 tj
-tj
-tj
+Up
 zi
 ge
 hq
@@ -47543,10 +47695,10 @@ cd
 cd
 cd
 cd
-cd
-cd
-cd
-cd
+jI
+jI
+jI
+jI
 cd
 cd
 cd
@@ -47798,12 +47950,12 @@ cd
 cd
 cd
 cd
+jI
+jI
+jI
 cd
 cd
-cd
-cd
-cd
-cd
+jI
 cd
 cd
 jI
@@ -48055,12 +48207,12 @@ cd
 cd
 cd
 cd
+jI
 cd
 cd
 cd
 cd
-cd
-cd
+jI
 cd
 cd
 jI
@@ -48312,12 +48464,12 @@ cd
 cd
 cd
 cd
+jI
 cd
 cd
 cd
 cd
-cd
-cd
+jI
 cd
 cd
 jI
@@ -48569,12 +48721,12 @@ cd
 cd
 cd
 cd
-cd
-cd
-cd
-cd
-cd
-cd
+jI
+jI
+jI
+jI
+jI
+jI
 cd
 cd
 jI
@@ -50397,9 +50549,9 @@ Hg
 cA
 jI
 jI
-JC
+ce
 Zh
-JC
+ce
 jI
 Hp
 Hp
