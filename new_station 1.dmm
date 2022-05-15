@@ -241,13 +241,9 @@
 /turf/environment/space,
 /area/shuttle/mining/station)
 "aG" = (
-/obj/structure/rack,
-/obj/item/stack/rods{
-	amount = 50
-	},
+/obj/structure/closet/firecloset,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "vault"
+	icon_state = "yellow"
 	},
 /area/space)
 "aH" = (
@@ -943,6 +939,13 @@
 	icon_state = "vault"
 	},
 /area/space)
+"cu" = (
+/obj/structure/table,
+/obj/item/device/flashlight,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "cv" = (
 /obj/machinery/washing_machine,
 /turf/simulated/floor{
@@ -980,9 +983,9 @@
 	},
 /area/space)
 "cz" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/machinery/space_heater,
 /turf/simulated/floor{
-	icon_state = "dark"
+	icon_state = "yellow"
 	},
 /area/space)
 "cA" = (
@@ -1075,17 +1078,7 @@
 /turf/simulated/floor/whitegreed,
 /area/space)
 "cK" = (
-/obj/structure/table,
-/obj/item/weapon/airlock_electronics{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/weapon/airlock_electronics{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/weapon/airlock_electronics,
-/obj/item/stack/cable_coil/random,
+/obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor{
 	icon_state = "yellow"
 	},
@@ -1779,14 +1772,9 @@
 /turf/simulated/floor/grass,
 /area/space)
 "eN" = (
-/obj/structure/rack,
-/obj/random/tools/tech_supply,
-/obj/random/tools/tech_supply,
-/obj/random/tools/tech_supply,
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/recharge_station,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "vault"
+	icon_state = "yellow"
 	},
 /area/space)
 "eO" = (
@@ -2186,7 +2174,8 @@
 /area/space)
 "fU" = (
 /obj/structure/rack,
-/obj/random/tools/toolbox,
+/obj/item/weapon/storage/toolbox/emergency,
+/obj/random/tools/tool,
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "yellow"
@@ -2244,8 +2233,8 @@
 /turf/simulated/floor/plating,
 /area/space)
 "gd" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Engineering Maintainance";
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Engineering Break Room Maintenance";
 	req_access = list(71)
 	},
 /turf/simulated/floor/plating,
@@ -2623,7 +2612,7 @@
 /area/space)
 "hl" = (
 /obj/machinery/door/airlock/mining{
-	name = "Recycler's workplace";
+	name = "Recycler's workplace Maintenance";
 	req_access = list(67)
 	},
 /turf/simulated/floor/plating,
@@ -3476,7 +3465,10 @@
 /turf/simulated/floor/plating,
 /area/space)
 "jr" = (
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/rack,
+/obj/item/stack/rods{
+	amount = 50
+	},
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "brown"
@@ -4471,8 +4463,8 @@
 	name = "Atmos Blast Door";
 	opacity = 0
 	},
-/obj/machinery/door/airlock/maintenance{
-	name = "Engineering Maintainance";
+/obj/machinery/door/airlock/atmos/glass{
+	name = "Atmospherics Monitoring Maintenance";
 	req_access = list(71)
 	},
 /turf/simulated/floor/plating,
@@ -6423,10 +6415,10 @@
 	},
 /area/space)
 "qR" = (
-/obj/structure/reagent_dispensers/fueltank,
+/obj/machinery/mineral/equipment_vendor,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "yellow"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "qS" = (
@@ -8260,6 +8252,13 @@
 /obj/item/weapon/card/id/captains_spare,
 /turf/simulated/floor/wood,
 /area/space)
+"vF" = (
+/obj/machinery/door/airlock/mining{
+	name = "Mining Equpment Maintenance";
+	req_access = list(48)
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "vG" = (
 /obj/item/weapon/clipboard{
 	pixel_y = 3
@@ -8714,6 +8713,14 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"wG" = (
+/obj/structure/closet/crate/scicrate,
+/obj/random/science,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "browncorner"
+	},
+/area/space)
 "wH" = (
 /turf/simulated/floor{
 	dir = 1;
@@ -9152,11 +9159,13 @@
 	},
 /area/station/hallway/secondary/exit)
 "xS" = (
-/obj/machinery/door/airlock/mining/glass{
-	name = "Cargo Bay Maintenance";
-	req_access = list(31)
+/obj/machinery/door/airlock/mining{
+	name = "Mining Equpment";
+	req_access = list(48)
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "xT" = (
 /obj/item/weapon/folder{
@@ -9371,15 +9380,8 @@
 	},
 /area/station/cargo/storage)
 "yz" = (
-/obj/structure/rack,
-/obj/item/stack/sheet/metal{
-	amount = 50
-	},
 /turf/environment/space,
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "yellow"
-	},
+/turf/simulated/floor/plating,
 /area/space)
 "yA" = (
 /obj/machinery/atmospherics/components/unary/cryo_cell,
@@ -9869,8 +9871,11 @@
 	},
 /area/space)
 "zE" = (
-/obj/structure/closet/crate/scicrate,
-/obj/random/science,
+/obj/structure/rack,
+/obj/random/tools/tech_supply,
+/obj/random/tools/tech_supply,
+/obj/random/tools/tech_supply,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "brown"
@@ -10173,7 +10178,7 @@
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/exit)
 "As" = (
-/obj/structure/reagent_dispensers/fueltank,
+/obj/structure/reagent_dispensers/aqueous_foam_tank,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -10531,10 +10536,18 @@
 /area/space)
 "Bp" = (
 /obj/structure/rack,
-/obj/item/stack/sheet/glass,
+/obj/item/weapon/pickaxe/drill{
+	pixel_y = 4
+	},
+/obj/item/weapon/pickaxe/drill{
+	pixel_y = 2
+	},
+/obj/item/weapon/pickaxe/drill,
+/obj/machinery/alarm{
+	pixel_y = 26
+	},
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "vault"
+	icon_state = "dark"
 	},
 /area/space)
 "Bq" = (
@@ -10975,12 +10988,11 @@
 	},
 /area/space)
 "Cx" = (
-/obj/machinery/door/airlock/glass{
-	name = "Auxiliary Tool Storage";
-	req_access = list(12)
-	},
+/obj/structure/table,
+/obj/random/foods/drink_bottle,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "brown"
 	},
 /area/space)
 "Cy" = (
@@ -11173,6 +11185,10 @@
 	icon_state = "wood-broken5"
 	},
 /area/space)
+"CW" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/simulated/floor/plating,
+/area/space)
 "CX" = (
 /obj/machinery/door/airlock/medical{
 	name = "Operating Theatre 1";
@@ -11269,7 +11285,7 @@
 	},
 /area/space)
 "Dj" = (
-/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -12356,14 +12372,8 @@
 	},
 /area/space)
 "FQ" = (
-/obj/structure/table,
-/obj/item/clothing/gloves/fyellow,
-/obj/item/clothing/suit/storage/hazardvest,
-/obj/item/device/multitool,
-/obj/random/tools/tool,
 /turf/simulated/floor{
-	dir = 9;
-	icon_state = "yellow"
+	icon_state = "bar"
 	},
 /area/space)
 "FR" = (
@@ -12753,10 +12763,8 @@
 /area/space)
 "GO" = (
 /obj/structure/rack,
-/obj/item/weapon/storage/toolbox/electrical{
-	pixel_y = 6
-	},
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/weapon/storage/toolbox/electrical,
+/obj/random/tools/tool,
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "yellow"
@@ -12923,6 +12931,14 @@
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "whiteblue"
+	},
+/area/space)
+"Hj" = (
+/obj/structure/rack,
+/obj/item/stack/sheet/glass,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "brown"
 	},
 /area/space)
 "Hk" = (
@@ -13094,10 +13110,11 @@
 	},
 /area/space)
 "HJ" = (
-/obj/structure/closet/firecloset,
+/obj/structure/stool/bed/chair/office/dark{
+	dir = 4
+	},
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "vault"
+	icon_state = "bar"
 	},
 /area/space)
 "HK" = (
@@ -13370,6 +13387,12 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor{
 	icon_state = "darkred"
+	},
+/area/space)
+"In" = (
+/obj/structure/closet/secure_closet/miner,
+/turf/simulated/floor{
+	icon_state = "brown"
 	},
 /area/space)
 "Io" = (
@@ -14177,10 +14200,11 @@
 	},
 /area/space)
 "KI" = (
-/obj/structure/closet/toolcloset,
+/obj/structure/table,
+/obj/item/weapon/folder/brown,
 /turf/simulated/floor{
-	dir = 6;
-	icon_state = "yellow"
+	dir = 4;
+	icon_state = "brown"
 	},
 /area/space)
 "KJ" = (
@@ -15149,7 +15173,6 @@
 	pixel_y = 4
 	},
 /obj/item/stack/cable_coil/random,
-/obj/item/weapon/wirecutters,
 /obj/random/tools/tool,
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -15431,7 +15454,6 @@
 "NW" = (
 /obj/structure/table,
 /obj/random/tools/technology_scanner,
-/obj/item/weapon/storage/toolbox/emergency,
 /obj/random/tools/tool,
 /turf/simulated/floor{
 	dir = 5;
@@ -16052,6 +16074,19 @@
 	icon_state = "greenbluefull"
 	},
 /area/space)
+"PA" = (
+/obj/structure/table,
+/obj/machinery/cell_charger{
+	pixel_y = 5
+	},
+/obj/item/weapon/stock_parts/cell/high{
+	charge = 100;
+	maxcharge = 15000
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "PB" = (
 /turf/simulated/floor{
 	dir = 10;
@@ -16501,15 +16536,11 @@
 	},
 /area/space)
 "QK" = (
-/obj/structure/table,
-/obj/item/weapon/module/power_control{
-	pixel_x = 2;
-	pixel_y = 2
+/obj/machinery/hologram/holopad{
+	pixel_x = 16
 	},
-/obj/item/weapon/module/power_control,
-/obj/item/weapon/screwdriver,
 /turf/simulated/floor{
-	icon_state = "yellow"
+	icon_state = "bar"
 	},
 /area/space)
 "QL" = (
@@ -18037,16 +18068,11 @@
 	},
 /area/space)
 "Ux" = (
-/obj/structure/rack,
-/obj/item/stack/sheet/glass{
-	amount = 50
-	},
-/obj/item/stack/rods{
-	amount = 50
-	},
+/obj/structure/table,
+/obj/item/weapon/packageWrap,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "yellow"
+	dir = 4;
+	icon_state = "brown"
 	},
 /area/space)
 "Uy" = (
@@ -18897,6 +18923,13 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"WK" = (
+/obj/structure/closet/secure_closet/miner,
+/turf/simulated/floor{
+	dir = 10;
+	icon_state = "brown"
+	},
+/area/space)
 "WM" = (
 /obj/structure/table/glass,
 /obj/item/weapon/folder/purple{
@@ -19581,6 +19614,15 @@
 /obj/machinery/disposal,
 /turf/simulated/floor/carpet/blue2,
 /area/space)
+"YA" = (
+/obj/machinery/door/airlock/mining{
+	name = "Recycler's workplace";
+	req_access = list(67)
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "YB" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor{
@@ -19870,6 +19912,13 @@
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "red"
+	},
+/area/space)
+"Zn" = (
+/obj/machinery/vending/assist,
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "brown"
 	},
 /area/space)
 "Zo" = (
@@ -45275,7 +45324,7 @@ jI
 jI
 jI
 jI
-wR
+jI
 wR
 wR
 wR
@@ -45530,8 +45579,8 @@ cd
 jI
 jp
 Vi
-pl
-jI
+PA
+cu
 jI
 jI
 jI
@@ -45788,7 +45837,7 @@ hl
 ce
 ce
 ce
-cz
+ce
 eB
 Dj
 jI
@@ -46307,7 +46356,7 @@ Rl
 Rl
 jI
 cd
-cd
+CW
 jI
 Sg
 Sg
@@ -47072,7 +47121,7 @@ Dt
 uC
 jI
 jI
-ce
+YA
 jI
 jI
 ey
@@ -48861,7 +48910,7 @@ Wr
 uo
 sx
 UZ
-UZ
+fW
 Uk
 FO
 uo
@@ -49632,16 +49681,16 @@ jI
 cd
 cd
 cd
-cd
-cd
-cd
-cd
-cd
-cd
 jI
-aG
+qR
+yg
+cC
+cC
+cC
+WK
+jI
 jr
-AR
+wG
 JC
 Vu
 rr
@@ -49886,17 +49935,17 @@ uo
 xs
 jI
 jI
-jI
-jI
-jI
-jI
-cd
-cd
 cd
 cd
 cd
 jI
-eN
+Bp
+Qd
+FQ
+QK
+FQ
+In
+jI
 zE
 Wk
 RE
@@ -50143,18 +50192,18 @@ Vs
 rl
 IJ
 jI
-FQ
-nt
-qR
-jI
-jI
-cd
 cd
 cd
 cd
 jI
-Bp
+Mm
 Qd
+HJ
+FQ
+FQ
+In
+jI
+Hj
 Wk
 sP
 Vu
@@ -50398,18 +50447,18 @@ SU
 JC
 JC
 JC
-MS
+aG
+jI
+cd
+cd
+cd
+jI
+jI
 Cx
-nP
-JC
-JC
-cK
-jI
-cd
-cd
-cd
-cd
-jI
+KI
+Ux
+UZ
+Zn
 jI
 Qd
 Cz
@@ -50655,18 +50704,18 @@ nP
 JC
 JC
 JC
-MS
-ME
-Ux
-JC
-JC
-QK
+cz
 jI
 cd
 cd
 cd
 cd
-cd
+jI
+jI
+jI
+jI
+vF
+jI
 jI
 kA
 ee
@@ -50912,13 +50961,13 @@ nP
 JC
 fh
 JC
-MS
-Od
-yz
-Cc
-Cc
-KI
+cK
 jI
+yz
+cd
+cd
+cd
+cd
 cd
 cd
 cd
@@ -51169,13 +51218,13 @@ SU
 JC
 DE
 JC
-MS
+eN
 jI
 jI
-Mm
-ce
-HJ
-jI
+cd
+cd
+cd
+cd
 cd
 cd
 cd
@@ -51429,10 +51478,10 @@ JC
 MS
 ku
 jI
-jI
-XG
-jI
-jI
+cd
+cd
+cd
+cd
 cd
 cd
 cd
