@@ -1196,12 +1196,8 @@
 	},
 /area/space)
 "cZ" = (
-/obj/machinery/computer/security/engineering{
-	dir = 8
-	},
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "caution"
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
 	},
 /area/space)
 "da" = (
@@ -1423,10 +1419,8 @@
 	},
 /area/space)
 "dF" = (
-/obj/structure/closet/wardrobe/atmospherics_yellow,
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "caution"
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
 	},
 /area/space)
 "dG" = (
@@ -3896,16 +3890,11 @@
 	},
 /area/space)
 "jT" = (
-/obj/structure/table,
-/obj/machinery/cell_charger,
-/obj/item/weapon/stock_parts/cell/high{
-	charge = 100;
-	maxcharge = 15000
+/obj/machinery/door/poddoor{
+	id = "toxinsdriver";
+	name = "Toxins Launcher Bay Door"
 	},
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "cautioncorner"
-	},
+/turf/simulated/floor/plating,
 /area/space)
 "jU" = (
 /turf/simulated/floor/wood{
@@ -4140,13 +4129,9 @@
 	},
 /area/space)
 "kw" = (
-/obj/item/weapon/storage/box/lights/mixed{
-	pixel_x = -3
-	},
-/obj/structure/rack,
-/turf/simulated/floor{
+/turf/simulated/floor/plating/airless{
 	dir = 8;
-	icon_state = "caution"
+	icon_state = "warnplate"
 	},
 /area/space)
 "kx" = (
@@ -4653,10 +4638,12 @@
 /turf/simulated/floor/wood,
 /area/space)
 "lP" = (
-/obj/structure/stool/bed/chair/office/dark{
+/obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg1"
+	},
 /area/space)
 "lQ" = (
 /turf/simulated/floor{
@@ -4749,10 +4736,12 @@
 	},
 /area/space)
 "mc" = (
-/obj/structure/table,
-/turf/simulated/floor{
+/obj/machinery/mass_driver{
 	dir = 8;
-	icon_state = "caution"
+	id = "toxinsdriver"
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "platebotc"
 	},
 /area/space)
 "md" = (
@@ -7038,6 +7027,10 @@
 	icon_state = "yellow"
 	},
 /area/space)
+"rd" = (
+/obj/machinery/vending/cigarette,
+/turf/simulated/floor,
+/area/space)
 "re" = (
 /obj/structure/stool/bed/chair/comfy/brown{
 	dir = 8
@@ -9264,16 +9257,8 @@
 	},
 /area/space)
 "ws" = (
-/obj/machinery/requests_console/atmos{
-	pixel_x = 30
-	},
-/obj/machinery/alarm{
-	pixel_y = 20
-	},
-/obj/structure/table/reinforced,
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "caution"
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg1"
 	},
 /area/space)
 "wt" = (
@@ -9479,7 +9464,12 @@
 /turf/simulated/floor/plating,
 /area/space)
 "wP" = (
-/obj/structure/stool/bed/chair/office/dark,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/window/southright,
+/obj/machinery/door/window/southright{
+	dir = 1;
+	name = "Forensic door"
+	},
 /turf/simulated/floor,
 /area/space)
 "wQ" = (
@@ -9589,16 +9579,11 @@
 /turf/simulated/floor,
 /area/space)
 "xe" = (
-/obj/machinery/computer/general_air_control{
-	dir = 8;
-	frequency = 1441;
-	name = "Tank Monitor";
-	sensors = list("n2_sensor" = "Nitrogen", "o2_sensor" = "Oxygen", "co2_sensor" = "Carbon Dioxide", "tox_sensor" = "Toxins", "n2o_sensor" = "Nitrous Oxide", "waste_sensor" = "Gas Mix Tank")
+/obj/structure/disposalpipe/trunk,
+/obj/structure/disposaloutlet{
+	dir = 1
 	},
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "caution"
-	},
+/turf/simulated/wall,
 /area/space)
 "xf" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -9687,13 +9672,15 @@
 	},
 /area/space)
 "xq" = (
-/obj/machinery/computer/atmoscontrol{
+/obj/machinery/driver_button{
+	id = "toxinsdriver";
+	layer = 4;
+	pixel_y = 24
+	},
+/obj/structure/stool/bed/chair/comfy/beige{
 	dir = 8
 	},
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "caution"
-	},
+/turf/simulated/floor,
 /area/space)
 "xr" = (
 /obj/structure/table/woodentable,
@@ -9888,12 +9875,10 @@
 	},
 /area/space)
 "xP" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Engineering Maintainance";
-	req_access = list(71)
+/obj/structure/disposalpipe/segment{
+	dir = 1
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
+/turf/simulated/floor,
 /area/space)
 "xQ" = (
 /obj/machinery/door/firedoor,
@@ -10931,10 +10916,12 @@
 	},
 /area/space)
 "Al" = (
-/obj/structure/table,
+/obj/structure/sign/warning/moving_parts{
+	pixel_x = -30
+	},
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "caution"
+	dir = 8;
+	icon_state = "warningcorner"
 	},
 /area/space)
 "Am" = (
@@ -11149,16 +11136,8 @@
 	},
 /area/space)
 "AM" = (
-/obj/machinery/computer/station_alert,
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the Engineering Department.";
-	name = "Engineering Monitor";
-	network = list("Engineering");
-	pixel_y = -30
-	},
-/turf/simulated/floor{
-	icon_state = "caution"
-	},
+/obj/structure/closet/bombcloset,
+/turf/simulated/floor,
 /area/space)
 "AN" = (
 /obj/structure/stool/bed/roller,
@@ -11683,22 +11662,9 @@
 	},
 /area/space)
 "Cb" = (
-/obj/machinery/computer/general_air_control{
-	dir = 1;
-	frequency = 1443;
-	level = 3;
-	name = "Distribution and Waste Monitor";
-	sensors = list("mair_in_meter" = "Mixed Air In", "air_sensor" = "Mixed Air Supply Tank", "mair_out_meter" = "Mixed Air Out", "dloop_atm_meter" = "Distribution Loop", "wloop_atm_meter" = "Waste Loop")
-	},
-/obj/machinery/computer/security/telescreen{
-	desc = "Used for watching the singularity chamber.";
-	layer = 4;
-	name = "Singularity Engine Telescreen";
-	network = list("Singularity");
-	pixel_y = -30
-	},
+/obj/structure/closet/bombcloset,
 /turf/simulated/floor{
-	icon_state = "caution"
+	icon_state = "warningcorner"
 	},
 /area/space)
 "Cc" = (
@@ -11963,14 +11929,16 @@
 	icon_state = "dark"
 	},
 /area/space)
+"CJ" = (
+/obj/machinery/vending/coffee,
+/turf/simulated/floor,
+/area/space)
 "CK" = (
-/obj/machinery/computer/atmos_alert{
-	dir = 8
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
 	},
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "caution"
-	},
+/turf/simulated/floor,
 /area/space)
 "CL" = (
 /obj/structure/window/reinforced{
@@ -14155,16 +14123,10 @@
 	},
 /area/space)
 "HO" = (
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "Monitoring Room APC";
-	pixel_y = -28
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
-/obj/structure/table/reinforced,
-/turf/simulated/floor{
-	dir = 6;
-	icon_state = "caution"
-	},
+/turf/simulated/floor,
 /area/space)
 "HQ" = (
 /obj/machinery/cryopod/right,
@@ -14523,11 +14485,11 @@
 	},
 /area/space)
 "IA" = (
-/obj/structure/table,
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "caution"
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
+/turf/simulated/floor,
 /area/space)
 "IB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -15008,22 +14970,10 @@
 	},
 /area/space)
 "JP" = (
-/obj/structure/plasticflaps{
-	opacity = 1
+/obj/machinery/door/airlock/research{
+	name = "Toxins Launch Room";
+	req_access = list(8)
 	},
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=4";
-	freq = 1400;
-	location = "Engineering"
-	},
-/obj/machinery/door/poddoor{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "atmos";
-	name = "Atmos Blast Door";
-	opacity = 0
-	},
-/obj/machinery/door/firedoor,
 /turf/simulated/floor,
 /area/space)
 "JR" = (
@@ -15643,17 +15593,11 @@
 /turf/simulated/wall/r_wall,
 /area/space)
 "Lq" = (
-/obj/machinery/computer/monitor{
-	dir = 1
+/obj/machinery/door/airlock/research{
+	name = "Toxins Research";
+	req_access = list(8)
 	},
-/obj/item/device/radio/intercom{
-	name = "Station Intercom (General)";
-	pixel_y = 20
-	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "caution"
-	},
+/turf/simulated/floor,
 /area/space)
 "Lr" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
@@ -16531,11 +16475,10 @@
 	},
 /area/space)
 "Nw" = (
-/obj/structure/table,
-/turf/simulated/floor{
-	dir = 9;
-	icon_state = "caution"
+/obj/structure/stool/bed/chair/comfy/beige{
+	dir = 8
 	},
+/turf/simulated/floor,
 /area/space)
 "Nx" = (
 /obj/structure/table/glass,
@@ -17612,11 +17555,16 @@
 	},
 /area/space)
 "PZ" = (
-/obj/structure/rack,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "caution"
+/obj/structure/sign/warning/nosmoking/circle{
+	pixel_y = -28
 	},
+/obj/structure/table,
+/obj/item/device/assembly/signaler,
+/obj/item/device/assembly/signaler{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/turf/simulated/floor,
 /area/space)
 "Qa" = (
 /obj/structure/sign/warning/fire{
@@ -18494,14 +18442,10 @@
 /turf/simulated/floor/plating,
 /area/space)
 "Sa" = (
-/obj/machinery/door/airlock/atmos/glass{
-	name = "Atmospherics Monitoring";
-	req_access = list(71)
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 4
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
+/turf/simulated/floor,
 /area/space)
 "Sb" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
@@ -18713,15 +18657,15 @@
 /turf/simulated/floor/engine,
 /area/space)
 "SG" = (
-/obj/machinery/disposal{
-	pixel_y = -2
+/obj/structure/table,
+/obj/item/ashtray/glass{
+	pixel_x = -6;
+	pixel_y = 2
 	},
-/obj/structure/sign/plaques/atmos{
-	pixel_y = -28
+/obj/structure/sign/warning/smoking{
+	pixel_y = 32
 	},
-/turf/simulated/floor{
-	icon_state = "caution"
-	},
+/turf/simulated/floor,
 /area/space)
 "SH" = (
 /obj/item/cardboard_cutout{
@@ -20283,17 +20227,10 @@
 	},
 /area/space)
 "Wh" = (
-/obj/structure/rack,
-/obj/item/weapon/storage/fancy/glowsticks{
-	pixel_y = -2
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 8
 	},
-/obj/item/weapon/storage/toolbox/mechanical{
-	pixel_y = 5
-	},
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "caution"
-	},
+/turf/simulated/floor,
 /area/space)
 "Wi" = (
 /obj/structure/stool/bed/chair/comfy/brown,
@@ -22361,17 +22298,17 @@ wR
 wR
 wR
 wR
-cd
-cd
-jI
-jI
-jI
-jI
-jI
-jI
-jI
-jI
-jI
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -22618,17 +22555,17 @@ wR
 wR
 wR
 wR
-cd
-cd
-cd
-cd
-cd
-cd
-cd
-cd
-cd
-cd
-Sg
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -22875,17 +22812,17 @@ wR
 wR
 wR
 wR
-cd
-cd
-cd
-cd
-cd
-cd
-cd
-cd
-cd
-cd
-Sg
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -23132,17 +23069,17 @@ wR
 wR
 wR
 wR
-jI
-jI
-jI
-jI
-jI
-jI
-jI
-jI
-xP
-JP
-jI
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -23389,17 +23326,17 @@ wR
 wR
 wR
 wR
-jI
-Nw
-mc
-mc
-Wh
-kw
-dF
-Lm
-Lm
-FD
-jI
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -23646,17 +23583,17 @@ wR
 wR
 wR
 wR
-Sa
-vl
-JC
-JC
-JC
-JC
-JC
-JC
-JC
-AL
-If
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -23903,17 +23840,17 @@ wR
 wR
 wR
 wR
-jI
-PZ
-JC
-JC
-JC
-JC
-JC
-JC
-JC
-SG
-jI
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -24160,17 +24097,17 @@ wR
 wR
 wR
 wR
-Sa
-vl
-JC
-JC
-JC
-JC
-JC
-JC
-JC
-AL
-If
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -24417,17 +24354,17 @@ wR
 wR
 wR
 wR
-jI
-IA
-Al
-Al
-jT
-JC
-JC
-JC
-JC
-AM
-jI
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -24674,17 +24611,17 @@ wR
 wR
 wR
 wR
-jI
-jI
-jI
-jI
-Lq
-lP
-JC
-JC
-wP
-Cb
-jI
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -24931,17 +24868,17 @@ wR
 wR
 wR
 wR
-jI
-Jh
-Nb
-jI
-ws
-xe
-cZ
-xq
-CK
-HO
-jI
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
+wR
 wR
 wR
 wR
@@ -41540,12 +41477,12 @@ wR
 wR
 wR
 wR
-wR
 Hp
+jT
 Hp
-Hp
-Hp
-Hp
+eo
+eo
+eo
 Hp
 JC
 JC
@@ -41798,11 +41735,11 @@ wR
 Hp
 Hp
 Hp
-Hp
-JC
-JC
-JC
-JC
+kw
+eo
+xq
+CK
+Nw
 Hp
 JC
 JC
@@ -42053,15 +41990,15 @@ wR
 Hp
 Hp
 Hp
-cd
-cd
+cZ
 Hp
+lP
+wP
 JC
-JC
-JC
+HO
 JC
 Hp
-JC
+Sa
 JC
 JC
 jI
@@ -42310,15 +42247,15 @@ wR
 Hp
 cd
 cd
-cd
-cd
+dF
 Hp
-JC
-JC
-JC
-JC
+mc
+xe
+xP
+IA
+PZ
 Hp
-JC
+SG
 JC
 JC
 jI
@@ -42568,14 +42505,14 @@ Hp
 cd
 cd
 cd
-cd
 Hp
 Hp
 Hp
-JC
+Hp
+JP
 Hp
 Hp
-JC
+Wh
 JC
 JC
 jI
@@ -42828,9 +42765,9 @@ cd
 cd
 cd
 Hp
-JC
-JC
-JC
+Al
+Cs
+Cv
 Hp
 JC
 JC
@@ -43083,12 +43020,12 @@ cd
 cd
 cd
 cd
-cd
-cd
+ws
+XG
 JC
+Vu
 JC
-JC
-JC
+Lq
 JC
 JC
 JC
@@ -43342,13 +43279,13 @@ cd
 cd
 cd
 Hp
-JC
+AM
 JC
 JC
 Hp
-JC
-JC
-JC
+CJ
+rd
+QW
 Hp
 Hp
 Hp
@@ -43599,8 +43536,8 @@ cd
 cd
 cd
 Hp
-JC
-JC
+Cb
+El
 Hp
 Hp
 Hp
@@ -43857,7 +43794,7 @@ cd
 cd
 Hp
 Hp
-JC
+Lq
 Hp
 df
 df
