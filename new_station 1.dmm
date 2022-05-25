@@ -1400,6 +1400,12 @@
 	icon_state = "wood-broken4"
 	},
 /area/space)
+"dx" = (
+/turf/simulated/floor/plating/airless{
+	dir = 4;
+	icon_state = "warnplatecorner"
+	},
+/area/space)
 "dy" = (
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "2-7"
@@ -3095,6 +3101,11 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "warndark"
+	},
+/area/space)
+"hQ" = (
+/turf/simulated/floor/plating/airless{
+	icon_state = "warnplatecorner"
 	},
 /area/space)
 "hS" = (
@@ -5012,7 +5023,7 @@
 /turf/simulated/floor/carpet/black,
 /area/space)
 "mE" = (
-/obj/machinery/computer/mech_bay_power_console,
+/obj/structure/closet/crate/medical,
 /turf/simulated/floor/plating,
 /area/space)
 "mF" = (
@@ -5826,6 +5837,10 @@
 	dir = 1;
 	icon_state = "whitepurple"
 	},
+/area/space)
+"oF" = (
+/obj/structure/closet/crate/engi,
+/turf/simulated/floor/plating,
 /area/space)
 "oG" = (
 /obj/structure/table/woodentable,
@@ -9664,6 +9679,12 @@
 	icon_state = "freezerfloor2"
 	},
 /area/space)
+"xw" = (
+/turf/simulated/floor/plating/airless{
+	dir = 8;
+	icon_state = "warnplatecorner"
+	},
+/area/space)
 "xx" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/book/manual/wiki/security_space_law{
@@ -11968,12 +11989,16 @@
 	icon_state = "warndarkcorners"
 	},
 /area/space)
+"CP" = (
+/obj/machinery/computer/mech_bay_power_console,
+/turf/simulated/floor/plating,
+/area/space)
 "CQ" = (
 /obj/structure/closet/secure_closet/hydroponics,
 /turf/simulated/floor/grass,
 /area/space)
 "CR" = (
-/obj/mecha/working/ripley,
+/obj/structure/closet/crate,
 /turf/simulated/floor/plating,
 /area/space)
 "CS" = (
@@ -14391,6 +14416,12 @@
 	icon_state = "wood-broken7"
 	},
 /area/space)
+"Iq" = (
+/turf/simulated/floor/plating/airless{
+	dir = 1;
+	icon_state = "warnplatecorner"
+	},
+/area/space)
 "Ir" = (
 /obj/structure/stool/bed/chair/office/light{
 	dir = 8
@@ -14787,7 +14818,7 @@
 	},
 /area/space)
 "Ju" = (
-/obj/structure/closet/crate,
+/obj/structure/closet/crate/scicrate,
 /turf/simulated/floor/plating,
 /area/space)
 "Jv" = (
@@ -15343,6 +15374,11 @@
 	},
 /obj/item/device/megaphone,
 /turf/simulated/floor/wood,
+/area/space)
+"KP" = (
+/obj/structure/table,
+/obj/item/mecha_parts/mecha_equipment/hydraulic_clamp,
+/turf/simulated/floor/plating,
 /area/space)
 "KQ" = (
 /obj/machinery/door/airlock/maintenance{
@@ -16038,8 +16074,7 @@
 	},
 /area/space)
 "Mx" = (
-/obj/structure/table,
-/obj/item/mecha_parts/mecha_equipment/hydraulic_clamp,
+/obj/mecha/working/ripley,
 /turf/simulated/floor/plating,
 /area/space)
 "Mz" = (
@@ -16356,8 +16391,9 @@
 	},
 /area/space)
 "Nl" = (
-/obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/machinery/mech_bay_recharge_port{
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/space)
 "Nm" = (
@@ -21167,7 +21203,8 @@
 	},
 /area/space)
 "YH" = (
-/obj/machinery/mech_bay_recharge_port,
+/obj/structure/table,
+/obj/item/weapon/storage/toolbox/mechanical,
 /turf/simulated/floor/plating,
 /area/space)
 "YI" = (
@@ -43750,13 +43787,13 @@ HH
 HH
 gv
 cd
-cd
+hQ
 tF
 tF
 tF
 tF
 tF
-cd
+dx
 cd
 bu
 HH
@@ -44260,9 +44297,9 @@ cd
 cd
 jI
 YH
+KP
 cd
 cd
-Ju
 cd
 zx
 hh
@@ -44777,7 +44814,7 @@ mE
 cd
 cd
 cd
-cd
+rT
 zx
 hh
 hh
@@ -45287,18 +45324,18 @@ cd
 cd
 cd
 eo
+oF
 cd
 cd
-Ju
 cd
 cd
-cd
+xw
 Hu
 Hu
 Hu
 Hu
 Hu
-cd
+Iq
 cd
 bu
 HH
@@ -45544,7 +45581,7 @@ cd
 cd
 cd
 eo
-rT
+CP
 cd
 cd
 cd
