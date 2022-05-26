@@ -1278,6 +1278,12 @@
 	icon_state = "dark"
 	},
 /area/space)
+"dh" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/space)
 "di" = (
 /obj/machinery/door/airlock/research/glass{
 	name = "Genetics Lab";
@@ -1381,10 +1387,9 @@
 	},
 /area/space)
 "du" = (
-/obj/structure/table,
+/obj/structure/closet/l3closet/scientist,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "warndark"
+	icon_state = "white"
 	},
 /area/space)
 "dv" = (
@@ -2092,6 +2097,18 @@
 	icon_state = "bot"
 	},
 /area/space)
+"fi" = (
+/obj/item/weapon/storage/box/cups,
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/structure/table,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "warndark"
+	},
+/area/space)
 "fj" = (
 /obj/structure/stool/bed/chair/office/light{
 	dir = 8
@@ -2778,6 +2795,13 @@
 /turf/simulated/floor{
 	dir = 10;
 	icon_state = "darkred"
+	},
+/area/space)
+"gT" = (
+/obj/structure/table,
+/obj/item/weapon/storage/bag/bio,
+/turf/simulated/floor{
+	icon_state = "whitepurple"
 	},
 /area/space)
 "gU" = (
@@ -3993,6 +4017,12 @@
 	icon_state = "dark"
 	},
 /area/space)
+"jF" = (
+/obj/structure/closet/emcloset,
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/space)
 "jG" = (
 /obj/structure/closet/crate/radiation{
 	desc = "A crate with a radiation sign on it. For the love of god, use protection.";
@@ -4125,10 +4155,9 @@
 /turf/simulated/floor/carpet/black,
 /area/space)
 "jZ" = (
-/obj/machinery/disposal,
+/obj/machinery/computer/camera_advanced/xenobio,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "whitepurplecorner"
+	icon_state = "dark"
 	},
 /area/space)
 "ka" = (
@@ -4636,8 +4665,13 @@
 /area/space)
 "lq" = (
 /obj/structure/table,
+/obj/item/weapon/storage/box/cups,
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_x = 3;
+	pixel_y = 3
+	},
 /turf/simulated/floor{
-	dir = 1;
+	dir = 8;
 	icon_state = "warndark"
 	},
 /area/space)
@@ -4908,6 +4942,18 @@
 /obj/structure/table/woodentable,
 /obj/random/randomfigure,
 /turf/simulated/floor/grass,
+/area/space)
+"mb" = (
+/obj/structure/table,
+/obj/item/weapon/scalpel,
+/obj/item/weapon/circular_saw{
+	pixel_y = 7
+	},
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "whitepurplecorner"
+	},
 /area/space)
 "mc" = (
 /obj/machinery/mass_driver{
@@ -5193,6 +5239,17 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "black"
+	},
+/area/space)
+"mJ" = (
+/obj/structure/table,
+/obj/item/weapon/storage/box/beakers{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/weapon/storage/box/syringes,
+/turf/simulated/floor{
+	icon_state = "whitepurplecorner"
 	},
 /area/space)
 "mK" = (
@@ -7993,6 +8050,13 @@
 	icon_state = "cafeteria"
 	},
 /area/space)
+"sY" = (
+/obj/structure/stool/bed/chair/office/light,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "warndark"
+	},
+/area/space)
 "sZ" = (
 /obj/structure/table/woodentable,
 /obj/item/device/taperecorder{
@@ -8106,6 +8170,21 @@
 	icon_state = "blue"
 	},
 /area/space)
+"to" = (
+/obj/machinery/door/window/northleft{
+	dir = 4;
+	name = "Containment Pen";
+	req_access = list(55)
+	},
+/obj/machinery/door/window/northleft{
+	base_state = "right";
+	dir = 8;
+	icon_state = "right";
+	name = "Containment Pen";
+	req_access = list(55)
+	},
+/turf/simulated/floor/engine,
+/area/space)
 "tp" = (
 /obj/machinery/computer/med_data,
 /turf/simulated/floor{
@@ -8120,6 +8199,14 @@
 	},
 /turf/simulated/floor{
 	icon_state = "darkblue"
+	},
+/area/space)
+"tr" = (
+/obj/structure/table,
+/obj/item/weapon/storage/bag/bio,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "whitepurplecorner"
 	},
 /area/space)
 "ts" = (
@@ -8580,10 +8667,14 @@
 /turf/simulated/floor,
 /area/space)
 "uq" = (
+/obj/item/weapon/storage/box/beakers{
+	pixel_x = 2;
+	pixel_y = 2
+	},
 /obj/structure/table,
+/obj/item/weapon/storage/box/syringes,
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "warndark"
+	icon_state = "white"
 	},
 /area/space)
 "ur" = (
@@ -9776,9 +9867,9 @@
 /area/space)
 "xb" = (
 /obj/structure/table,
+/obj/item/weapon/storage/box/monkeycubes,
 /turf/simulated/floor{
-	dir = 10;
-	icon_state = "whitepurple"
+	icon_state = "dark"
 	},
 /area/space)
 "xc" = (
@@ -9849,6 +9940,13 @@
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "vault"
+	},
+/area/space)
+"xl" = (
+/obj/machinery/disposal,
+/turf/simulated/floor{
+	dir = 9;
+	icon_state = "warndark"
 	},
 /area/space)
 "xm" = (
@@ -11753,7 +11851,8 @@
 	},
 /area/space)
 "Bz" = (
-/obj/structure/table,
+/obj/machinery/monkey_recycler,
+/obj/machinery/smartfridge/secure/extract,
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "whitepurple"
@@ -11811,6 +11910,14 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet/red,
+/area/space)
+"BH" = (
+/obj/structure/stool/bed/chair/office/light{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "warndark"
+	},
 /area/space)
 "BI" = (
 /obj/structure/kitchenspike,
@@ -11959,6 +12066,14 @@
 "Cd" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/simulated/floor/wood,
+/area/space)
+"Ce" = (
+/obj/machinery/shower{
+	pixel_y = 24
+	},
+/turf/simulated/floor{
+	icon_state = "white"
+	},
 /area/space)
 "Cf" = (
 /obj/machinery/door/window/brigdoor/westleft{
@@ -12710,10 +12825,9 @@
 	},
 /area/space)
 "DN" = (
-/obj/structure/table,
+/obj/structure/closet/l3closet/scientist,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "whitepurplecorner"
+	icon_state = "dark"
 	},
 /area/space)
 "DO" = (
@@ -13874,6 +13988,22 @@
 /turf/simulated/floor{
 	icon_state = "chapel"
 	},
+/area/space)
+"Gr" = (
+/obj/machinery/door/window/northleft{
+	base_state = "right";
+	icon_state = "right";
+	name = "Containment Pen";
+	req_access = list(55)
+	},
+/obj/machinery/door/window/northleft{
+	base_state = "right";
+	dir = 2;
+	icon_state = "right";
+	name = "Containment Pen";
+	req_access = list(55)
+	},
+/turf/simulated/floor/engine,
 /area/space)
 "Gs" = (
 /obj/structure/table/glass,
@@ -15115,6 +15245,18 @@
 /obj/random/misc/all,
 /turf/simulated/floor/plating/airless,
 /area/space)
+"Jf" = (
+/obj/structure/table,
+/obj/item/stack/sheet/mineral/phoron{
+	amount = 5;
+	layer = 2.9
+	},
+/obj/machinery/reagentgrinder,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "whitepurple"
+	},
+/area/space)
 "Jg" = (
 /obj/structure/table,
 /obj/item/weapon/storage/fancy/donut_box,
@@ -15272,9 +15414,11 @@
 	},
 /area/space)
 "JB" = (
-/obj/structure/table,
+/obj/structure/sink{
+	pixel_y = 24
+	},
 /turf/simulated/floor{
-	icon_state = "warndark"
+	icon_state = "white"
 	},
 /area/space)
 "JC" = (
@@ -15900,10 +16044,10 @@
 	},
 /area/space)
 "KV" = (
-/obj/structure/table,
+/obj/machinery/chem_master,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "warndark"
+	dir = 4;
+	icon_state = "whitepurplecorner"
 	},
 /area/space)
 "KW" = (
@@ -15964,10 +16108,10 @@
 	},
 /area/space)
 "Le" = (
+/obj/item/weapon/storage/box/monkeycubes,
 /obj/structure/table,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "whitepurple"
+	icon_state = "dark"
 	},
 /area/space)
 "Lf" = (
@@ -16656,9 +16800,9 @@
 	},
 /area/space)
 "MO" = (
-/obj/structure/table,
+/obj/machinery/computer/operating,
 /turf/simulated/floor{
-	dir = 5;
+	dir = 1;
 	icon_state = "whitepurple"
 	},
 /area/space)
@@ -16946,10 +17090,11 @@
 	},
 /area/space)
 "Nv" = (
+/obj/item/weapon/folder/blue,
 /obj/structure/table,
+/obj/item/weapon/paper_bin,
 /turf/simulated/floor{
-	dir = 6;
-	icon_state = "warndark"
+	icon_state = "whitepurple"
 	},
 /area/space)
 "Nw" = (
@@ -17202,11 +17347,19 @@
 	},
 /area/space)
 "Ob" = (
-/obj/structure/table,
-/turf/simulated/floor{
-	dir = 6;
-	icon_state = "whitepurple"
+/obj/machinery/door/window/northleft{
+	base_state = "right";
+	dir = 8;
+	icon_state = "right";
+	name = "Containment Pen";
+	req_access = list(55)
 	},
+/obj/machinery/door/window/northleft{
+	dir = 4;
+	name = "Containment Pen";
+	req_access = list(55)
+	},
+/turf/simulated/floor/engine,
 /area/space)
 "Od" = (
 /obj/structure/grille,
@@ -17440,10 +17593,10 @@
 /turf/simulated/floor/grass,
 /area/space)
 "OJ" = (
-/obj/structure/table,
+/obj/structure/reagent_dispensers/aqueous_foam_tank,
 /turf/simulated/floor{
-	dir = 10;
-	icon_state = "warndark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "OK" = (
@@ -17773,9 +17926,12 @@
 	},
 /area/space)
 "Pt" = (
-/obj/structure/table,
+/obj/machinery/disposal,
+/obj/structure/sign/warning/deathsposal{
+	pixel_y = 32
+	},
 /turf/simulated/floor{
-	icon_state = "whitepurplecorner"
+	icon_state = "warndark"
 	},
 /area/space)
 "Pu" = (
@@ -18748,10 +18904,10 @@
 	},
 /area/space)
 "RH" = (
-/obj/structure/table,
+/obj/machinery/optable,
 /turf/simulated/floor{
-	dir = 9;
-	icon_state = "warndark"
+	dir = 4;
+	icon_state = "whitepurplecorner"
 	},
 /area/space)
 "RI" = (
@@ -20413,6 +20569,12 @@
 /obj/item/device/radio/electropack,
 /turf/simulated/floor/engine,
 /area/space)
+"Vp" = (
+/obj/machinery/monkey_recycler,
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/space)
 "Vq" = (
 /obj/machinery/door/airlock/glass{
 	name = "Prison"
@@ -21824,6 +21986,17 @@
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
+	},
+/area/space)
+"YK" = (
+/obj/structure/table,
+/obj/item/weapon/book/manual/wiki/guide_to_xenobiology,
+/obj/item/weapon/pen{
+	layer = 3.1
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "whitepurplecorner"
 	},
 /area/space)
 "YL" = (
@@ -41730,11 +41903,11 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
-wR
-wR
+Hp
+Lc
+Lc
+Lc
+Hp
 wR
 wR
 wR
@@ -41988,9 +42161,9 @@ wR
 wR
 wR
 Hp
-Lc
-Lc
-Lc
+kE
+nI
+nI
 Hp
 wR
 wR
@@ -42245,7 +42418,7 @@ wR
 wR
 wR
 Hp
-kE
+nI
 nI
 nI
 Hp
@@ -42514,8 +42687,8 @@ wR
 wR
 wR
 wR
-Hp
-Hp
+wR
+wR
 Hp
 cZ
 jI
@@ -42759,9 +42932,9 @@ wR
 wR
 wR
 Hp
-nI
-nI
-nI
+eo
+Ob
+eo
 Hp
 wR
 wR
@@ -42771,8 +42944,8 @@ wR
 wR
 wR
 wR
-Hp
-cd
+wR
+wR
 cd
 dF
 jI
@@ -43010,26 +43183,26 @@ wR
 wR
 wR
 wR
-wR
+Hp
+Hp
+Hp
+Hp
+Hp
+Hp
+hq
+XM
+xl
+Hp
+Hp
+Hp
+Hp
+Hp
+Hp
 wR
 wR
 wR
 Hp
 Hp
-eo
-nI
-eo
-Hp
-Hp
-wR
-wR
-wR
-wR
-wR
-wR
-Hp
-Hp
-cd
 cd
 cd
 jI
@@ -43266,26 +43439,26 @@ wR
 wR
 wR
 wR
-Hp
-Hp
-Hp
-Hp
-Hp
-Hp
-Bz
-jZ
-XM
-vh
-xb
-Hp
-Hp
-Hp
-Hp
-Hp
-Hp
 wR
 Hp
-cd
+nI
+nI
+nI
+jI
+Bz
+ib
+ib
+CE
+xb
+jI
+nI
+nI
+nI
+Hp
+wR
+wR
+wR
+Hp
 cd
 cd
 cd
@@ -43523,26 +43696,26 @@ wR
 wR
 wR
 wR
+wR
 Hp
 nI
 nI
 nI
-eo
-pl
-li
+jI
+RH
 ib
 ib
-ib
-KM
-pl
-eo
+sY
+jZ
+jI
 nI
 nI
 nI
 Hp
 wR
+wR
 Hp
-cd
+Hp
 cd
 cd
 cd
@@ -43780,26 +43953,26 @@ wR
 wR
 wR
 wR
+wR
 Hp
 nI
 nI
 nI
-nI
-ce
-ge
+jI
+MO
 ib
 ib
-ib
-ZJ
-ce
-nI
+rw
+fi
+jI
 nI
 nI
 nI
 Hp
 wR
+wR
 Hp
-Hp
+cd
 cd
 cd
 cd
@@ -44038,25 +44211,25 @@ wR
 wR
 wR
 Hp
-nI
-nI
-nI
+Hp
 eo
-pl
-vh
-RH
-KV
-OJ
-hq
-pl
+Ob
 eo
-nI
-nI
-nI
+jI
+mb
+ib
+ib
+ib
+YK
+jI
+eo
+Ob
+eo
+Hp
 Hp
 wR
-wR
 Hp
+cd
 cd
 cd
 cd
@@ -44290,31 +44463,31 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
 Hp
 Hp
+Hp
+Hp
+Hp
+DN
+OJ
+ce
+TQ
 jI
-jI
-jI
-jI
-pl
+Vp
 ib
-lq
-nH
-JB
-ZJ
-pl
+ib
+ib
+Nv
+jI
+TQ
+ce
+OJ
+DN
 Hp
 Hp
 Hp
 Hp
 Hp
-Hp
-wR
-Hp
-cd
 cd
 cd
 cd
@@ -44547,31 +44720,31 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
 Hp
 nI
 nI
 nI
 eo
-Eq
+zA
 ce
-li
-CE
 ce
-Hl
+ce
+zA
+ib
+ce
+ce
+ce
 KM
+zA
 ce
-Eq
+ce
+ce
+zA
 eo
 nI
 nI
 nI
 Hp
-wR
-Hp
-cd
 cd
 cd
 cd
@@ -44804,31 +44977,31 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
 Hp
 nI
 nI
 nI
-nI
+Gr
 ce
 ce
-ge
-lq
-pl
-JB
+ce
+ce
+ce
+ib
+ce
+ce
+ce
 ZJ
 ce
 ce
-nI
+ce
+ce
+ce
+Gr
 nI
 nI
 nI
 Hp
-wR
-Hp
-cd
 cd
 cd
 cd
@@ -45061,31 +45234,31 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
 Hp
 nI
 nI
 nI
 eo
-Eq
+TQ
 ce
-vh
-CE
 ce
-Hl
+ce
+zA
+ib
+ce
+ce
+ce
 hq
+zA
 ce
-Eq
+ce
+ce
+TQ
 eo
 nI
 nI
 nI
 Hp
-wR
-Hp
-cd
 cd
 cd
 cd
@@ -45318,31 +45491,31 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
 Hp
 Hp
+Hp
+Hp
+Hp
+ce
+zA
+ce
+TQ
 jI
+KV
+ib
+ib
+ib
+uq
 jI
-jI
-jI
-pl
-ge
-lq
-tx
-JB
-ZJ
+TQ
+ce
+zA
 ce
 Hp
 Hp
 Hp
 Hp
 Hp
-Hp
-wR
-Hp
-cd
 cd
 cd
 cd
@@ -45580,25 +45753,25 @@ wR
 wR
 wR
 Hp
-nI
-nI
-nI
-eo
-pl
-li
-uq
-du
-Nv
-KM
-ce
-eo
-nI
-nI
-nI
 Hp
-wR
-wR
+eo
+Ob
+eo
+jI
+Jf
+ib
+ib
+ib
+mJ
+jI
+eo
+to
+eo
 Hp
+Hp
+cd
+cd
+jI
 cd
 cd
 cd
@@ -45836,26 +46009,26 @@ wR
 wR
 wR
 wR
-Hp
-nI
-nI
-nI
-nI
-ce
-ge
-ib
-ib
-ib
-ZJ
-ce
-nI
-nI
-nI
-nI
-Hp
-wR
 wR
 Hp
+nI
+nI
+nI
+jI
+lq
+Sx
+ib
+ib
+gT
+jI
+nI
+nI
+nI
+Hp
+cd
+cd
+cd
+jI
 cd
 cd
 cd
@@ -46093,26 +46266,26 @@ wR
 wR
 wR
 wR
-Hp
-nI
-nI
-nI
-eo
-pl
-vh
-ib
-ib
-ib
-hq
-ce
-eo
-nI
-nI
-nI
-Hp
-wR
 wR
 Hp
+nI
+nI
+nI
+jI
+jZ
+BH
+ib
+ib
+tr
+jI
+nI
+nI
+nI
+Hp
+cd
+cd
+cd
+jI
 cd
 cd
 cd
@@ -46350,26 +46523,26 @@ wR
 wR
 wR
 wR
+wR
 Hp
-Hp
-Hp
-Hp
-Hp
-Hp
+nI
+nI
+nI
+jI
 Le
+Hl
 ib
 ib
-ib
-ZJ
-pl
+dh
+jI
+nI
+nI
+nI
 Hp
-Hp
-Hp
-Hp
-Hp
-wR
-wR
-Hp
+cd
+cd
+cd
+jI
 cd
 cd
 cd
@@ -46608,25 +46781,25 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
-wR
 Hp
-MO
+Hp
+Hp
+Hp
+Hp
+Hp
 Pt
 OP
-DN
-Ob
+li
 Hp
 Hp
-wR
-wR
-wR
-wR
-wR
-wR
 Hp
+Hp
+Hp
+Hp
+cd
+cd
+cd
+jI
 cd
 cd
 cd
@@ -46869,13 +47042,13 @@ wR
 wR
 wR
 wR
-Hp
+wR
 Hp
 Hp
 pb
 Hp
 Hp
-Hp
+wR
 wR
 wR
 wR
@@ -47128,9 +47301,9 @@ Hp
 wR
 wR
 Hp
+Ce
 ib
-ib
-ib
+jF
 Hp
 wR
 wR
@@ -47385,9 +47558,9 @@ Hp
 Hp
 Hp
 Hp
+JB
 ib
-ib
-ib
+du
 Hp
 wR
 Hp
@@ -47642,9 +47815,9 @@ ib
 ib
 ib
 Hp
+JB
 ib
-ib
-ib
+du
 Hp
 wR
 Hp
