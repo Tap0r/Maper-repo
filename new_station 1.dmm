@@ -2241,8 +2241,11 @@
 	},
 /area/space)
 "fA" = (
-/obj/structure/table/woodentable,
-/turf/simulated/floor/wood,
+/obj/structure/stool/bed/chair/comfy/black,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -27
+	},
+/turf/simulated/floor/carpet,
 /area/space)
 "fB" = (
 /obj/machinery/bot/secbot/beepsky{
@@ -3271,6 +3274,18 @@
 	dir = 4;
 	icon_state = "whitepurple"
 	},
+/area/space)
+"hX" = (
+/obj/structure/table/woodentable,
+/obj/item/device/flashlight/lamp/green{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/random/misc/book,
+/obj/machinery/newscaster{
+	pixel_x = -28
+	},
+/turf/simulated/floor/carpet,
 /area/space)
 "hY" = (
 /obj/machinery/door/airlock/security{
@@ -5473,6 +5488,12 @@
 	icon_state = "warning"
 	},
 /area/space)
+"nl" = (
+/obj/structure/bookcase{
+	name = "bookcase (Reference)"
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "nm" = (
 /obj/structure/closet/emcloset,
 /turf/simulated/floor{
@@ -6247,6 +6268,10 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
+/area/space)
+"oZ" = (
+/obj/machinery/bookbinder,
+/turf/simulated/floor/wood,
 /area/space)
 "pa" = (
 /obj/structure/closet/crate/freezer,
@@ -7464,6 +7489,11 @@
 /turf/simulated/floor{
 	icon_state = "darkyellow"
 	},
+/area/space)
+"rG" = (
+/obj/structure/table/woodentable,
+/obj/random/misc/book,
+/turf/simulated/floor/carpet,
 /area/space)
 "rH" = (
 /turf/simulated/floor/carpet/purple,
@@ -8696,6 +8726,12 @@
 	icon_state = "vault"
 	},
 /area/space)
+"ut" = (
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/space)
 "uu" = (
 /obj/machinery/door/airlock/command{
 	name = "Teleport Access";
@@ -8794,6 +8830,11 @@
 /turf/simulated/floor{
 	icon_state = "whitehall"
 	},
+/area/space)
+"uE" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/machinery/vending/coffee,
+/turf/simulated/floor/wood,
 /area/space)
 "uF" = (
 /obj/structure/table,
@@ -9096,6 +9137,13 @@
 	dir = 1;
 	icon_state = "whitehall"
 	},
+/area/space)
+"vp" = (
+/obj/structure/stool/bed/chair/comfy/black,
+/obj/structure/sign/poster/random{
+	pixel_x = 32
+	},
+/turf/simulated/floor/carpet,
 /area/space)
 "vq" = (
 /obj/structure/table,
@@ -10060,6 +10108,15 @@
 	icon_state = "freezerfloor2"
 	},
 /area/space)
+"xw" = (
+/obj/structure/table/woodentable,
+/obj/item/device/flashlight/lamp/green{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/obj/random/misc/book,
+/turf/simulated/floor/carpet,
+/area/space)
 "xx" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/book/manual/wiki/security_space_law{
@@ -10227,6 +10284,10 @@
 /area/space)
 "xR" = (
 /obj/item/weapon/flora/pottedplant/minitree,
+/obj/structure/noticeboard{
+	dir = 8;
+	pixel_y = -32
+	},
 /turf/simulated/floor/wood,
 /area/space)
 "xS" = (
@@ -10751,7 +10812,7 @@
 	},
 /area/space)
 "yV" = (
-/obj/structure/bookcase,
+/obj/structure/bookcase/manuals/security,
 /turf/simulated/floor/wood,
 /area/space)
 "yW" = (
@@ -11335,6 +11396,10 @@
 	dir = 4;
 	icon_state = "blue"
 	},
+/area/space)
+"Ar" = (
+/obj/structure/bookcase,
+/turf/simulated/floor/wood,
 /area/space)
 "As" = (
 /obj/structure/reagent_dispensers/aqueous_foam_tank,
@@ -15003,6 +15068,9 @@
 /obj/structure/table/woodentable,
 /obj/item/weapon/paper_bin,
 /obj/item/weapon/pen/invisible,
+/obj/machinery/newscaster{
+	pixel_y = -32
+	},
 /turf/simulated/floor{
 	icon_state = "cult"
 	},
@@ -15056,6 +15124,10 @@
 	dir = 8;
 	icon_state = "vault"
 	},
+/area/space)
+"IH" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/carpet,
 /area/space)
 "II" = (
 /obj/structure/stool/bed/roller,
@@ -16692,6 +16764,12 @@
 	icon_state = "warnplate"
 	},
 /area/space)
+"My" = (
+/obj/structure/bookcase{
+	name = "bookcase (Non-Fiction)"
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "Mz" = (
 /obj/structure/closet/secure_closet/personal,
 /turf/simulated/floor{
@@ -16710,6 +16788,14 @@
 /turf/simulated/floor{
 	icon_state = "darkredfull"
 	},
+/area/space)
+"MD" = (
+/obj/structure/sign/plaques/kiddie/library{
+	pixel_w = 32;
+	pixel_x = 32
+	},
+/obj/structure/bookcase/manuals/engineering,
+/turf/simulated/floor/wood,
 /area/space)
 "ME" = (
 /obj/structure/grille,
@@ -17289,6 +17375,10 @@
 	icon_state = "green"
 	},
 /area/space)
+"NT" = (
+/obj/structure/bookcase/manuals/research_and_development,
+/turf/simulated/floor/wood,
+/area/space)
 "NU" = (
 /obj/structure/closet/emcloset,
 /turf/simulated/floor{
@@ -17503,6 +17593,12 @@
 	dir = 5;
 	icon_state = "vault"
 	},
+/area/space)
+"Ov" = (
+/obj/machinery/door/airlock/glass{
+	name = "Library"
+	},
+/turf/simulated/floor/wood,
 /area/space)
 "Ow" = (
 /obj/structure/closet/crate{
@@ -18265,6 +18361,12 @@
 	},
 /turf/simulated/floor,
 /area/space)
+"Qi" = (
+/obj/structure/bookcase{
+	name = "bookcase (Adult)"
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "Qj" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -18782,6 +18884,12 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"Ru" = (
+/obj/structure/bookcase{
+	name = "bookcase (Religious)"
+	},
+/turf/simulated/floor/wood,
 /area/space)
 "Rv" = (
 /obj/structure/grille,
@@ -44557,9 +44665,9 @@ cd
 jI
 jI
 jI
-lT
+Ov
 jI
-lT
+Ov
 jI
 jI
 lT
@@ -44812,10 +44920,10 @@ jI
 jI
 jI
 jI
-fA
-fA
+uE
+NT
 lT
-fA
+Ru
 lT
 xd
 jI
@@ -45068,12 +45176,12 @@ cd
 cd
 jI
 fA
-fA
+hX
 lT
 lT
 lT
 lT
-lT
+Vz
 lT
 OE
 lT
@@ -45324,9 +45432,9 @@ cd
 cd
 cd
 jI
-fA
-lT
-lT
+IH
+ut
+Vz
 lT
 lT
 lT
@@ -45581,13 +45689,13 @@ cd
 cd
 cd
 jI
-fA
+Pq
 lT
 lT
 lT
-lT
-lT
-lT
+Qv
+kR
+Qv
 yt
 jI
 jI
@@ -45838,13 +45946,13 @@ cd
 cd
 cd
 jI
-fA
-fA
-fA
-fA
-lT
-fA
-lT
+Ar
+Vv
+Qi
+My
+IH
+rG
+Qv
 ZY
 oK
 Al
@@ -46095,13 +46203,13 @@ cd
 cd
 cd
 jI
-fA
+Pq
 lT
+Vz
 lT
-lT
-lT
-lT
-lT
+Qv
+ut
+IH
 lT
 Ig
 PC
@@ -46352,8 +46460,8 @@ cd
 cd
 cd
 jI
-fA
-lT
+Qv
+kR
 lT
 lT
 lT
@@ -46609,11 +46717,11 @@ cd
 cd
 cd
 jI
-fA
-fA
+vp
+xw
 lT
 lT
-lT
+Vz
 lT
 lT
 lT
@@ -46868,10 +46976,10 @@ cd
 jI
 jI
 jI
-fA
-fA
+oZ
+MD
 lT
-fA
+nl
 lT
 yV
 ZQ
