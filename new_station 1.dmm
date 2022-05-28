@@ -1099,8 +1099,16 @@
 /area/space)
 "cG" = (
 /obj/structure/table/glass,
-/obj/item/weapon/game_kit/random{
+/obj/item/stack/medical/bruise_pack{
+	pixel_x = 10;
 	pixel_y = 2
+	},
+/obj/item/stack/medical/bruise_pack{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/stack/medical/ointment{
+	pixel_y = 4
 	},
 /turf/simulated/floor,
 /area/space)
@@ -2254,6 +2262,18 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"fz" = (
+/obj/structure/stool/bed/chair/metal/red,
+/obj/machinery/flasher_button{
+	id = "escapeshutflash";
+	pixel_x = 31;
+	pixel_y = 2
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "darkred"
+	},
+/area/space)
 "fA" = (
 /obj/structure/stool/bed/chair/comfy/black,
 /obj/structure/extinguisher_cabinet{
@@ -2754,8 +2774,10 @@
 	},
 /area/space)
 "gJ" = (
-/obj/random/vending/cola,
-/turf/simulated/floor,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor{
+	icon_state = "escape"
+	},
 /area/space)
 "gK" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -3233,6 +3255,8 @@
 /area/space)
 "hQ" = (
 /obj/structure/window/reinforced,
+/obj/structure/table/reinforced,
+/obj/item/weapon/handcuffs,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkred"
@@ -4145,6 +4169,16 @@
 	icon_state = "dark"
 	},
 /area/space)
+"jS" = (
+/obj/structure/window/reinforced,
+/obj/structure/table/reinforced,
+/obj/machinery/recharger{
+	pixel_y = 4
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "jT" = (
 /obj/machinery/door/poddoor{
 	id = "toxinsdriver";
@@ -4712,6 +4746,10 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
+/area/space)
+"lo" = (
+/obj/machinery/computer/arcade,
+/turf/simulated/floor,
 /area/space)
 "lp" = (
 /obj/machinery/door/airlock/engineering/glass{
@@ -5993,7 +6031,7 @@
 	},
 /area/space)
 "ol" = (
-/obj/structure/filingcabinet,
+/obj/structure/closet/wardrobe/red,
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "darkred"
@@ -6088,12 +6126,9 @@
 	},
 /area/space)
 "ow" = (
-/obj/structure/table/glass,
-/obj/item/weapon/lighter/zippo{
-	pixel_x = -5;
-	pixel_y = 5
+/turf/simulated/floor{
+	icon_state = "escape"
 	},
-/turf/simulated/floor,
 /area/space)
 "ox" = (
 /obj/machinery/disposal,
@@ -6444,6 +6479,15 @@
 	icon_state = "whitepurple"
 	},
 /area/space)
+"pk" = (
+/obj/machinery/flasher{
+	id = "escapeshutflash"
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "vault"
+	},
+/area/space)
 "pl" = (
 /obj/structure/table,
 /turf/simulated/floor{
@@ -6648,7 +6692,7 @@
 	},
 /area/space)
 "pC" = (
-/obj/structure/closet/wardrobe/red,
+/obj/structure/filingcabinet,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkred"
@@ -10008,7 +10052,10 @@
 	},
 /area/space)
 "wY" = (
-/obj/machinery/computer/arcade,
+/obj/structure/table/glass,
+/obj/item/weapon/game_kit/random{
+	pixel_y = 2
+	},
 /turf/simulated/floor,
 /area/space)
 "wZ" = (
@@ -12383,6 +12430,10 @@
 /area/space)
 "Ct" = (
 /obj/structure/table/reinforced,
+/obj/machinery/door_control{
+	id = "Security_private";
+	name = "Shutters Control"
+	},
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "darkred"
@@ -12519,6 +12570,14 @@
 /area/space)
 "CJ" = (
 /obj/structure/window/reinforced,
+/obj/structure/table/reinforced,
+/obj/item/stack/medical/ointment{
+	pixel_y = 4
+	},
+/obj/item/stack/medical/bruise_pack{
+	pixel_x = 10;
+	pixel_y = 2
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "darkred"
@@ -13395,8 +13454,13 @@
 	},
 /area/space)
 "EF" = (
-/obj/random/vending/snack,
-/turf/simulated/floor,
+/obj/machinery/door/airlock/security{
+	name = "Security Checkpoint";
+	req_access = list(1)
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "EG" = (
 /obj/structure/table/woodentable,
@@ -13743,7 +13807,7 @@
 	},
 /area/space)
 "Fp" = (
-/obj/machinery/vending/cigarette,
+/obj/random/vending/snack,
 /turf/simulated/floor,
 /area/space)
 "Fq" = (
@@ -14089,6 +14153,12 @@
 	},
 /turf/simulated/floor{
 	icon_state = "darkbrown"
+	},
+/area/space)
+"Gb" = (
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "escape"
 	},
 /area/space)
 "Gc" = (
@@ -14660,6 +14730,10 @@
 	dir = 1;
 	icon_state = "greencorner"
 	},
+/area/space)
+"Hs" = (
+/obj/random/vending/cola,
+/turf/simulated/floor,
 /area/space)
 "Ht" = (
 /obj/structure/table,
@@ -15997,6 +16071,12 @@
 /area/space)
 "Ko" = (
 /obj/structure/window/reinforced,
+/obj/structure/table/reinforced,
+/obj/item/device/radio/off{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/item/device/flash,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -19379,9 +19459,12 @@
 /area/space)
 "RS" = (
 /obj/structure/table/glass,
-/obj/item/weapon/paper_bin,
+/obj/item/weapon/paper_bin{
+	pixel_y = 5
+	},
 /obj/item/weapon/pen{
-	layer = 3.1
+	layer = 3.1;
+	pixel_y = 5
 	},
 /turf/simulated/floor,
 /area/space)
@@ -21651,19 +21734,11 @@
 	},
 /area/space)
 "WU" = (
-/obj/structure/table/glass,
-/obj/item/stack/medical/bruise_pack{
-	pixel_x = 10;
-	pixel_y = 2
+/obj/machinery/vending/cigarette,
+/turf/simulated/floor{
+	dir = 10;
+	icon_state = "escape"
 	},
-/obj/item/stack/medical/bruise_pack{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/stack/medical/ointment{
-	pixel_y = 4
-	},
-/turf/simulated/floor,
 /area/space)
 "WV" = (
 /obj/machinery/recharge_station,
@@ -38539,7 +38614,7 @@ wR
 wR
 wR
 wR
-wR
+cG
 wR
 wR
 wR
@@ -38793,11 +38868,11 @@ wR
 wR
 wR
 wR
-wR
-wR
-wR
-wR
-wR
+jI
+jI
+jI
+jI
+jI
 wR
 jI
 jI
@@ -39050,7 +39125,7 @@ wR
 wR
 wR
 wR
-wR
+jI
 cd
 cd
 cd
@@ -39307,7 +39382,7 @@ wR
 wR
 wR
 wR
-wR
+jI
 cd
 cd
 cd
@@ -39564,7 +39639,7 @@ wR
 wR
 wR
 wR
-wR
+jI
 cd
 cd
 jI
@@ -39581,13 +39656,13 @@ JC
 JC
 JC
 JC
-Oe
+Hs
 jI
 IL
 ce
 gD
 ce
-ce
+pk
 la
 jI
 wR
@@ -39821,28 +39896,28 @@ jI
 wR
 wR
 wR
-wR
+jI
 cd
 cd
 jI
-gJ
-JC
-JC
-iv
-iv
-iv
-iv
-iv
-JC
-JC
 qU
 JC
 JC
-AE
+iv
+iv
+iv
+iv
+iv
+JC
+JC
+JC
+JC
+JC
+lo
 jI
 IL
 ce
-Ko
+jS
 ce
 ce
 TE
@@ -40078,7 +40153,7 @@ jI
 jI
 jI
 wR
-wR
+jI
 cd
 cd
 jI
@@ -40092,12 +40167,12 @@ Ho
 rq
 JC
 JC
-cG
+JC
 JC
 JC
 Fp
 jI
-fg
+fz
 ce
 hQ
 Ys
@@ -40339,20 +40414,20 @@ jI
 cd
 cd
 jI
-EF
-JC
-JC
-qU
-qU
-qU
-qU
-qU
-JC
-JC
 iv
 JC
 JC
-ow
+qU
+qU
+qU
+qU
+qU
+JC
+JC
+JC
+JC
+JC
+JG
 jI
 jI
 Iq
@@ -40360,7 +40435,7 @@ jI
 jI
 jI
 jI
-jI
+wR
 wR
 wR
 wR
@@ -40597,7 +40672,7 @@ cd
 cd
 jI
 jI
-WU
+QW
 JC
 JC
 JC
@@ -40610,7 +40685,7 @@ JC
 JC
 JC
 QW
-jI
+cq
 ma
 ce
 HD
@@ -40853,8 +40928,8 @@ cd
 cd
 cd
 cd
-jI
-JG
+XG
+JC
 qk
 JC
 JC
@@ -41124,7 +41199,7 @@ JC
 JC
 ye
 ye
-jI
+cq
 Nt
 ce
 la
@@ -41617,8 +41692,8 @@ wR
 wR
 wR
 wR
+jI
 wR
-wR
 jI
 jI
 cd
@@ -41635,7 +41710,7 @@ cd
 jI
 MB
 MB
-MB
+gJ
 jI
 ol
 cL
@@ -41874,10 +41949,10 @@ wR
 wR
 wR
 wR
+jI
 wR
 wR
-wR
-wR
+jI
 cd
 cd
 cd
@@ -41892,8 +41967,8 @@ cd
 jI
 JC
 JC
-JC
-jI
+ow
+cq
 xY
 ce
 ce
@@ -42150,7 +42225,7 @@ jI
 JC
 JC
 JC
-SF
+EF
 ce
 ce
 ce
@@ -42406,8 +42481,8 @@ ib
 jI
 JC
 JC
-JC
-jI
+ow
+cq
 xY
 ce
 nD
@@ -42663,7 +42738,7 @@ ib
 ib
 JC
 JC
-JC
+ow
 jI
 yv
 pC
@@ -42920,12 +42995,12 @@ ib
 jI
 JC
 JC
-JC
+ow
 jI
 jI
-jI
-jI
-jI
+id
+HU
+Uz
 jI
 jI
 jI
@@ -43178,7 +43253,7 @@ ib
 JC
 JC
 JC
-JC
+WU
 jI
 JC
 JC
@@ -43435,7 +43510,7 @@ jI
 JC
 JC
 JC
-JC
+ow
 JC
 JC
 JC
@@ -43692,7 +43767,7 @@ jI
 JC
 JC
 JC
-JC
+ow
 jI
 JC
 JC
@@ -43949,7 +44024,7 @@ jI
 JC
 JC
 JC
-JC
+Gb
 jI
 jI
 jI
@@ -44205,7 +44280,7 @@ cd
 jI
 JC
 JC
-JC
+ow
 jI
 jI
 Ai
@@ -44462,7 +44537,7 @@ cd
 jI
 JC
 JC
-JC
+ow
 jI
 Vv
 lT
@@ -44719,7 +44794,7 @@ cd
 jI
 JC
 JC
-JC
+ow
 jI
 Zq
 lT
