@@ -4106,6 +4106,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/space)
+"jH" = (
+/obj/machinery/door_control{
+	desc = "A remote control-switch for a door to space.";
+	id = "xenobioout6";
+	name = "Containment Release Switch";
+	pixel_y = 24;
+	req_access = list(55)
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "whitepurplecorner"
+	},
+/area/space)
 "jI" = (
 /turf/simulated/wall,
 /area/space)
@@ -6603,19 +6616,6 @@
 	},
 /turf/simulated/floor{
 	icon_state = "grimy"
-	},
-/area/space)
-"pv" = (
-/obj/machinery/door_control{
-	desc = "A remote control-switch for a door to space.";
-	id = "xenobioout6";
-	name = "Containment Release Switch";
-	pixel_y = 24;
-	req_access = list(55)
-	},
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "whitepurplecorner"
 	},
 /area/space)
 "pw" = (
@@ -11454,6 +11454,10 @@
 /turf/simulated/floor{
 	icon_state = "darkblue"
 	},
+/area/space)
+"Ab" = (
+/mob/living/carbon/monkey,
+/turf/simulated/floor/engine,
 /area/space)
 "Ac" = (
 /obj/structure/table/glass,
@@ -43694,7 +43698,7 @@ Hp
 Hp
 Hp
 Hp
-pv
+jH
 XM
 xl
 Hp
@@ -45226,7 +45230,7 @@ wR
 wR
 wR
 Hp
-nI
+Ab
 nI
 nI
 eo
@@ -45248,7 +45252,7 @@ zA
 eo
 nI
 nI
-nI
+Ab
 Hp
 cd
 cd
@@ -45505,7 +45509,7 @@ ce
 Gr
 nI
 nI
-nI
+Ab
 Hp
 cd
 cd
@@ -45740,7 +45744,7 @@ wR
 wR
 wR
 Hp
-nI
+Ab
 nI
 nI
 eo
@@ -45762,7 +45766,7 @@ TQ
 eo
 nI
 nI
-nI
+Ab
 Hp
 cd
 cd
