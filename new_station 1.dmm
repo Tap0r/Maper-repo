@@ -6605,6 +6605,19 @@
 	icon_state = "grimy"
 	},
 /area/space)
+"pv" = (
+/obj/machinery/door_control{
+	desc = "A remote control-switch for a door to space.";
+	id = "xenobioout6";
+	name = "Containment Release Switch";
+	pixel_y = 24;
+	req_access = list(55)
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "whitepurplecorner"
+	},
+/area/space)
 "pw" = (
 /obj/structure/table,
 /obj/item/weapon/screwdriver,
@@ -43681,7 +43694,7 @@ Hp
 Hp
 Hp
 Hp
-hq
+pv
 XM
 xl
 Hp
