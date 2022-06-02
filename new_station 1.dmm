@@ -175,7 +175,7 @@
 	},
 /area/space)
 "aiY" = (
-/obj/structure/closet/secure_closet/security,
+/obj/item/weapon/flora/random,
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "darkred"
@@ -1214,7 +1214,13 @@
 	},
 /area/space)
 "bnc" = (
-/obj/structure/table/reinforced,
+/obj/structure/table,
+/obj/item/weapon/paper_bin{
+	pixel_y = 4
+	},
+/obj/item/weapon/pen{
+	pixel_y = 6
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "darkred"
@@ -2760,7 +2766,13 @@
 /turf/simulated/floor,
 /area/space)
 "cYy" = (
-/obj/structure/closet/wardrobe/red,
+/obj/structure/table,
+/obj/machinery/computer/skills,
+/obj/machinery/door_control{
+	id = "Security_private";
+	name = "Shutters Control";
+	pixel_x = -28
+	},
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "darkred"
@@ -2813,11 +2825,8 @@
 /turf/simulated/floor,
 /area/space)
 "dcU" = (
-/obj/structure/stool/bed/chair/metal/red,
-/obj/machinery/flasher_button{
-	id = "escapeshutflash";
-	pixel_x = 31;
-	pixel_y = 2
+/obj/item/weapon/flora/pottedplant{
+	icon_state = "plant-6"
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -3719,12 +3728,24 @@
 	},
 /area/space)
 "dMn" = (
-/obj/structure/stool/bed/chair/metal/red{
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/machinery/door_control{
+	id = "Security_KPP";
+	name = "Shutters Control";
+	pixel_y = 2
+	},
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id = "Security_private";
+	opacity = 0
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor{
-	dir = 6;
-	icon_state = "darkred"
+	icon_state = "darkredfull"
 	},
 /area/space)
 "dMv" = (
@@ -3757,8 +3778,22 @@
 	},
 /area/space)
 "dNg" = (
-/turf/simulated/wall,
-/area/station/hallway/secondary/entry)
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/item/weapon/book/manual/wiki/security_space_law,
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id = "Security_private";
+	opacity = 0
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor{
+	icon_state = "darkredfull"
+	},
+/area/space)
 "dNk" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced{
@@ -3774,7 +3809,7 @@
 	name = "Arrival Airlock"
 	},
 /turf/simulated/floor,
-/area/station/hallway/secondary/entry)
+/area/space)
 "dNC" = (
 /obj/structure/table/glass,
 /turf/simulated/floor{
@@ -3989,12 +4024,23 @@
 	},
 /area/space)
 "dYo" = (
-/obj/machinery/door/airlock/security{
-	name = "Security Checkpoint";
-	req_access = list(1)
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/brigdoor/northleft{
+	name = "Brig Desk";
+	req_access = list(63)
+	},
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id = "Security_private";
+	opacity = 0
+	},
+/obj/machinery/door/firedoor,
+/obj/item/weapon/bell{
+	pixel_y = 4
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	icon_state = "darkredfull"
 	},
 /area/space)
 "dYr" = (
@@ -4524,13 +4570,11 @@
 	},
 /area/space)
 "eyT" = (
-/obj/structure/reagent_dispensers/peppertank{
-	pixel_y = -31
+/obj/machinery/computer/security{
+	dir = 8
 	},
-/obj/structure/table/reinforced,
-/obj/item/weapon/crowbar,
-/obj/item/device/flash,
 /turf/simulated/floor{
+	dir = 5;
 	icon_state = "darkred"
 	},
 /area/space)
@@ -4921,9 +4965,13 @@
 	},
 /area/space)
 "eUD" = (
-/obj/machinery/computer/secure_data,
+/obj/machinery/door/airlock/security{
+	name = "Security Checkpoint";
+	req_access = list(1)
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor{
-	icon_state = "darkred"
+	icon_state = "darkredfull"
 	},
 /area/space)
 "eVp" = (
@@ -6279,7 +6327,7 @@
 	name = "Arrival Airlock"
 	},
 /turf/simulated/floor/plating,
-/area/station/hallway/secondary/entry)
+/area/space)
 "gfE" = (
 /obj/item/weapon/flora/random,
 /obj/structure/sign/warning/securearea{
@@ -6392,7 +6440,8 @@
 "gnj" = (
 /obj/structure/window/reinforced,
 /obj/structure/table/reinforced,
-/obj/machinery/recharger{
+/obj/machinery/flasher_button{
+	id = "escapeshutflash";
 	pixel_y = 4
 	},
 /turf/simulated/floor{
@@ -6989,11 +7038,7 @@
 	},
 /area/space)
 "gMl" = (
-/obj/structure/table/reinforced,
-/obj/machinery/door_control{
-	id = "Security_private";
-	name = "Shutters Control"
-	},
+/obj/machinery/disposal,
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "darkred"
@@ -7644,12 +7689,8 @@
 "htA" = (
 /obj/structure/window/reinforced,
 /obj/structure/table/reinforced,
-/obj/item/stack/medical/ointment{
-	pixel_y = 4
-	},
-/obj/item/stack/medical/bruise_pack{
-	pixel_x = 10;
-	pixel_y = 2
+/obj/item/device/radio/off{
+	pixel_y = 6
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -7826,6 +7867,9 @@
 /obj/structure/window/reinforced,
 /obj/structure/table/reinforced,
 /obj/item/weapon/handcuffs,
+/obj/machinery/recharger{
+	pixel_y = 4
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkred"
@@ -9243,7 +9287,9 @@
 	},
 /area/space)
 "jjj" = (
-/obj/structure/filingcabinet,
+/obj/machinery/computer/card{
+	dir = 8
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkred"
@@ -9538,17 +9584,12 @@
 	},
 /area/space)
 "jAH" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/folder/red{
-	pixel_x = -9;
-	pixel_y = 2
+/obj/machinery/door/airlock/security{
+	name = "Security Checkpoint";
+	req_access = list(1)
 	},
-/obj/item/weapon/folder/red,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "darkred"
+	icon_state = "darkredfull"
 	},
 /area/space)
 "jAL" = (
@@ -10490,12 +10531,18 @@
 /turf/simulated/wall/r_wall,
 /area/space)
 "kFP" = (
-/obj/structure/sign/warning/securearea{
-	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
-	name = "KEEP CLEAR: DOCKING AREA"
+/obj/structure/rack,
+/obj/item/device/flash{
+	pixel_x = -5;
+	pixel_y = 5
 	},
-/turf/simulated/wall,
-/area/station/hallway/secondary/entry)
+/obj/item/weapon/screwdriver,
+/obj/item/weapon/handcuffs,
+/turf/simulated/floor{
+	dir = 10;
+	icon_state = "darkred"
+	},
+/area/space)
 "kFT" = (
 /obj/machinery/door/poddoor{
 	density = 0;
@@ -10764,8 +10811,17 @@
 	},
 /area/space)
 "kXw" = (
-/turf/simulated/floor/plating,
-/area/station/hallway/secondary/entry)
+/obj/item/device/radio/off{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/structure/rack,
+/obj/item/weapon/crowbar,
+/obj/item/clothing/mask/gas/sechailer,
+/turf/simulated/floor{
+	icon_state = "darkred"
+	},
+/area/space)
 "kXz" = (
 /obj/structure/sign/nanotrasen{
 	pixel_y = 32
@@ -11049,13 +11105,8 @@
 /turf/simulated/floor/carpet/green,
 /area/space)
 "lny" = (
-/obj/structure/rack,
-/obj/item/device/radio/off{
-	pixel_x = 6;
-	pixel_y = 4
-	},
-/obj/item/device/radio/off{
-	pixel_x = -6;
+/obj/structure/table,
+/obj/machinery/recharger{
 	pixel_y = 4
 	},
 /turf/simulated/floor{
@@ -11102,13 +11153,17 @@
 /area/space)
 "lqa" = (
 /obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id = "Security_KPP";
+	opacity = 0
+	},
 /turf/simulated/floor,
 /area/space)
 "lqb" = (
-/obj/structure/table/reinforced,
-/obj/machinery/computer/skills,
+/obj/structure/closet/secure_closet/security,
 /turf/simulated/floor{
-	dir = 4;
 	icon_state = "darkred"
 	},
 /area/space)
@@ -14612,7 +14667,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor{
-	icon_state = "dark"
+	icon_state = "darkredfull"
 	},
 /area/space)
 "paN" = (
@@ -16657,12 +16712,13 @@
 	},
 /area/space)
 "rgE" = (
-/obj/structure/table/reinforced,
-/obj/machinery/recharger/wallcharger{
+/obj/structure/reagent_dispensers/peppertank{
 	pixel_y = 30
 	},
+/obj/structure/table,
+/obj/item/weapon/storage/fancy/donut_box,
 /turf/simulated/floor{
-	dir = 1;
+	dir = 5;
 	icon_state = "darkred"
 	},
 /area/space)
@@ -16756,13 +16812,12 @@
 /turf/environment/space,
 /area/shuttle/mining/station)
 "rmq" = (
-/obj/machinery/door/airlock/external{
-	dock_tag = "arrival_specops";
-	locked = 1;
-	name = "Arrival Airlock"
+/obj/structure/closet/wardrobe/red,
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "darkred"
 	},
-/turf/simulated/floor/plating,
-/area/station/hallway/secondary/entry)
+/area/space)
 "rms" = (
 /turf/simulated/floor{
 	dir = 1;
@@ -16911,11 +16966,17 @@
 "rth" = (
 /obj/structure/window/reinforced,
 /obj/structure/table/reinforced,
-/obj/item/device/radio/off{
-	pixel_x = -6;
+/obj/item/stack/medical/bruise_pack{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/stack/medical/ointment{
 	pixel_y = 4
 	},
-/obj/item/device/flash,
+/obj/item/stack/medical/bruise_pack{
+	pixel_x = 10;
+	pixel_y = 2
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -17246,12 +17307,6 @@
 "rKO" = (
 /turf/environment/space,
 /area/shuttle/specops/station)
-"rLw" = (
-/obj/machinery/computer/security,
-/turf/simulated/floor{
-	icon_state = "darkred"
-	},
-/area/space)
 "rLG" = (
 /obj/structure/morgue,
 /turf/simulated/floor{
@@ -17390,6 +17445,12 @@
 /area/space)
 "rRO" = (
 /obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id = "Security_KPP";
+	opacity = 0
+	},
 /turf/simulated/floor{
 	icon_state = "escape"
 	},
@@ -18072,10 +18133,10 @@
 	},
 /area/space)
 "sDd" = (
-/obj/structure/table/reinforced,
+/obj/structure/filingcabinet,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "darkredcorners"
+	dir = 8;
+	icon_state = "darkred"
 	},
 /area/space)
 "sDH" = (
@@ -18111,15 +18172,6 @@
 /obj/structure/stool/bed,
 /turf/simulated/floor{
 	dir = 8;
-	icon_state = "darkred"
-	},
-/area/space)
-"sEH" = (
-/obj/structure/stool/bed/chair/metal/red{
-	dir = 1
-	},
-/turf/simulated/floor{
-	dir = 10;
 	icon_state = "darkred"
 	},
 /area/space)
@@ -20875,12 +20927,6 @@
 	icon_state = "warndark"
 	},
 /area/station/cargo/storage)
-"vAV" = (
-/obj/machinery/computer/card,
-/turf/simulated/floor{
-	icon_state = "darkred"
-	},
-/area/space)
 "vBf" = (
 /obj/structure/table/glass,
 /obj/item/stack/medical/bruise_pack{
@@ -39496,8 +39542,8 @@ tiR
 tiR
 rKN
 fkk
-hMt
-gUU
+aiY
+uqC
 htA
 foD
 foD
@@ -39758,11 +39804,11 @@ gUU
 rth
 gUU
 gUU
-sEH
+kak
 fkk
-iRy
-iRy
-iRy
+fkk
+fkk
+fkk
 iRy
 iRy
 iRy
@@ -40017,9 +40063,9 @@ gUU
 qKt
 kak
 fkk
-iRy
-iRy
-iRy
+muw
+muw
+fkk
 iRy
 iRy
 iRy
@@ -40272,12 +40318,12 @@ gUU
 gnj
 gUU
 gUU
-dMn
+kak
 fkk
-iRy
-iRy
-iRy
-iRy
+muw
+muw
+fkk
+fkk
 iRy
 iRy
 iRy
@@ -40525,16 +40571,16 @@ dcI
 cGe
 fkk
 dcU
-gUU
+gKu
 hCY
 hcS
-cdW
+hcS
 fkk
 fkk
-iRy
-iRy
-iRy
-iRy
+muw
+muw
+muw
+fkk
 iRy
 iRy
 iRy
@@ -40787,11 +40833,11 @@ fkk
 fkk
 fkk
 fkk
-iRy
-iRy
-iRy
-iRy
-iRy
+muw
+muw
+muw
+muw
+fkk
 iRy
 iRy
 iRy
@@ -41039,16 +41085,16 @@ dcI
 cYc
 nMY
 aiY
-gUU
-sEH
+uqC
+uqC
+kFP
 fkk
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+muw
+muw
+muw
+muw
+muw
+fkk
 iRy
 iRy
 iRy
@@ -41294,18 +41340,18 @@ dcI
 dcI
 dcI
 dcI
-fFg
+eUD
+bJl
 gUU
 gUU
-kak
+kXw
 fkk
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+muw
+muw
+muw
+muw
+muw
+fkk
 iRy
 iRy
 iRy
@@ -41554,15 +41600,15 @@ tjY
 nMY
 lny
 gUU
-kak
+gUU
+lqb
 fkk
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+muw
+muw
+muw
+muw
+muw
+fkk
 iRy
 iRy
 iRy
@@ -41810,16 +41856,16 @@ fkk
 fkk
 fkk
 rgE
-gUU
-hha
+gKu
+gKu
+rmq
 fkk
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+muw
+muw
+muw
+muw
+muw
+fkk
 iRy
 iRy
 iRy
@@ -42067,16 +42113,16 @@ fkk
 cYy
 bnc
 sDd
-gUU
-eyT
+uqC
+rVw
 fkk
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+muw
+muw
+muw
+muw
+muw
+fkk
 iRy
 iRy
 iRy
@@ -42320,20 +42366,20 @@ fkk
 dcI
 dcI
 kIY
-nMY
+dMn
 bJl
+izL
 gUU
 gUU
-gUU
-eUD
+fyw
+muw
+muw
+muw
+muw
+muw
+muw
+muw
 fkk
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
 iRy
 iRy
 iRy
@@ -42578,19 +42624,19 @@ dcI
 dcI
 dcI
 dYo
+wbW
 gUU
 gUU
 gUU
-nTn
-rLw
+eFA
 fkk
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+muw
+muw
+muw
+muw
+muw
+muw
+fkk
 iRy
 iRy
 xBl
@@ -42834,20 +42880,20 @@ fkk
 dcI
 dcI
 kIY
-nMY
+dNg
 bJl
-gUU
 pTa
 gUU
-vAV
+gUU
+srH
 fkk
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+muw
+muw
+muw
+muw
+muw
+muw
+fkk
 iRy
 xBl
 xBl
@@ -43092,19 +43138,19 @@ dcI
 dcI
 kIY
 fkk
-kgm
+eyT
 jjj
-lqb
-jAH
+nVi
+gKu
 gMl
 fkk
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+muw
+muw
+muw
+muw
+muw
+muw
+fkk
 iRy
 xBl
 xBl
@@ -43350,9 +43396,9 @@ dcI
 kIY
 fkk
 fkk
-kUn
-bFk
-mYT
+fkk
+fkk
+jAH
 fkk
 fkk
 fkk
@@ -43385,10 +43431,10 @@ doj
 krE
 lqA
 fkk
-kFP
-lqA
-lqA
-lqA
+pxG
+iRy
+iRy
+iRy
 rbr
 rbr
 rbr
@@ -43642,10 +43688,10 @@ dcI
 dcI
 dcI
 dcI
-dNg
-kXw
-kXw
-dNg
+fkk
+fkk
+fkk
+fkk
 rbr
 rbr
 rbr
@@ -43899,9 +43945,9 @@ dcI
 dcI
 dcI
 dcI
-rmq
-kXw
-kXw
+lzP
+muw
+muw
 gff
 rbr
 rbr
@@ -44157,8 +44203,8 @@ dcI
 dcI
 dcI
 dNr
-kXw
-kXw
+muw
+muw
 gff
 rbr
 rbr
@@ -44413,10 +44459,10 @@ dcI
 dcI
 dcI
 dcI
-dNg
-dNg
-dNg
-dNg
+fkk
+fkk
+fkk
+fkk
 rbr
 rbr
 rbr
