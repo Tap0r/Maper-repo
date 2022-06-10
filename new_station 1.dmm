@@ -4122,21 +4122,6 @@
 /obj/machinery/pipedispenser,
 /turf/simulated/floor,
 /area/space)
-"dOs" = (
-/obj/structure/stool/bed/chair/office/dark{
-	dir = 1
-	},
-/obj/machinery/door_control{
-	id = "bridge blast";
-	name = "Bridge Blast Door Control";
-	pixel_y = 35;
-	req_access = list(19)
-	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "darkblue"
-	},
-/area/space)
 "dOy" = (
 /obj/structure/stool/bed/chair/comfy/black,
 /turf/simulated/floor{
@@ -6404,6 +6389,15 @@
 	icon_state = "red"
 	},
 /area/space)
+"fKI" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 1;
+	frequency = 1441;
+	id = "waste_in";
+	name = "waste air injector"
+	},
+/turf/simulated/floor/engine/vacuum,
+/area/space)
 "fKV" = (
 /obj/structure/closet/secure_closet/personal/patient,
 /obj/item/clothing/under/patient_gown,
@@ -6471,22 +6465,6 @@
 	dir = 1
 	},
 /turf/simulated/floor/engine,
-/area/space)
-"fMo" = (
-/obj/machinery/door/airlock/command/glass{
-	name = "Bridge";
-	req_access = list(19,38)
-	},
-/obj/machinery/door/poddoor{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "bridge blast";
-	name = "Bridge Blast Doors";
-	opacity = 0
-	},
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
 /area/space)
 "fNz" = (
 /obj/machinery/computer/monitor{
@@ -12038,6 +12016,15 @@
 	dir = 6;
 	icon_state = "black"
 	},
+/area/space)
+"liT" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
+	dir = 1;
+	frequency = 1441;
+	id_tag = "waste_out";
+	name = "(A) Waste Vent"
+	},
+/turf/simulated/floor/engine/vacuum,
 /area/space)
 "lkm" = (
 /turf/simulated/floor{
@@ -18519,6 +18506,21 @@
 	icon_state = "dark"
 	},
 /area/space)
+"ryD" = (
+/obj/structure/stool/bed/chair/office/dark{
+	dir = 1
+	},
+/obj/machinery/door_control{
+	id = "bridge blast";
+	name = "Bridge Blast Door Control";
+	pixel_y = 35;
+	req_access = list(19)
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkblue"
+	},
+/area/space)
 "ryL" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor{
@@ -22873,6 +22875,22 @@
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "red"
+	},
+/area/space)
+"vFN" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Bridge";
+	req_access = list(19,38)
+	},
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "bridge blast";
+	name = "Bridge Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space)
 "vGC" = (
@@ -56637,7 +56655,7 @@ qIO
 xOi
 xOi
 xOi
-fMo
+vFN
 xOi
 xOi
 xOi
@@ -56964,7 +56982,7 @@ jyg
 dAY
 vVA
 lfk
-rRu
+liT
 rRu
 rRu
 jpW
@@ -57478,7 +57496,7 @@ jyg
 dZn
 yka
 odG
-rRu
+fKI
 rRu
 rRu
 jpW
@@ -58181,7 +58199,7 @@ wbw
 cUW
 qby
 kIn
-dOs
+ryD
 gUU
 gZq
 pLb
@@ -59721,7 +59739,7 @@ hmr
 xOi
 xOi
 xOi
-fMo
+vFN
 xOi
 xOi
 xOi
