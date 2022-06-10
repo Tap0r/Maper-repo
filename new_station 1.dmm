@@ -4122,6 +4122,21 @@
 /obj/machinery/pipedispenser,
 /turf/simulated/floor,
 /area/space)
+"dOs" = (
+/obj/structure/stool/bed/chair/office/dark{
+	dir = 1
+	},
+/obj/machinery/door_control{
+	id = "bridge blast";
+	name = "Bridge Blast Door Control";
+	pixel_y = 35;
+	req_access = list(19)
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkblue"
+	},
+/area/space)
 "dOy" = (
 /obj/structure/stool/bed/chair/comfy/black,
 /turf/simulated/floor{
@@ -6456,6 +6471,22 @@
 	dir = 1
 	},
 /turf/simulated/floor/engine,
+/area/space)
+"fMo" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Bridge";
+	req_access = list(19,38)
+	},
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "bridge blast";
+	name = "Bridge Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "fNz" = (
 /obj/machinery/computer/monitor{
@@ -11471,9 +11502,6 @@
 /area/space)
 "kIn" = (
 /obj/structure/table/woodentable,
-/obj/item/weapon/folder/blue{
-	pixel_y = 4
-	},
 /turf/simulated/floor{
 	icon_state = "darkblue"
 	},
@@ -20782,6 +20810,9 @@
 /obj/structure/table/woodentable,
 /obj/item/weapon/book/manual/wiki/sop{
 	pixel_y = 6
+	},
+/obj/item/weapon/folder/blue{
+	pixel_y = 4
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -56606,7 +56637,7 @@ qIO
 xOi
 xOi
 xOi
-lGZ
+fMo
 xOi
 xOi
 xOi
@@ -58150,7 +58181,7 @@ wbw
 cUW
 qby
 kIn
-pIs
+dOs
 gUU
 gZq
 pLb
@@ -59690,7 +59721,7 @@ hmr
 xOi
 xOi
 xOi
-lGZ
+fMo
 xOi
 xOi
 xOi
