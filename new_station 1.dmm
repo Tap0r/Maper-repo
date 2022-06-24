@@ -250,6 +250,19 @@
 	icon_state = "warndarkcorners"
 	},
 /area/space)
+"alh" = (
+/obj/structure/table/glass,
+/obj/item/weapon/paper_bin{
+	pixel_y = 4
+	},
+/obj/item/weapon/pen{
+	pixel_y = 6
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "whiteblue"
+	},
+/area/space)
 "ami" = (
 /obj/machinery/door/airlock/glass{
 	name = "Bedroom"
@@ -346,12 +359,12 @@
 	},
 /area/space)
 "aoR" = (
-/obj/structure/stool/bed/chair/metal{
-	dir = 1
+/obj/structure/morgue{
+	dir = 8
 	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "black"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "aoW" = (
@@ -392,7 +405,8 @@
 "aqg" = (
 /obj/structure/morgue,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "aqt" = (
@@ -522,9 +536,10 @@
 	},
 /area/space)
 "atE" = (
-/obj/structure/closet/secure_closet/personal/patient,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
 /turf/simulated/floor{
-	dir = 9;
 	icon_state = "whiteblue"
 	},
 /area/space)
@@ -573,7 +588,34 @@
 "avt" = (
 /obj/structure/closet/secure_closet/personal/patient,
 /turf/simulated/floor{
-	dir = 1;
+	dir = 9;
+	icon_state = "whiteblue"
+	},
+/area/space)
+"avE" = (
+/obj/item/weapon/reagent_containers/blood/AMinus{
+	pixel_x = -7;
+	pixel_y = -3
+	},
+/obj/item/weapon/reagent_containers/blood/APlus{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/obj/item/weapon/reagent_containers/blood/BPlus{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/obj/item/weapon/reagent_containers/blood/OMinus{
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/obj/structure/table/glass,
+/obj/item/weapon/reagent_containers/blood/empty{
+	pixel_x = 1;
+	pixel_y = -4
+	},
+/turf/simulated/floor{
+	dir = 6;
 	icon_state = "whiteblue"
 	},
 /area/space)
@@ -1208,8 +1250,7 @@
 	},
 /area/space)
 "bhB" = (
-/obj/machinery/door/airlock/medical/glass{
-	id_tag = "";
+/obj/machinery/door/airlock/medical{
 	name = "Surgery";
 	req_access = list(5)
 	},
@@ -1869,6 +1910,10 @@
 	icon_state = "warndark"
 	},
 /area/space)
+"bJk" = (
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/space)
 "bJl" = (
 /turf/simulated/floor{
 	dir = 1;
@@ -2180,6 +2225,13 @@
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
+	},
+/area/space)
+"bXQ" = (
+/obj/structure/closet/emcloset,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "black"
 	},
 /area/space)
 "bXR" = (
@@ -4046,8 +4098,7 @@
 	},
 /area/space)
 "dKR" = (
-/obj/machinery/door/airlock/medical/glass{
-	id_tag = "";
+/obj/machinery/door/airlock/medical{
 	name = "Shrubbery";
 	req_access = list(9)
 	},
@@ -4185,6 +4236,14 @@
 	},
 /turf/simulated/floor,
 /area/space)
+"dNx" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 5
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "dNC" = (
 /obj/structure/table/glass,
 /turf/simulated/floor{
@@ -4280,6 +4339,15 @@
 /turf/simulated/floor{
 	dir = 10;
 	icon_state = "warndark"
+	},
+/area/space)
+"dQZ" = (
+/obj/structure/sink{
+	pixel_y = 24
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "dRc" = (
@@ -5449,8 +5517,7 @@
 	},
 /area/space)
 "eOb" = (
-/obj/machinery/door/airlock/medical/glass{
-	id_tag = "";
+/obj/machinery/door/airlock/medical{
 	name = "Surgery";
 	req_access = list(5)
 	},
@@ -6049,6 +6116,19 @@
 	icon_state = "warndark"
 	},
 /area/space)
+"fpy" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/lighter/zippo{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/ashtray/bronze{
+	pixel_x = 6
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "fpz" = (
 /obj/structure/table,
 /obj/item/weapon/phone{
@@ -6110,6 +6190,15 @@
 /obj/structure/table,
 /turf/simulated/floor{
 	icon_state = "warndark"
+	},
+/area/space)
+"frV" = (
+/obj/machinery/door/airlock/virology{
+	name = "Virology Access";
+	req_access = list(5)
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space)
 "fsM" = (
@@ -6580,6 +6669,15 @@
 /obj/structure/grille,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
+/area/space)
+"fJm" = (
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
 /area/space)
 "fKv" = (
 /obj/structure/object_wall/mining{
@@ -7162,7 +7260,13 @@
 	},
 /area/space)
 "ggM" = (
-/obj/structure/closet/l3closet/general,
+/obj/structure/table/glass,
+/obj/item/weapon/storage/box/bodybags{
+	pixel_y = 4
+	},
+/obj/item/weapon/pen{
+	pixel_y = 6
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -7247,10 +7351,13 @@
 	},
 /area/space)
 "gnj" = (
-/obj/structure/stool/bed/chair/metal{
-	dir = 4
+/obj/machinery/hologram/holopad{
+	pixel_x = -16;
+	pixel_y = -16
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	icon_state = "white"
+	},
 /area/space)
 "gnz" = (
 /obj/structure/stool/bed/chair/comfy/black{
@@ -7386,6 +7493,21 @@
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "darkpurple"
+	},
+/area/space)
+"gvq" = (
+/obj/structure/table/glass,
+/obj/item/weapon/medical/teleporter{
+	pixel_x = -12;
+	pixel_y = 7
+	},
+/obj/item/weapon/storage/firstaid/toxin{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/turf/simulated/floor{
+	dir = 10;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "gvU" = (
@@ -7543,11 +7665,19 @@
 /turf/simulated/floor/engine/n20,
 /area/space)
 "gzU" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id = "Security_KPP";
+	opacity = 0
+	},
 /obj/machinery/door/airlock/glass{
 	name = "Escape Hall"
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "gzV" = (
 /obj/structure/stool/bed/chair/pew/right,
@@ -7615,8 +7745,10 @@
 	pixel_x = -28;
 	req_access = list(39)
 	},
+/obj/structure/stool/bed/chair/comfy/black,
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 8;
+	icon_state = "whitegreen"
 	},
 /area/space)
 "gBZ" = (
@@ -8060,10 +8192,13 @@
 	},
 /area/space)
 "gPi" = (
-/obj/structure/stool/bed/chair/metal{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "whiteblue"
+	},
 /area/space)
 "gQv" = (
 /obj/machinery/computer/security{
@@ -8361,7 +8496,7 @@
 /area/space)
 "hcM" = (
 /obj/structure/table/glass,
-/obj/item/weapon/storage/box/bodybags{
+/obj/item/weapon/reagent_containers/spray/cleaner{
 	pixel_y = 4
 	},
 /turf/simulated/floor{
@@ -9690,6 +9825,14 @@
 	icon_state = "vault"
 	},
 /area/space)
+"imK" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/space)
 "imP" = (
 /obj/random/tools/tech_supply,
 /turf/simulated/floor{
@@ -9736,6 +9879,15 @@
 /turf/simulated/floor{
 	dir = 10;
 	icon_state = "darkblue"
+	},
+/area/space)
+"ipJ" = (
+/obj/machinery/sleeper{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "iqK" = (
@@ -9913,10 +10065,6 @@
 "iAj" = (
 /obj/structure/table/glass,
 /obj/item/weapon/paper_bin{
-	pixel_y = 4
-	},
-/obj/item/weapon/reagent_containers/spray/cleaner{
-	pixel_x = -12;
 	pixel_y = 4
 	},
 /obj/item/weapon/pen/blue{
@@ -10590,6 +10738,13 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"jnh" = (
+/obj/item/weapon/flora/random,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "whiteblue"
+	},
+/area/space)
 "jnp" = (
 /obj/machinery/door/airlock/research/glass{
 	name = "Robotics Lab";
@@ -10655,6 +10810,13 @@
 	dir = 5;
 	icon_state = "vault"
 	},
+/area/space)
+"jqQ" = (
+/obj/machinery/door/airlock/medical{
+	name = "Psychiatric Maintenance";
+	req_access = list(64)
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "jrv" = (
 /obj/mecha/working/ripley,
@@ -11043,6 +11205,12 @@
 	icon_state = "warningcorner"
 	},
 /area/space)
+"jJV" = (
+/obj/machinery/door/firedoor,
+/turf/simulated/floor{
+	icon_state = "neutral"
+	},
+/area/space)
 "jKx" = (
 /obj/structure/rack,
 /obj/item/weapon/module/power_control,
@@ -11117,6 +11285,12 @@
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
+/area/space)
+"jNf" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/green,
 /area/space)
 "jNI" = (
 /obj/machinery/light/small,
@@ -11254,6 +11428,13 @@
 	opacity = 0
 	},
 /turf/simulated/floor/engine,
+/area/space)
+"jSM" = (
+/obj/machinery/door/firedoor,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "neutral"
+	},
 /area/space)
 "jTA" = (
 /obj/structure/rack,
@@ -11554,7 +11735,9 @@
 /turf/simulated/floor,
 /area/space)
 "kjE" = (
-/obj/structure/table/glass,
+/obj/structure/stool/bed/chair/metal{
+	dir = 1
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "black"
@@ -11976,6 +12159,26 @@
 	},
 /turf/simulated/floor{
 	icon_state = "darkbluefull"
+	},
+/area/space)
+"kGe" = (
+/obj/structure/table/glass,
+/obj/item/stack/medical/advanced/bruise_pack{
+	pixel_x = -4
+	},
+/obj/item/stack/medical/advanced/bruise_pack{
+	pixel_y = 4
+	},
+/obj/item/stack/medical/advanced/ointment{
+	pixel_x = 4;
+	pixel_y = -1
+	},
+/obj/machinery/vending/wallmed2{
+	pixel_y = -32
+	},
+/turf/simulated/floor{
+	dir = 10;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "kGL" = (
@@ -12581,6 +12784,22 @@
 	},
 /turf/simulated/floor/engine/vacuum,
 /area/space)
+"lkf" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/firstaid/o2,
+/obj/item/device/radio/off{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/item/device/radio/off{
+	pixel_x = 6;
+	pixel_y = 1
+	},
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "whiteblue"
+	},
+/area/space)
 "lkm" = (
 /turf/simulated/floor{
 	dir = 8;
@@ -12695,15 +12914,31 @@
 	icon_state = "darkredfull"
 	},
 /area/space)
-"lqa" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/poddoor/shutters{
-	density = 0;
-	icon_state = "shutter0";
-	id = "Security_KPP";
-	opacity = 0
+"lpR" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_x = -2;
+	pixel_y = 4
 	},
-/turf/simulated/floor,
+/obj/item/weapon/reagent_containers/syringe{
+	pixel_x = -4
+	},
+/obj/item/weapon/reagent_containers/syringe{
+	pixel_x = -2;
+	pixel_y = 3
+	},
+/obj/item/weapon/reagent_containers/syringe{
+	pixel_y = 6
+	},
+/turf/simulated/floor{
+	icon_state = "whiteblue"
+	},
+/area/space)
+"lqa" = (
+/obj/structure/closet/l3closet/general,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "lqb" = (
 /obj/structure/closet/secure_closet/security,
@@ -14016,6 +14251,15 @@
 	icon_state = "darkbrown"
 	},
 /area/space)
+"mBU" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/space)
 "mCa" = (
 /obj/structure/stool/bed/chair/office/dark,
 /turf/simulated/floor{
@@ -14894,6 +15138,7 @@
 /area/space)
 "ntN" = (
 /obj/structure/flora/ausbushes/genericbush,
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/simulated/floor/grass,
 /area/space)
 "nuD" = (
@@ -15467,6 +15712,12 @@
 	pixel_y = 3
 	},
 /turf/simulated/floor/wood,
+/area/space)
+"nQI" = (
+/obj/item/weapon/flora/random,
+/turf/simulated/floor{
+	icon_state = "white"
+	},
 /area/space)
 "nRH" = (
 /obj/item/weapon/flora/random,
@@ -17341,6 +17592,12 @@
 	icon_state = "dark"
 	},
 /area/space)
+"pFa" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/green,
+/area/space)
 "pFp" = (
 /obj/machinery/computer/crew,
 /obj/structure/sign/nanotrasen{
@@ -17442,6 +17699,15 @@
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "darkred"
+	},
+/area/space)
+"pJo" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 10;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "pJI" = (
@@ -17770,6 +18036,12 @@
 	},
 /turf/simulated/floor/plating/airless,
 /area/space)
+"pVx" = (
+/obj/item/weapon/flora/random,
+/turf/simulated/floor{
+	icon_state = "whiteblue"
+	},
+/area/space)
 "pWp" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor{
@@ -18049,6 +18321,10 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"qpb" = (
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/space)
 "qpM" = (
 /obj/structure/stool/bed/chair/pew/right,
 /turf/simulated/floor{
@@ -18180,9 +18456,10 @@
 	},
 /area/space)
 "qul" = (
-/obj/structure/table/glass,
+/obj/structure/closet/emcloset,
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 9;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "quA" = (
@@ -18311,7 +18588,8 @@
 /obj/machinery/iv_drip,
 /obj/structure/stool/bed/roller,
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 5;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "qBO" = (
@@ -18424,7 +18702,8 @@
 	dir = 4
 	},
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 8;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "qFS" = (
@@ -18595,6 +18874,17 @@
 /area/space)
 "qPA" = (
 /obj/structure/table/glass,
+/obj/item/stack/medical/bruise_pack{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/stack/medical/bruise_pack{
+	pixel_x = 4
+	},
+/obj/item/stack/medical/ointment{
+	pixel_x = 1;
+	pixel_y = 7
+	},
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "black"
@@ -18619,6 +18909,33 @@
 	pixel_y = 3
 	},
 /turf/simulated/floor/carpet/red,
+/area/space)
+"qQW" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/space)
+"qRA" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "qSO" = (
 /obj/machinery/computer/telescience,
@@ -18822,8 +19139,13 @@
 	},
 /area/space)
 "qZE" = (
-/obj/machinery/door/firedoor,
-/turf/simulated/floor,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "whiteblue"
+	},
 /area/space)
 "qZG" = (
 /turf/simulated/floor{
@@ -20075,6 +20397,12 @@
 	dir = 4
 	},
 /turf/simulated/floor,
+/area/space)
+"sdj" = (
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "whitegreen"
+	},
 /area/space)
 "sdu" = (
 /obj/machinery/atmospherics/components/binary/pump{
@@ -22009,6 +22337,14 @@
 	icon_state = "dark"
 	},
 /area/space)
+"tVP" = (
+/obj/machinery/iv_drip,
+/obj/structure/stool/bed/roller,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "whiteblue"
+	},
+/area/space)
 "tVT" = (
 /obj/machinery/computer/mine_sci_shuttle/flight_comp{
 	dir = 8
@@ -22524,6 +22860,12 @@
 	icon_state = "caution"
 	},
 /area/space)
+"uxH" = (
+/obj/machinery/computer/arcade,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "uxV" = (
 /obj/machinery/access_button{
 	command = "cycle_interior";
@@ -22680,6 +23022,7 @@
 /mob/living/carbon/monkey/tajara{
 	name = "Kyle"
 	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/simulated/floor/grass,
 /area/space)
 "uEs" = (
@@ -23179,7 +23522,7 @@
 	},
 /area/space)
 "vbg" = (
-/obj/machinery/door/airlock/maintenance{
+/obj/machinery/door/airlock/medical{
 	name = "Surgery Maintenance";
 	req_access = list(45)
 	},
@@ -23633,6 +23976,13 @@
 	icon_state = "dark"
 	},
 /area/space)
+"vyb" = (
+/obj/structure/closet/l3closet/general,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/space)
 "vyf" = (
 /obj/machinery/vending/eva,
 /turf/simulated/floor{
@@ -23997,6 +24347,13 @@
 	icon_state = "darkbrown"
 	},
 /area/space)
+"vLW" = (
+/obj/structure/closet/emcloset,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "black"
+	},
+/area/space)
 "vNy" = (
 /turf/simulated/floor{
 	dir = 8;
@@ -24076,6 +24433,17 @@
 	pixel_y = -7
 	},
 /turf/simulated/floor/carpet/black,
+/area/space)
+"vUc" = (
+/obj/structure/table/glass,
+/obj/item/weapon/folder/white,
+/obj/item/weapon/reagent_containers/food/drinks/britcup{
+	pixel_x = -4
+	},
+/turf/simulated/floor{
+	dir = 9;
+	icon_state = "whiteblue"
+	},
 /area/space)
 "vUf" = (
 /turf/simulated/floor/carpet/red,
@@ -24269,6 +24637,16 @@
 /obj/item/weapon/wrench,
 /turf/simulated/floor{
 	icon_state = "warndark"
+	},
+/area/space)
+"vZC" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/fancy/crayons{
+	pixel_y = 2
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "vZL" = (
@@ -25339,6 +25717,13 @@
 	icon_state = "warndark"
 	},
 /area/space)
+"xjn" = (
+/obj/machinery/door/airlock/security{
+	name = "Security Checkpoint Maintenance";
+	req_access = list(1)
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "xjw" = (
 /obj/machinery/conveyor_switch/oneway{
 	id = "QMLoad2"
@@ -25484,6 +25869,9 @@
 /area/space)
 "xsG" = (
 /obj/structure/stool/bed/roller,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "whiteblue"
 	},
@@ -26195,6 +26583,12 @@
 	icon_state = "dark"
 	},
 /area/space)
+"xXq" = (
+/obj/machinery/door/airlock/maintenance{
+	req_one_access = list(9,12,47)
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "xXG" = (
 /obj/structure/table/glass,
 /obj/item/weapon/storage/pill_bottle/inaprovaline{
@@ -26376,6 +26770,14 @@
 	req_access = list(8)
 	},
 /turf/simulated/floor/engine,
+/area/space)
+"yfu" = (
+/obj/structure/stool/bed/chair/office/light{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "white"
+	},
 /area/space)
 "yfA" = (
 /obj/effect/decal/cleanable/dirt,
@@ -42315,9 +42717,9 @@ cJy
 cJy
 cJy
 fkk
-fkk
-fkk
-fkk
+dNx
+dNx
+dNx
 fkk
 bfr
 qwk
@@ -42570,7 +42972,7 @@ xOi
 cJy
 iRy
 fkk
-fkk
+dNx
 fkk
 dLt
 aCS
@@ -42825,7 +43227,7 @@ oEk
 lZS
 xOi
 cJy
-iRy
+fkk
 fkk
 qPA
 cgc
@@ -43083,7 +43485,7 @@ jIb
 xOi
 cJy
 fkk
-fkk
+uxH
 kjE
 nPP
 htU
@@ -43092,11 +43494,11 @@ htU
 htU
 htU
 dAY
-dcI
-dcI
-dcI
+nPP
+htU
+dAY
 cVt
-pmi
+vZC
 fkk
 bmW
 gUU
@@ -43340,8 +43742,8 @@ mBr
 xOi
 cJy
 fkk
-oJD
-aoR
+fJm
+bCu
 cVt
 mSK
 aOg
@@ -43349,9 +43751,9 @@ mSK
 aOg
 mSK
 bCu
-dcI
-gnj
-dcI
+cVt
+pmi
+bCu
 cVt
 nAD
 fkk
@@ -43597,7 +43999,7 @@ xOi
 xOi
 cJy
 fkk
-yax
+fpy
 bCu
 cVt
 aYa
@@ -43606,9 +44008,9 @@ diG
 wGk
 aYa
 bCu
-dcI
-gra
-dcI
+cVt
+tyV
+bCu
 cVt
 pgT
 fkk
@@ -43854,7 +44256,7 @@ xOi
 cJy
 cJy
 fkk
-htG
+kCQ
 bCu
 cVt
 dLt
@@ -43863,9 +44265,9 @@ dLt
 aCS
 dLt
 bCu
-dcI
-gPi
-dcI
+cVt
+njB
+bCu
 cVt
 nAD
 fkk
@@ -44086,7 +44488,7 @@ fkk
 fkk
 fkk
 hcM
-gUU
+vga
 gUU
 gUU
 aqg
@@ -44096,7 +44498,7 @@ aqg
 aqg
 fkk
 fkk
-muw
+bJk
 fkk
 fkk
 cJy
@@ -44112,7 +44514,7 @@ cJy
 fkk
 fkk
 fkk
-bCu
+vLW
 ehy
 cgc
 cgc
@@ -44120,9 +44522,9 @@ cgc
 cgc
 cgc
 fjP
-dcI
-dcI
-dcI
+ehy
+cgc
+fjP
 cVt
 aVq
 nMY
@@ -44368,8 +44770,8 @@ fkk
 fkk
 fkk
 muw
-muw
-nSc
+fkk
+bXQ
 htU
 htU
 htU
@@ -44602,10 +45004,10 @@ fkk
 eKF
 gUU
 gUU
+upV
 gUU
 gUU
-gUU
-gUU
+tEV
 gUU
 gUU
 gUU
@@ -44626,19 +45028,19 @@ muw
 muw
 muw
 fkk
-fkk
+pgT
+gUU
+mSK
+aOg
+mSK
+aOg
+mSK
 mHB
-mSK
-aOg
-mSK
-aOg
-mSK
-tyV
 mJS
 gUU
 mJS
 eKF
-njB
+htG
 nMY
 lny
 gUU
@@ -44873,8 +45275,8 @@ muw
 muw
 fkk
 gBT
-etM
-etM
+sdj
+sdj
 fkk
 muw
 muw
@@ -44882,9 +45284,9 @@ muw
 muw
 muw
 muw
-muw
 fkk
 fkk
+mTV
 fkk
 fkk
 fkk
@@ -45117,22 +45519,22 @@ tMr
 xAn
 xUs
 gUU
-uVE
-uVE
-uVE
+aoR
+aoR
+aoR
 gUU
-uVE
-uVE
+aoR
+aoR
 fkk
 muw
 muw
 muw
 muw
-muw
+xXq
 etM
 etM
 etM
-muw
+xXq
 muw
 muw
 muw
@@ -45143,14 +45545,14 @@ muw
 muw
 muw
 fkk
-qul
-qul
+vUc
+alh
 qFA
-qul
+kGe
 fkk
-lqa
-lqa
-lqa
+tWN
+uqC
+rVw
 fkk
 cYy
 bnc
@@ -45382,13 +45784,13 @@ fkk
 fkk
 fkk
 fkk
-muw
+ajQ
 fkk
 fkk
 fkk
 etM
 etM
-etM
+nQI
 fkk
 muw
 muw
@@ -45399,22 +45801,22 @@ muw
 muw
 muw
 muw
-muw
+ajQ
+kxD
+yfu
 etM
-etM
-etM
-qul
-fkk
-dcI
-dcI
-dcI
+lpR
+qQW
+bJl
+gUU
+fyw
 dMn
 bJl
 izL
 gUU
 gUU
 fyw
-muw
+xjn
 muw
 muw
 muw
@@ -45633,18 +46035,18 @@ tFJ
 vAb
 hUV
 gEC
-atE
-vAb
-lhC
-fkk
-yax
-yax
+uaS
 gUU
-yax
-yax
+aVq
 fkk
-fkk
+yax
+vyb
 gUU
+mJS
+nAD
+fkk
+fkk
+frV
 fkk
 fkk
 fkk
@@ -45652,19 +46054,19 @@ fkk
 fkk
 fkk
 fkk
+ajQ
 fkk
 fkk
 fkk
 fkk
-fkk
-etM
-etM
-etM
-qul
-fkk
-dcI
-dcI
-dcI
+dQZ
+hbH
+rnx
+lkf
+mBU
+bJl
+gUU
+fyw
 dYo
 wbW
 gUU
@@ -45881,47 +46283,47 @@ muw
 xOi
 emj
 mPJ
+ifk
 vAb
-vAb
-vAb
+glD
 lhC
 gag
 dPT
 etM
-isf
+atE
 gag
 avt
-etM
-avG
+vAb
+vAb
 aLq
 vAb
+glD
 vAb
-vAb
-lhC
-yax
+pJo
+mJS
 fkk
-yax
+aVq
 gUU
-yax
-yax
+htG
+nAD
 fkk
-yax
-yax
+vyb
+lqa
 fkk
-yax
-yax
-yax
-yax
+aVq
+gUU
+htG
+nAD
 fkk
 qul
-etM
-etM
-etM
-qul
-fkk
-dcI
-dcI
-dcI
+vAb
+vAb
+vAb
+gvq
+gNv
+bJl
+gUU
+fyw
 dNg
 bJl
 pTa
@@ -46170,15 +46572,15 @@ vAb
 vAb
 vAb
 pTZ
+kxD
 etM
 etM
 etM
-etM
-etM
+isf
 qXy
-dcI
-dcI
-dcI
+cWy
+gKu
+cmC
 fkk
 eyT
 jjj
@@ -46404,9 +46806,9 @@ otS
 etM
 xsG
 gEC
-wFl
+gPi
 hbH
-hbH
+qZE
 aSi
 hbH
 clY
@@ -46415,27 +46817,27 @@ etM
 etM
 dUR
 etM
-etM
-etM
+sJf
+rFh
 etM
 cYJ
 etM
 etM
 dUR
+sJf
+etM
+etM
+rFh
+qRA
+jnh
 etM
 etM
 etM
-etM
+pVx
 fkk
-etM
-etM
-etM
-etM
-etM
-fkk
-dcI
-dcI
-dcI
+jSM
+qpb
+jJV
 fkk
 fkk
 fkk
@@ -46661,11 +47063,11 @@ nvY
 hbH
 tAc
 gag
-yax
-yax
-eKF
+pgT
+lqa
+eVQ
 xOi
-yax
+mHB
 kxD
 etM
 dnH
@@ -46684,16 +47086,16 @@ hbH
 hbH
 hbH
 pTZ
+kxD
 etM
 etM
 etM
-etM
-etM
+isf
 qXy
+rSg
 dcI
-dcI
-dcI
-dcI
+wox
+nAD
 fkk
 gUU
 gUU
@@ -46933,7 +47335,7 @@ kUn
 bFk
 mYT
 xOi
-nAD
+pgT
 nAD
 fkk
 nNi
@@ -46942,16 +47344,16 @@ oHE
 fkk
 fkk
 qBa
-qBa
-etM
-etM
-etM
-fkk
+tVP
+hbH
+ipJ
+avE
+qRA
+rSg
 dcI
-dcI
-dcI
-dcI
-qZE
+wox
+gUU
+ttz
 bsZ
 hLg
 hLg
@@ -47200,15 +47602,15 @@ peQ
 fkk
 fkk
 fkk
-muw
+ajQ
 fkk
 fkk
 fkk
+rSg
 dcI
-dcI
-dcI
-dcI
-qZE
+wox
+gUU
+ttz
 rjp
 jgd
 jgd
@@ -47438,7 +47840,7 @@ vwp
 rpO
 tbE
 kxD
-etM
+eQK
 isf
 aVq
 faY
@@ -47453,18 +47855,18 @@ mFN
 eFG
 oqi
 eFG
-eFG
+pFa
 pUn
 fkk
 muw
 muw
 muw
 fkk
+gUU
+rSg
 dcI
-dcI
-dcI
-dcI
-dcI
+wox
+gUU
 fkk
 fkk
 fkk
@@ -47687,9 +48089,9 @@ muw
 rrM
 nex
 etM
+xgg
 etM
-etM
-etM
+gwK
 etM
 nHc
 gag
@@ -47712,15 +48114,15 @@ owA
 oIc
 eFG
 fzc
+jqQ
 muw
 muw
 muw
 muw
-muw
+gUU
+rSg
 dcI
-dcI
-dcI
-dcI
+wox
 fkk
 fkk
 doU
@@ -47952,7 +48354,7 @@ dJn
 aYG
 gUU
 kxD
-etM
+imK
 isf
 vYz
 gEC
@@ -47967,17 +48369,17 @@ mGX
 ofN
 owH
 eFG
-eFG
+jNf
 qjP
 fkk
 muw
 muw
 muw
 fkk
+gUU
+rSg
 dcI
-dcI
-dcI
-dcI
+wox
 fkk
 rdC
 fzc
@@ -48231,10 +48633,10 @@ muw
 muw
 muw
 fkk
-dcI
-dcI
-dcI
-dcI
+nAD
+cpb
+lFI
+ivn
 fkk
 jpM
 aPe
@@ -48980,7 +49382,7 @@ isf
 cLr
 gUU
 kxD
-etM
+eQK
 isf
 gUU
 eOb
@@ -49227,17 +49629,17 @@ muw
 fkk
 gUU
 kxD
+sJf
+etM
+gnj
 etM
 etM
-etM
-etM
-etM
-etM
+rFh
 isf
 cLr
 gUU
 kxD
-etM
+imK
 isf
 gUU
 eOb
@@ -50522,7 +50924,7 @@ xgg
 isf
 xLR
 kxD
-etM
+imK
 isf
 uJQ
 fkk
@@ -52064,7 +52466,7 @@ fql
 gag
 oXl
 kxD
-etM
+eQK
 isf
 fkk
 fkk
