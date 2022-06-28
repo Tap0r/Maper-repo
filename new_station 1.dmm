@@ -524,6 +524,7 @@
 "atc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/space_heater,
+/obj/effect/decal/cleanable/ash,
 /turf/simulated/floor/plating,
 /area/space)
 "atw" = (
@@ -1941,6 +1942,11 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"bJE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/shard,
+/turf/simulated/floor/plating,
+/area/space)
 "bJI" = (
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = 30
@@ -2026,6 +2032,12 @@
 "bNq" = (
 /obj/structure/stool/bed/chair/schair/wagon/bench,
 /turf/simulated/floor/grass,
+/area/space)
+"bNr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/turf/simulated/floor/plating,
 /area/space)
 "bNB" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
@@ -2823,6 +2835,13 @@
 	icon_state = "dark"
 	},
 /area/space)
+"cAs" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/scrap_lump,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/space)
 "cAW" = (
 /obj/machinery/light/small,
 /turf/simulated/floor{
@@ -3146,6 +3165,12 @@
 /obj/structure/stool,
 /turf/simulated/floor{
 	icon_state = "boxing"
+	},
+/area/space)
+"daC" = (
+/obj/effect/decal/cleanable/molten_item,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg1"
 	},
 /area/space)
 "daG" = (
@@ -4962,6 +4987,13 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/simulated/floor/plating,
 /area/space)
+"epO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/space)
 "epR" = (
 /obj/machinery/hydroponics/constructable,
 /turf/simulated/floor{
@@ -4980,6 +5012,7 @@
 	},
 /area/space)
 "equ" = (
+/obj/effect/decal/cleanable/generic,
 /turf/simulated/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -5317,6 +5350,10 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
+/area/space)
+"eEa" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/simulated/floor/plating,
 /area/space)
 "eEb" = (
 /turf/simulated/floor/carpet,
@@ -6711,10 +6748,7 @@
 /obj/structure/grille{
 	destroyed = 1
 	},
-/obj/structure/window/reinforced,
-/obj/item/weapon/shard{
-	icon_state = "small"
-	},
+/obj/item/stack/rods,
 /turf/simulated/floor/plating,
 /area/space)
 "fGX" = (
@@ -7810,8 +7844,9 @@
 /area/space)
 "gAr" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/maintenance/five,
+/obj/item/weapon/shard{
+	icon_state = "small"
+	},
 /turf/simulated/floor/plating,
 /area/space)
 "gAC" = (
@@ -8627,6 +8662,12 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"hdd" = (
+/obj/item/weapon/shard,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/space)
 "hdx" = (
 /obj/machinery/space_heater,
 /turf/simulated/floor/plating{
@@ -8780,6 +8821,19 @@
 	icon_state = "cautioncorner"
 	},
 /area/space)
+"hkA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/grille{
+	destroyed = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/spider/stickyweb,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/space)
 "hkP" = (
 /obj/structure/closet/firecloset,
 /turf/simulated/floor{
@@ -8876,6 +8930,7 @@
 	pixel_y = 5
 	},
 /obj/effect/decal/cleanable/cobweb,
+/obj/effect/decal/cleanable/generic,
 /turf/simulated/floor/plating,
 /area/space)
 "hqM" = (
@@ -9321,6 +9376,8 @@
 /area/space)
 "hJu" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/broken_bottle,
+/obj/effect/decal/cleanable/greenglow,
 /turf/simulated/floor/plating{
 	icon_state = "platingdmg3"
 	},
@@ -9448,7 +9505,15 @@
 "hNT" = (
 /obj/item/weapon/scrap_lump,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/space)
+"hOc" = (
+/obj/random/foods/food_trash,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg1"
+	},
 /area/space)
 "hOj" = (
 /obj/structure/reagent_dispensers/water_cooler,
@@ -10613,8 +10678,9 @@
 	},
 /area/space)
 "iVG" = (
-/obj/item/weapon/scrap_lump,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
+	},
 /area/space)
 "iWf" = (
 /turf/simulated/floor{
@@ -10647,8 +10713,8 @@
 /area/space)
 "iXS" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/structure/closet/emcloset,
+/obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/plating,
 /area/space)
 "iYZ" = (
@@ -10993,6 +11059,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/space)
+"jqW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/shard{
+	icon_state = "medium"
+	},
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/space)
 "jrv" = (
 /obj/mecha/working/ripley,
 /turf/simulated/floor/plating/airless{
@@ -11000,9 +11075,7 @@
 	},
 /area/space)
 "jrW" = (
-/obj/item/weapon/shard{
-	icon_state = "small"
-	},
+/obj/item/weapon/scrap_lump,
 /turf/simulated/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -11573,9 +11646,8 @@
 /area/space)
 "jRp" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/weapon/shard{
-	icon_state = "medium"
-	},
+/obj/item/weapon/scrap_lump,
+/obj/effect/decal/cleanable/generic,
 /turf/simulated/floor/plating,
 /area/space)
 "jRs" = (
@@ -12718,7 +12790,7 @@
 	},
 /area/space)
 "kYw" = (
-/obj/item/weapon/shard,
+/obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/space)
 "kYB" = (
@@ -13000,6 +13072,7 @@
 /obj/structure/grille{
 	destroyed = 1
 	},
+/obj/item/stack/rods,
 /turf/simulated/floor/plating,
 /area/space)
 "lkf" = (
@@ -14366,7 +14439,10 @@
 "mxH" = (
 /obj/effect/decal/cleanable/cobweb2,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
+/obj/random/foods/food_trash,
+/turf/simulated/floor/plating{
+	icon_state = "panelscorched"
+	},
 /area/space)
 "myt" = (
 /obj/machinery/door/airlock/glass{
@@ -14930,6 +15006,12 @@
 	icon_state = "black"
 	},
 /area/space)
+"mUv" = (
+/obj/effect/decal/cleanable/blood/xeno,
+/turf/simulated/floor/plating{
+	icon_state = "panelscorched"
+	},
+/area/space)
 "mUD" = (
 /obj/machinery/mineral/equipment_vendor,
 /turf/simulated/floor{
@@ -14959,6 +15041,11 @@
 	dir = 6;
 	icon_state = "darkpurple"
 	},
+/area/space)
+"mYk" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/mouse,
+/turf/simulated/floor/plating,
 /area/space)
 "mYn" = (
 /obj/effect/decal/cleanable/dirt,
@@ -15034,6 +15121,12 @@
 	dir = 8;
 	icon_state = "vault"
 	},
+/area/space)
+"ncS" = (
+/obj/structure/grille{
+	destroyed = 1
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "nei" = (
 /obj/structure/table,
@@ -16943,14 +17036,14 @@
 /turf/environment/space,
 /area/shuttle/mining/station)
 "oLE" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 8
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/cigbutt{
+	pixel_x = 7;
+	pixel_y = 2
 	},
-/obj/structure/window/reinforced{
-	dir = 1
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg1"
 	},
-/turf/simulated/floor/plating,
 /area/space)
 "oMk" = (
 /obj/machinery/door/airlock{
@@ -17148,6 +17241,11 @@
 	icon_state = "vault"
 	},
 /area/space)
+"oWJ" = (
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/space)
 "oWO" = (
 /obj/structure/table/glass,
 /obj/item/weapon/lipstick/random,
@@ -17186,7 +17284,9 @@
 "oYh" = (
 /obj/structure/closet/emcloset,
 /obj/effect/decal/cleanable/cobweb2,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
+	},
 /area/space)
 "paa" = (
 /obj/structure/rack,
@@ -18316,7 +18416,9 @@
 /area/space)
 "pUA" = (
 /obj/effect/decal/cleanable/generic,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
+	},
 /area/space)
 "pUJ" = (
 /obj/structure/closet/secure_closet/miner,
@@ -18405,6 +18507,13 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "vault"
+	},
+/area/space)
+"pZk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/emcloset,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
 	},
 /area/space)
 "pZt" = (
@@ -18643,6 +18752,7 @@
 	pixel_x = 2;
 	pixel_y = 9
 	},
+/obj/effect/decal/cleanable/mucus,
 /turf/simulated/floor/plating,
 /area/space)
 "qmM" = (
@@ -19323,10 +19433,9 @@
 /obj/item/weapon/cigbutt{
 	pixel_x = 13
 	},
-/obj/item/weapon/scrap_lump,
-/obj/effect/decal/cleanable/cobweb2{
-	desc = "Spider Timmy lives here."
-	},
+/obj/effect/decal/cleanable/cobweb2,
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/maintenance,
 /turf/simulated/floor/plating,
 /area/space)
 "qTY" = (
@@ -19905,7 +20014,9 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating{
+	icon_state = "panelscorched"
+	},
 /area/space)
 "rsR" = (
 /obj/structure/table/glass,
@@ -20842,7 +20953,6 @@
 /area/space)
 "sgK" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced,
 /obj/item/weapon/shard{
 	icon_state = "small"
 	},
@@ -20996,6 +21106,9 @@
 "spB" = (
 /obj/item/weapon/cigbutt{
 	pixel_y = 9
+	},
+/obj/item/weapon/shard{
+	icon_state = "small"
 	},
 /turf/simulated/floor/plating{
 	icon_state = "platingdmg2"
@@ -23171,6 +23284,16 @@
 	},
 /turf/simulated/floor,
 /area/space)
+"urX" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/blood/drip{
+	pixel_x = -12;
+	pixel_y = 12
+	},
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/space)
 "usb" = (
 /obj/machinery/computer/atmos_alert{
 	dir = 8
@@ -23331,6 +23454,11 @@
 /turf/simulated/floor{
 	icon_state = "delivery"
 	},
+/area/space)
+"uyz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/foods/food_trash,
+/turf/simulated/floor/plating,
 /area/space)
 "uyG" = (
 /obj/machinery/door/airlock/security/glass{
@@ -24568,8 +24696,8 @@
 	},
 /area/space)
 "vCi" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance/four,
+/obj/effect/decal/cleanable/greenglow,
+/mob/living/simple_animal/mouse,
 /turf/simulated/floor/plating,
 /area/space)
 "vCU" = (
@@ -24653,6 +24781,12 @@
 	},
 /turf/simulated/floor{
 	icon_state = "warning"
+	},
+/area/space)
+"vEd" = (
+/obj/random/foods/food_trash,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
 	},
 /area/space)
 "vEw" = (
@@ -24841,6 +24975,15 @@
 	icon_state = "barber"
 	},
 /area/space)
+"vNS" = (
+/obj/structure/sign/poster/contraband{
+	pixel_y = 31
+	},
+/obj/random/scrap/safe_even,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/space)
 "vPC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor{
@@ -24881,6 +25024,11 @@
 "vSB" = (
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/wood,
+/area/space)
+"vSZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/maintenance,
+/turf/simulated/floor/plating,
 /area/space)
 "vTz" = (
 /obj/structure/table/reinforced,
@@ -25189,7 +25337,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/plating{
-	icon_state = "platingdmg3"
+	icon_state = "platingdmg1"
 	},
 /area/space)
 "waF" = (
@@ -25828,6 +25976,13 @@
 /turf/simulated/floor{
 	icon_state = "delivery"
 	},
+/area/space)
+"wLd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/shard{
+	icon_state = "medium"
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "wLk" = (
 /obj/effect/decal/cleanable/dirt,
@@ -48395,7 +48550,7 @@ pFa
 pUn
 fkk
 uqH
-muw
+hOc
 uYf
 fkk
 gUU
@@ -48651,9 +48806,9 @@ oIc
 eFG
 fzc
 jqQ
-jRp
+ljg
 rZd
-muw
+epO
 muw
 gUU
 rSg
@@ -48908,9 +49063,9 @@ eFG
 jNf
 qjP
 fkk
-equ
+vNS
 iVo
-kYw
+muw
 fkk
 gUU
 rSg
@@ -49165,7 +49320,7 @@ oOu
 pgF
 fkk
 fkk
-sHP
+hdd
 pUA
 cTU
 fkk
@@ -49678,7 +49833,7 @@ hic
 fkk
 sHP
 qih
-ljg
+rZd
 fkk
 fkk
 bkO
@@ -49934,7 +50089,7 @@ etM
 isf
 vbg
 qxb
-tZw
+vEd
 iVG
 fkk
 mqZ
@@ -50190,9 +50345,9 @@ dcI
 oGD
 dGm
 fkk
-ljg
+pZk
 jrW
-muw
+fTO
 ltl
 aPe
 eEb
@@ -50449,7 +50604,7 @@ uJi
 fkk
 qTX
 xiy
-oLE
+rAr
 fkk
 bdP
 eEb
@@ -51219,7 +51374,7 @@ hbH
 uPY
 fkk
 rAr
-ljg
+vSZ
 gAr
 fkk
 fkk
@@ -51476,8 +51631,8 @@ vnf
 fkk
 fkk
 sgK
-ljg
-ljg
+bNr
+mYk
 waE
 fkk
 rdN
@@ -51733,7 +51888,7 @@ fkk
 fkk
 vIN
 ljg
-muw
+oWJ
 hNT
 mvF
 fkk
@@ -51988,10 +52143,10 @@ oji
 gaL
 rZd
 fGH
-ljg
-muw
-ljg
-ljg
+bJE
+urX
+uyz
+iIg
 ljg
 vbY
 fkk
@@ -52251,7 +52406,7 @@ fkk
 fkk
 fkk
 mxH
-ljg
+jqW
 fkk
 rer
 dcI
@@ -52498,7 +52653,7 @@ nFV
 dcI
 teR
 fkk
-ljg
+sEM
 rdo
 fkk
 fkk
@@ -52508,7 +52663,7 @@ ivE
 xTp
 fkk
 fkk
-muw
+ncS
 fkk
 rer
 dcI
@@ -52756,7 +52911,7 @@ wPJ
 fkk
 fkk
 uAL
-ljg
+vSZ
 fkk
 kpI
 xBu
@@ -52765,7 +52920,7 @@ ivE
 xTp
 fvl
 fkk
-ljg
+cAs
 mTV
 dcI
 dcI
@@ -53011,7 +53166,7 @@ vzV
 fkk
 fkk
 fkk
-kYw
+sHP
 ljg
 equ
 fkk
@@ -53268,7 +53423,7 @@ eke
 xeT
 fkk
 thb
-muw
+daC
 gEs
 hyH
 fkk
@@ -53524,7 +53679,7 @@ gUU
 eke
 xeT
 fkk
-ljg
+gAr
 ljg
 atc
 jXm
@@ -53782,7 +53937,7 @@ gyh
 fkk
 fkk
 tZw
-sHP
+eEa
 fkk
 fkk
 fkk
@@ -54038,7 +54193,7 @@ fkk
 fkk
 fkk
 uJd
-ljg
+iIg
 fkk
 fkk
 iXl
@@ -54291,11 +54446,11 @@ etM
 etM
 isf
 mTV
-ljg
+oLE
 jRp
-ljg
-ljg
-muw
+hkA
+wLd
+mUv
 fkk
 iXl
 iXl
@@ -54549,7 +54704,7 @@ etM
 dMW
 fkk
 oYh
-ljg
+uyz
 rZd
 vCi
 dBU
@@ -66619,7 +66774,7 @@ muw
 muw
 muw
 muw
-muw
+kYw
 fkk
 xOi
 gAb
