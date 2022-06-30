@@ -90,6 +90,13 @@
 /obj/structure/sign/warning/airlock,
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/exit)
+"adE" = (
+/obj/item/trash/fries,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor{
+	icon_state = "arcade_carpet"
+	},
+/area/space)
 "aeF" = (
 /obj/structure/table/glass,
 /obj/item/ashtray/plastic,
@@ -521,7 +528,7 @@
 	input_tag = "air_in";
 	name = "Mixed Air Supply Control";
 	output_tag = "air_out";
-	sensors = list("air_sensor" = "Tank")
+	sensors = list("air_sensor"="Tank")
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -832,6 +839,11 @@
 	icon_state = "whiteblue"
 	},
 /area/space)
+"aFd" = (
+/obj/structure/window/reinforced,
+/obj/structure/grille,
+/turf/simulated/floor/plating,
+/area/space)
 "aGz" = (
 /obj/structure/stool/bed/chair/comfy/brown,
 /turf/simulated/floor/carpet/black,
@@ -860,6 +872,10 @@
 /obj/structure/stool/bed/chair/comfy/teal,
 /mob/living/carbon/ian,
 /turf/simulated/floor/carpet/blue2,
+/area/space)
+"aHB" = (
+/obj/random/foods/food_trash,
+/turf/simulated/floor/wood,
 /area/space)
 "aHF" = (
 /obj/item/weapon/paper_bin{
@@ -2054,6 +2070,15 @@
 /obj/structure/window/reinforced,
 /turf/simulated/floor/plating,
 /area/space)
+"bNv" = (
+/obj/structure/rack,
+/obj/item/device/flashlight,
+/obj/item/weapon/storage/briefcase/inflatable{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "bNB" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	dir = 4
@@ -2151,7 +2176,7 @@
 	input_tag = "co2_in";
 	name = "Carbon Dioxide Supply Control";
 	output_tag = "co2_out";
-	sensors = list("co2_sensor" = "Tank")
+	sensors = list("co2_sensor"="Tank")
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -2405,6 +2430,11 @@
 	icon_state = "grimy"
 	},
 /area/space)
+"cfO" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/turf/simulated/floor/plating,
+/area/space)
 "cgc" = (
 /turf/simulated/floor{
 	dir = 8;
@@ -2425,7 +2455,7 @@
 "ciy" = (
 /obj/machinery/door/airlock/medical/glass{
 	name = "Brig Medical Checkpoint";
-	req_access = list(5, 63)
+	req_access = list(5,63)
 	},
 /turf/simulated/floor{
 	icon_state = "whitebluefull"
@@ -3080,6 +3110,10 @@
 	icon_state = "darkbluefull"
 	},
 /area/space)
+"cUr" = (
+/obj/structure/grille,
+/turf/simulated/floor/plating,
+/area/space)
 "cUW" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/paper_bin{
@@ -3231,7 +3265,7 @@
 /obj/machinery/door/window/brigdoor/westleft{
 	dir = 2;
 	name = "Internal Affairs Desk";
-	req_access = list(38, 2)
+	req_access = list(38,2)
 	},
 /turf/simulated/floor{
 	icon_state = "wood_stairs"
@@ -3588,6 +3622,11 @@
 	icon_state = "dark"
 	},
 /area/space)
+"dqT" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/reagent_containers/food/snacks/pizzaslice/margherita,
+/turf/simulated/floor/plating,
+/area/space)
 "dsD" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor{
@@ -3684,6 +3723,13 @@
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
+/area/space)
+"dvn" = (
+/obj/item/trash/raisins,
+/obj/structure/grille{
+	destroyed = 1
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "dvp" = (
 /obj/structure/window/reinforced{
@@ -5189,6 +5235,11 @@
 	icon_state = "caution"
 	},
 /area/space)
+"exm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/plating,
+/area/space)
 "exA" = (
 /obj/decal/boxingrope,
 /turf/simulated/floor{
@@ -6064,6 +6115,12 @@
 	icon_state = "darkpurple"
 	},
 /area/space)
+"fgt" = (
+/obj/random/scrap/safe_even,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/space)
 "fgu" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -6218,7 +6275,7 @@
 "fnB" = (
 /obj/machinery/door/airlock/mining/glass{
 	name = "Mining Shuttle Dock";
-	req_access = list(48, 65)
+	req_access = list(48,65)
 	},
 /turf/simulated/floor/plating,
 /area/space)
@@ -6413,6 +6470,12 @@
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor{
 	icon_state = "yellow"
+	},
+/area/space)
+"fvk" = (
+/obj/item/weapon/shard,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
 	},
 /area/space)
 "fvl" = (
@@ -7068,6 +7131,10 @@
 	icon_state = "dark"
 	},
 /area/space)
+"fRs" = (
+/obj/structure/sign/poster/official/random,
+/turf/simulated/wall,
+/area/space)
 "fTg" = (
 /turf/simulated/floor{
 	icon_state = "redcorner"
@@ -7472,6 +7539,11 @@
 	icon_state = "whitehall"
 	},
 /area/space)
+"ggT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/randomtoy,
+/turf/simulated/floor/plating,
+/area/space)
 "ghe" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Chief Engineer";
@@ -7807,7 +7879,7 @@
 "gxS" = (
 /obj/machinery/door/airlock/mining/glass{
 	name = "Mining Shuttle Dock";
-	req_access = list(48, 65)
+	req_access = list(48,65)
 	},
 /turf/simulated/floor,
 /area/station/hallway/secondary/mine_sci_shuttle)
@@ -8534,6 +8606,12 @@
 	icon_state = "darkblue"
 	},
 /area/space)
+"gWx" = (
+/obj/item/clothing/suit/necromancer_hoodie,
+/obj/item/clothing/head/black_hood,
+/obj/structure/closet,
+/turf/simulated/floor/plating,
+/area/space)
 "gWM" = (
 /obj/structure/sign/nanotrasen{
 	pixel_y = -32
@@ -8687,6 +8765,12 @@
 	},
 /turf/simulated/wall,
 /area/space)
+"hbb" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor{
+	icon_state = "arcade_carpet"
+	},
+/area/space)
 "hbq" = (
 /obj/machinery/atmospherics/components/unary/portables_connector{
 	dir = 4
@@ -8750,6 +8834,11 @@
 	icon_state = "vault"
 	},
 /area/space)
+"hdO" = (
+/obj/effect/decal/cleanable/blood/oil,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating,
+/area/space)
 "hdQ" = (
 /obj/structure/closet{
 	name = "Evidence Closet"
@@ -8781,7 +8870,7 @@
 	input_tag = "n2_in";
 	name = "Nitrogen Supply Control";
 	output_tag = "n2_out";
-	sensors = list("n2_sensor" = "Tank")
+	sensors = list("n2_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 9
@@ -9672,6 +9761,10 @@
 	temperature = 80
 	},
 /area/space)
+"hRt" = (
+/obj/item/trash/popcorn,
+/turf/simulated/floor/wood,
+/area/space)
 "hRO" = (
 /obj/item/weapon/crowbar,
 /obj/structure/rack,
@@ -9892,6 +9985,14 @@
 	icon_state = "warning"
 	},
 /area/space)
+"ibs" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood,
+/area/space)
 "ibB" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor{
@@ -10110,7 +10211,7 @@
 	frequency = 1443;
 	level = 3;
 	name = "Distribution and Waste Monitor";
-	sensors = list("mair_in_meter" = "Mixed Air In", "air_sensor" = "Mixed Air Supply Tank", "mair_out_meter" = "Mixed Air Out", "dloop_atm_meter" = "Distribution Loop", "wloop_atm_meter" = "Waste Loop")
+	sensors = list("mair_in_meter"="Mixed Air In","air_sensor"="Mixed Air Supply Tank","mair_out_meter"="Mixed Air Out","dloop_atm_meter"="Distribution Loop","wloop_atm_meter"="Waste Loop")
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -10198,7 +10299,7 @@
 	input_tag = "waste_in";
 	name = "Gas Mix Tank Control";
 	output_tag = "waste_out";
-	sensors = list("waste_sensor" = "Tank")
+	sensors = list("waste_sensor"="Tank")
 	},
 /turf/simulated/floor{
 	icon_state = "caution"
@@ -10248,6 +10349,12 @@
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "neutral"
+	},
+/area/space)
+"ivA" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
 	},
 /area/space)
 "ivD" = (
@@ -10706,6 +10813,12 @@
 	icon_state = "vault"
 	},
 /area/space)
+"iUd" = (
+/obj/structure/closet/crate,
+/obj/item/weapon/crowbar/red,
+/obj/effect/decal/cleanable/cobweb2,
+/turf/simulated/floor/plating,
+/area/space)
 "iUm" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor{
@@ -10833,6 +10946,15 @@
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
+	},
+/area/space)
+"jbC" = (
+/obj/item/toy/cards,
+/obj/structure/table/woodentable,
+/obj/item/weapon/reagent_containers/food/drinks/cans/lemon_lime,
+/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice,
+/turf/simulated/floor{
+	icon_state = "arcade_carpet"
 	},
 /area/space)
 "jca" = (
@@ -11062,6 +11184,13 @@
 /obj/random/vending/snack,
 /turf/simulated/floor{
 	icon_state = "darkred"
+	},
+/area/space)
+"jnf" = (
+/obj/machinery/computer/arcade,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor{
+	icon_state = "arcade_carpet"
 	},
 /area/space)
 "jnh" = (
@@ -11304,7 +11433,7 @@
 	input_tag = "n2o_in";
 	name = "Nitrous Oxide Supply Control";
 	output_tag = "n2o_out";
-	sensors = list("n2o_sensor" = "Tank")
+	sensors = list("n2o_sensor"="Tank")
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -12300,6 +12429,13 @@
 /obj/structure/closet/secure_closet/personal/patient,
 /turf/simulated/floor/wood,
 /area/space)
+"kuQ" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "kvS" = (
 /obj/structure/stool/bed/chair/metal/yellow{
 	dir = 8
@@ -12599,6 +12735,12 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/grass,
+/area/space)
+"kIZ" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/random/tools/toolbox,
+/turf/simulated/floor/plating,
 /area/space)
 "kJF" = (
 /obj/machinery/light/small{
@@ -13615,7 +13757,7 @@
 	dir = 8;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor" = "Nitrogen", "o2_sensor" = "Oxygen", "co2_sensor" = "Carbon Dioxide", "tox_sensor" = "Toxins", "n2o_sensor" = "Nitrous Oxide", "waste_sensor" = "Gas Mix Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous Oxide","waste_sensor"="Gas Mix Tank")
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -13646,6 +13788,15 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"lBN" = (
+/obj/structure/grille{
+	destroyed = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "lCj" = (
 /obj/structure/stool/bed/chair/metal/yellow,
@@ -14467,6 +14618,13 @@
 	req_one_access = list(25)
 	},
 /turf/simulated/floor/plating,
+/area/space)
+"mrP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
 /area/space)
 "msn" = (
 /obj/machinery/disposal,
@@ -16425,6 +16583,16 @@
 /obj/machinery/atmospherics/pipe/simple/visible/green,
 /turf/simulated/floor,
 /area/space)
+"oaY" = (
+/obj/machinery/door/airlock/maintenance{
+	req_access = list(12)
+	},
+/obj/structure/barricade/wooden{
+	layer = 2.8;
+	name = "doorway barricade"
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "ocF" = (
 /obj/structure/closet/crate/scicrate,
 /obj/item/stack/cable_coil/red{
@@ -17030,6 +17198,15 @@
 	icon_state = "wooden-2"
 	},
 /area/space)
+"oCh" = (
+/obj/item/weapon/game_kit,
+/obj/structure/table/woodentable,
+/obj/item/trash/chinese1,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken4"
+	},
+/area/space)
 "oCs" = (
 /obj/structure/window/reinforced{
 	dir = 5
@@ -17190,6 +17367,11 @@
 /turf/simulated/floor/plating{
 	icon_state = "platingdmg1"
 	},
+/area/space)
+"oLI" = (
+/obj/item/weapon/scrap_lump,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating,
 /area/space)
 "oMk" = (
 /obj/machinery/door/airlock{
@@ -17631,6 +17813,10 @@
 	icon_state = "vault"
 	},
 /area/space)
+"phL" = (
+/obj/machinery/space_heater,
+/turf/simulated/floor/plating,
+/area/space)
 "phV" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
 /turf/simulated/wall/r_wall,
@@ -17944,6 +18130,10 @@
 	dir = 9;
 	icon_state = "green"
 	},
+/area/space)
+"pvP" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/simulated/floor/plating,
 /area/space)
 "pwm" = (
 /obj/structure/stool/bed/chair/metal/red,
@@ -18298,6 +18488,12 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"pJP" = (
+/obj/item/weapon/reagent_containers/spray/extinguisher,
+/obj/structure/rack,
+/obj/item/weapon/reagent_containers/spray/extinguisher,
+/turf/simulated/floor/plating,
 /area/space)
 "pJV" = (
 /obj/structure/rack,
@@ -19483,6 +19679,12 @@
 	icon_state = "black"
 	},
 /area/space)
+"qPB" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken4"
+	},
+/area/space)
 "qQa" = (
 /obj/structure/stool/bed/chair/metal/white{
 	dir = 8
@@ -19780,7 +19982,7 @@
 	input_tag = "tox_in";
 	name = "Toxin Supply Control";
 	output_tag = "tox_out";
-	sensors = list("tox_sensor" = "Tank")
+	sensors = list("tox_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 5
@@ -19948,6 +20150,18 @@
 /turf/simulated/floor{
 	icon_state = "arcade_carpet"
 	},
+/area/space)
+"riq" = (
+/obj/structure/grille{
+	destroyed = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "riS" = (
 /obj/structure/table,
@@ -20122,6 +20336,13 @@
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
+	},
+/area/space)
+"rrP" = (
+/obj/item/trash/pistachios,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor{
+	icon_state = "arcade_carpet"
 	},
 /area/space)
 "rsr" = (
@@ -21690,6 +21911,10 @@
 	icon_state = "vault"
 	},
 /area/space)
+"sKm" = (
+/obj/item/weapon/shard,
+/turf/simulated/floor/plating,
+/area/space)
 "sKo" = (
 /obj/machinery/door/poddoor{
 	density = 0;
@@ -22203,6 +22428,14 @@
 	icon_state = "whiteblue"
 	},
 /area/space)
+"tiX" = (
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "arcade_carpet"
+	},
+/area/space)
 "tjC" = (
 /obj/structure/closet/secure_closet/engineering_personal,
 /turf/simulated/floor{
@@ -22422,6 +22655,10 @@
 	pixel_y = -10
 	},
 /turf/simulated/floor/wood,
+/area/space)
+"trF" = (
+/obj/structure/closet/emcloset,
+/turf/simulated/floor/plating,
 /area/space)
 "tsa" = (
 /obj/machinery/computer/station_alert{
@@ -23030,6 +23267,13 @@
 	icon_state = "darkbrown"
 	},
 /area/space)
+"tUN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/vomit{
+	icon_state = "vomittox_2"
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "tUQ" = (
 /obj/structure/safe,
 /obj/item/stack/sheet/mineral/gold{
@@ -23397,6 +23641,11 @@
 	icon_state = "darkredfull"
 	},
 /area/space)
+"uls" = (
+/mob/living/simple_animal/mouse,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating,
+/area/space)
 "ulF" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/heater,
 /turf/simulated/floor{
@@ -23488,6 +23737,10 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"usv" = (
+/obj/item/toy/eight_ball,
+/turf/simulated/floor/plating,
 /area/space)
 "uth" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue,
@@ -23618,6 +23871,12 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"uxI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/grille,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating,
 /area/space)
 "uxV" = (
 /obj/machinery/access_button{
@@ -24529,6 +24788,11 @@
 	icon_state = "platingdmg2"
 	},
 /area/space)
+"vle" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/computer/arcade,
+/turf/simulated/floor/wood,
+/area/space)
 "vlq" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor{
@@ -24574,6 +24838,10 @@
 	dir = 1;
 	icon_state = "bot"
 	},
+/area/space)
+"vnl" = (
+/obj/random/randomtoy,
+/turf/simulated/floor/plating,
 /area/space)
 "vnq" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/yellow{
@@ -24659,7 +24927,7 @@
 	input_tag = "o2_in";
 	name = "Oxygen Supply Control";
 	output_tag = "o2_out";
-	sensors = list("o2_sensor" = "Tank")
+	sensors = list("o2_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 9
@@ -24814,6 +25082,12 @@
 	dir = 8;
 	icon_state = "whiteblue"
 	},
+/area/space)
+"vAn" = (
+/obj/effect/decal/cleanable/vomit{
+	icon_state = "vomittox_2"
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "vAv" = (
 /obj/machinery/bodyscanner,
@@ -26080,6 +26354,13 @@
 	icon_state = "darkblue"
 	},
 /area/space)
+"wCw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/stool/bed/chair/metal{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "wCH" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -26431,6 +26712,15 @@
 	icon_state = "dark"
 	},
 /area/space)
+"xav" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "arcade_carpet"
+	},
+/area/space)
 "xbT" = (
 /obj/machinery/door/airlock/mining{
 	name = "Mining Equpment";
@@ -26668,6 +26958,12 @@
 	icon_state = "darkpurple"
 	},
 /area/space)
+"xoj" = (
+/obj/structure/stool/bed/chair/metal{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "xoW" = (
 /obj/structure/closet/firecloset,
 /turf/simulated/floor{
@@ -26767,6 +27063,13 @@
 	maxcharge = 15000
 	},
 /turf/simulated/floor/engine,
+/area/space)
+"xsA" = (
+/obj/item/trash/chips,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor{
+	icon_state = "arcade_carpet"
+	},
 /area/space)
 "xsG" = (
 /obj/structure/stool/bed/roller,
@@ -27701,6 +28004,12 @@
 	icon_state = "warndark"
 	},
 /area/station/cargo/storage)
+"yfV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/maintenance/three,
+/turf/simulated/floor/plating,
+/area/space)
 "yfW" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger{
@@ -65999,8 +66308,8 @@ fkk
 mTV
 fkk
 fkk
-muw
-muw
+trF
+trF
 fkk
 dEr
 lpl
@@ -66252,12 +66561,12 @@ lau
 fzc
 lau
 fkk
+phL
 muw
 muw
-muw
-muw
-muw
-muw
+ncS
+ljg
+ljg
 fkk
 iJV
 gUU
@@ -66509,11 +66818,11 @@ fkk
 xeM
 fkk
 fkk
+phL
 muw
-muw
-muw
-muw
-muw
+sHP
+fkk
+sHP
 muw
 fkk
 fkk
@@ -66766,13 +67075,13 @@ swy
 iVr
 cEK
 fkk
+xoj
 muw
 muw
-muw
-muw
-muw
-muw
-muw
+fkk
+cfO
+ncS
+kIZ
 fkk
 fkk
 rdy
@@ -67023,23 +67332,23 @@ mVf
 aGz
 vKA
 fkk
+dqT
+wCw
+ggT
+ncS
+ljg
+hdO
+fvk
 muw
 muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
+ljg
+yfV
 xOi
 xOi
 xOi
 xOi
 xOi
-muw
+gWx
 xOi
 qGL
 nhF
@@ -67280,22 +67589,22 @@ xOi
 xOi
 xOi
 xOi
+fkk
+fkk
+oaY
+fkk
+iUd
+muw
+sHP
+sHP
+muw
+ljg
+ljg
+sHP
 muw
 muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
+trF
+fkk
 muw
 xOi
 qIM
@@ -67538,20 +67847,20 @@ fkk
 qEk
 xOi
 xOi
+ibs
+qPB
+fRs
+fkk
 muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
+tZw
+fkk
+fkk
+fkk
+fkk
+bNv
+ljg
+oLI
+trF
 xOi
 xOi
 xOi
@@ -67795,19 +68104,19 @@ fkk
 sat
 vlJ
 xOi
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
+vle
+hRt
+vle
+fkk
+sEM
+vAn
+fkk
+pJP
+vvJ
+fkk
+fkk
+ggT
+ivA
 xOi
 xOi
 nGy
@@ -68052,19 +68361,19 @@ dYA
 bUq
 vVE
 xOi
+adE
+xsA
+tiX
+fkk
+yfV
+oLI
+fkk
 muw
 muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
+vvJ
+fkk
+lBN
+uxI
 xOi
 lUD
 muw
@@ -68309,19 +68618,19 @@ fkk
 duk
 pAI
 xOi
+hbb
+hbb
+jbC
+fkk
+izM
+ljg
+mTV
 muw
 muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
+pvP
+fkk
+ljg
+vnl
 xOi
 mbO
 muw
@@ -68566,19 +68875,19 @@ fkk
 fkk
 oTW
 xOi
+jnf
+rrP
+xav
+fkk
+cUr
+exm
+fkk
 muw
 muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
+fqV
+fkk
+vBf
+tZw
 xOi
 nkk
 muw
@@ -68823,19 +69132,19 @@ qbs
 fkk
 bUq
 xOi
+mrP
+aHB
+oCh
+fkk
+aFd
+bJE
+fkk
+fkk
+fkk
+fkk
+fkk
 muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
+sHP
 xOi
 nwY
 muw
@@ -69080,19 +69389,19 @@ cKT
 fkk
 bXu
 xOi
+fkk
+fkk
+fkk
+fkk
+riq
+dvn
+kuQ
+usv
 muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
-muw
+sKm
+tUN
+ljg
+sHP
 xOi
 nyV
 muw
@@ -69339,13 +69648,13 @@ xOi
 xOi
 muw
 muw
+sKm
+oWJ
+ljg
+uls
 muw
 muw
-muw
-muw
-muw
-muw
-muw
+sHP
 fkk
 fkk
 fkk
@@ -69593,13 +69902,13 @@ oCu
 oCu
 bWp
 xOi
-ljg
-ljg
 muw
 muw
 muw
-muw
-muw
+fgt
+sHP
+trF
+trF
 fkk
 fkk
 fkk
@@ -69850,7 +70159,7 @@ oCu
 oCu
 rwr
 xOi
-ljg
+muw
 muw
 muw
 fkk
@@ -70107,8 +70416,8 @@ oCu
 nRH
 dUU
 xOi
-ljg
-ljg
+muw
+muw
 fkk
 fkk
 iRy
