@@ -1215,7 +1215,9 @@
 	name = "Hydroponics";
 	req_access = list(35)
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "aWP" = (
 /obj/machinery/computer/camera_advanced/xenobio{
@@ -1438,11 +1440,10 @@
 /area/space)
 "biC" = (
 /obj/structure/table/woodentable,
-/obj/item/clothing/suit/plaid{
-	pixel_x = 3;
-	pixel_y = 4
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
 	},
-/turf/simulated/floor/carpet/red,
 /area/space)
 "biG" = (
 /obj/machinery/light/small/emergency{
@@ -2116,6 +2117,16 @@
 "bKp" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/engine/vacuum,
+/area/space)
+"bKz" = (
+/obj/machinery/vending/boozeomat{
+	req_access = list()
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
 /area/space)
 "bKF" = (
 /obj/structure/object_wall/mining{
@@ -6093,9 +6104,10 @@
 	},
 /area/space)
 "ePA" = (
-/obj/structure/stool/bed,
-/obj/item/weapon/bedsheet/red,
-/turf/simulated/floor/carpet/red,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
 /area/space)
 "ePW" = (
 /obj/structure/table,
@@ -6286,9 +6298,15 @@
 /turf/simulated/floor,
 /area/space)
 "eXV" = (
-/obj/structure/stool/bed,
-/obj/item/weapon/bedsheet/green,
-/turf/simulated/floor/carpet/green,
+/obj/machinery/reagentgrinder{
+	layer = 3.1;
+	pixel_y = 5
+	},
+/obj/structure/table/woodentable,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkred"
+	},
 /area/space)
 "eYg" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
@@ -6310,8 +6328,23 @@
 	},
 /area/space)
 "eYC" = (
-/obj/structure/closet/secure_closet/personal/cabinet,
-/turf/simulated/floor/carpet/green,
+/obj/structure/table/woodentable,
+/obj/item/weapon/reagent_containers/food/drinks/shaker{
+	pixel_y = 14
+	},
+/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/obj/item/weapon/reagent_containers/glass/rag,
+/obj/item/weapon/book/manual/wiki/barman_recipes{
+	pixel_x = 3;
+	pixel_y = 4
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkred"
+	},
 /area/space)
 "eYQ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8667,12 +8700,10 @@
 	},
 /area/space)
 "gHX" = (
-/obj/machinery/door/airlock{
-	id_tag = "Dorm1";
-	name = "Dorm 1"
-	},
+/obj/structure/table/reinforced,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "darkred"
 	},
 /area/space)
 "gIu" = (
@@ -9049,13 +9080,11 @@
 	},
 /area/space)
 "gXv" = (
-/obj/machinery/door_control{
-	id = "Dorm1";
-	name = "Dorm 1";
-	pixel_x = 28;
-	specialfunctions = 4
+/obj/structure/stool/bar,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
 	},
-/turf/simulated/floor/carpet/green,
 /area/space)
 "gYf" = (
 /obj/structure/closet/secure_closet/exile,
@@ -10803,11 +10832,9 @@
 	},
 /area/space)
 "iuM" = (
-/obj/machinery/door/airlock{
-	id_tag = "Dorm2";
-	name = "Dorm 2"
-	},
+/obj/structure/table/woodentable,
 /turf/simulated/floor{
+	dir = 4;
 	icon_state = "dark"
 	},
 /area/space)
@@ -11423,11 +11450,13 @@
 /area/space)
 "jao" = (
 /obj/structure/table/woodentable,
-/obj/item/clothing/suit/plaid{
-	pixel_x = 3;
+/obj/machinery/chem_dispenser/beer{
 	pixel_y = 4
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
 /area/space)
 "jbC" = (
 /obj/item/toy/cards,
@@ -12660,10 +12689,10 @@
 	},
 /area/space)
 "klZ" = (
-/obj/structure/reagent_dispensers/watertank,
-/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/structure/table/reinforced,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space)
 "kmh" = (
@@ -12976,13 +13005,14 @@
 	},
 /area/space)
 "kAW" = (
-/obj/machinery/door_control{
-	id = "Dorm2";
-	name = "Dorm 2";
-	pixel_x = 28;
-	specialfunctions = 4
+/obj/structure/table/woodentable,
+/obj/machinery/chem_dispenser/soda{
+	pixel_y = 4
 	},
-/turf/simulated/floor/carpet/red,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
 /area/space)
 "kBd" = (
 /obj/item/weapon/flora/random,
@@ -15530,7 +15560,6 @@
 	},
 /area/space)
 "mMf" = (
-/obj/item/weapon/flora/pottedplant/minitree,
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "green"
@@ -17201,6 +17230,13 @@
 	icon_state = "warnwhite"
 	},
 /area/space)
+"ohX" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/space)
 "oji" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
@@ -17451,6 +17487,13 @@
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "warndark"
+	},
+/area/space)
+"osD" = (
+/obj/item/weapon/flora/random,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/space)
 "osX" = (
@@ -18008,6 +18051,14 @@
 	},
 /turf/simulated/floor{
 	icon_state = "freezerfloor2"
+	},
+/area/space)
+"oVc" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space)
 "oVp" = (
@@ -19495,6 +19546,13 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"qnI" = (
+/obj/machinery/media/jukebox/bar,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/space)
 "qpb" = (
 /obj/structure/sign/poster/official/cleanliness{
 	pixel_x = 32
@@ -19813,10 +19871,13 @@
 	},
 /area/space)
 "qCl" = (
-/obj/structure/sign/poster/official/no_erp{
-	pixel_y = 32
+/obj/machinery/hologram/holopad{
+	pixel_y = -16
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
 /area/space)
 "qCq" = (
 /obj/structure/table,
@@ -21339,8 +21400,15 @@
 	},
 /area/space)
 "rSp" = (
-/obj/structure/closet/secure_closet/personal/cabinet,
-/turf/simulated/floor/carpet/red,
+/obj/structure/closet/crate/hydroponics,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/screwdriver,
+/obj/item/weapon/shovel/spade,
+/obj/item/weapon/wrench,
+/obj/item/weapon/minihoe{
+	pixel_x = 3
+	},
+/turf/simulated/floor/grass,
 /area/space)
 "rSL" = (
 /mob/living/simple_animal/fox/Renault,
@@ -21860,14 +21928,8 @@
 /turf/simulated/floor/plating,
 /area/space)
 "sqR" = (
-/obj/structure/closet/crate/hydroponics,
+/obj/structure/reagent_dispensers/watertank,
 /obj/item/weapon/reagent_containers/glass/bucket,
-/obj/item/weapon/screwdriver,
-/obj/item/weapon/shovel/spade,
-/obj/item/weapon/wrench,
-/obj/item/weapon/minihoe{
-	pixel_x = 3
-	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -26701,6 +26763,16 @@
 /obj/machinery/disposal,
 /turf/simulated/floor/plating{
 	icon_state = "platebot"
+	},
+/area/space)
+"wGA" = (
+/obj/machinery/door/window/southright{
+	name = "Bar Door";
+	req_one_access = list(25)
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/space)
 "wHk" = (
@@ -57322,11 +57394,11 @@ muw
 muw
 muw
 muw
-fkk
-fkk
-fkk
-fkk
-fkk
+muw
+muw
+muw
+muw
+muw
 muw
 muw
 muw
@@ -57577,15 +57649,15 @@ muw
 muw
 muw
 muw
-fkk
-fkk
-fkk
-dcI
-dcI
-dcI
-fkk
-fkk
-fkk
+muw
+muw
+muw
+muw
+muw
+muw
+muw
+muw
+muw
 muw
 muw
 muw
@@ -57833,17 +57905,17 @@ muw
 muw
 muw
 muw
-fkk
-fkk
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-fkk
-fkk
+muw
+muw
+muw
+muw
+muw
+muw
+muw
+muw
+muw
+muw
+muw
 muw
 muw
 muw
@@ -58090,17 +58162,17 @@ fkk
 fkk
 muw
 muw
+muw
+muw
+muw
 fkk
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
 fkk
+fkk
+fkk
+muw
+muw
+muw
+muw
 muw
 muw
 muw
@@ -58345,19 +58417,19 @@ fFd
 fzc
 fOY
 fkk
+muw
+muw
+muw
+muw
+muw
+fkk
+fzc
+fzc
 fkk
 fkk
-fkk
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-fkk
+muw
+muw
+muw
 muw
 muw
 muw
@@ -58602,19 +58674,19 @@ pZf
 sFB
 fzc
 fkk
-rSp
-biC
+muw
+muw
+muw
+muw
+muw
 fkk
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
+fzc
+fzc
+fzc
 fkk
+muw
+muw
+muw
 muw
 muw
 muw
@@ -58859,20 +58931,20 @@ gIS
 lbF
 fzc
 fkk
-vUf
-vUf
-iuM
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
+muw
+muw
+muw
+muw
+muw
+fkk
+fzc
+fzc
+fzc
 fkk
 fkk
 muw
+fkk
+fkk
 muw
 fkk
 fkk
@@ -59116,20 +59188,20 @@ iex
 fzc
 dDo
 fkk
-ePA
-kAW
-fkk
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-fkk
 muw
 muw
+muw
+muw
+muw
+fkk
+fzc
+fzc
+fzc
+fkk
+iuM
+mJS
+iuM
+fkk
 fkk
 fkk
 yam
@@ -59374,19 +59446,19 @@ epR
 fkk
 fkk
 fkk
-fkk
-fkk
-fkk
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-fkk
 muw
 muw
+muw
+fkk
+fkk
+fkk
+ePA
+fkk
+fkk
+biC
+ePA
+mJS
+iuM
 fkk
 xYM
 bAX
@@ -59631,19 +59703,19 @@ beE
 mfr
 sfe
 fkk
-eYC
+muw
+muw
+fkk
+fkk
 jao
-fkk
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-fkk
-muw
-muw
+kAW
+ePA
+qnI
+bKz
+iuM
+mJS
+ePA
+biC
 fkk
 syf
 bCu
@@ -59887,20 +59959,20 @@ eEb
 eEb
 eEb
 eEb
-fkk
-qCl
-eFG
-gHX
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-fkk
 muw
 muw
+muw
+fkk
+eXV
+ePA
+ePA
+ePA
+ePA
+wGA
+mJS
+ePA
+mJS
+iuM
 fkk
 bex
 nSc
@@ -60145,18 +60217,18 @@ cLN
 oMf
 bPz
 fkk
-eXV
-gXv
-fkk
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-fkk
 muw
+muw
+fkk
+eYC
+ePA
+ePA
+ePA
+ePA
+ohX
+ePA
+mJS
+iuM
 fkk
 fkk
 fkk
@@ -60405,15 +60477,15 @@ fkk
 fkk
 fkk
 fkk
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-fkk
-fkk
+gHX
+klZ
+klZ
+klZ
+klZ
+oVc
+mJS
+ePA
+biC
 fkk
 pzU
 oSp
@@ -60661,16 +60733,16 @@ jZk
 sDb
 jZk
 fkk
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
+biC
+gXv
+bPR
+gXv
+bPR
+gXv
+bPR
+ePA
+mJS
+iuM
 fkk
 erE
 fzc
@@ -60918,16 +60990,16 @@ eeE
 fzc
 svp
 bTw
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
+ePA
+mJS
+ePA
+mJS
+ePA
+mJS
+ePA
+mJS
+ePA
+mJS
 fPS
 teX
 eFG
@@ -61175,16 +61247,16 @@ iFD
 fzc
 doU
 qRA
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
+aVq
+ePA
+mJS
+ePA
+qCl
+ePA
+mJS
+ePA
+mJS
+osD
 ocK
 doU
 fIF
@@ -61432,16 +61504,16 @@ eeE
 fzc
 fzc
 bTw
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
+ePA
+mJS
+ePA
+mJS
+ePA
+mJS
+ePA
+mJS
+ePA
+mJS
 fPS
 fzc
 eFG
@@ -61689,16 +61761,16 @@ fzc
 oqA
 oeq
 fkk
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
-dcI
+biC
+iuM
+biC
+ePA
+mJS
+ePA
+mJS
+ePA
+biC
+iuM
 fkk
 sac
 but
@@ -61949,11 +62021,11 @@ fkk
 fkk
 fkk
 fkk
-fkk
-dcI
-dcI
-dcI
-dcI
+mJS
+ePA
+mJS
+ePA
+biC
 fkk
 fkk
 fkk
@@ -62205,7 +62277,7 @@ fkk
 fkk
 lAY
 nAb
-lAY
+fkk
 fkk
 poQ
 aWw
@@ -64006,7 +64078,7 @@ lAY
 nAb
 gUU
 nAb
-klZ
+lAY
 fkk
 fkk
 fkk
@@ -64520,7 +64592,7 @@ sRi
 iBM
 lRV
 dPV
-lRV
+rSp
 fkk
 gxE
 wuf
