@@ -192,10 +192,6 @@
 	icon_state = "darkbrown"
 	},
 /area/space)
-"ahm" = (
-/obj/machinery/atmospherics/pipe/manifold/visible,
-/turf/simulated/floor,
-/area/space)
 "ahq" = (
 /obj/machinery/computer/secure_data,
 /turf/simulated/floor{
@@ -333,10 +329,6 @@
 	},
 /turf/simulated/floor,
 /area/space)
-"amr" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/yellow,
-/turf/simulated/floor,
-/area/space)
 "amx" = (
 /obj/structure/sign/warning/biohazard{
 	pixel_x = -32
@@ -446,12 +438,12 @@
 	},
 /area/space)
 "apd" = (
-/obj/machinery/atmospherics/components/binary/pump{
+/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
 	dir = 8
 	},
 /turf/simulated/floor{
-	dir = 6;
-	icon_state = "caution"
+	dir = 8;
+	icon_state = "yellow"
 	},
 /area/space)
 "apk" = (
@@ -465,7 +457,7 @@
 /turf/simulated/wall,
 /area/station/hallway/secondary/mine_sci_shuttle)
 "apS" = (
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
+/obj/machinery/light/small,
 /turf/simulated/floor/engine/carbon_dioxide,
 /area/space)
 "aqg" = (
@@ -577,16 +569,12 @@
 	},
 /area/space)
 "asv" = (
-/obj/machinery/computer/general_air_control/large_tank_control{
-	frequency = 1443;
-	input_tag = "air_in";
-	name = "Mixed Air Supply Control";
-	output_tag = "air_out";
-	sensors = list("air_sensor"="Tank")
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 1;
-	icon_state = "arrival"
+	icon_state = "warning"
 	},
 /area/space)
 "asW" = (
@@ -620,10 +608,9 @@
 /turf/simulated/floor/plating,
 /area/space)
 "atw" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	dir = 9
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/red,
 /turf/simulated/floor,
 /area/space)
 "atA" = (
@@ -827,13 +814,9 @@
 	},
 /area/space)
 "aAR" = (
-/obj/structure/window/reinforced{
-	dir = 5
-	},
-/obj/structure/grille,
-/obj/machinery/door/firedoor,
+/obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/turf/simulated/floor/plating,
+/turf/environment/space,
 /area/space)
 "aBf" = (
 /obj/machinery/washing_machine,
@@ -1020,13 +1003,6 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkblue"
-	},
-/area/space)
-"aHR" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "darkyellow"
 	},
 /area/space)
 "aID" = (
@@ -1266,8 +1242,9 @@
 /area/space)
 "aVU" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
-	dir = 1
+	dir = 4
 	},
+/obj/machinery/meter,
 /turf/simulated/floor,
 /area/space)
 "aWj" = (
@@ -1340,14 +1317,8 @@
 	},
 /area/space)
 "aZb" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green,
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 8
-	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "bot"
-	},
+/obj/machinery/atmospherics/pipe/manifold4w/visible/green,
+/turf/simulated/floor,
 /area/space)
 "bbg" = (
 /obj/structure/grille,
@@ -1467,6 +1438,7 @@
 	},
 /area/space)
 "bgO" = (
+/obj/machinery/atmospherics/components/binary/valve,
 /turf/simulated/floor/plating{
 	dir = 4;
 	icon_state = "warnplate"
@@ -1791,6 +1763,8 @@
 /turf/simulated/floor/wood,
 /area/space)
 "brs" = (
+/obj/machinery/atmospherics/pipe/simple/visible/yellow,
+/obj/machinery/meter,
 /turf/simulated/floor/plating{
 	dir = 5;
 	icon_state = "warnplate"
@@ -2245,8 +2219,13 @@
 	},
 /area/space)
 "bKp" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/engine/vacuum,
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 10
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "warning"
+	},
 /area/space)
 "bKz" = (
 /obj/machinery/vending/boozeomat{
@@ -2390,10 +2369,13 @@
 /turf/simulated/wall/r_wall,
 /area/space)
 "bNI" = (
-/obj/machinery/atmospherics/components/binary/valve{
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
 	dir = 4
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "bot"
+	},
 /area/space)
 "bOa" = (
 /obj/machinery/disposal,
@@ -2407,6 +2389,15 @@
 	dir = 4;
 	icon_state = "darkred"
 	},
+/area/space)
+"bOu" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 1;
+	frequency = 1441;
+	id = "co2_in";
+	name = "CO2 air injector"
+	},
+/turf/simulated/floor/engine/carbon_dioxide,
 /area/space)
 "bOT" = (
 /obj/machinery/door/airlock/maintenance{
@@ -2503,17 +2494,11 @@
 	},
 /area/space)
 "bSw" = (
-/obj/machinery/computer/general_air_control/large_tank_control{
-	dir = 1;
-	input_tag = "co2_in";
-	name = "Carbon Dioxide Supply Control";
-	output_tag = "co2_out";
-	sensors = list("co2_sensor"="Tank")
+/obj/machinery/atmospherics/pipe/simple/visible/yellow,
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
 	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "darkyellow"
-	},
+/turf/simulated/floor,
 /area/space)
 "bSy" = (
 /obj/machinery/computer/forensic_scanning,
@@ -2893,10 +2878,10 @@
 	},
 /area/space)
 "cld" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 9
+/obj/machinery/atmospherics/pipe/simple/visible/yellow,
+/turf/simulated/floor{
+	icon_state = "yellow"
 	},
-/turf/simulated/floor,
 /area/space)
 "clg" = (
 /obj/structure/stool,
@@ -3015,7 +3000,7 @@
 	},
 /area/space)
 "cnA" = (
-/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+/obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
 	},
 /obj/machinery/space_heater,
@@ -3055,7 +3040,9 @@
 /obj/item/weapon/storage/bible{
 	pixel_y = 6
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
 /area/space)
 "cpb" = (
 /turf/simulated/floor{
@@ -3182,8 +3169,8 @@
 	},
 /area/space)
 "cta" = (
-/obj/machinery/atmospherics/components/trinary/filter{
-	dir = 1
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -3198,7 +3185,9 @@
 	},
 /obj/item/weapon/reagent_containers/food/drinks/bottle/wine,
 /obj/item/weapon/reagent_containers/food/drinks/bottle/wine,
-/turf/simulated/floor/wood,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
 /area/space)
 "ctC" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
@@ -3264,8 +3253,8 @@
 /obj/item/weapon/reagent_containers/food/drinks/bottle/holywater{
 	pixel_y = 4
 	},
-/turf/simulated/floor/wood{
-	icon_state = "wood-broken5"
+/turf/simulated/floor{
+	icon_state = "grimy"
 	},
 /area/space)
 "cvm" = (
@@ -3664,7 +3653,9 @@
 	name = "Crematorium";
 	req_access = list(27)
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "cTQ" = (
 /obj/machinery/atmospherics/components/binary/valve/digital/open{
@@ -4061,7 +4052,9 @@
 /area/space)
 "dhL" = (
 /obj/item/weapon/flora/pottedplant/minitree,
-/turf/simulated/floor/wood,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
 /area/space)
 "dhN" = (
 /obj/machinery/door/airlock/external{
@@ -4075,13 +4068,13 @@
 /turf/simulated/floor/plating,
 /area/station/aisat)
 "dhQ" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on{
 	dir = 1;
-	frequency = 1441;
-	id = "waste_in";
-	name = "waste air injector"
+	external_pressure_bound = 140;
+	external_pressure_bound_default = 140;
+	name = "(OUT) Space Large Air Vent"
 	},
-/turf/simulated/floor/engine/vacuum,
+/turf/simulated/floor/plating/airless,
 /area/space)
 "dic" = (
 /obj/structure/flora/bush,
@@ -4381,15 +4374,6 @@
 	icon_state = "greenbluefull"
 	},
 /area/space)
-"dug" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/cyan{
-	dir = 8
-	},
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "arrival"
-	},
-/area/space)
 "duk" = (
 /obj/structure/sink{
 	dir = 4;
@@ -4453,13 +4437,10 @@
 	},
 /area/space)
 "dvt" = (
-/obj/machinery/atmospherics/components/trinary/filter/m_filter/on{
-	dir = 8;
-	filter_type = "carbon_dioxide";
-	name = "Gas filter (CO2 tank)"
-	},
+/obj/machinery/atmospherics/pipe/simple/visible/green,
 /turf/simulated/floor{
-	icon_state = "caution"
+	dir = 5;
+	icon_state = "darkyellow"
 	},
 /area/space)
 "dvx" = (
@@ -4883,13 +4864,11 @@
 	},
 /area/space)
 "dGe" = (
-/obj/machinery/atmospherics/components/trinary/mixer/m_mixer{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 4
 	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "bot"
-	},
+/obj/machinery/atmospherics/pipe/simple/visible/red,
+/turf/simulated/floor,
 /area/space)
 "dGm" = (
 /obj/item/weapon/storage/visuals/surgery/full{
@@ -4947,13 +4926,10 @@
 	},
 /area/space)
 "dJO" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 10
 	},
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "caution"
-	},
+/turf/simulated/floor,
 /area/space)
 "dJT" = (
 /obj/machinery/door/airlock/security{
@@ -5149,7 +5125,7 @@
 	},
 /area/space)
 "dNM" = (
-/obj/machinery/atmospherics/components/binary/pump{
+/obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -5185,8 +5161,8 @@
 /area/space)
 "dOy" = (
 /obj/machinery/constructable_frame/machine_frame,
-/turf/simulated/floor/wood{
-	icon_state = "wood-broken7"
+/turf/simulated/floor{
+	icon_state = "grimy"
 	},
 /area/space)
 "dPo" = (
@@ -5487,13 +5463,9 @@
 /turf/simulated/floor/plating,
 /area/space)
 "dZn" = (
-/obj/structure/window/reinforced{
-	dir = 5
-	},
-/obj/structure/grille,
-/obj/machinery/door/firedoor,
+/obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/simulated/floor/plating,
+/turf/environment/space,
 /area/space)
 "dZx" = (
 /obj/structure/rack,
@@ -5747,9 +5719,8 @@
 	},
 /area/space)
 "ejw" = (
-/obj/machinery/atmospherics/components/binary/pump,
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
+/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
+	dir = 8
 	},
 /turf/simulated/floor,
 /area/space)
@@ -5770,11 +5741,16 @@
 	},
 /area/space)
 "ejR" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
+/obj/machinery/computer/general_air_control/large_tank_control{
+	dir = 1;
+	input_tag = "n2o_in";
+	name = "Nitrous Oxide Supply Control";
+	output_tag = "n2o_out";
+	sensors = list("n2o_sensor"="Tank")
 	},
 /turf/simulated/floor{
-	icon_state = "caution"
+	dir = 1;
+	icon_state = "escape"
 	},
 /area/space)
 "eke" = (
@@ -5905,13 +5881,8 @@
 	},
 /area/space)
 "epc" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 4
-	},
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "vault"
-	},
+/obj/machinery/atmospherics/pipe/simple/visible/universal,
+/turf/simulated/wall/r_wall,
 /area/space)
 "epr" = (
 /obj/structure/table,
@@ -6081,12 +6052,10 @@
 	},
 /area/space)
 "exb" = (
-/obj/machinery/atmospherics/pipe/simple/visible/yellow{
-	dir = 5
-	},
+/obj/structure/reagent_dispensers/aqueous_foam_tank,
 /turf/simulated/floor{
 	dir = 8;
-	icon_state = "caution"
+	icon_state = "vault"
 	},
 /area/space)
 "exm" = (
@@ -6171,11 +6140,6 @@
 	icon_state = "dark"
 	},
 /area/space)
-"eAb" = (
-/obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/obj/structure/lattice,
-/turf/environment/space,
-/area/space)
 "eAt" = (
 /obj/structure/table,
 /obj/item/device/flashlight,
@@ -6192,11 +6156,10 @@
 	},
 /area/space)
 "eAF" = (
-/obj/machinery/atmospherics/components/unary/portables_connector,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "bot"
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8
 	},
+/turf/simulated/floor,
 /area/space)
 "eAG" = (
 /obj/structure/table,
@@ -6277,14 +6240,8 @@
 /turf/simulated/floor/grass,
 /area/space)
 "eCY" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "caution"
-	},
+/obj/machinery/atmospherics/components/binary/valve,
+/turf/simulated/floor,
 /area/space)
 "eDe" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -6554,14 +6511,9 @@
 /turf/simulated/floor/engine,
 /area/space)
 "eMk" = (
-/obj/machinery/atmospherics/components/unary/portables_connector{
-	dir = 8
-	},
-/obj/machinery/portable_atmospherics/canister,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "bot"
-	},
+/obj/machinery/atmospherics/pipe/manifold4w/visible,
+/obj/machinery/meter,
+/turf/simulated/floor,
 /area/space)
 "eMp" = (
 /obj/structure/closet/secure_closet/hos,
@@ -6587,10 +6539,7 @@
 	},
 /area/space)
 "eNI" = (
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "tox_sensor"
-	},
+/obj/machinery/portable_atmospherics/canister/phoron,
 /turf/simulated/floor/engine/phoron,
 /area/space)
 "eNO" = (
@@ -6618,10 +6567,13 @@
 	},
 /area/space)
 "eOi" = (
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/obj/machinery/meter,
-/turf/simulated/wall/r_wall,
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
+	dir = 1;
+	frequency = 1443;
+	id_tag = "air_out";
+	name = "(A) Air Vent"
+	},
+/turf/simulated/floor/engine/airmix,
 /area/space)
 "eOZ" = (
 /obj/machinery/computer/crew{
@@ -6683,14 +6635,6 @@
 	dir = 8;
 	icon_state = "vault"
 	},
-/area/space)
-"eRC" = (
-/obj/machinery/atmospherics/components/trinary/mixer/m_mixer/on{
-	name = "Gas mixer (N2/O2)";
-	node1_concentration = 0.2;
-	node2_concentration = 0.8
-	},
-/turf/simulated/floor,
 /area/space)
 "eRN" = (
 /turf/simulated/floor{
@@ -6787,7 +6731,9 @@
 	},
 /area/space)
 "eVC" = (
-/obj/machinery/atmospherics/pipe/manifold4w/visible/green,
+/obj/machinery/atmospherics/pipe/manifold/visible/green{
+	dir = 8
+	},
 /turf/simulated/floor,
 /area/space)
 "eVH" = (
@@ -6833,12 +6779,6 @@
 	icon_state = "darkgreen"
 	},
 /area/space)
-"eXC" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/space)
 "eXV" = (
 /obj/machinery/reagentgrinder{
 	layer = 3.1;
@@ -6851,13 +6791,11 @@
 	},
 /area/space)
 "eYg" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+/obj/machinery/atmospherics/components/trinary/mixer/m_mixer,
+/turf/simulated/floor{
 	dir = 1;
-	frequency = 1441;
-	id = "tox_in";
-	name = "TOX air injector"
+	icon_state = "bot"
 	},
-/turf/simulated/floor/engine/phoron,
 /area/space)
 "eYl" = (
 /obj/machinery/door/airlock/command/glass{
@@ -6986,8 +6924,8 @@
 	},
 /area/space)
 "fci" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 9
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 4
 	},
 /turf/simulated/floor,
 /area/space)
@@ -7033,9 +6971,12 @@
 	},
 /area/space)
 "fev" = (
-/obj/machinery/disposal,
-/turf/simulated/floor/wood{
-	icon_state = "wood-broken3"
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "caution"
 	},
 /area/space)
 "ffe" = (
@@ -7239,29 +7180,25 @@
 /turf/simulated/floor/wood,
 /area/space)
 "flc" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
-	dir = 1;
-	frequency = 1441;
-	id_tag = "tox_out";
-	name = "(A) Toxin Vent"
+/obj/machinery/atmospherics/pipe/manifold/visible/blue{
+	dir = 4
 	},
-/turf/simulated/floor/engine/phoron,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "caution"
+	},
 /area/space)
 "flK" = (
-/obj/machinery/atmospherics/components/binary/pump/on,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "bot"
+/obj/machinery/atmospherics/pipe/manifold/visible/red{
+	dir = 8
 	},
+/turf/simulated/floor,
 /area/space)
 "flT" = (
-/obj/machinery/atmospherics/components/trinary/filter/m_filter/on{
-	dir = 8;
-	filter_type = "phoron";
-	name = "Gas filter (Toxins tank)"
-	},
+/obj/machinery/atmospherics/pipe/simple/visible/green,
 /turf/simulated/floor{
-	icon_state = "caution"
+	dir = 5;
+	icon_state = "warning"
 	},
 /area/space)
 "flW" = (
@@ -7303,10 +7240,9 @@
 /turf/simulated/floor/engine,
 /area/space)
 "fou" = (
-/obj/machinery/atmospherics/components/unary/portables_connector{
-	dir = 1
+/obj/machinery/atmospherics/components/unary/thermomachine/heater{
+	dir = 4
 	},
-/obj/machinery/portable_atmospherics/canister,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "bot"
@@ -8061,13 +7997,10 @@
 	},
 /area/station/tcommsat/chamber)
 "fLD" = (
-/obj/machinery/atmospherics/components/unary/portables_connector{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 5
 	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "bot"
-	},
+/turf/simulated/floor,
 /area/space)
 "fLZ" = (
 /obj/structure/table,
@@ -8124,10 +8057,6 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/space)
-"fNR" = (
-/obj/machinery/atmospherics/pipe/manifold4w/visible,
-/turf/simulated/floor,
 /area/space)
 "fOa" = (
 /turf/simulated/floor{
@@ -8253,12 +8182,16 @@
 	},
 /area/space)
 "fRp" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
+/obj/machinery/computer/general_air_control/large_tank_control{
+	dir = 1;
+	input_tag = "tox_in";
+	name = "Toxin Supply Control";
+	output_tag = "tox_out";
+	sensors = list("tox_sensor"="Tank")
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/green,
 /turf/simulated/floor{
-	icon_state = "caution"
+	dir = 1;
+	icon_state = "warning"
 	},
 /area/space)
 "fRq" = (
@@ -8324,12 +8257,9 @@
 	},
 /area/space)
 "fUt" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green,
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
-	},
+/obj/structure/table,
 /turf/simulated/floor{
-	dir = 4;
+	dir = 1;
 	icon_state = "caution"
 	},
 /area/space)
@@ -8514,12 +8444,12 @@
 /turf/simulated/floor/engine,
 /area/space)
 "gcw" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
+/obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
 	},
-/obj/item/weapon/flora/random,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "gcH" = (
@@ -8730,8 +8660,8 @@
 	},
 /area/space)
 "ghB" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue{
-	dir = 6
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 1
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -8789,10 +8719,10 @@
 	},
 /area/space)
 "glQ" = (
-/obj/machinery/atmospherics/components/binary/valve/digital/open,
+/obj/structure/table,
 /turf/simulated/floor{
-	dir = 9;
-	icon_state = "warning"
+	dir = 5;
+	icon_state = "caution"
 	},
 /area/space)
 "gmb" = (
@@ -8881,7 +8811,9 @@
 /area/space)
 "gqB" = (
 /obj/structure/closet/wardrobe/chaplain_black,
-/turf/simulated/floor/wood,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
 /area/space)
 "gqH" = (
 /obj/structure/table,
@@ -8894,10 +8826,7 @@
 	},
 /area/space)
 "gqK" = (
-/obj/machinery/atmospherics/components/trinary/filter/on{
-	filter_type = "phoron";
-	name = "Gas filter (Toxins tank)"
-	},
+/obj/machinery/atmospherics/components/trinary/tvalve/mirrored/digital,
 /turf/simulated/floor,
 /area/space)
 "gra" = (
@@ -9145,7 +9074,7 @@
 	},
 /area/space)
 "gzQ" = (
-/obj/machinery/portable_atmospherics/canister/sleeping_agent,
+/obj/machinery/light/small,
 /turf/simulated/floor/engine/n20,
 /area/space)
 "gzU" = (
@@ -9212,10 +9141,9 @@
 	},
 /area/space)
 "gBi" = (
-/obj/machinery/atmospherics/pipe/manifold/visible{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 9
 	},
-/obj/machinery/meter,
 /turf/simulated/floor,
 /area/space)
 "gBT" = (
@@ -9234,8 +9162,8 @@
 	},
 /area/space)
 "gCr" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/green{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 9;
@@ -9345,15 +9273,10 @@
 /turf/simulated/floor/plating,
 /area/space)
 "gFj" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1
-	},
+/obj/machinery/atmospherics/components/binary/valve/digital/open,
 /turf/simulated/floor{
-	dir = 10;
-	icon_state = "caution"
+	dir = 9;
+	icon_state = "escape"
 	},
 /area/space)
 "gFB" = (
@@ -10057,9 +9980,6 @@
 	output_tag = "n2_out";
 	sensors = list("n2_sensor"="Tank")
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 9
-	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "red"
@@ -10269,9 +10189,7 @@
 /turf/simulated/floor/wood,
 /area/space)
 "hoG" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = 8
-	},
+/obj/machinery/atmospherics/components/unary/portables_connector,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "bot"
@@ -10419,11 +10337,11 @@
 /turf/simulated/floor/wood,
 /area/space)
 "hxc" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+/obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
 	},
 /turf/simulated/floor{
-	dir = 4;
+	dir = 8;
 	icon_state = "caution"
 	},
 /area/space)
@@ -10575,9 +10493,10 @@
 /turf/simulated/floor/wood,
 /area/space)
 "hBr" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 10
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /turf/simulated/floor,
 /area/space)
 "hBB" = (
@@ -10758,20 +10677,17 @@
 /turf/environment/space,
 /area/space)
 "hIj" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
+/obj/machinery/atmospherics/pipe/manifold/visible/cyan{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/space)
+"hIx" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /turf/simulated/floor,
-/area/space)
-"hIx" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 1;
-	frequency = 1441;
-	id = "co2_in";
-	name = "CO2 air injector"
-	},
-/turf/simulated/floor/engine/carbon_dioxide,
 /area/space)
 "hID" = (
 /turf/simulated/wall/r_wall,
@@ -10829,17 +10745,16 @@
 /turf/simulated/wall/r_wall,
 /area/space)
 "hKh" = (
-/obj/machinery/atmospherics/components/trinary/filter/m_filter/on{
-	filter_type = "nitrogen";
-	name = "Gas filter (N2 tank)"
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 1
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "bot"
+	},
 /area/space)
 "hKq" = (
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "n2o_sensor"
-	},
+/obj/machinery/portable_atmospherics/canister/sleeping_agent,
 /turf/simulated/floor/engine/n20,
 /area/space)
 "hKv" = (
@@ -10955,6 +10870,9 @@
 	},
 /area/space)
 "hNK" = (
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "warningcorner"
@@ -11301,6 +11219,15 @@
 	icon_state = "red"
 	},
 /area/space)
+"ibG" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
+	dir = 1;
+	frequency = 1441;
+	id_tag = "co2_out";
+	name = "(A) CO2 Vent"
+	},
+/turf/simulated/floor/engine/carbon_dioxide,
+/area/space)
 "icb" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/camera{
@@ -11544,14 +11471,13 @@
 	},
 /area/space)
 "ikT" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/engine/carbon_dioxide,
+/obj/machinery/atmospherics/pipe/manifold/visible/red{
+	dir = 1
+	},
+/turf/simulated/floor,
 /area/space)
 "ill" = (
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "co2_sensor"
-	},
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/simulated/floor/engine/carbon_dioxide,
 /area/space)
 "ily" = (
@@ -11630,10 +11556,10 @@
 	},
 /area/space)
 "imR" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+/obj/machinery/atmospherics/pipe/simple/visible/green,
+/obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/green,
 /turf/simulated/floor,
 /area/space)
 "inq" = (
@@ -11699,15 +11625,14 @@
 	},
 /area/space)
 "irK" = (
-/obj/machinery/computer/general_air_control/large_tank_control{
-	input_tag = "waste_in";
-	name = "Gas Mix Tank Control";
-	output_tag = "waste_out";
-	sensors = list("waste_sensor"="Tank")
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	dir = 4
 	},
-/turf/simulated/floor{
-	icon_state = "caution"
+/obj/machinery/door/airlock/atmos/glass{
+	name = "Distribution Loop";
+	req_access = list(24)
 	},
+/turf/simulated/floor,
 /area/space)
 "isf" = (
 /turf/simulated/floor{
@@ -11945,10 +11870,7 @@
 	},
 /area/space)
 "iBz" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/red,
+/obj/machinery/atmospherics/pipe/manifold/visible/red,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "caution"
@@ -12003,8 +11925,8 @@
 	},
 /area/space)
 "iDd" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 6
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 1
 	},
 /turf/simulated/floor,
 /area/space)
@@ -12526,12 +12448,10 @@
 /turf/simulated/floor/engine,
 /area/space)
 "jfr" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/red{
-	dir = 8
-	},
+/obj/machinery/atmospherics/components/binary/pump/on,
 /turf/simulated/floor{
 	dir = 1;
-	icon_state = "caution"
+	icon_state = "bot"
 	},
 /area/space)
 "jfS" = (
@@ -12902,17 +12822,10 @@
 /turf/simulated/floor,
 /area/space)
 "jyr" = (
-/obj/machinery/computer/general_air_control/large_tank_control{
-	dir = 1;
-	input_tag = "n2o_in";
-	name = "Nitrous Oxide Supply Control";
-	output_tag = "n2o_out";
-	sensors = list("n2o_sensor"="Tank")
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 6
 	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "escape"
-	},
+/turf/simulated/floor,
 /area/space)
 "jyx" = (
 /obj/machinery/door/airlock/glass{
@@ -13091,12 +13004,10 @@
 	},
 /area/space)
 "jGl" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 5
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 6
 	},
-/turf/simulated/floor{
-	icon_state = "caution"
-	},
+/turf/simulated/floor,
 /area/space)
 "jGx" = (
 /obj/machinery/atmospherics/components/binary/valve,
@@ -13106,10 +13017,13 @@
 	},
 /area/space)
 "jHl" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 8
+/obj/machinery/atmospherics/components/trinary/filter{
+	dir = 1
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "bot"
+	},
 /area/space)
 "jHm" = (
 /obj/structure/table/woodentable,
@@ -13162,13 +13076,6 @@
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "darkblue"
-	},
-/area/space)
-"jMm" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "escape"
 	},
 /area/space)
 "jMy" = (
@@ -13531,11 +13438,14 @@
 /turf/simulated/floor/wood,
 /area/space)
 "jZv" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/binary/pump{
 	dir = 1
 	},
 /turf/simulated/floor{
-	dir = 8;
+	dir = 10;
 	icon_state = "caution"
 	},
 /area/space)
@@ -13566,7 +13476,9 @@
 	},
 /area/space)
 "kaG" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/blue,
+/obj/machinery/atmospherics/pipe/manifold/visible/green{
+	dir = 1
+	},
 /turf/simulated/floor,
 /area/space)
 "kaR" = (
@@ -14217,7 +14129,7 @@
 /turf/simulated/floor/wood,
 /area/space)
 "kAK" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 4
 	},
 /obj/machinery/space_heater,
@@ -14510,7 +14422,7 @@
 	},
 /area/space)
 "kMS" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
+/obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
@@ -14994,11 +14906,13 @@
 	},
 /area/station/aisat/antechamber_interior)
 "leA" = (
-/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/turf/simulated/floor,
+/turf/simulated/floor{
+	icon_state = "caution"
+	},
 /area/space)
 "leH" = (
 /obj/structure/closet/crate{
@@ -15015,9 +14929,13 @@
 	},
 /area/space)
 "lfk" = (
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/turf/simulated/wall/r_wall,
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
+	dir = 1;
+	frequency = 1441;
+	id_tag = "waste_out";
+	name = "(A) Waste Vent"
+	},
+/turf/simulated/floor/engine/vacuum,
 /area/space)
 "lfQ" = (
 /obj/machinery/cell_charger{
@@ -15102,9 +15020,7 @@
 	},
 /area/space)
 "lir" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 6
-	},
+/obj/machinery/atmospherics/components/binary/pump,
 /turf/simulated/floor,
 /area/space)
 "liu" = (
@@ -15121,12 +15037,13 @@
 /turf/simulated/floor/plating,
 /area/space)
 "liT" = (
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "waste_sensor";
-	output = 63
+/obj/machinery/atmospherics/pipe/simple/visible/blue{
+	dir = 6
 	},
-/turf/simulated/floor/engine/vacuum,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "caution"
+	},
 /area/space)
 "ljg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -15492,12 +15409,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/station/cargo/storage)
-"lwd" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/red{
-	dir = 8
-	},
-/turf/simulated/floor,
-/area/space)
 "lwv" = (
 /obj/structure/stool/bed/chair/metal/red{
 	dir = 1
@@ -15812,11 +15723,7 @@
 /turf/environment/space,
 /area/space)
 "lIk" = (
-/obj/machinery/air_sensor{
-	frequency = 1443;
-	id_tag = "air_sensor";
-	output = 7
-	},
+/obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor/engine/airmix,
 /area/space)
 "lIS" = (
@@ -16004,10 +15911,6 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/space)
-"lRU" = (
-/obj/machinery/atmospherics/pipe/simple/visible,
-/turf/simulated/floor,
 /area/space)
 "lRV" = (
 /turf/simulated/floor/grass,
@@ -16221,13 +16124,8 @@
 	},
 /area/space)
 "lZs" = (
-/obj/machinery/atmospherics/components/unary/portables_connector{
-	dir = 1
-	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "bot"
-	},
+/obj/machinery/atmospherics/pipe/manifold4w/visible,
+/turf/simulated/floor,
 /area/space)
 "lZS" = (
 /mob/living/carbon/monkey,
@@ -16414,13 +16312,9 @@
 /turf/environment/space,
 /area/space)
 "mhK" = (
-/obj/structure/window/reinforced{
-	dir = 5
-	},
-/obj/structure/grille,
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/turf/simulated/floor/plating,
+/obj/structure/lattice,
+/turf/environment/space,
 /area/space)
 "mhV" = (
 /obj/machinery/deployable/barrier,
@@ -16842,10 +16736,13 @@
 	},
 /area/space)
 "mEv" = (
-/obj/machinery/atmospherics/components/binary/valve/digital,
-/turf/simulated/floor{
-	icon_state = "caution"
+/obj/structure/window/reinforced{
+	dir = 5
 	},
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/visible/yellow,
+/turf/simulated/floor/plating,
 /area/space)
 "mEO" = (
 /obj/structure/closet/theatrecloset,
@@ -17150,12 +17047,12 @@
 	},
 /area/space)
 "mQI" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/blue{
-	dir = 4
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1
 	},
 /turf/simulated/floor{
 	dir = 1;
-	icon_state = "caution"
+	icon_state = "bot"
 	},
 /area/space)
 "mRl" = (
@@ -17428,9 +17325,11 @@
 	},
 /area/space)
 "neE" = (
-/obj/structure/table,
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
 /turf/simulated/floor{
-	dir = 5;
+	dir = 4;
 	icon_state = "caution"
 	},
 /area/space)
@@ -17866,13 +17765,13 @@
 /turf/simulated/floor,
 /area/space)
 "nwp" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/green{
-	dir = 4
+/obj/structure/window/reinforced{
+	dir = 5
 	},
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "warning"
-	},
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/visible/green,
+/turf/simulated/floor/plating,
 /area/space)
 "nwq" = (
 /obj/structure/table/woodentable,
@@ -18068,8 +17967,10 @@
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
+/obj/machinery/space_heater,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "nEb" = (
@@ -18187,14 +18088,8 @@
 	},
 /area/space)
 "nIS" = (
-/obj/machinery/atmospherics/components/unary/portables_connector{
-	dir = 1
-	},
-/obj/machinery/portable_atmospherics/canister/air,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "bot"
-	},
+/obj/machinery/atmospherics/pipe/manifold/visible,
+/turf/simulated/floor,
 /area/space)
 "nJG" = (
 /obj/structure/stool/bed/chair/office/dark{
@@ -18257,10 +18152,12 @@
 	},
 /area/space)
 "nLr" = (
-/obj/structure/reagent_dispensers/fueltank,
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/item/weapon/flora/random,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "vault"
+	icon_state = "dark"
 	},
 /area/space)
 "nLY" = (
@@ -18335,11 +18232,11 @@
 	},
 /area/space)
 "nNP" = (
-/obj/machinery/atmospherics/components/binary/valve/digital/open,
-/turf/simulated/floor{
-	dir = 9;
-	icon_state = "escape"
+/obj/machinery/atmospherics/pipe/simple/visible/yellow,
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 4
 	},
+/turf/simulated/floor,
 /area/space)
 "nOs" = (
 /obj/machinery/door/firedoor,
@@ -18709,9 +18606,13 @@
 	},
 /area/space)
 "odG" = (
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/simulated/wall/r_wall,
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 1;
+	frequency = 1441;
+	id = "waste_in";
+	name = "waste air injector"
+	},
+/turf/simulated/floor/engine/vacuum,
 /area/space)
 "oeq" = (
 /obj/structure/table/woodentable,
@@ -18727,12 +18628,10 @@
 /turf/simulated/floor/wood,
 /area/space)
 "oeG" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/binary/valve/digital/open,
 /turf/simulated/floor{
-	icon_state = "caution"
+	dir = 9;
+	icon_state = "arrival"
 	},
 /area/space)
 "oeK" = (
@@ -18754,6 +18653,14 @@
 	pixel_y = -3
 	},
 /turf/simulated/floor/plating,
+/area/space)
+"oeT" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 1;
+	frequency = 1443;
+	id = "air_in"
+	},
+/turf/simulated/floor/engine/airmix,
 /area/space)
 "oeW" = (
 /obj/structure/closet/firecloset,
@@ -18802,10 +18709,8 @@
 	},
 /area/space)
 "ohs" = (
+/obj/machinery/atmospherics/pipe/manifold/visible/cyan,
 /obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/manifold/visible/cyan{
-	dir = 1
-	},
 /turf/simulated/floor,
 /area/space)
 "ohH" = (
@@ -19052,8 +18957,7 @@
 	},
 /area/space)
 "oqc" = (
-/obj/machinery/atmospherics/pipe/manifold4w/visible,
-/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor,
 /area/space)
 "oqi" = (
@@ -19652,13 +19556,11 @@
 /turf/simulated/floor/wood,
 /area/space)
 "oTr" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 1;
-	frequency = 1441;
-	id = "n2o_in";
-	name = "N2O air injector"
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8
 	},
-/turf/simulated/floor/engine/n20,
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/turf/simulated/floor,
 /area/space)
 "oTQ" = (
 /obj/machinery/scrap/stacking_machine,
@@ -19668,7 +19570,9 @@
 /turf/simulated/floor/plating/airless,
 /area/space)
 "oTS" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/cyan,
+/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
+	dir = 1
+	},
 /turf/simulated/floor,
 /area/space)
 "oTW" = (
@@ -19982,8 +19886,13 @@
 /turf/simulated/floor/plating,
 /area/space)
 "phV" = (
-/obj/machinery/atmospherics/pipe/simple/visible/universal,
-/turf/simulated/wall/r_wall,
+/obj/machinery/atmospherics/pipe/manifold/visible/red{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "caution"
+	},
 /area/space)
 "piY" = (
 /obj/structure/cryofeed/right,
@@ -20454,14 +20363,10 @@
 /turf/simulated/floor/plating,
 /area/space)
 "pAJ" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "caution"
-	},
+/turf/simulated/floor,
 /area/space)
 "pBl" = (
 /obj/structure/stool/bed/chair/comfy/brown{
@@ -20554,13 +20459,13 @@
 /turf/simulated/floor/engine/vacuum,
 /area/space)
 "pFH" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
-	dir = 1;
-	frequency = 1441;
-	id_tag = "waste_out";
-	name = "(A) Waste Vent"
+/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
+	dir = 1
 	},
-/turf/simulated/floor/engine/vacuum,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "caution"
+	},
 /area/space)
 "pGu" = (
 /obj/item/weapon/scrap_lump,
@@ -20770,14 +20675,15 @@
 	},
 /area/space)
 "pMi" = (
+/obj/structure/window/reinforced{
+	dir = 5
+	},
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
-/obj/machinery/door/airlock/atmos/glass{
-	name = "Distribution Loop";
-	req_access = list(24)
-	},
-/turf/simulated/floor,
+/turf/simulated/floor/plating,
 /area/space)
 "pMu" = (
 /obj/structure/stool,
@@ -20807,15 +20713,15 @@
 	},
 /area/space)
 "pNg" = (
-/obj/structure/window/reinforced{
-	dir = 5
+/obj/machinery/computer/general_air_control/large_tank_control{
+	input_tag = "waste_in";
+	name = "Gas Mix Tank Control";
+	output_tag = "waste_out";
+	sensors = list("waste_sensor"="Tank")
 	},
-/obj/structure/grille,
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 4
+/turf/simulated/floor{
+	icon_state = "caution"
 	},
-/turf/simulated/floor/plating,
 /area/space)
 "pNs" = (
 /obj/machinery/portable_atmospherics/canister/air,
@@ -21137,11 +21043,13 @@
 	},
 /area/space)
 "pZt" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "caution"
+	},
 /area/space)
 "pZV" = (
 /turf/simulated/floor{
@@ -21490,13 +21398,14 @@
 	},
 /area/space)
 "qrC" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
-	dir = 1;
-	frequency = 1443;
-	id_tag = "air_out";
-	name = "(A) Air Vent"
+/obj/machinery/atmospherics/components/trinary/filter/m_filter/on{
+	dir = 8;
+	filter_type = "sleeping_agent";
+	name = "Gas filter (N2O tank)"
 	},
-/turf/simulated/floor/engine/airmix,
+/turf/simulated/floor{
+	icon_state = "caution"
+	},
 /area/space)
 "qrN" = (
 /obj/structure/table/woodentable,
@@ -21781,9 +21690,9 @@
 	},
 /area/space)
 "qDY" = (
-/obj/structure/lattice,
+/obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/turf/environment/space,
+/turf/simulated/wall/r_wall,
 /area/space)
 "qEk" = (
 /obj/structure/mopbucket,
@@ -21808,9 +21717,10 @@
 	},
 /area/space)
 "qFS" = (
+/obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/obj/structure/lattice,
-/turf/environment/space,
+/obj/machinery/meter,
+/turf/simulated/wall/r_wall,
 /area/space)
 "qGL" = (
 /turf/simulated/floor{
@@ -22142,8 +22052,11 @@
 	},
 /area/space)
 "qUM" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/red{
+/obj/machinery/atmospherics/components/binary/pump{
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/blue{
+	dir = 8
 	},
 /turf/simulated/floor,
 /area/space)
@@ -22331,25 +22244,17 @@
 /turf/simulated/floor,
 /area/space)
 "rbO" = (
-/obj/machinery/computer/general_air_control/large_tank_control{
-	dir = 1;
-	input_tag = "tox_in";
-	name = "Toxin Supply Control";
-	output_tag = "tox_out";
-	sensors = list("tox_sensor"="Tank")
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 5
+/obj/machinery/atmospherics/components/trinary/filter/m_filter/on{
+	dir = 8;
+	filter_type = "phoron";
+	name = "Gas filter (Toxins tank)"
 	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "warning"
+	icon_state = "caution"
 	},
 /area/space)
 "rcx" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/cyan{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/visible/cyan,
 /turf/simulated/floor,
 /area/space)
 "rcX" = (
@@ -23326,7 +23231,7 @@
 	},
 /area/space)
 "rLT" = (
-/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/light/small,
 /turf/simulated/floor/engine/airmix,
 /area/space)
 "rMc" = (
@@ -23559,11 +23464,8 @@
 	},
 /area/space)
 "rUw" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/blue{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 5
 	},
 /turf/simulated/floor,
 /area/space)
@@ -23768,8 +23670,8 @@
 	},
 /area/space)
 "sbg" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/green{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 9;
@@ -23800,8 +23702,8 @@
 	},
 /area/space)
 "sdu" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 5
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -23899,11 +23801,12 @@
 /turf/simulated/floor/plating,
 /area/space)
 "sgQ" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 8
+/obj/machinery/atmospherics/components/trinary/filter/m_filter/on{
+	dir = 8;
+	filter_type = "carbon_dioxide";
+	name = "Gas filter (CO2 tank)"
 	},
 /turf/simulated/floor{
-	dir = 1;
 	icon_state = "caution"
 	},
 /area/space)
@@ -24107,6 +24010,14 @@
 	icon_state = "brownold"
 	},
 /area/space)
+"svl" = (
+/obj/machinery/air_sensor{
+	frequency = 1443;
+	id_tag = "air_sensor";
+	output = 7
+	},
+/turf/simulated/floor/engine/airmix,
+/area/space)
 "svp" = (
 /turf/simulated/floor/wood{
 	icon_state = "wood-broken5"
@@ -24202,13 +24113,20 @@
 /turf/simulated/floor/whitegreed,
 /area/space)
 "sAJ" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
+/obj/machinery/access_button{
+	command = "cycle_interior";
+	frequency = 1379;
+	master_tag = "atmospherics_airlock";
+	name = "interior access button";
+	pixel_x = 28;
+	req_one_access = list(24)
 	},
-/obj/machinery/space_heater,
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 9
+	},
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "vault"
+	dir = 6;
+	icon_state = "caution"
 	},
 /area/space)
 "sAK" = (
@@ -24241,7 +24159,7 @@
 /turf/simulated/floor,
 /area/space)
 "sBE" = (
-/obj/structure/reagent_dispensers/aqueous_foam_tank,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -24980,7 +24898,7 @@
 	},
 /area/space)
 "tei" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
+/obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
 	},
 /turf/simulated/floor{
@@ -25048,12 +24966,11 @@
 	},
 /area/space)
 "tgR" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "vault"
+	icon_state = "dark"
 	},
 /area/space)
 "tgT" = (
@@ -25083,10 +25000,10 @@
 	},
 /area/space)
 "thC" = (
-/obj/structure/table,
+/obj/machinery/atmospherics/components/binary/valve/digital/open,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "caution"
+	dir = 9;
+	icon_state = "darkyellow"
 	},
 /area/space)
 "tio" = (
@@ -25533,10 +25450,15 @@
 	},
 /area/space)
 "tEt" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/binary/pump{
 	dir = 1
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	icon_state = "caution"
+	},
 /area/space)
 "tEy" = (
 /obj/structure/window/reinforced{
@@ -25717,12 +25639,16 @@
 	},
 /area/space)
 "tIb" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/heater{
-	dir = 8
+/obj/machinery/computer/general_air_control/large_tank_control{
+	dir = 1;
+	input_tag = "co2_in";
+	name = "Carbon Dioxide Supply Control";
+	output_tag = "co2_out";
+	sensors = list("co2_sensor"="Tank")
 	},
 /turf/simulated/floor{
 	dir = 1;
-	icon_state = "bot"
+	icon_state = "darkyellow"
 	},
 /area/space)
 "tIJ" = (
@@ -25816,7 +25742,7 @@
 	},
 /area/space)
 "tLN" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
 /obj/machinery/door/airlock/atmos/glass{
@@ -25908,8 +25834,17 @@
 /turf/simulated/floor/whitegreed,
 /area/station/aisat/ai_chamber)
 "tQb" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/engine/n20,
+/obj/machinery/computer/general_air_control/large_tank_control{
+	frequency = 1443;
+	input_tag = "air_in";
+	name = "Mixed Air Supply Control";
+	output_tag = "air_out";
+	sensors = list("air_sensor"="Tank")
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "arrival"
+	},
 /area/space)
 "tQj" = (
 /obj/machinery/space_heater,
@@ -25961,13 +25896,10 @@
 	},
 /area/space)
 "tTh" = (
-/obj/machinery/atmospherics/components/trinary/filter/m_filter/on{
-	dir = 8;
-	filter_type = "sleeping_agent";
-	name = "Gas filter (N2O tank)"
-	},
+/obj/machinery/atmospherics/pipe/simple/visible/green,
 /turf/simulated/floor{
-	icon_state = "caution"
+	dir = 5;
+	icon_state = "escape"
 	},
 /area/space)
 "tTD" = (
@@ -26415,10 +26347,13 @@
 	},
 /area/space)
 "ujM" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 9
+/obj/machinery/atmospherics/pipe/manifold/visible/cyan{
+	dir = 8
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "arrival"
+	},
 /area/space)
 "ujW" = (
 /obj/structure/table/glass,
@@ -26485,11 +26420,13 @@
 	},
 /area/space)
 "unn" = (
-/obj/machinery/atmospherics/components/binary/valve/digital/open,
-/turf/simulated/floor{
-	dir = 9;
-	icon_state = "arrival"
+/obj/structure/window/reinforced{
+	dir = 5
 	},
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/visible/cyan,
+/turf/simulated/floor/plating,
 /area/space)
 "uop" = (
 /obj/machinery/autolathe,
@@ -26532,12 +26469,6 @@
 /obj/item/weapon/book/manual/wiki/security_space_law,
 /turf/simulated/floor/wood,
 /area/space)
-"urI" = (
-/obj/machinery/atmospherics/pipe/simple/visible/yellow{
-	dir = 9
-	},
-/turf/simulated/floor,
-/area/space)
 "urX" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/drip{
@@ -26573,10 +26504,7 @@
 	},
 /area/station/aisat/antechamber)
 "uth" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue,
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/visible/blue,
 /turf/simulated/floor,
 /area/space)
 "utL" = (
@@ -26618,10 +26546,13 @@
 /area/space)
 "uvC" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 8
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "bot"
+	},
 /area/space)
 "uvG" = (
 /obj/structure/table,
@@ -26667,20 +26598,12 @@
 /turf/simulated/floor/plating,
 /area/space)
 "uxV" = (
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1379;
-	master_tag = "atmospherics_airlock";
-	name = "interior access button";
-	pixel_x = 28;
-	req_one_access = list(24)
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 9
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 4
 	},
 /turf/simulated/floor{
-	dir = 6;
-	icon_state = "caution"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "uyg" = (
@@ -26749,12 +26672,6 @@
 	icon_state = "dark"
 	},
 /area/space)
-"uzM" = (
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 9
-	},
-/turf/simulated/floor,
-/area/space)
 "uAr" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor{
@@ -26806,11 +26723,9 @@
 	},
 /area/space)
 "uBA" = (
-/obj/structure/closet/emcloset,
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "darkyellow"
-	},
+/obj/machinery/atmospherics/pipe/simple/visible/yellow,
+/obj/structure/lattice,
+/turf/environment/space,
 /area/space)
 "uCb" = (
 /obj/machinery/door/airlock/maintenance{
@@ -27393,10 +27308,10 @@
 /turf/simulated/floor/plating,
 /area/space)
 "vbp" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
-	dir = 4
+/obj/machinery/atmospherics/components/binary/valve/digital,
+/turf/simulated/floor{
+	icon_state = "caution"
 	},
-/turf/simulated/floor,
 /area/space)
 "vbr" = (
 /obj/machinery/chem_master,
@@ -27465,13 +27380,9 @@
 	},
 /area/space)
 "vfC" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
-	dir = 1;
-	frequency = 1441;
-	id_tag = "co2_out";
-	name = "(A) CO2 Vent"
-	},
-/turf/simulated/floor/engine/carbon_dioxide,
+/obj/machinery/atmospherics/pipe/simple/visible/green,
+/obj/structure/lattice,
+/turf/environment/space,
 /area/space)
 "vfO" = (
 /obj/machinery/computer/mecha,
@@ -27581,10 +27492,11 @@
 	},
 /area/station/aisat)
 "vjG" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 8
+/obj/machinery/atmospherics/components/trinary/mixer/m_mixer/on{
+	name = "Gas mixer (N2/O2)";
+	node1_concentration = 0.2;
+	node2_concentration = 0.8
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /turf/simulated/floor,
 /area/space)
 "vks" = (
@@ -27673,8 +27585,8 @@
 /turf/simulated/floor/plating,
 /area/space)
 "vnq" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 9
 	},
 /turf/simulated/floor,
 /area/space)
@@ -27732,7 +27644,7 @@
 	},
 /area/space)
 "voV" = (
-/obj/machinery/portable_atmospherics/canister/phoron,
+/obj/machinery/light/small,
 /turf/simulated/floor/engine/phoron,
 /area/space)
 "vpj" = (
@@ -27745,8 +27657,8 @@
 	},
 /area/space)
 "vqJ" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 5
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
+	dir = 10
 	},
 /turf/simulated/floor,
 /area/space)
@@ -27764,22 +27676,17 @@
 	output_tag = "o2_out";
 	sensors = list("o2_sensor"="Tank")
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 9
-	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "blue"
 	},
 /area/space)
 "vrD" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/visible/blue,
+/obj/machinery/atmospherics/pipe/simple/visible/red{
+	dir = 4
 	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "bot"
-	},
+/turf/simulated/floor,
 /area/space)
 "vsa" = (
 /obj/machinery/porta_turret/station_default{
@@ -27797,10 +27704,12 @@
 	},
 /area/space)
 "vsY" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/green{
-	dir = 1
+/obj/machinery/air_sensor{
+	frequency = 1441;
+	id_tag = "waste_sensor";
+	output = 63
 	},
-/turf/simulated/floor,
+/turf/simulated/floor/engine/vacuum,
 /area/space)
 "vtn" = (
 /obj/item/weapon/storage/toolbox/electrical{
@@ -28721,8 +28630,13 @@
 	},
 /area/space)
 "wcz" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/engine/airmix,
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
+	dir = 1;
+	frequency = 1441;
+	id_tag = "n2o_out";
+	name = "(A) N2O Vent"
+	},
+/turf/simulated/floor/engine/n20,
 /area/space)
 "wdU" = (
 /turf/simulated/floor{
@@ -29072,11 +28986,11 @@
 	},
 /area/space)
 "wqP" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "caution"
+/obj/machinery/air_sensor{
+	frequency = 1441;
+	id_tag = "n2o_sensor"
 	},
+/turf/simulated/floor/engine/n20,
 /area/space)
 "wqX" = (
 /obj/structure/stool/bed/chair/metal/blue,
@@ -29157,10 +29071,7 @@
 /turf/simulated/floor,
 /area/space)
 "wuX" = (
-/obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/visible/yellow,
 /turf/simulated/floor,
 /area/space)
 "wvQ" = (
@@ -29414,10 +29325,12 @@
 /turf/simulated/floor/whitegreed,
 /area/station/aisat/ai_chamber)
 "wHk" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/green{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 5
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	icon_state = "caution"
+	},
 /area/space)
 "wHl" = (
 /obj/machinery/door/airlock/security{
@@ -29610,8 +29523,13 @@
 	},
 /area/space)
 "wRL" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/engine/phoron,
+/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+	dir = 1;
+	frequency = 1441;
+	id = "n2o_in";
+	name = "N2O air injector"
+	},
+/turf/simulated/floor/engine/n20,
 /area/space)
 "wRQ" = (
 /obj/structure/table/woodentable,
@@ -29794,10 +29712,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
 	dir = 1;
 	frequency = 1441;
-	id_tag = "n2o_out";
-	name = "(A) N2O Vent"
+	id_tag = "tox_out";
+	name = "(A) Toxin Vent"
 	},
-/turf/simulated/floor/engine/n20,
+/turf/simulated/floor/engine/phoron,
 /area/space)
 "xcH" = (
 /obj/machinery/door/airlock/mining/glass{
@@ -29823,11 +29741,11 @@
 	},
 /area/space)
 "xeb" = (
-/obj/machinery/atmospherics/components/binary/valve/digital/open,
-/turf/simulated/floor{
-	dir = 9;
-	icon_state = "darkyellow"
+/obj/machinery/air_sensor{
+	frequency = 1441;
+	id_tag = "tox_sensor"
 	},
+/turf/simulated/floor/engine/phoron,
 /area/space)
 "xec" = (
 /obj/machinery/door/airlock{
@@ -30306,14 +30224,10 @@
 /turf/simulated/floor/grass,
 /area/space)
 "xyM" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1
-	},
+/obj/machinery/atmospherics/components/binary/valve/digital/open,
 /turf/simulated/floor{
-	icon_state = "caution"
+	dir = 9;
+	icon_state = "warning"
 	},
 /area/space)
 "xyV" = (
@@ -30634,7 +30548,10 @@
 /turf/simulated/floor/plating/airless,
 /area/space)
 "xMy" = (
-/obj/machinery/atmospherics/components/trinary/tvalve/mirrored/digital,
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/red,
 /turf/simulated/floor,
 /area/space)
 "xMG" = (
@@ -30747,7 +30664,7 @@
 	},
 /area/space)
 "xRf" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
+/obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
 /turf/simulated/floor{
@@ -30832,11 +30749,6 @@
 	icon_state = "darkblue"
 	},
 /area/station/aisat/teleport)
-"xUk" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green,
-/obj/structure/lattice,
-/turf/environment/space,
-/area/space)
 "xUl" = (
 /obj/machinery/smartfridge,
 /turf/simulated/floor{
@@ -30871,15 +30783,20 @@
 	icon_state = "black"
 	},
 /area/space)
+"xUy" = (
+/obj/machinery/light/small,
+/turf/simulated/floor/engine/vacuum,
+/area/space)
 "xUU" = (
-/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+/obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/simulated/floor,
+/turf/simulated/floor{
+	icon_state = "caution"
+	},
 /area/space)
 "xUY" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
+/obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
 	},
 /turf/simulated/floor{
@@ -31072,6 +30989,13 @@
 	icon_state = "darkpurple"
 	},
 /area/space)
+"yaj" = (
+/obj/machinery/air_sensor{
+	frequency = 1441;
+	id_tag = "co2_sensor"
+	},
+/turf/simulated/floor/engine/carbon_dioxide,
+/area/space)
 "yam" = (
 /obj/machinery/disposal,
 /turf/simulated/floor{
@@ -31181,10 +31105,11 @@
 "ygz" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	dir = 1;
-	frequency = 1443;
-	id = "air_in"
+	frequency = 1441;
+	id = "tox_in";
+	name = "TOX air injector"
 	},
-/turf/simulated/floor/engine/airmix,
+/turf/simulated/floor/engine/phoron,
 /area/space)
 "yhu" = (
 /obj/machinery/hologram/holopad,
@@ -31193,9 +31118,9 @@
 	},
 /area/station/aisat)
 "yiw" = (
-/obj/structure/lattice,
+/obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/environment/space,
+/turf/simulated/wall/r_wall,
 /area/space)
 "yix" = (
 /obj/structure/table/glass,
@@ -61282,7 +61207,6 @@ fkk
 fkk
 muw
 muw
-muw
 fkk
 muw
 muw
@@ -61293,6 +61217,7 @@ cJy
 iRy
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -61544,7 +61469,6 @@ muw
 muw
 muw
 muw
-muw
 fkk
 cJy
 cJy
@@ -61554,6 +61478,7 @@ cJy
 cJy
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -61796,7 +61721,6 @@ muw
 muw
 muw
 muw
-muw
 fkk
 muw
 muw
@@ -61813,6 +61737,7 @@ iRy
 cJy
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -62053,7 +61978,6 @@ muw
 muw
 muw
 muw
-muw
 xOi
 xOi
 xOi
@@ -62069,6 +61993,7 @@ cJy
 cJy
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -62309,14 +62234,13 @@ muw
 muw
 muw
 muw
-muw
 xOi
 xOi
 cNw
 cNw
+liT
 ghB
 sdu
-exb
 xOi
 xOi
 cJy
@@ -62326,6 +62250,7 @@ jpW
 jpW
 jpW
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -62566,24 +62491,24 @@ muw
 muw
 muw
 muw
-muw
+epc
 phV
 jfr
 flK
-lwd
-rUw
+qUM
 rYN
+pAJ
 vbp
 mEv
 aAR
 qDY
 lfk
-pFH
 rRu
 rRu
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -62823,24 +62748,24 @@ muw
 muw
 muw
 muw
-muw
 xOi
-sgQ
+fev
 dcI
+ikT
 qUM
 rUw
-vqJ
 dcI
-irK
+pNg
 gpa
 cJy
 sHq
-liT
+vsY
 rRu
-bKp
+xUy
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -63080,24 +63005,24 @@ muw
 muw
 muw
 muw
-muw
-phV
+epc
+flc
 mQI
 vrD
 uth
 kaG
-vsY
 oaB
-mEv
+vbp
+nwp
 dZn
 yiw
 odG
-dhQ
 rRu
 rRu
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -63337,15 +63262,14 @@ muw
 muw
 muw
 muw
-muw
 xOi
-thC
+fUt
 knx
+imR
 uvC
 aZb
 eVC
 wHk
-jGl
 xOi
 cJy
 jpW
@@ -63354,6 +63278,7 @@ jpW
 jpW
 jpW
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -63595,14 +63520,13 @@ xOi
 xOi
 akd
 xOi
-xOi
+glQ
 neE
 xUY
 xRf
-hxc
 jdr
 jdr
-apd
+pZt
 xOi
 cJy
 cJy
@@ -63611,6 +63535,7 @@ cJy
 cJy
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -63851,13 +63776,12 @@ xOi
 xOi
 mAO
 hPi
-uBA
 xOi
 xOi
 sFy
+irK
 tLN
 pMi
-pNg
 nWE
 sFy
 xOi
@@ -63869,6 +63793,7 @@ cJy
 cJy
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -64108,7 +64033,7 @@ dLd
 dLd
 gUU
 gUU
-gUU
+exb
 sBE
 nLr
 gcw
@@ -64116,7 +64041,6 @@ tgR
 nDR
 kAK
 cnA
-sAJ
 xOi
 xOi
 cJy
@@ -64126,6 +64050,7 @@ jpW
 jpW
 jpW
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -64367,22 +64292,22 @@ qZG
 qZG
 qZG
 qZG
-qZG
+hxc
 tei
-dJO
 sTc
 sTc
+pFH
 jZv
 gFj
-nNP
 gpa
-eAb
-lfk
-xcf
+uBA
+qDY
+wcz
 mwj
 mwj
 jpW
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -64624,23 +64549,23 @@ xgA
 xgA
 xgA
 xgA
-xgA
+hIx
 kMS
 hIj
 rcx
-oTS
 rWw
+xUU
 ejR
-jyr
 gpa
 cJy
 sHq
+wqP
 hKq
 gzQ
-tQb
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -64878,26 +64803,26 @@ kZE
 kZE
 kZE
 hkp
+flK
 gti
-gti
-gti
+gqK
 xMy
 atw
-cld
 dcI
-eXC
+fci
 rWw
+qrC
 tTh
-jMm
-dZn
-xUk
-odG
-oTr
+nwp
+vfC
+yiw
+wRL
 mwj
 mwj
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -65136,15 +65061,14 @@ sLD
 pMG
 lKX
 eAF
-ikh
-lZs
+dcI
 scF
 scF
+jyr
 iDd
-dNM
+nNP
 wuX
-amr
-ejR
+xUU
 xOi
 xOi
 cJy
@@ -65155,6 +65079,7 @@ jpW
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -65392,25 +65317,25 @@ gpa
 xOi
 mGu
 lKX
-eAF
+dNM
 oqc
-lZs
+sBD
 aVU
 sBD
-fNR
-dNM
+iDd
+rcx
 oTS
 tEt
 xyM
-glQ
 gpa
-eAb
-lfk
-flc
+uBA
+qDY
+xcf
 uPZ
 uPZ
 jpW
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -65649,25 +65574,25 @@ sEc
 gpa
 mfd
 lKX
-eAF
-fNR
+tIV
+dcI
 fou
 bNI
-dcI
-bNI
-knx
-imR
+cta
+cta
+fci
+rWw
 xUU
 fRp
-rbO
 gpa
 cJy
 sHq
+xeb
 eNI
 voV
-wRL
 jpW
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -65905,27 +65830,27 @@ tiR
 fcR
 gpa
 hyp
-ozn
+lKX
 dNM
+eCY
+lZs
 sBD
-lRU
-ujM
-kiN
-tIV
-dsH
-eXC
+eMk
+nIS
+fci
 rWw
+rbO
 flT
 nwp
-dZn
-xUk
-odG
-eYg
+vfC
+yiw
+ygz
 uPZ
 uPZ
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -66163,16 +66088,15 @@ lPw
 gGm
 gUU
 ozn
-dNM
-ikh
-ikh
+dGe
+iDd
 gBi
-ikh
-ahm
-dsH
-eXC
+kiN
+scF
+eAF
+fci
 rWw
-ejR
+xUU
 xOi
 xOi
 cJy
@@ -66183,6 +66107,7 @@ jpW
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -66420,26 +66345,26 @@ btQ
 gpa
 rNv
 lKX
-fLD
+tIV
 hoG
 jHl
-tIV
-scF
-tIb
-dsH
-eXC
+hKh
+xfF
+xfF
+fci
+oTS
 tEt
-xyM
-xeb
+thC
 gpa
-eAb
-lfk
-vfC
+uBA
+qDY
+ibG
 wuh
 wuh
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -66677,25 +66602,25 @@ uwL
 gpa
 dNZ
 lKX
-aVU
-nIS
-xfF
-xfF
+tIV
+dcI
 xfF
 dcI
-dsH
-eXC
+dcI
+dcI
+fci
 rWw
-ejR
-bSw
+xUU
+tIb
 gpa
 cJy
 sHq
+yaj
 ill
 apS
-ikT
 jpW
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -66933,26 +66858,26 @@ xOi
 xOi
 xOi
 xOi
-lKX
-scF
-dcI
+ozn
+dGe
+iDd
 fLD
-eAF
 cta
-lZs
-dsH
-eXC
+cta
+cta
+fci
 rWw
+sgQ
 dvt
-aHR
-dZn
-xUk
-odG
-hIx
+nwp
+vfC
+yiw
+bOu
 wuh
 wuh
 jpW
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -67191,16 +67116,15 @@ uak
 uak
 xOi
 lKX
-xfF
-eAF
-dGe
+dJO
+eCY
+sBD
 lZs
 eMk
-knx
+nIS
 fci
-eXC
 rWw
-ejR
+xUU
 xOi
 xOi
 cJy
@@ -67211,6 +67135,7 @@ jpW
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -67440,7 +67365,7 @@ rYN
 rYN
 rYN
 vYk
-rsF
+apd
 pgr
 jcS
 tWJ
@@ -67448,12 +67373,12 @@ csg
 dqq
 nnD
 iBz
-gti
-gti
+hoG
+iDd
 hKh
-oaB
-oaB
-gqK
+xfF
+xfF
+xfF
 vqJ
 hBr
 leA
@@ -67462,12 +67387,12 @@ unn
 mhK
 qFS
 eOi
-qrC
 rlW
 rlW
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -67707,24 +67632,24 @@ bkP
 elt
 xgA
 xgA
-pZt
+xgA
 eDe
-dcI
+jGl
 lir
 ejw
 vnq
-urI
-ejR
-asv
+xUU
+tQb
 gpa
 cJy
 sHq
+svl
 lIk
 rLT
-wcz
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -67954,7 +67879,7 @@ gpw
 gpw
 gpw
 xOi
-cXo
+asv
 kPd
 xCe
 xOi
@@ -67962,26 +67887,26 @@ xOi
 xOi
 xOi
 lKX
-dcI
-dcI
-dsH
+hoG
+eYg
+hKh
 cKz
+hIj
 xgA
-rcx
-kMS
+oTr
 vjG
-eRC
-oeG
-dug
+leA
+ujM
+unn
 mhK
 qFS
-eOi
-ygz
+oeT
 rlW
 rlW
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -68211,7 +68136,7 @@ pNx
 pNx
 pNx
 xOi
-cXo
+asv
 dsH
 gLU
 gUU
@@ -68220,16 +68145,15 @@ gpa
 msF
 lKX
 dcI
+xfF
 dcI
-dsH
 cal
 dcI
 dcI
-dsH
+vqJ
 ohs
-uzM
-ejR
-nDR
+xUU
+tgR
 xOi
 cJy
 jpW
@@ -68239,6 +68163,7 @@ jpW
 jpW
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -68468,7 +68393,7 @@ lMQ
 lMQ
 lMQ
 xOi
-cXo
+asv
 dsH
 gLU
 gUU
@@ -68476,17 +68401,16 @@ rBc
 gpa
 xhg
 qUs
-wqP
+odr
 rWT
-fUt
+odr
 tGx
 odr
 dFm
-eCY
-pAJ
 odr
+tGx
+sAJ
 uxV
-epc
 xOi
 cJy
 cJy
@@ -68496,6 +68420,7 @@ cJy
 cJy
 cJy
 cJy
+iRy
 iRy
 iRy
 iRy
@@ -68725,7 +68650,7 @@ caO
 fnL
 xMX
 euh
-cXo
+asv
 dsH
 gLU
 iZu
@@ -68982,7 +68907,7 @@ xMX
 not
 dLv
 euh
-cXo
+asv
 dsH
 gLU
 tYi
@@ -69239,13 +69164,13 @@ rgW
 sDH
 xMX
 euh
-cXo
-dsH
-gLU
+bKp
+bSw
+cld
 brs
 bgO
-xOi
-cJy
+mEv
+dhQ
 xAV
 cJy
 kZC
@@ -71189,7 +71114,7 @@ muw
 muw
 fkk
 coC
-teX
+fnw
 dhL
 fkk
 eSw
@@ -71449,9 +71374,9 @@ ctB
 fnw
 fnw
 fnw
-fzc
-oqA
-fev
+fnw
+fnw
+agf
 fkk
 muw
 fkk
@@ -71706,8 +71631,8 @@ cuL
 fnw
 dlh
 fnw
-beE
-fzc
+fnw
+fnw
 gqB
 fkk
 fkk
