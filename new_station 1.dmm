@@ -523,7 +523,7 @@
 /turf/simulated/floor,
 /area/space)
 "arm" = (
-/obj/machinery/space_heater,
+/obj/structure/closet/firecloset,
 /turf/simulated/floor{
 	icon_state = "yellow"
 	},
@@ -823,7 +823,8 @@
 "aAd" = (
 /obj/machinery/power/smes,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "aAR" = (
@@ -4163,7 +4164,8 @@
 "dkr" = (
 /obj/machinery/vending/engivend,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "dkB" = (
@@ -5091,7 +5093,12 @@
 	},
 /area/space)
 "dNk" = (
-/obj/structure/reagent_dispensers/watertank,
+/obj/structure/closet/crate/hydroponics,
+/obj/item/device/plant_analyzer,
+/obj/item/weapon/minihoe,
+/obj/item/weapon/reagent_containers/spray/plantbgone,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/shovel/spade,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "darkgreen"
@@ -5310,7 +5317,8 @@
 	slogan_delay = 700
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "dSh" = (
@@ -5955,8 +5963,8 @@
 	pixel_y = -1
 	},
 /turf/simulated/floor{
-	dir = 9;
-	icon_state = "yellow"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "esq" = (
@@ -6541,8 +6549,7 @@
 "eMr" = (
 /obj/machinery/vending/hydronutrients,
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "vault"
+	icon_state = "dark"
 	},
 /area/space)
 "eMK" = (
@@ -6789,7 +6796,10 @@
 	},
 /area/station/hallway/secondary/mine_sci_shuttle)
 "eXu" = (
-/obj/machinery/hydroponics/constructable,
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkgreen"
@@ -7456,7 +7466,7 @@
 	},
 /area/space)
 "fvf" = (
-/obj/machinery/portable_atmospherics/powered/scrubber,
+/obj/machinery/space_heater,
 /turf/simulated/floor{
 	icon_state = "yellow"
 	},
@@ -8323,7 +8333,8 @@
 "fWm" = (
 /obj/machinery/vending/eva/engineering,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "fWu" = (
@@ -8676,7 +8687,7 @@
 	},
 /area/space)
 "ghx" = (
-/obj/item/weapon/flora/pottedplant/minitree,
+/obj/machinery/hydroponics/constructable,
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "darkgreen"
@@ -9032,7 +9043,9 @@
 	name = "Mining Shuttle Dock";
 	req_access = list(48,65)
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/station/hallway/secondary/mine_sci_shuttle)
 "gxY" = (
 /obj/machinery/door/window/southleft{
@@ -9402,8 +9415,8 @@
 	},
 /obj/item/device/radio/off,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "yellow"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "gIS" = (
@@ -11034,7 +11047,8 @@
 	},
 /area/space)
 "hSw" = (
-/obj/machinery/biogenerator,
+/obj/structure/table/reinforced,
+/obj/machinery/reagentgrinder,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -12256,7 +12270,6 @@
 /area/space)
 "iVE" = (
 /obj/machinery/hydroponics/constructable,
-/obj/item/weapon/reagent_containers/glass/bucket,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkgreen"
@@ -12972,7 +12985,8 @@
 "jBG" = (
 /obj/machinery/vending/tool,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "jBL" = (
@@ -13362,8 +13376,8 @@
 	},
 /obj/item/weapon/storage/briefcase/inflatable,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "yellow"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "jTK" = (
@@ -13430,7 +13444,8 @@
 "jVP" = (
 /obj/machinery/computer/monitor,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "jXm" = (
@@ -13646,10 +13661,12 @@
 	},
 /area/station/aisat)
 "kfb" = (
-/obj/structure/stool/bed/chair/metal/yellow{
-	dir = 8
+/obj/machinery/hydroponics/constructable,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkgreen"
 	},
-/turf/simulated/floor,
 /area/space)
 "kgm" = (
 /obj/item/weapon/flora/random,
@@ -13974,7 +13991,8 @@
 "ksE" = (
 /obj/machinery/computer/atmos_alert,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "ktF" = (
@@ -14435,24 +14453,21 @@
 	},
 /area/space)
 "kML" = (
-/obj/item/clothing/ears/earmuffs{
-	pixel_x = -5;
-	pixel_y = 6
-	},
-/obj/item/clothing/ears/earmuffs{
-	pixel_x = -5;
-	pixel_y = 6
-	},
-/obj/item/clothing/ears/earmuffs{
-	pixel_x = -5;
-	pixel_y = 6
-	},
 /obj/structure/rack,
-/obj/item/clothing/glasses/welding,
-/obj/item/clothing/glasses/welding,
-/obj/item/clothing/glasses/welding,
+/obj/item/clothing/ears/earmuffs{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/clothing/ears/earmuffs{
+	pixel_y = 1
+	},
+/obj/item/clothing/ears/earmuffs{
+	pixel_x = -2;
+	pixel_y = -2
+	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "kMS" = (
@@ -14666,7 +14681,8 @@
 	},
 /obj/structure/table,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "kXc" = (
@@ -14913,7 +14929,8 @@
 /obj/item/weapon/tracker_electronics,
 /obj/item/weapon/paper/solar,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "lbt" = (
@@ -15392,8 +15409,8 @@
 	pixel_y = -2
 	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "yellow"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "ltk" = (
@@ -15656,15 +15673,10 @@
 /turf/simulated/floor/plating,
 /area/space)
 "lDb" = (
-/obj/structure/closet/crate/hydroponics,
-/obj/item/device/plant_analyzer,
-/obj/item/weapon/minihoe,
-/obj/item/weapon/reagent_containers/spray/plantbgone,
-/obj/item/weapon/reagent_containers/glass/bucket,
-/obj/item/weapon/shovel/spade,
+/obj/machinery/recharge_station,
 /turf/simulated/floor{
 	dir = 5;
-	icon_state = "vault"
+	icon_state = "yellow"
 	},
 /area/space)
 "lDh" = (
@@ -16269,7 +16281,8 @@
 	},
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor{
-	icon_state = "yellow"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "mdq" = (
@@ -16413,8 +16426,8 @@
 	},
 /obj/item/weapon/airlock_painter,
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "yellow"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "mjX" = (
@@ -17091,6 +17104,15 @@
 /area/space)
 "mPL" = (
 /obj/structure/rack,
+/obj/item/clothing/glasses/welding{
+	pixel_x = 4;
+	pixel_y = 6
+	},
+/obj/item/clothing/glasses/welding{
+	pixel_x = 2;
+	pixel_y = 3
+	},
+/obj/item/clothing/glasses/welding,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -18729,7 +18751,7 @@
 /turf/simulated/floor/engine/airmix,
 /area/space)
 "oeW" = (
-/obj/structure/closet/firecloset,
+/obj/structure/closet/emcloset,
 /turf/simulated/floor{
 	icon_state = "yellow"
 	},
@@ -19427,7 +19449,7 @@
 	req_access = list(55)
 	},
 /turf/simulated/floor{
-	icon_state = "white"
+	icon_state = "dark"
 	},
 /area/space)
 "oJD" = (
@@ -19846,7 +19868,7 @@
 	},
 /area/space)
 "pdR" = (
-/obj/machinery/recharge_station,
+/obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor{
 	icon_state = "yellow"
 	},
@@ -21176,9 +21198,10 @@
 	},
 /area/space)
 "qcj" = (
-/obj/structure/reagent_dispensers/aqueous_foam_tank,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor{
-	icon_state = "yellow"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "qdz" = (
@@ -21231,10 +21254,15 @@
 	},
 /area/space)
 "qga" = (
-/obj/structure/stool/bed/chair/metal/yellow{
-	dir = 4
+/obj/structure/rack,
+/obj/item/clothing/shoes/magboots,
+/obj/item/clothing/suit/space/rig/engineering,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/head/helmet/space/rig/engineering,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
 	},
-/turf/simulated/floor,
 /area/space)
 "qho" = (
 /obj/structure/filingcabinet/chestdrawer,
@@ -21849,7 +21877,8 @@
 	pixel_y = 5
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "qIO" = (
@@ -22283,7 +22312,8 @@
 "qZh" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "qZp" = (
@@ -22384,8 +22414,11 @@
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/exit)
 "rer" = (
-/obj/structure/table,
-/turf/simulated/floor,
+/obj/machinery/recharge_station,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
 /area/space)
 "reA" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -24385,13 +24418,6 @@
 /obj/machinery/portable_atmospherics/canister,
 /turf/simulated/floor{
 	icon_state = "bot"
-	},
-/area/space)
-"sEj" = (
-/obj/machinery/portable_atmospherics/powered/scrubber,
-/turf/simulated/floor{
-	dir = 10;
-	icon_state = "yellow"
 	},
 /area/space)
 "sEy" = (
@@ -26987,8 +27013,7 @@
 	},
 /area/space)
 "uHD" = (
-/obj/structure/table/reinforced,
-/obj/machinery/reagentgrinder,
+/obj/machinery/biogenerator,
 /turf/simulated/floor{
 	dir = 10;
 	icon_state = "darkgreen"
@@ -27432,7 +27457,7 @@
 	},
 /area/space)
 "vbr" = (
-/obj/machinery/chem_master,
+/obj/item/weapon/flora/pottedplant/minitree,
 /turf/simulated/floor{
 	icon_state = "darkgreen"
 	},
@@ -56622,7 +56647,7 @@ xOi
 dSg
 eMr
 hSw
-lDb
+jRc
 xOi
 xOi
 xOi
@@ -57650,7 +57675,7 @@ dNk
 egA
 eXu
 iVE
-eXu
+kfb
 ghx
 ocK
 fhH
@@ -63376,7 +63401,7 @@ rdM
 fRk
 xOi
 xOi
-prS
+lDb
 dvH
 dvH
 dvH
@@ -63563,7 +63588,7 @@ fzc
 fzc
 svp
 hYa
-fkk
+qRA
 doU
 fzc
 fzc
@@ -64663,7 +64688,7 @@ bTN
 kFA
 eKP
 dcI
-qga
+dcI
 dcI
 gLU
 gUU
@@ -64920,7 +64945,7 @@ aUT
 xOi
 vhx
 dcI
-rer
+dcI
 dcI
 gLU
 fHH
@@ -65177,7 +65202,7 @@ xOi
 dbT
 clc
 dcI
-kfb
+dcI
 dcI
 gLU
 fkk
@@ -66725,14 +66750,14 @@ jIb
 aBv
 xOi
 erK
+dSh
 nYG
 nYG
 nYG
 nYG
 nYG
-nYG
-nYG
-sEj
+xCe
+xuK
 xOi
 dBs
 xOi
@@ -66982,13 +67007,13 @@ aoW
 vHZ
 xOi
 gIM
-dcI
+rWQ
 sIK
 dvH
 dvH
 dvH
 uCD
-dcI
+gLU
 mdn
 xOi
 xOi
@@ -67239,16 +67264,16 @@ jIb
 lRV
 xOi
 jTA
-dcI
+rWQ
 gLU
 jBG
 dkr
 fWm
 rWQ
-dcI
-qcj
+gLU
+exb
 gpa
-msF
+xhg
 msF
 lbo
 dSh
@@ -67258,7 +67283,7 @@ nYG
 nYG
 nYG
 xCe
-uUf
+rer
 dpT
 kWY
 xOi
@@ -67496,14 +67521,14 @@ lRV
 jIb
 xOi
 lti
-dcI
+rWQ
 rSR
 nYG
 nYG
 nYG
 mip
-dcI
 gLU
+gUU
 hPU
 gUU
 jfS
@@ -67753,16 +67778,16 @@ eCE
 jIb
 xOi
 mjM
-dvH
-dvH
+rwP
 dvH
 dvH
 dvH
 dvH
 dvH
 cuo
-hPU
 gUU
+hPU
+mJS
 gsg
 dcI
 dcI
@@ -68789,7 +68814,7 @@ npF
 muw
 muw
 xOi
-pMG
+qcj
 rWQ
 xss
 pIq
@@ -69050,7 +69075,7 @@ gUU
 rWQ
 dcI
 lPw
-muw
+tYi
 jQM
 sKo
 xMX
@@ -69560,7 +69585,7 @@ muw
 muw
 nXT
 xOi
-vIs
+qga
 rWQ
 dsH
 lPw
@@ -70074,7 +70099,7 @@ qYt
 tyf
 nXT
 xOi
-vIs
+qga
 rwP
 dnY
 dcI
@@ -70332,7 +70357,7 @@ tyf
 xOi
 xOi
 xOi
-gUU
+mJS
 dKb
 dcI
 dcI
@@ -70848,7 +70873,7 @@ muw
 xOi
 qIM
 gUU
-gUU
+mJS
 rwP
 dvH
 dvH
@@ -70856,7 +70881,7 @@ sYS
 dvH
 dvH
 cuo
-gUU
+mJS
 eTz
 xOi
 xOi
