@@ -60,6 +60,14 @@
 	icon_state = "darkred"
 	},
 /area/station/security/secconfhall)
+"ace" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "boxing"
+	},
+/area/station/civilian/gym)
 "ach" = (
 /obj/machinery/r_n_d/destructive_analyzer{
 	pixel_y = 2
@@ -365,7 +373,7 @@
 	pixel_y = 4
 	},
 /obj/machinery/power/apc/largecell{
-	dir = 4;
+	dir = 8;
 	name = "largecell apc left";
 	pixel_x = -28
 	},
@@ -484,13 +492,13 @@
 	},
 /area/station/security/execution)
 "ahS" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
 /obj/item/device/radio/intercom{
 	name = "Station Intercom (General)";
 	pixel_x = 28;
 	pixel_y = -5
+	},
+/obj/machinery/light{
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -585,9 +593,6 @@
 /obj/item/weapon/reagent_containers/glass/beaker{
 	pixel_x = 5;
 	pixel_y = 2
-	},
-/obj/machinery/light/small{
-	dir = 1
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -1296,7 +1301,7 @@
 /area/station/medical/genetics_cloning)
 "aud" = (
 /obj/machinery/power/apc/largecell{
-	dir = 4;
+	dir = 8;
 	name = "largecell apc left";
 	pixel_x = -28
 	},
@@ -1686,6 +1691,16 @@
 	icon_state = "dark"
 	},
 /area/station/civilian/chapel)
+"ayZ" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "brown"
+	},
+/area/station/hallway/secondary/entry)
 "aza" = (
 /obj/structure/bookcase/manuals/security,
 /obj/machinery/light/small{
@@ -2061,7 +2076,7 @@
 /area/station/maintenance/engineering)
 "aFh" = (
 /obj/machinery/power/apc{
-	dir = 1;
+	dir = 2;
 	name = "apc down";
 	pixel_y = -28
 	},
@@ -2793,6 +2808,7 @@
 /area/station/rnd/xenobiology)
 "aSH" = (
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
@@ -3741,6 +3757,7 @@
 /obj/structure/stool/bed,
 /obj/item/weapon/bedsheet/blue,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -4042,6 +4059,7 @@
 /area/station/civilian/garden)
 "boA" = (
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -4210,6 +4228,7 @@
 "bqB" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -5262,6 +5281,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/machinery/light/small,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -5325,7 +5345,7 @@
 	},
 /obj/machinery/light/small,
 /obj/machinery/power/apc/largecell{
-	dir = 1;
+	dir = 2;
 	name = "largecell apc down";
 	pixel_y = -28
 	},
@@ -5570,6 +5590,7 @@
 /obj/structure/stool/bed,
 /obj/item/weapon/bedsheet/red,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -5899,6 +5920,9 @@
 /obj/item/clothing/gloves/boxing/yellow,
 /obj/item/clothing/gloves/boxing/green,
 /obj/structure/table/woodentable,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "wooden-2"
 	},
@@ -7127,6 +7151,7 @@
 	pixel_y = 4
 	},
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -7269,6 +7294,7 @@
 "coC" = (
 /obj/structure/table/woodentable,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -8610,6 +8636,7 @@
 	dir = 1
 	},
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
@@ -9305,6 +9332,7 @@
 /area/station/medical/hallway)
 "cYQ" = (
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
@@ -10273,6 +10301,13 @@
 	icon_state = "cafeteria"
 	},
 /area/station/security/prison)
+"dlW" = (
+/obj/structure/closet/crate,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/plating/airless,
+/area/station/cargo/recycler)
 "dlY" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor{
@@ -13164,6 +13199,9 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "brown"
@@ -13834,6 +13872,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -30
 	},
+/obj/machinery/light/small,
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "whitepurple"
@@ -14530,6 +14569,7 @@
 	pixel_x = -28
 	},
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -16254,6 +16294,7 @@
 "eYU" = (
 /obj/item/weapon/flora/random,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -17469,12 +17510,16 @@
 	pixel_y = 3
 	},
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
 /obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2"
+	},
+/obj/machinery/light/small{
+	dir = 1
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -17870,7 +17915,7 @@
 /obj/random/tools/tool,
 /obj/random/tools/technology_scanner,
 /obj/machinery/power/apc{
-	dir = 1;
+	dir = 2;
 	name = "apc down";
 	pixel_y = -28
 	},
@@ -19310,7 +19355,7 @@
 	},
 /obj/structure/table/woodentable,
 /obj/machinery/power/apc{
-	dir = 1;
+	dir = 2;
 	name = "apc down";
 	pixel_y = -28
 	},
@@ -20717,6 +20762,7 @@
 "gjL" = (
 /obj/structure/stool/bed/chair/comfy/brown,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -21027,14 +21073,14 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "Incinerator APC";
-	pixel_x = 24
-	},
 /obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2"
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "apc right";
+	pixel_x = 28
 	},
 /turf/simulated/floor/plating{
 	icon_state = "warnplate"
@@ -21406,6 +21452,7 @@
 /area/station/civilian/toilet)
 "gvU" = (
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -23416,6 +23463,9 @@
 	pixel_x = 28;
 	pixel_y = -5
 	},
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -25140,6 +25190,7 @@
 /obj/structure/closet/secure_closet/personal/patient,
 /obj/item/clothing/under/patient_gown,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -25239,7 +25290,7 @@
 	},
 /obj/item/weapon/storage/box/solution_trays,
 /obj/machinery/power/apc{
-	dir = 1;
+	dir = 2;
 	name = "apc down";
 	pixel_y = -28
 	},
@@ -26977,6 +27028,7 @@
 /obj/machinery/alarm{
 	pixel_y = -32
 	},
+/obj/machinery/light,
 /turf/simulated/floor{
 	icon_state = "wooden-2"
 	},
@@ -27075,6 +27127,7 @@
 "igf" = (
 /obj/item/weapon/flora/random,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -27274,6 +27327,9 @@
 /obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2"
+	},
+/obj/machinery/light/small{
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -28575,6 +28631,9 @@
 	pixel_x = -28;
 	pixel_y = -6
 	},
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -29026,7 +29085,7 @@
 "iNj" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/power/apc/largecell{
-	dir = 4;
+	dir = 8;
 	name = "largecell apc left";
 	pixel_x = -28
 	},
@@ -29303,7 +29362,7 @@
 /area/station/maintenance/medbay)
 "iTz" = (
 /obj/machinery/power/apc{
-	dir = 1;
+	dir = 2;
 	name = "apc down";
 	pixel_y = -28
 	},
@@ -30735,10 +30794,8 @@
 /turf/simulated/floor,
 /area/station/cargo/office)
 "jrv" = (
-/obj/mecha/working/ripley,
-/turf/simulated/floor/plating/airless{
-	icon_state = "platebot"
-	},
+/obj/structure/lattice,
+/turf/environment/space,
 /area/station/cargo/recycler)
 "jrx" = (
 /obj/item/weapon/scrap_lump,
@@ -31055,6 +31112,19 @@
 	icon_state = "vault"
 	},
 /area/station/civilian/chapel/altar)
+"jvx" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating/airless,
+/area/station/cargo/recycler)
 "jvO" = (
 /obj/structure/stool/bed/chair/metal/red{
 	dir = 8
@@ -31120,6 +31190,9 @@
 /obj/structure/table/woodentable,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 29
+	},
+/obj/machinery/light/small{
+	dir = 4
 	},
 /turf/simulated/floor{
 	icon_state = "wooden-2"
@@ -31951,7 +32024,7 @@
 	},
 /obj/item/weapon/storage/belt/utility,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small,
+/obj/machinery/light,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -32525,6 +32598,7 @@
 	},
 /obj/item/weapon/storage/briefcase/inflatable,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -33273,7 +33347,7 @@
 /area/station/civilian/chapel/altar)
 "kgO" = (
 /obj/machinery/power/apc/largecell{
-	dir = 1;
+	dir = 2;
 	name = "largecell apc down";
 	pixel_y = -28
 	},
@@ -34059,6 +34133,9 @@
 /area/station/maintenance/science)
 "ktY" = (
 /obj/structure/closet/athletic_mixed,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "wooden-2"
 	},
@@ -36032,6 +36109,7 @@
 "lal" = (
 /obj/structure/closet/secure_closet/quartermaster,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -36174,6 +36252,13 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/station/civilian/kitchen)
+"lbm" = (
+/obj/structure/closet/secure_closet/personal,
+/obj/machinery/light/small,
+/turf/simulated/floor{
+	icon_state = "wooden-2"
+	},
+/area/station/civilian/gym)
 "lbo" = (
 /obj/structure/closet/crate{
 	name = "solar pack crate"
@@ -36920,6 +37005,9 @@
 /area/station/security/execution)
 "llG" = (
 /obj/structure/closet/crate/medical,
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/simulated/floor/plating/airless,
 /area/station/cargo/recycler)
 "llM" = (
@@ -37060,6 +37148,7 @@
 	dir = 8
 	},
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -37648,6 +37737,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/random/scrap/safe_even,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -37886,7 +37976,7 @@
 /area/station/rnd/robotics)
 "lys" = (
 /obj/machinery/power/apc{
-	dir = 1;
+	dir = 2;
 	name = "apc down";
 	pixel_y = -28
 	},
@@ -37913,9 +38003,6 @@
 	desc = "A crate with a radiation sign on it. For the love of god, use protection.";
 	name = "Radiation Suit Crate";
 	req_access = list(56)
-	},
-/obj/machinery/light/small{
-	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/station/engineering/engine)
@@ -38369,7 +38456,7 @@
 	dir = 8
 	},
 /obj/machinery/power/apc/largecell{
-	dir = 4;
+	dir = 8;
 	name = "largecell apc left";
 	pixel_x = -28
 	},
@@ -38982,6 +39069,7 @@
 	},
 /obj/structure/rack,
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
@@ -39096,6 +39184,12 @@
 	icon_state = "dark"
 	},
 /area/station/rnd/xenobiology)
+"lTS" = (
+/turf/simulated/floor/plating/airless{
+	dir = 1;
+	icon_state = "warnplatecorner"
+	},
+/area/station/cargo/recycler)
 "lTV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -40193,6 +40287,7 @@
 /area/station/hallway/secondary/exit)
 "miE" = (
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -41412,6 +41507,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -41813,6 +41909,7 @@
 /area/station/civilian/library)
 "mHs" = (
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
@@ -42450,6 +42547,7 @@
 	dir = 1
 	},
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -44389,6 +44487,15 @@
 	icon_state = "whiteblue"
 	},
 /area/station/medical/storage)
+"nyK" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "brown"
+	},
+/area/station/hallway/secondary/entry)
 "nyV" = (
 /obj/structure/table,
 /obj/machinery/cell_charger{
@@ -45585,6 +45692,7 @@
 "nSL" = (
 /obj/structure/stool/bed/chair/comfy/black,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -46063,6 +46171,7 @@
 	pixel_x = -7;
 	pixel_y = 8
 	},
+/obj/machinery/light/small,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -47242,6 +47351,7 @@
 	dir = 1
 	},
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
@@ -47615,7 +47725,7 @@
 	pixel_y = 29
 	},
 /obj/machinery/power/apc/largecell{
-	dir = 4;
+	dir = 8;
 	name = "largecell apc left";
 	pixel_x = -28
 	},
@@ -48104,7 +48214,7 @@
 "oIf" = (
 /obj/machinery/light/small,
 /obj/machinery/power/apc/largecell{
-	dir = 1;
+	dir = 2;
 	name = "largecell apc down";
 	pixel_y = -28
 	},
@@ -49161,7 +49271,7 @@
 	pixel_y = 4
 	},
 /obj/item/weapon/circuitboard/skills,
-/obj/machinery/light/small{
+/obj/machinery/light{
 	dir = 8
 	},
 /turf/simulated/floor/plating{
@@ -49199,7 +49309,7 @@
 "pat" = (
 /obj/machinery/light/small,
 /obj/machinery/power/apc{
-	dir = 1;
+	dir = 2;
 	name = "apc down";
 	pixel_y = -28
 	},
@@ -49529,6 +49639,9 @@
 	name = "Station Intercom (General)";
 	pixel_y = 22
 	},
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "boxing"
 	},
@@ -49548,6 +49661,7 @@
 /area/station/security/secconfhall)
 "pfG" = (
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -49894,6 +50008,12 @@
 	icon_state = "warning"
 	},
 /area/station/engineering/engine)
+"pkK" = (
+/turf/simulated/floor/plating/airless{
+	dir = 4;
+	icon_state = "warnplate"
+	},
+/area/station/cargo/recycler)
 "pkX" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/simulated/floor{
@@ -50624,7 +50744,6 @@
 /area/station/maintenance/incinerator)
 "pxC" = (
 /obj/machinery/disposal,
-/obj/machinery/light,
 /obj/machinery/alarm{
 	pixel_y = -32
 	},
@@ -50933,6 +51052,12 @@
 	icon_state = "vault"
 	},
 /area/station/rnd/storage)
+"pCz" = (
+/turf/simulated/floor/plating/airless{
+	dir = 8;
+	icon_state = "warnplate"
+	},
+/area/station/cargo/recycler)
 "pCH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -50964,7 +51089,7 @@
 "pDk" = (
 /obj/item/weapon/flora/random,
 /obj/machinery/power/apc/largecell{
-	dir = 1;
+	dir = 2;
 	name = "largecell apc down";
 	pixel_y = -28
 	},
@@ -51251,7 +51376,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/apc/largecell{
-	dir = 4;
+	dir = 8;
 	name = "largecell apc left";
 	pixel_x = -28
 	},
@@ -51290,7 +51415,7 @@
 	},
 /obj/machinery/light,
 /obj/machinery/power/apc/largecell{
-	dir = 1;
+	dir = 2;
 	name = "largecell apc down";
 	pixel_y = -28
 	},
@@ -51490,7 +51615,7 @@
 	pixel_y = 4
 	},
 /obj/item/weapon/circuitboard/security,
-/obj/machinery/light/small{
+/obj/machinery/light{
 	dir = 4
 	},
 /turf/simulated/floor/plating{
@@ -52139,6 +52264,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/science)
+"pVE" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/plating/airless,
+/area/station/cargo/recycler)
 "pVV" = (
 /obj/machinery/door/airlock/glass{
 	autoclose = 0;
@@ -52247,7 +52385,7 @@
 	},
 /obj/machinery/light/small,
 /obj/machinery/power/apc{
-	dir = 1;
+	dir = 2;
 	name = "apc down";
 	pixel_y = -28
 	},
@@ -52549,6 +52687,7 @@
 "qcj" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
@@ -53544,7 +53683,7 @@
 "qsk" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/power/apc{
-	dir = 1;
+	dir = 2;
 	name = "apc down";
 	pixel_y = -28
 	},
@@ -54740,7 +54879,7 @@
 "qMV" = (
 /obj/machinery/light,
 /obj/machinery/power/apc/largecell{
-	dir = 1;
+	dir = 2;
 	name = "largecell apc down";
 	pixel_y = -28
 	},
@@ -55332,6 +55471,7 @@
 "qWK" = (
 /obj/effect/decal/cleanable/molten_item,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -55851,6 +55991,7 @@
 /obj/item/weapon/rack_parts,
 /obj/effect/spawner/lootdrop/maintenance/four,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -56122,6 +56263,11 @@
 	icon_state = "brown"
 	},
 /area/station/hallway/secondary/entry)
+"rje" = (
+/obj/structure/rack,
+/obj/item/mecha_parts/mecha_equipment/hydraulic_clamp,
+/turf/simulated/floor/plating/airless,
+/area/station/cargo/recycler)
 "rjj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -56422,6 +56568,12 @@
 	icon_state = "black"
 	},
 /area/station/civilian/garden)
+"roO" = (
+/turf/simulated/floor/plating/airless{
+	dir = 8;
+	icon_state = "warnplatecorner"
+	},
+/area/station/cargo/recycler)
 "roT" = (
 /obj/structure/stool,
 /turf/simulated/floor/plating{
@@ -57659,6 +57811,9 @@
 /obj/item/clothing/under/karate,
 /obj/item/clothing/under/karate,
 /obj/item/clothing/under/karate,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "wooden-2"
 	},
@@ -58181,6 +58336,12 @@
 	},
 /turf/simulated/floor/carpet,
 /area/station/security/lawyer_office)
+"rRD" = (
+/turf/simulated/floor/plating/airless{
+	dir = 4;
+	icon_state = "warnplatecorner"
+	},
+/area/station/cargo/recycler)
 "rRO" = (
 /obj/structure/dispenser/oxygen,
 /turf/simulated/floor{
@@ -58708,6 +58869,9 @@
 /obj/machinery/requests_console/janitorial{
 	pixel_x = -28
 	},
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -58890,13 +59054,13 @@
 /turf/simulated/floor/plating,
 /area/station/security/warden)
 "scA" = (
-/obj/machinery/floodlight,
 /obj/machinery/power/apc/largecell{
 	dir = 4;
 	name = "largecell apc right";
 	pixel_x = 28
 	},
 /obj/structure/cable,
+/obj/machinery/floodlight,
 /turf/simulated/floor/plating/airless,
 /area/station/cargo/recycler)
 "scC" = (
@@ -60171,6 +60335,9 @@
 /area/station/hallway/secondary/mine_sci_shuttle)
 "syf" = (
 /obj/structure/stool/bed/chair/janitorialcart,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -60347,7 +60514,7 @@
 /area/station/civilian/bar)
 "sBA" = (
 /obj/machinery/power/port_gen/pacman,
-/obj/machinery/light/small{
+/obj/machinery/light{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
@@ -60582,11 +60749,12 @@
 /turf/simulated/floor/engine,
 /area/station/engineering/engine)
 "sDK" = (
-/obj/machinery/floodlight,
-/turf/simulated/floor/plating/airless{
-	dir = 1;
-	icon_state = "warnplate"
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
+/turf/simulated/floor/plating/airless,
 /area/station/cargo/recycler)
 "sDQ" = (
 /turf/simulated/floor/wood,
@@ -61257,9 +61425,6 @@
 	pixel_x = -1;
 	pixel_y = 6
 	},
-/obj/machinery/light{
-	dir = 4
-	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -61428,6 +61593,10 @@
 /area/station/rnd/lab)
 "sSO" = (
 /obj/machinery/power/port_gen/pacman/scrap,
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/plating/airless{
 	icon_state = "platebot"
 	},
@@ -61732,7 +61901,7 @@
 /obj/item/weapon/flora/random,
 /obj/machinery/light/small,
 /obj/machinery/power/apc/largecell{
-	dir = 1;
+	dir = 2;
 	name = "largecell apc down";
 	pixel_y = -28
 	},
@@ -62603,10 +62772,14 @@
 	},
 /area/station/hallway/primary/aft)
 "tkH" = (
-/turf/simulated/floor/plating/airless{
-	dir = 6;
-	icon_state = "warnplate"
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "packageSort1"
 	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/plating/airless,
 /area/station/cargo/recycler)
 "tkS" = (
 /obj/structure/closet/emcloset,
@@ -63288,6 +63461,13 @@
 	icon_state = "whiteblue"
 	},
 /area/station/hallway/primary/fore)
+"txf" = (
+/obj/mecha/working/ripley,
+/obj/machinery/light/small,
+/turf/simulated/floor/plating/airless{
+	icon_state = "platebot"
+	},
+/area/station/cargo/recycler)
 "txw" = (
 /obj/machinery/door/window/westright{
 	name = "Kitchen Maintenance";
@@ -64068,6 +64248,7 @@
 	dir = 1
 	},
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
@@ -64284,7 +64465,7 @@
 /area/station/civilian/theatre)
 "tMh" = (
 /obj/machinery/power/apc/largecell{
-	dir = 1;
+	dir = 2;
 	name = "largecell apc down";
 	pixel_y = -28
 	},
@@ -64602,6 +64783,9 @@
 "tQB" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 29
+	},
+/obj/machinery/light/small{
+	dir = 1
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -64958,7 +65142,7 @@
 /area/station/engineering/engine)
 "tWL" = (
 /obj/machinery/power/apc{
-	dir = 1;
+	dir = 2;
 	name = "apc down";
 	pixel_y = -28
 	},
@@ -65259,6 +65443,18 @@
 /obj/effect/landmark/start/assistant/test_subject,
 /turf/simulated/floor/wood,
 /area/station/civilian/theatre)
+"udi" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "brown"
+	},
+/area/station/hallway/secondary/entry)
 "udp" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor{
@@ -65515,6 +65711,9 @@
 /obj/machinery/alarm{
 	pixel_x = 29;
 	pixel_y = -6
+	},
+/obj/machinery/light/small{
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -66925,7 +67124,7 @@
 "uDl" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/glass,
-/obj/machinery/light/small{
+/obj/machinery/light{
 	dir = 1
 	},
 /turf/simulated/floor{
@@ -67641,6 +67840,9 @@
 	},
 /area/station/rnd/hallway)
 "uNr" = (
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/plating/airless{
 	dir = 4;
 	icon_state = "warnplatecorner"
@@ -68888,6 +69090,7 @@
 /obj/item/clothing/mask/gas/coloured,
 /obj/item/clothing/mask/gas/coloured,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -69190,7 +69393,7 @@
 	},
 /obj/item/device/radio/off,
 /obj/machinery/power/apc/largecell{
-	dir = 1;
+	dir = 2;
 	name = "largecell apc down";
 	pixel_y = -28
 	},
@@ -69202,6 +69405,9 @@
 /area/station/security/main)
 "vmg" = (
 /obj/machinery/color_mixer,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "whitepurple"
@@ -70096,7 +70302,6 @@
 /area/station/civilian/library)
 "vBn" = (
 /obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/mecha_parts/mecha_equipment/hydraulic_clamp,
 /obj/structure/rack,
 /turf/simulated/floor/plating/airless,
 /area/station/cargo/recycler)
@@ -70235,6 +70440,7 @@
 "vDb" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
@@ -71285,6 +71491,9 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
 "vUY" = (
@@ -72180,6 +72389,13 @@
 	req_access = list(67)
 	},
 /obj/machinery/power/port_gen/pacman/scrap,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/plating/airless{
 	icon_state = "platebot"
 	},
@@ -72693,9 +72909,6 @@
 /obj/machinery/conveyor{
 	id = "garbage"
 	},
-/obj/machinery/light/small{
-	dir = 4
-	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
 "wpr" = (
@@ -73045,12 +73258,12 @@
 "wvQ" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/obj/machinery/light/small{
-	dir = 8
-	},
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -22
+	},
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -73515,6 +73728,9 @@
 /obj/machinery/alarm{
 	pixel_x = -28;
 	pixel_y = -6
+	},
+/obj/machinery/light/small{
+	dir = 8
 	},
 /turf/simulated/floor{
 	dir = 10;
@@ -74324,6 +74540,9 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "wooden-2"
 	},
@@ -74438,6 +74657,7 @@
 /area/station/maintenance/atmos)
 "wSf" = (
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -74716,6 +74936,7 @@
 "wXd" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
@@ -75308,6 +75529,7 @@
 	dir = 1
 	},
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -76422,6 +76644,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
+/obj/machinery/light/small,
 /turf/simulated/floor{
 	icon_state = "brown"
 	},
@@ -77073,6 +77296,7 @@
 "xNc" = (
 /obj/structure/closet/wardrobe/mixed,
 /obj/machinery/power/apc{
+	dir = 1;
 	name = "apc top";
 	pixel_y = 28
 	},
@@ -77415,6 +77639,7 @@
 "xTY" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/power/apc/largecell{
+	dir = 1;
 	name = "largecell apc top";
 	pixel_y = 28
 	},
@@ -99221,7 +99446,7 @@ omk
 xmN
 jgd
 gbL
-cOv
+udi
 jgd
 eoZ
 oFh
@@ -99232,19 +99457,19 @@ qlP
 eoZ
 fed
 eoZ
-jgd
+nyK
 tCj
 jgd
 qlP
 czl
-eoZ
+ayZ
 jgd
 cOv
 jgd
 gbL
 jgd
 gfS
-cOv
+udi
 nbV
 qlP
 gfS
@@ -100776,7 +101001,7 @@ rgH
 oDy
 oDy
 oDy
-wYN
+dlW
 vVO
 diZ
 llG
@@ -101031,7 +101256,7 @@ ntn
 kkU
 oDy
 oDy
-sDK
+tcD
 iSo
 iSo
 iSo
@@ -101289,17 +101514,17 @@ rLM
 oDy
 fYV
 tcD
-iSo
-iSo
-iSo
-iSo
-iSo
-iSo
-iSo
-iSo
 tbZ
-tkH
-dYE
+pkK
+pkK
+pkK
+pkK
+pkK
+rRD
+iSo
+iSo
+iSo
+fkk
 iRy
 cJy
 cDK
@@ -101546,17 +101771,17 @@ oDy
 oDy
 pVv
 tcD
-iSo
-mfE
-mfE
-mfE
-mfE
-mfE
-iSo
-iSo
 sLP
-iRy
-dYE
+mfE
+mfE
+mfE
+mfE
+mfE
+tcD
+iSo
+iSo
+cJy
+cJy
 cJy
 cJy
 cJy
@@ -101800,19 +102025,19 @@ oIb
 pjJ
 oDy
 pVv
-qXt
+tkH
 pVv
 tcD
-iSo
-mfE
-mfE
-mfE
-mfE
-mfE
-iSo
-iSo
 sLP
-cJy
+mfE
+mfE
+mfE
+mfE
+mfE
+tcD
+iSo
+jrv
+iRy
 cJy
 cJy
 iRy
@@ -102060,15 +102285,15 @@ oku
 tLw
 pVv
 tpW
-iSo
+sLP
 mfE
 mfE
 ily
 mfE
 mfE
+tcD
 iSo
-iSo
-sLP
+jrv
 iRy
 cJy
 iRy
@@ -102317,15 +102542,15 @@ pVv
 tLw
 pVv
 tcD
-iSo
-mfE
-mfE
-mfE
-mfE
-mfE
-iSo
-iSo
 sLP
+mfE
+mfE
+mfE
+mfE
+mfE
+tcD
+iSo
+jrv
 cJy
 cJy
 cJy
@@ -102574,16 +102799,16 @@ pVv
 tLw
 ylL
 tcD
-iSo
-mfE
-mfE
-mfE
-mfE
-mfE
-iSo
-iSo
 sLP
-dYE
+mfE
+mfE
+mfE
+mfE
+mfE
+tcD
+iSo
+iSo
+cJy
 cJy
 cJy
 cJy
@@ -102831,16 +103056,16 @@ pVv
 tLw
 pVv
 tcD
-iSo
-iSo
-iSo
-iSo
-iSo
-iSo
+roO
+pCz
+pCz
+pCz
+pCz
+pCz
+lTS
 iSo
 xkA
-oDy
-dYE
+fkk
 cJy
 iRy
 iRy
@@ -103095,10 +103320,10 @@ iSo
 iSo
 iSo
 iSo
-jrv
-oDy
+iSo
+txf
+fkk
 cJy
-iRy
 iRy
 iRy
 cJy
@@ -103347,14 +103572,14 @@ mpu
 twz
 oDy
 xuL
-iSo
-iSo
+aFi
+jvx
+sDK
 iSo
 iSo
 iSo
 oeK
-oDy
-cJy
+fkk
 cJy
 cJy
 cJy
@@ -103606,13 +103831,13 @@ ozg
 ozg
 sSO
 wgJ
-aFi
+pVE
 scA
 vBn
+rje
 oDy
-oDy
+fkk
 cJy
-iRy
 cJy
 cJy
 cJy
@@ -103867,7 +104092,7 @@ spP
 ozg
 ozg
 oDy
-cJy
+fkk
 cJy
 iRy
 iRy
@@ -105114,7 +105339,7 @@ bjZ
 jWK
 jWK
 iXl
-iXl
+ace
 cZt
 jWK
 oBM
@@ -105377,7 +105602,7 @@ exA
 jdk
 xsM
 pjI
-jMM
+lbm
 jWK
 lqJ
 bSG
