@@ -377,6 +377,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
+/obj/machinery/camera{
+	c_tag = "Bridge West";
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "darkblue"
 	},
@@ -482,6 +486,11 @@
 /area/station/engineering/engine)
 "afM" = (
 /obj/machinery/portable_atmospherics/canister/phoron,
+/obj/machinery/camera{
+	c_tag = "Engineering Atmospherics Storage";
+	dir = 8;
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	icon_state = "delivery"
 	},
@@ -606,6 +615,10 @@
 /obj/machinery/computer/secure_data,
 /obj/machinery/requests_console/hos{
 	pixel_y = 28
+	},
+/obj/machinery/camera{
+	c_tag = "Brig HoS Office";
+	network = list("SS13","Security")
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -943,7 +956,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "alT" = (
 /obj/structure/lattice,
 /turf/environment/space,
@@ -1452,6 +1467,11 @@
 /obj/item/weapon/storage/belt/medical,
 /obj/item/device/radio/headset/headset_med,
 /obj/item/weapon/storage/pill_bottle/dexalin,
+/obj/machinery/camera{
+	c_tag = "Medbay Chemistry";
+	dir = 5;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "whiteyellow"
@@ -2585,6 +2605,10 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay Virology South";
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor/carpet/green,
 /area/station/medical/virology)
 "aHp" = (
@@ -2860,6 +2884,11 @@
 /area/station/hallway/secondary/entry)
 "aLq" = (
 /obj/machinery/door/firedoor,
+/obj/machinery/camera{
+	c_tag = "Medbay West";
+	dir = 5;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "whiteblue"
@@ -3172,7 +3201,9 @@
 "aRe" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/carpet/black,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "aRg" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5
@@ -3450,6 +3481,9 @@
 /obj/item/weapon/flora/random,
 /obj/machinery/light/small{
 	dir = 1
+	},
+/obj/machinery/camera{
+	c_tag = "Bar East"
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -3763,6 +3797,11 @@
 	pixel_x = -32
 	},
 /obj/item/clothing/suit/docshirt,
+/obj/machinery/camera{
+	c_tag = "Medbay Storage";
+	dir = 5;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "whiteblue"
@@ -4193,6 +4232,10 @@
 	},
 /obj/machinery/firealarm{
 	pixel_y = 22
+	},
+/obj/machinery/camera{
+	c_tag = "Brig North";
+	network = list("SS13","Security")
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -4750,7 +4793,9 @@
 	dir = 8;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "bpG" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -5242,6 +5287,11 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/machinery/camera{
+	c_tag = "Engineering Break Room West";
+	dir = 5;
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "yellow"
@@ -5648,7 +5698,9 @@
 	dir = 8;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "bBk" = (
 /obj/machinery/door/poddoor{
 	id = "cell4";
@@ -5749,8 +5801,11 @@
 /area/station/maintenance/medbay)
 "bCP" = (
 /obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
+/obj/machinery/camera{
+	c_tag = "Engineering Hall";
+	dir = 8;
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -6502,6 +6557,10 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
+/obj/machinery/camera{
+	c_tag = "Brig Interrogation Observation";
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkred"
@@ -6555,8 +6614,6 @@
 	dir = 4
 	},
 /obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "warning"
@@ -6885,6 +6942,10 @@
 	},
 /obj/machinery/firealarm{
 	pixel_y = 22
+	},
+/obj/machinery/camera{
+	c_tag = "Forensic's Office";
+	network = list("SS13","Security")
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -7423,7 +7484,9 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "cdk" = (
 /turf/simulated/wall/r_wall,
 /area/station/bridge/ai_upload)
@@ -7729,11 +7792,12 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating{
-	icon_state = "panelscorched"
+/obj/machinery/door/airlock/engineering{
+	name = "Engine Room Maintenance";
+	req_access = list(10)
 	},
-/area/station/maintenance/engineering)
+/turf/simulated/floor/plating,
+/area/station/engineering/engine)
 "chG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/computer/arcade,
@@ -7808,31 +7872,12 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/chapel)
 "cjj" = (
-/obj/machinery/cell_charger{
-	pixel_y = 5
+/obj/item/weapon/flora/random,
+/obj/machinery/camera{
+	c_tag = "Theater"
 	},
-/obj/structure/table,
-/obj/item/weapon/stock_parts/cell/high{
-	charge = 100;
-	maxcharge = 15000
-	},
-/obj/item/weapon/stock_parts/cell/high{
-	charge = 100;
-	maxcharge = 15000;
-	pixel_x = 5;
-	pixel_y = 9
-	},
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "apc right";
-	pixel_x = 28
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/turf/simulated/floor/plating,
-/area/space)
+/turf/simulated/floor/wood,
+/area/station/civilian/theatre)
 "cjR" = (
 /turf/simulated/wall/r_wall,
 /area/station/aisat/antechamber)
@@ -7934,6 +7979,11 @@
 /obj/machinery/sleeper{
 	dir = 4
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay Arrival Medical Checkpoint";
+	dir = 6;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "whiteblue"
@@ -8004,6 +8054,11 @@
 	name = "Station Intercom (Security)";
 	pixel_x = 28;
 	pixel_y = -5
+	},
+/obj/machinery/camera{
+	c_tag = "Brig Lobby Observation";
+	dir = 8;
+	network = list("SS13","Security")
 	},
 /turf/simulated/floor{
 	dir = 6;
@@ -8146,6 +8201,11 @@
 	dir = 4
 	},
 /obj/machinery/space_heater,
+/obj/machinery/camera{
+	c_tag = "Engineering Atmospherics South West";
+	dir = 10;
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -8182,13 +8242,15 @@
 	},
 /area/station/bridge)
 "coy" = (
-/obj/machinery/portable_atmospherics/canister/air,
-/obj/machinery/atmospherics/components/unary/portables_connector,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating{
-	icon_state = "platebotc"
+/obj/machinery/hydroponics/constructable,
+/obj/machinery/camera{
+	c_tag = "Hydroponics"
 	},
-/area/station/maintenance/auxsolarport)
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/station/civilian/hydroponics)
 "coz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash,
@@ -9236,10 +9298,15 @@
 	},
 /area/station/hallway/secondary/mine_sci_shuttle)
 "cEh" = (
-/obj/structure/computerframe,
-/obj/item/weapon/shard,
-/turf/simulated/floor/plating,
-/area/space)
+/obj/machinery/camera{
+	c_tag = "RnD Lobby";
+	dir = 6;
+	network = list("SS13","Research")
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/station/hallway/primary/port)
 "cEp" = (
 /obj/item/weapon/syndcodebook,
 /obj/structure/closet/crate,
@@ -9396,12 +9463,18 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "cGW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/device/radio/intercom{
 	name = "Station Intercom (General)";
 	pixel_y = -32
+	},
+/obj/machinery/camera{
+	c_tag = "Cargo Bay Storage South";
+	dir = 1
 	},
 /turf/simulated/floor{
 	icon_state = "brown"
@@ -10861,7 +10934,9 @@
 /turf/simulated/floor{
 	icon_state = "wood_stairs"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "ddj" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -11002,6 +11077,10 @@
 /obj/structure/sign/plaques/kiddie/perfect_drone{
 	pixel_y = 32
 	},
+/obj/machinery/camera{
+	c_tag = "Engineering Drone Fabrication";
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -11046,7 +11125,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "dft" = (
 /obj/machinery/computer/camera_advanced/xenobio{
 	dir = 8
@@ -11128,7 +11209,7 @@
 /area/station/security/prison)
 "dgz" = (
 /obj/machinery/camera{
-	c_tag = "Interrogation";
+	c_tag = "Brig Interrogation";
 	dir = 6;
 	network = list("SS13","Security","Interrogation")
 	},
@@ -11366,6 +11447,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/camera{
+	c_tag = "Bridge Gateway Control";
+	dir = 8
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkblue"
@@ -11460,7 +11545,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "djZ" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass{
@@ -11655,6 +11742,11 @@
 	dir = 8;
 	pixel_x = -22
 	},
+/obj/machinery/camera{
+	c_tag = "Engineering Atmospherics Monitoring";
+	dir = 4;
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "caution"
@@ -11761,19 +11853,11 @@
 /turf/simulated/floor/carpet/black,
 /area/station/security/iaa_office)
 "dol" = (
-/obj/structure/closet/bombcloset,
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -22
-	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "vault"
-	},
-/area/space)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/maintenance/five,
+/turf/simulated/floor/plating,
+/area/station/maintenance/medbay)
 "doF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/flour,
@@ -12166,7 +12250,9 @@
 	dir = 1;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "dvH" = (
 /turf/simulated/floor{
 	dir = 4;
@@ -12263,6 +12349,11 @@
 /obj/item/weapon/kitchenknife/combat{
 	pixel_x = -4
 	},
+/obj/machinery/camera/motion{
+	c_tag = "Brig Armory North";
+	dir = 1;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -12299,7 +12390,9 @@
 	pixel_x = 5
 	},
 /turf/simulated/floor/carpet/black,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "dwE" = (
 /obj/structure/closet/secure_closet/bar,
 /obj/item/weapon/gun/projectile/revolver/doublebarrel,
@@ -12310,6 +12403,10 @@
 /obj/item/clothing/suit/armor/vest,
 /obj/item/weapon/storage/firstaid/regular,
 /obj/machinery/light/small,
+/obj/machinery/camera{
+	c_tag = "Bar Backroom";
+	dir = 1
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wood-broken4"
 	},
@@ -12891,7 +12988,9 @@
 	pixel_y = 22
 	},
 /turf/simulated/floor/wood,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "dDQ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -13102,14 +13201,15 @@
 	},
 /area/station/security/armoury)
 "dHF" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 5
+/obj/machinery/cryopod,
+/obj/machinery/camera{
+	c_tag = "Cryogenic Storage"
 	},
-/obj/structure/rack,
-/obj/item/weapon/storage/toolbox/electrical,
-/obj/item/stack/cable_coil/random,
-/turf/simulated/floor/plating,
-/area/space)
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "vault"
+	},
+/area/station/hallway/primary/port)
 "dHH" = (
 /obj/structure/transit_tube{
 	icon_state = "N-S"
@@ -13124,7 +13224,9 @@
 /turf/simulated/floor{
 	icon_state = "vault"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "dHM" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -13888,6 +13990,10 @@
 /area/station/maintenance/cargo)
 "dNZ" = (
 /obj/machinery/pipedispenser,
+/obj/machinery/camera{
+	c_tag = "Engineering Atmospherics North";
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -14473,6 +14579,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/camera{
+	c_tag = "Bridge Teleporter";
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -14920,6 +15030,10 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/machinery/camera{
+	c_tag = "Arrival Dock's South";
+	dir = 8
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "brown"
@@ -15347,16 +15461,17 @@
 	},
 /area/station/security/detectives_office)
 "ejP" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	dir = 4
+/obj/structure/morgue,
+/obj/machinery/camera{
+	c_tag = "Medbay Morgue";
+	dir = 4;
+	network = list("SS13","Medical")
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "vault"
 	},
-/turf/simulated/floor/plating,
-/area/space)
+/area/station/medical/morgue)
 "ejQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -15472,6 +15587,10 @@
 	frequency = 1485;
 	name = "Station Intercom (Medbay)";
 	pixel_y = 22
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay Reseption North";
+	network = list("SS13","Medical")
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -17212,6 +17331,10 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/machinery/camera{
+	c_tag = "Brig Warden Office";
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "darkred"
@@ -17707,6 +17830,11 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay Chief Medical Office";
+	dir = 8;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whiteblue"
@@ -17761,6 +17889,10 @@
 "ePF" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/light/small,
+/obj/machinery/camera{
+	c_tag = "Bridge Gateway Entrance";
+	dir = 1
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -18555,7 +18687,9 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "eZb" = (
 /obj/item/device/radio/off{
 	pixel_y = 6
@@ -19239,6 +19373,11 @@
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_y = 30
 	},
+/obj/machinery/camera{
+	c_tag = "Brig Equipment";
+	dir = 6;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -19311,7 +19450,9 @@
 	dir = 8;
 	icon_state = "vault"
 	},
-/area/station/security/main)
+/area/station/security/main{
+	name = "Security Equipment"
+	})
 "fjP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -19614,6 +19755,10 @@
 /obj/machinery/hologram/holopad,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/camera{
+	c_tag = "Chapel Office";
+	dir = 4
+	},
 /turf/simulated/floor/carpet/black,
 /area/station/civilian/chapel/office)
 "fnB" = (
@@ -19704,7 +19849,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/carpet/red,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "fou" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/heater{
 	dir = 4
@@ -19873,6 +20020,10 @@
 	},
 /obj/machinery/light/small{
 	dir = 1
+	},
+/obj/machinery/camera/motion{
+	c_tag = "Bridge AI Upload Chamber";
+	network = list("SS13","RD","AIUpload")
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -20291,6 +20442,11 @@
 	},
 /obj/item/weapon/circuitboard/communications,
 /obj/machinery/light/small,
+/obj/machinery/camera/motion{
+	c_tag = "Engineering Secure Tech Storage";
+	dir = 1;
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -20689,7 +20845,9 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "fBk" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/reagent_containers/food/drinks/bottle/ale,
@@ -21374,6 +21532,9 @@
 	name = "Station Intercom (General)";
 	pixel_y = 22
 	},
+/obj/machinery/camera{
+	c_tag = "Escape Hall North"
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -21866,6 +22027,11 @@
 	frequency = 1485;
 	name = "Station Intercom (Medbay)";
 	pixel_y = 22
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay Genetics Research";
+	dir = 6;
+	network = list("SS13","Research")
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -22883,7 +23049,9 @@
 /area/station/maintenance/brig)
 "gdP" = (
 /turf/simulated/wall,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "gdX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/weapon/cigbutt{
@@ -23025,7 +23193,9 @@
 	dir = 8;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "gfe" = (
 /obj/structure/cryofeed/right,
 /turf/simulated/floor/plating,
@@ -23148,7 +23318,9 @@
 	dir = 4;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "ggv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/weapon/shard{
@@ -23375,7 +23547,9 @@
 	},
 /obj/item/device/megaphone,
 /turf/simulated/floor/carpet/black,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "giw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -23656,16 +23830,16 @@
 	},
 /area/station/engineering/atmos)
 "glR" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 6
+/obj/machinery/camera{
+	c_tag = "Brig Firing Range";
+	dir = 9;
+	network = list("SS13","Security")
 	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
 	},
-/turf/simulated/floor/plating,
-/area/space)
+/area/station/security/range)
 "gmb" = (
 /obj/structure/sink{
 	pixel_y = 24
@@ -23935,6 +24109,10 @@
 /area/station/security/main)
 "gpR" = (
 /obj/machinery/space_heater,
+/obj/machinery/camera{
+	c_tag = "Engineering North";
+	network = list("SS13","Engineering")
+	},
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 29
 	},
@@ -24024,6 +24202,9 @@
 /obj/item/device/radio/intercom{
 	name = "Station Intercom (General)";
 	pixel_y = 22
+	},
+/obj/machinery/camera{
+	c_tag = "Arrival Dock's West"
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -24773,7 +24954,9 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "gCv" = (
 /obj/machinery/door/airlock/medical/glass{
 	name = "Medbay Maintenance";
@@ -25067,6 +25250,10 @@
 /obj/machinery/status_display{
 	pixel_x = 32
 	},
+/obj/machinery/camera{
+	c_tag = "Barbershop";
+	dir = 8
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whitepurple"
@@ -25205,12 +25392,11 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/black,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "gHO" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/medical/glass{
-	name = "Medbay"
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 1
 	},
@@ -26010,6 +26196,9 @@
 /obj/machinery/status_display{
 	pixel_y = 32
 	},
+/obj/machinery/camera{
+	c_tag = "Bridge Internal Affairs"
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -26080,13 +26269,21 @@
 	},
 /area/station/rnd/brainstorm_center)
 "gSM" = (
-/obj/machinery/portable_atmospherics/canister/air,
-/obj/machinery/atmospherics/components/unary/portables_connector,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating{
-	icon_state = "platebotc"
+/obj/structure/grille,
+/obj/structure/window/reinforced/polarized{
+	dir = 1;
+	id = "privateoffice"
 	},
-/area/space)
+/obj/structure/window/reinforced/polarized{
+	id = "privateoffice"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "privateoffice"
+	},
+/obj/structure/sign/departments/lawyer,
+/turf/simulated/floor/plating,
+/area/station/security/lawyer_office)
 "gSN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/weapon/shard,
@@ -27284,20 +27481,16 @@
 	},
 /area/station/security/range)
 "hhb" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	id_tag = "solar_tool_outer";
-	locked = 1;
-	name = "Engineering External Access";
-	req_access = list(10,13)
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/obj/machinery/camera{
+	c_tag = "Bridge East";
+	dir = 6
 	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkblue"
 	},
-/turf/simulated/floor/plating,
-/area/space)
+/area/station/bridge)
 "hhq" = (
 /obj/structure/lattice,
 /obj/structure/window/reinforced{
@@ -27557,16 +27750,15 @@
 	},
 /area/station/engineering/atmos)
 "hkr" = (
-/obj/machinery/atmospherics/pipe/manifold/visible{
-	dir = 1
+/obj/machinery/camera{
+	c_tag = "Brig East";
+	dir = 1;
+	network = list("SS13","Security")
 	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
-/turf/simulated/floor/plating,
-/area/space)
+/area/station/security/brig)
 "hks" = (
 /turf/simulated/wall,
 /area/station/maintenance/incinerator)
@@ -27639,7 +27831,9 @@
 	pixel_y = 5
 	},
 /turf/simulated/floor/wood,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "hls" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -27680,6 +27874,10 @@
 /obj/structure/closet/secure_closet/personal,
 /obj/machinery/alarm{
 	pixel_y = -32
+	},
+/obj/machinery/camera{
+	c_tag = "Holodeck Control";
+	dir = 10
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -28046,7 +28244,9 @@
 	dir = 8;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "hst" = (
 /turf/simulated/wall/r_wall,
 /area/station/civilian/garden)
@@ -28434,6 +28634,10 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay Surgery Observation";
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -28714,6 +28918,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/status_display{
 	pixel_x = -32
+	},
+/obj/machinery/camera{
+	c_tag = "Library South";
+	dir = 4
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/library)
@@ -29326,12 +29534,15 @@
 	},
 /area/station/engineering/engine)
 "hMK" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 5
+/obj/decal/boxingrope,
+/obj/machinery/camera{
+	c_tag = "Gym West";
+	dir = 4
 	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
+/turf/simulated/floor{
+	icon_state = "boxing"
+	},
+/area/station/civilian/gym)
 "hMW" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
@@ -29488,6 +29699,11 @@
 	name = "Station Intercom (General)";
 	pixel_x = 28;
 	pixel_y = -5
+	},
+/obj/machinery/camera{
+	c_tag = "Brig Prison East";
+	dir = 8;
+	network = list("SS13","Prison")
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -29847,12 +30063,11 @@
 	},
 /area/station/security/checkpoint)
 "hTZ" = (
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor{
+	icon_state = "wooden-2"
 	},
-/turf/simulated/floor/plating/airless/catwalk,
-/area/station/solar/auxport)
+/area/station/civilian/gym)
 "hUg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -30019,6 +30234,10 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/machinery/camera{
+	c_tag = "Engineering Tech Storage";
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor/plating,
 /area/station/storage/tech)
 "hVR" = (
@@ -30043,6 +30262,10 @@
 	},
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/machinery/camera{
+	c_tag = "Bridge Gateway";
+	dir = 8
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -30287,6 +30510,11 @@
 /obj/item/weapon/flora/random,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -30
+	},
+/obj/machinery/camera{
+	c_tag = "Engineering South";
+	dir = 1;
+	network = list("SS13","Engineering")
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -30783,6 +31011,10 @@
 	dir = 8;
 	pixel_x = -22
 	},
+/obj/machinery/camera{
+	c_tag = "Cargo Lobby West";
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 10;
 	icon_state = "brown"
@@ -30891,6 +31123,10 @@
 	},
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/machinery/camera{
+	c_tag = "Custodial Closet";
+	dir = 8
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -31068,6 +31304,11 @@
 	},
 /obj/machinery/disposal,
 /obj/machinery/light/small,
+/obj/machinery/camera{
+	c_tag = "Medbay Virology North";
+	dir = 1;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 3;
 	icon_state = "whitegreen"
@@ -31078,6 +31319,9 @@
 /obj/machinery/computer/guestpass{
 	dir = 1;
 	pixel_y = 28
+	},
+/obj/machinery/camera{
+	c_tag = "Bridge North"
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -31209,6 +31453,10 @@
 "ind" = (
 /obj/machinery/alarm{
 	pixel_y = -32
+	},
+/obj/machinery/camera{
+	c_tag = "Bridge Vault";
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -31519,12 +31767,16 @@
 /turf/simulated/floor,
 /area/station/hallway/secondary/arrival)
 "ivo" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 8
+/obj/structure/stool/bed/chair/metal/red,
+/obj/machinery/camera{
+	c_tag = "Brig Escape Security Room";
+	network = list("SS13","Security")
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkred"
+	},
+/area/station/security/checkpoint)
 "ivD" = (
 /obj/machinery/atmospherics/components/unary/portables_connector,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -31748,6 +32000,9 @@
 	pixel_y = 7
 	},
 /obj/item/device/camera,
+/obj/machinery/camera{
+	c_tag = "Bridge Captain's Quarters"
+	},
 /turf/simulated/floor/carpet/blue,
 /area/station/bridge/captain_quarters)
 "ixc" = (
@@ -31889,16 +32144,16 @@
 /turf/simulated/floor/plating,
 /area/station/medical/chemistry)
 "izl" = (
-/obj/structure/rack,
-/obj/random/tools/tool,
-/obj/effect/spawner/lootdrop/maintenance/four,
-/obj/random/tools/tool,
-/obj/machinery/alarm{
-	pixel_y = -32
+/obj/machinery/door/firedoor,
+/obj/machinery/camera{
+	c_tag = "Arrival Dock's South";
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "brown"
+	},
+/area/station/hallway/secondary/entry)
 "izm" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/cartridge/quartermaster{
@@ -32341,6 +32596,11 @@
 /obj/machinery/requests_console/security{
 	pixel_x = -28
 	},
+/obj/machinery/camera{
+	c_tag = "Brig Security Office West";
+	dir = 4;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "darkred"
@@ -32527,6 +32787,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/obj/machinery/camera{
+	c_tag = "Brig Prison Bedroom";
+	network = list("SS13","Prison")
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "brownold"
@@ -32650,6 +32914,10 @@
 /obj/structure/reagent_dispensers/cleaner{
 	pixel_y = 32
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay East";
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "whiteblue"
@@ -32722,7 +32990,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet/red,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "iLc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -32815,7 +33085,9 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "iMj" = (
 /obj/machinery/light/small,
 /obj/item/device/radio/intercom{
@@ -32931,6 +33203,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/camera{
+	c_tag = "Cargo Bay East";
+	dir = 8
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "brown"
@@ -33033,21 +33309,20 @@
 	},
 /area/station/gateway)
 "iPw" = (
-/obj/structure/table,
-/obj/item/weapon/module/power_control{
-	pixel_y = 4
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/obj/item/weapon/module/power_control,
-/obj/item/stack/cable_coil/random,
-/obj/random/tools/tool,
-/obj/machinery/firealarm{
-	pixel_y = 22
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
-/obj/machinery/light/small{
-	dir = 1
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/space)
+/area/station/maintenance/engineering)
 "iPT" = (
 /turf/simulated/floor{
 	dir = 9;
@@ -33166,6 +33441,9 @@
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
 	dir = 1
+	},
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay"
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -33311,8 +33589,8 @@
 	},
 /area/station/civilian/locker)
 "iVj" = (
-/turf/simulated/floor/plating/airless/catwalk,
-/area/station/solar/auxport)
+/turf/simulated/wall,
+/area/station/engineering/engine)
 "iVo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/weapon/cigbutt{
@@ -33401,16 +33679,9 @@
 	},
 /area/station/civilian/locker)
 "iWh" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
-	dir = 1;
-	frequency = 1379;
-	id_tag = "solar_tool_pump";
-	name = "Solar Tool Large Air Vent"
-	},
-/turf/simulated/floor/plating{
-	icon_state = "platebotc"
-	},
-/area/station/maintenance/auxsolarport)
+/obj/structure/closet/radiation,
+/turf/simulated/floor/plating,
+/area/station/engineering/engine)
 "iWk" = (
 /turf/simulated/wall,
 /area/station/medical/surgery{
@@ -33464,7 +33735,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "iWO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -33663,7 +33936,9 @@
 /turf/simulated/floor{
 	icon_state = "vault"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "iZa" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -33859,7 +34134,9 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "jcm" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -33928,6 +34205,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/camera{
+	c_tag = "Dormitory"
 	},
 /turf/simulated/floor/carpet/green,
 /area/station/civilian/dormitories)
@@ -34267,6 +34547,11 @@
 	},
 /obj/structure/closet/l3closet/general,
 /obj/item/clothing/mask/gas/coloured,
+/obj/machinery/camera{
+	c_tag = "Medbay Virology Access";
+	dir = 1;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	icon_state = "warnwhite"
 	},
@@ -34625,7 +34910,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "joJ" = (
 /turf/simulated/floor{
 	dir = 4;
@@ -35151,7 +35438,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "jwi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -35401,13 +35690,15 @@
 /turf/simulated/floor,
 /area/station/rnd/chargebay)
 "jzD" = (
-/obj/machinery/power/terminal{
-	dir = 4
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "packageSort1"
 	},
-/obj/structure/cable,
-/obj/machinery/light/small,
-/turf/simulated/floor/plating,
-/area/space)
+/obj/machinery/camera{
+	c_tag = "Cargo Dump"
+	},
+/turf/simulated/floor/plating/airless,
+/area/station/cargo/recycler)
 "jzL" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/simulated/floor,
@@ -35432,7 +35723,9 @@
 	dir = 4;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "jAr" = (
 /obj/machinery/camera{
 	c_tag = "Holodeck West";
@@ -35532,7 +35825,9 @@
 	dir = 8;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "jBv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -36019,6 +36314,11 @@
 	pixel_y = -28
 	},
 /obj/machinery/light/small,
+/obj/machinery/camera{
+	c_tag = "Detective's Office";
+	dir = 1;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor/wood,
 /area/station/security/detectives_office)
 "jIU" = (
@@ -36164,7 +36464,9 @@
 	dir = 1;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "jLj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -36779,7 +37081,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "jUx" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -37806,21 +38110,22 @@
 	},
 /area/station/storage/tech)
 "klJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+/obj/machinery/power/rad_collector{
+	anchored = 1
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/engineering{
-	name = "Fore Port Solar Acces";
-	req_access = list(10)
-	},
-/obj/structure/cable{
-	d1 = 4;
+/obj/structure/cable/yellow{
 	d2 = 8;
-	icon_state = "4-8"
+	icon_state = "0-8"
 	},
-/turf/simulated/floor/plating,
-/area/space)
+/obj/machinery/camera{
+	c_tag = "Engineering Supermatter";
+	dir = 6;
+	network = list("SS13","Engineering")
+	},
+/turf/simulated/floor/plating{
+	icon_state = "platebot"
+	},
+/area/station/engineering/engine)
 "klZ" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/reagent_containers/food/drinks/drinkingglass,
@@ -37839,17 +38144,6 @@
 	icon_state = "panelscorched"
 	},
 /area/station/maintenance/engineering)
-"kmJ" = (
-/obj/machinery/atmospherics/pipe/manifold/visible{
-	dir = 1
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "kmK" = (
 /obj/machinery/computer/mech_bay_power_console,
 /obj/effect/decal/cleanable/dirt,
@@ -38233,6 +38527,9 @@
 	pixel_y = 28;
 	req_access = list(22)
 	},
+/obj/machinery/camera{
+	c_tag = "Chapel Mass Driver"
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -38354,7 +38651,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "ksS" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -38365,7 +38664,9 @@
 /area/station/rnd/hallway)
 "kta" = (
 /turf/simulated/floor/carpet/red,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "kts" = (
 /obj/structure/stool/bed/chair/metal/red{
 	dir = 1
@@ -38419,6 +38720,10 @@
 /obj/structure/closet/athletic_mixed,
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/machinery/camera{
+	c_tag = "Sauna";
+	dir = 8
 	},
 /turf/simulated/floor{
 	icon_state = "wooden-2"
@@ -39665,7 +39970,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "kNm" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -39719,17 +40026,6 @@
 	icon_state = "darkpurple"
 	},
 /area/station/rnd/hor)
-"kOA" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 6
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "kOH" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/simulated/floor{
@@ -40118,7 +40414,9 @@
 	dir = 1;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "kUk" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
@@ -40475,6 +40773,9 @@
 /area/station/maintenance/brig)
 "kYx" = (
 /obj/structure/dispenser,
+/obj/machinery/firealarm{
+	pixel_y = 22
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -40615,7 +40916,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "lah" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -41025,7 +41328,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "lfO" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -41509,7 +41814,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "lll" = (
 /obj/structure/table,
 /obj/item/stack/cable_coil/random{
@@ -42078,6 +42385,10 @@
 	pixel_x = 28;
 	pixel_y = -5
 	},
+/obj/machinery/camera/motion{
+	c_tag = "Bridge EVA East";
+	dir = 8
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -42187,11 +42498,13 @@
 /area/station/storage/primary)
 "lts" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/medical/glass{
-	name = "Medbay"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/camera{
+	c_tag = "Medbay South";
+	dir = 8;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whiteblue"
@@ -42812,33 +43125,6 @@
 	},
 /turf/environment/space,
 /area/space)
-"lDy" = (
-/obj/machinery/cell_charger{
-	pixel_y = 5
-	},
-/obj/structure/table,
-/obj/item/weapon/stock_parts/cell/high{
-	charge = 100;
-	maxcharge = 15000
-	},
-/obj/item/weapon/stock_parts/cell/high{
-	charge = 100;
-	maxcharge = 15000;
-	pixel_x = 5;
-	pixel_y = 9
-	},
-/obj/random/tools/tool,
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "apc right";
-	pixel_x = 28
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "lDK" = (
 /obj/machinery/firealarm{
 	pixel_y = 22
@@ -43105,6 +43391,11 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/machinery/camera{
+	c_tag = "Engineering Atmospherics North West";
+	dir = 4;
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -43360,6 +43651,9 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/camera{
+	c_tag = "Escape Hallway West"
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -43894,6 +44188,11 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 28
 	},
+/obj/machinery/camera{
+	c_tag = "Engineering Storage";
+	dir = 8;
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -43955,7 +44254,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "lSs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -44100,6 +44401,10 @@
 	pixel_y = -28
 	},
 /obj/machinery/light/small,
+/obj/machinery/camera{
+	c_tag = "Cargo Office";
+	dir = 10
+	},
 /turf/simulated/floor{
 	icon_state = "brownold"
 	},
@@ -44538,6 +44843,10 @@
 /obj/machinery/vending/cigarette,
 /obj/machinery/alarm{
 	pixel_y = -32
+	},
+/obj/machinery/camera{
+	c_tag = "Escape Hall South";
+	dir = 1
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -45147,6 +45456,10 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/machinery/camera{
+	c_tag = "Cargo Recycler Office";
+	dir = 0
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -45710,13 +46023,6 @@
 	icon_state = "vault"
 	},
 /area/station/rnd/tox_launch)
-"mrI" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/space)
 "mrK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate,
@@ -45801,6 +46107,11 @@
 	pixel_x = 28;
 	req_access = list(10)
 	},
+/obj/machinery/camera{
+	c_tag = "Engineering West";
+	dir = 8;
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "warning"
@@ -45851,21 +46162,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/auxsolarstarboard)
-"mtI" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	id_tag = "solar_tool_outer";
-	locked = 1;
-	name = "Engineering External Access";
-	req_access = list(10,13)
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "mub" = (
 /obj/machinery/sleeper{
 	dir = 8
@@ -46656,6 +46952,10 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/machinery/camera{
+	c_tag = "Brig Evidence Storage";
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -46700,7 +47000,9 @@
 	dir = 4;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "mEE" = (
 /obj/item/device/radio/intercom{
 	frequency = 1475;
@@ -46716,6 +47018,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/camera{
+	c_tag = "Brig West";
+	dir = 1;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
@@ -46730,6 +47037,10 @@
 /obj/item/device/radio/intercom{
 	name = "Station Intercom (General)";
 	pixel_y = -32
+	},
+/obj/machinery/camera{
+	c_tag = "Theater Backroom";
+	dir = 1
 	},
 /turf/simulated/floor/wood{
 	icon_state = "wood-broken4"
@@ -46901,6 +47212,10 @@
 "mGN" = (
 /obj/structure/sign/warning/moving_parts{
 	pixel_y = 32
+	},
+/obj/machinery/camera{
+	c_tag = "Cargo Mail";
+	dir = 6
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -48211,7 +48526,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/carpet/red,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "naD" = (
 /obj/structure/table/reinforced,
 /obj/item/ashtray/bronze,
@@ -49095,8 +49412,6 @@
 /area/station/aisat)
 "nly" = (
 /obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -49226,6 +49541,11 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/camera{
+	c_tag = "Engineering East";
+	dir = 4;
+	network = list("SS13","Engineering")
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -49407,6 +49727,7 @@
 /obj/item/clothing/head/ushanka/black,
 /obj/item/clothing/under/soviet,
 /obj/item/clothing/suit/hgpirate{
+	desc = "No step back!";
 	name = "soviet marshal coat"
 	},
 /obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
@@ -49551,6 +49872,10 @@
 /obj/machinery/requests_console/ce{
 	pixel_y = 26
 	},
+/obj/machinery/camera{
+	c_tag = "Engineering Chief Engineer's Office";
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "darkyellow"
@@ -49627,6 +49952,10 @@
 /obj/machinery/computer/guestpass{
 	dir = 1;
 	pixel_y = 28
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay Center";
+	network = list("SS13","Medical")
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -49715,6 +50044,10 @@
 /obj/machinery/alarm{
 	pixel_y = 22
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay Cloning";
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "whiteblue"
@@ -49766,7 +50099,9 @@
 	pixel_y = 22
 	},
 /turf/simulated/floor/wood,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "nwB" = (
 /obj/effect/landmark/start/ai,
 /obj/item/device/radio/intercom{
@@ -49934,9 +50269,6 @@
 /obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/plating,
 /area/station/maintenance/brig)
-"nyv" = (
-/turf/simulated/wall,
-/area/station/maintenance/auxsolarport)
 "nyw" = (
 /obj/structure/rack,
 /obj/item/weapon/storage/firstaid/fire{
@@ -51066,7 +51398,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "nPY" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -51450,8 +51784,6 @@
 	pixel_y = -32
 	},
 /obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "warning"
@@ -51846,16 +52178,6 @@
 	icon_state = "platingdmg1"
 	},
 /area/station/maintenance/medbay)
-"obc" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 5
-	},
-/obj/structure/rack,
-/obj/item/weapon/storage/toolbox/electrical,
-/obj/item/stack/cable_coil/random,
-/obj/random/tools/tool,
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "obd" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /turf/simulated/floor/carpet/black,
@@ -52183,6 +52505,12 @@
 /obj/machinery/newscaster{
 	pixel_x = 28
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay Psychiatric Office";
+	dir = 8;
+	network = list("SS13","Medical");
+	pixel_y = -22
+	},
 /turf/simulated/floor/carpet/green,
 /area/station/medical/psych)
 "ofP" = (
@@ -52503,6 +52831,11 @@
 	pixel_y = -32
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/camera{
+	c_tag = "Brig  Washroom";
+	dir = 10;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	icon_state = "freezerfloor2"
 	},
@@ -52888,8 +53221,6 @@
 	pixel_y = -32
 	},
 /obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
 /turf/simulated/floor{
 	dir = 10;
 	icon_state = "warning"
@@ -53533,7 +53864,9 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "oyB" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -53661,6 +53994,11 @@
 /obj/machinery/ai_status_display{
 	pixel_x = 32
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay Treatment Center";
+	dir = 8;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -53694,6 +54032,11 @@
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
+	},
+/obj/machinery/camera{
+	c_tag = "Brig Prison Observation";
+	dir = 8;
+	network = list("SS13","Security")
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -53857,7 +54200,9 @@
 	dir = 8;
 	icon_state = "vault"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "oDy" = (
 /turf/simulated/wall,
 /area/station/cargo/recycler)
@@ -53982,6 +54327,11 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/machinery/camera{
+	c_tag = "Brig Security Office East";
+	dir = 8;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkred"
@@ -53997,6 +54347,9 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay"
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whiteblue"
@@ -54499,6 +54852,9 @@
 	name = "Station Intercom (General)";
 	pixel_y = 22
 	},
+/obj/machinery/camera{
+	c_tag = "Cargo Bay Storage North"
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "brown"
@@ -54747,6 +55103,11 @@
 "oRy" = (
 /obj/structure/table/glass,
 /obj/item/weapon/storage/box/cups,
+/obj/machinery/camera{
+	c_tag = "Medbay Break Room";
+	dir = 4;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -55381,17 +55742,6 @@
 	icon_state = "warndark"
 	},
 /area/station/gateway)
-"pbb" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "pbc" = (
 /obj/machinery/door/airlock/command{
 	name = "Captain's Quarters";
@@ -55453,6 +55803,10 @@
 /obj/item/weapon/flora/random,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 28
+	},
+/obj/machinery/camera{
+	c_tag = "Chapel Hall East";
+	dir = 9
 	},
 /turf/simulated/floor/carpet{
 	icon_state = "carpetsymbol"
@@ -56164,8 +56518,10 @@
 /area/station/cargo/office)
 "pmL" = (
 /obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
+/obj/machinery/camera{
+	c_tag = "Engineering passage";
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
@@ -56187,6 +56543,10 @@
 	pixel_y = -4
 	},
 /obj/machinery/computer/skills,
+/obj/machinery/camera{
+	c_tag = "Bridge Head of Personnel's Office";
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "darkblue"
@@ -56462,7 +56822,9 @@
 	dir = 8;
 	icon_state = "vault"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "psT" = (
 /obj/structure/stool,
 /obj/machinery/light/small{
@@ -56547,6 +56909,10 @@
 	},
 /obj/machinery/light/small/emergency{
 	dir = 1
+	},
+/obj/machinery/camera/motion{
+	c_tag = "Brig Armory South";
+	network = list("SS13","Security")
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -56947,17 +57313,6 @@
 	icon_state = "panelscorched"
 	},
 /area/station/maintenance/medbay)
-"pzx" = (
-/obj/structure/rack,
-/obj/random/tools/tool,
-/obj/effect/spawner/lootdrop/maintenance/four,
-/obj/random/tools/tool,
-/obj/machinery/alarm{
-	pixel_y = -32
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/space)
 "pzz" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -57199,9 +57554,6 @@
 	icon_state = "dark"
 	},
 /area/station/engineering/equip)
-"pBX" = (
-/turf/environment/space,
-/area/station/solar/auxport)
 "pBY" = (
 /obj/structure/altar_of_gods,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -57674,14 +58026,6 @@
 "pJO" = (
 /turf/simulated/floor,
 /area/station/cargo/storage)
-"pJP" = (
-/obj/machinery/iv_drip,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "whiteblue"
-	},
-/area/space)
 "pJV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -57929,6 +58273,11 @@
 /obj/machinery/newscaster{
 	pixel_x = -28
 	},
+/obj/machinery/camera{
+	c_tag = "Brig Prison West";
+	dir = 4;
+	network = list("SS13","Prison")
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -57972,6 +58321,10 @@
 /area/station/civilian/cold_room)
 "pOa" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/machinery/camera{
+	c_tag = "Engineering Secure Storage";
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor/plating,
 /area/station/engineering/engine)
 "pOd" = (
@@ -58316,6 +58669,10 @@
 /obj/structure/flora/ausbushes/ppflowers{
 	layer = 2.7
 	},
+/obj/machinery/camera{
+	c_tag = "Hydroponics Pasture";
+	dir = 1
+	},
 /turf/simulated/floor/grass,
 /area/station/civilian/hydroponics)
 "pSM" = (
@@ -58648,6 +59005,11 @@
 	pixel_y = -28
 	},
 /obj/structure/cable,
+/obj/machinery/camera/motion{
+	c_tag = "Brig Execution Chamber";
+	dir = 1;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	icon_state = "darkredfull"
 	},
@@ -59017,7 +59379,9 @@
 	dir = 4;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "qcw" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/light/small,
@@ -59189,7 +59553,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "qeP" = (
 /obj/machinery/conveyor_switch/oneway{
 	id = "QMLoad"
@@ -59269,14 +59635,14 @@
 	},
 /area/station/rnd/misc_lab)
 "qga" = (
+/obj/item/weapon/flora/random,
 /obj/machinery/door_control{
 	desc = "A remote control-switch for secure storage.";
 	id = "Secure Storage";
 	name = "Engineering Secure Storage";
 	pixel_y = 28;
-	req_access = list(10)
+	req_access = list(56)
 	},
-/obj/item/weapon/flora/random,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -59718,7 +60084,9 @@
 	dir = 1;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "qmN" = (
 /obj/machinery/hologram/holopad{
 	pixel_x = 16
@@ -59783,6 +60151,10 @@
 /obj/machinery/alarm{
 	pixel_x = -28;
 	pixel_y = -6
+	},
+/obj/machinery/camera{
+	c_tag = "Bar West";
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -60049,6 +60421,9 @@
 	name = "Station Intercom (General)";
 	pixel_y = 22
 	},
+/obj/machinery/camera{
+	c_tag = "Kitchen Cold Room"
+	},
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
@@ -60209,21 +60584,11 @@
 /turf/simulated/floor/carpet,
 /area/station/security/lawyer_office)
 "quM" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/engineering{
-	name = "Fore Port Solar Acces";
-	req_access = list(10)
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/machinery/door/airlock/maintenance{
+	req_access = list(12)
 	},
 /turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
+/area/space)
 "quZ" = (
 /obj/structure/flora/bush,
 /obj/structure/flora/ausbushes/fullgrass{
@@ -60565,8 +60930,6 @@
 	dir = 8
 	},
 /obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "warning"
@@ -60819,6 +61182,11 @@
 /area/station/security/prison)
 "qCB" = (
 /obj/item/weapon/flora/random,
+/obj/machinery/camera{
+	c_tag = "Medbay Escape Medical Checkpoint";
+	dir = 10;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	icon_state = "whiteblue"
 	},
@@ -61025,7 +61393,9 @@
 	dir = 8;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "qFK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -61349,7 +61719,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "qKJ" = (
 /obj/machinery/disposal,
 /obj/machinery/light_switch{
@@ -61921,7 +62293,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "qUu" = (
 /obj/item/device/radio/intercom{
 	broadcasting = 1;
@@ -62254,6 +62628,10 @@
 	dir = 8;
 	pixel_x = -22
 	},
+/obj/machinery/camera{
+	c_tag = "Cargo Mining office";
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "brown"
@@ -62274,7 +62652,9 @@
 	dir = 8;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "qZE" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -62594,7 +62974,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "rec" = (
 /obj/machinery/door/airlock/external{
 	dock_tag = "arrival_escape";
@@ -62799,7 +63181,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "rhW" = (
 /obj/random/vending/cola,
 /obj/machinery/status_display{
@@ -62933,6 +63317,10 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/machinery/camera{
+	c_tag = "Brig SMES";
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -62955,7 +63343,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "rjX" = (
 /obj/structure/rack,
 /obj/item/weapon/storage/toolbox/electrical,
@@ -63438,9 +63828,6 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/firealarm{
-	pixel_y = 22
-	},
 /obj/random/tools/tool,
 /turf/simulated/floor{
 	dir = 5;
@@ -63624,6 +64011,11 @@
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -22
+	},
+/obj/machinery/camera{
+	c_tag = "Engineering MiniSat Access";
+	dir = 4;
+	network = list("SS13","Engineering")
 	},
 /turf/simulated/floor{
 	dir = 10;
@@ -64503,7 +64895,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/carpet/red,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "rHX" = (
 /obj/structure/closet/athletic_mixed,
 /obj/item/clothing/under/pants/black_sport,
@@ -64674,7 +65068,9 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "rLG" = (
 /obj/structure/table/woodentable,
 /obj/item/device/camera_film{
@@ -64844,7 +65240,9 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/black,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "rOw" = (
 /obj/machinery/alarm{
 	pixel_x = -28;
@@ -64860,6 +65258,11 @@
 	dir = 8
 	},
 /obj/machinery/power/smes,
+/obj/machinery/camera{
+	c_tag = "Engineering SMES";
+	dir = 4;
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor/plating{
 	icon_state = "platebot"
 	},
@@ -65544,6 +65947,11 @@
 	pixel_x = 1;
 	pixel_y = 7
 	},
+/obj/machinery/camera{
+	c_tag = "Brig Lobby West";
+	dir = 4;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -66075,15 +66483,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/rnd/misc_lab)
-"seM" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/item/weapon/cigbutt,
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "seO" = (
 /obj/machinery/light/small,
 /turf/simulated/floor{
@@ -66149,6 +66548,10 @@
 /area/station/civilian/cafeteria)
 "sgb" = (
 /obj/machinery/vending/coffee,
+/obj/machinery/camera{
+	c_tag = "Cafe";
+	dir = 4
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/cafeteria)
 "sgm" = (
@@ -66228,15 +66631,6 @@
 /obj/structure/closet/crate/large,
 /turf/simulated/floor,
 /area/station/cargo/storage)
-"shT" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/item/weapon/cigbutt,
-/turf/simulated/floor/plating,
-/area/space)
 "shZ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /obj/effect/landmark/start/security_cadet,
@@ -66425,6 +66819,9 @@
 "skR" = (
 /obj/structure/sign/warning/nosmoking{
 	pixel_y = 32
+	},
+/obj/machinery/camera{
+	c_tag = "Incinerator"
 	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
@@ -66844,31 +67241,6 @@
 	icon_state = "vault"
 	},
 /area/station/engineering/engine)
-"srb" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	id_tag = "solar_tool_inner";
-	locked = 1;
-	name = "Engineering External Access";
-	req_access = list(13)
-	},
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 4
-	},
-/obj/structure/sign/warning/securearea{
-	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
-	icon_state = "space";
-	layer = 4;
-	name = "EXTERNAL AIRLOCK";
-	pixel_y = 32
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/space)
 "srk" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /obj/structure/cable/yellow{
@@ -67210,18 +67582,6 @@
 	icon_state = "dark"
 	},
 /area/station/cargo/recycleroffice)
-"svP" = (
-/obj/machinery/atmospherics/pipe/manifold/visible{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/space)
 "svS" = (
 /obj/structure/stool/bed/chair/comfy/beige{
 	dir = 8
@@ -67300,6 +67660,10 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -28
 	},
+/obj/machinery/camera{
+	c_tag = "Chapel Hall West";
+	dir = 5
+	},
 /turf/simulated/floor/carpet{
 	icon_state = "carpetsymbol"
 	},
@@ -67370,6 +67734,10 @@
 	},
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/obj/machinery/camera{
+	c_tag = "Cargo Lobby East";
 	dir = 8
 	},
 /turf/simulated/floor{
@@ -67535,8 +67903,6 @@
 /area/station/maintenance/science)
 "sAu" = (
 /obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -67551,23 +67917,6 @@
 	icon_state = "dark"
 	},
 /area/station/engineering/engine)
-"sAG" = (
-/obj/structure/stool{
-	pixel_y = 8
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "sAJ" = (
 /obj/machinery/access_button{
 	command = "cycle_interior";
@@ -67582,6 +67931,11 @@
 	},
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/machinery/camera{
+	c_tag = "Engineering Atmospherics South East";
+	dir = 8;
+	network = list("SS13","Engineering")
 	},
 /turf/simulated/floor{
 	dir = 6;
@@ -67624,7 +67978,9 @@
 	dir = 4;
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "sBo" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -67744,7 +68100,9 @@
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "sCz" = (
 /obj/machinery/embedded_controller/radio/access_controller{
 	id_tag = "incinerator_access_control";
@@ -68605,7 +68963,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet/red,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "sPI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor{
@@ -68640,6 +69000,10 @@
 /obj/machinery/kitchen_machine/microwave{
 	pixel_x = -1;
 	pixel_y = 6
+	},
+/obj/machinery/camera{
+	c_tag = "Kitchen";
+	dir = 8
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -68872,6 +69236,10 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -30
 	},
+/obj/machinery/camera{
+	c_tag = "Library North";
+	dir = 10
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/library)
 "sTv" = (
@@ -69031,7 +69399,9 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "sUT" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 1
@@ -69066,6 +69436,11 @@
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -22
+	},
+/obj/machinery/camera{
+	c_tag = "Engineering Atmospherics South";
+	dir = 10;
+	network = list("SS13","Engineering")
 	},
 /turf/simulated/floor{
 	icon_state = "caution"
@@ -69238,8 +69613,6 @@
 /area/station/security/secconfhall)
 "sYp" = (
 /obj/structure/closet/radiation,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -69374,7 +69747,9 @@
 	dir = 10
 	},
 /turf/simulated/floor/wood,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "taK" = (
 /obj/machinery/computer/HolodeckControl,
 /turf/simulated/floor{
@@ -69466,7 +69841,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet/red,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "tcu" = (
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -70177,7 +70554,7 @@
 /obj/machinery/door/airlock/medical/glass{
 	id_tag = "Cloning Lab";
 	name = "Cloning Lab";
-	req_access = list(6)
+	req_access = list(6,9)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -70430,7 +70807,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "tqS" = (
 /obj/machinery/door/airlock/research{
 	name = "Research Division Access";
@@ -72406,6 +72785,10 @@
 	name = "Station Intercom (General)";
 	pixel_y = -32
 	},
+/obj/machinery/camera{
+	c_tag = "Chapel Altar";
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -72789,6 +73172,11 @@
 /obj/structure/cable{
 	d2 = 4;
 	icon_state = "0-4"
+	},
+/obj/machinery/camera{
+	c_tag = "Brig Escape Security Checkpoint";
+	dir = 1;
+	network = list("SS13","Security")
 	},
 /turf/simulated/floor{
 	dir = 10;
@@ -73371,7 +73759,9 @@
 "ugZ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/simulated/floor/carpet/black,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "uha" = (
 /obj/structure/stool/bed/roller,
 /obj/machinery/iv_drip,
@@ -73482,6 +73872,9 @@
 	},
 /obj/item/weapon/stock_parts/cell/high,
 /obj/random/tools/tool,
+/obj/machinery/camera{
+	c_tag = "Primary Tool Storage"
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -73507,7 +73900,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "uiP" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor,
@@ -73959,14 +74354,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/cargo)
-"upx" = (
-/obj/machinery/power/terminal{
-	dir = 4
-	},
-/obj/structure/cable,
-/obj/machinery/light/small,
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "upy" = (
 /obj/machinery/hologram/holopad,
 /obj/machinery/ai_slipper{
@@ -74430,13 +74817,6 @@
 /obj/structure/closet/firecloset,
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
-"uvi" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance/four,
-/turf/simulated/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/station/maintenance/medbay)
 "uvq" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor{
@@ -74659,7 +75039,9 @@
 	pixel_y = -4
 	},
 /turf/simulated/floor/wood,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "uyQ" = (
 /obj/structure/stool/bed/chair/pedalgen{
 	anchored = 1;
@@ -74867,31 +75249,6 @@
 /obj/structure/window/reinforced,
 /turf/environment/space,
 /area/space)
-"uBF" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	id_tag = "solar_tool_inner";
-	locked = 1;
-	name = "Engineering External Access";
-	req_access = list(13)
-	},
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 4
-	},
-/obj/structure/sign/warning/securearea{
-	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
-	icon_state = "space";
-	layer = 4;
-	name = "EXTERNAL AIRLOCK";
-	pixel_y = 32
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "uBN" = (
 /obj/machinery/light{
 	dir = 8
@@ -74937,7 +75294,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "uCD" = (
 /turf/simulated/floor{
 	dir = 4;
@@ -75033,7 +75392,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "uEG" = (
 /obj/machinery/suit_storage_unit/standard_unit,
 /turf/simulated/floor{
@@ -75055,18 +75416,6 @@
 	icon_state = "brown"
 	},
 /area/station/cargo/office)
-"uES" = (
-/obj/machinery/atmospherics/pipe/manifold/visible{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "uFb" = (
 /obj/structure/table,
 /obj/item/weapon/storage/toolbox/mechanical{
@@ -75157,6 +75506,11 @@
 "uFZ" = (
 /obj/machinery/door_timer/cell_4,
 /obj/structure/closet/secure_closet/brig,
+/obj/machinery/camera{
+	c_tag = "Brig South";
+	dir = 1;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -75483,7 +75837,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "uJP" = (
 /obj/machinery/telecomms/processor/preset_three,
 /obj/machinery/firealarm{
@@ -75996,22 +76352,6 @@
 	icon_state = "darkbrown"
 	},
 /area/station/cargo/qm)
-"uQH" = (
-/obj/structure/table,
-/obj/item/weapon/module/power_control{
-	pixel_y = 4
-	},
-/obj/item/weapon/module/power_control,
-/obj/item/stack/cable_coil/random,
-/obj/random/tools/tool,
-/obj/machinery/firealarm{
-	pixel_y = 22
-	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "uQT" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -76056,7 +76396,9 @@
 	id = "privateoffice"
 	},
 /turf/simulated/floor/plating,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "uRM" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/mouse,
@@ -76394,6 +76736,9 @@
 /obj/machinery/ai_status_display{
 	pixel_y = 32
 	},
+/obj/machinery/camera{
+	c_tag = "Bridge Captain's Office"
+	},
 /turf/simulated/floor/wood,
 /area/station/bridge/captain_quarters)
 "uWm" = (
@@ -76720,7 +77065,9 @@
 	pixel_y = 22
 	},
 /turf/simulated/floor/wood,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "vav" = (
 /turf/simulated/floor{
 	icon_state = "white"
@@ -76729,7 +77076,9 @@
 "vax" = (
 /obj/structure/stool/bed/chair/metal/red,
 /turf/simulated/floor/wood,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "vay" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -76748,8 +77097,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/random/foods/food_trash,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/sign/warning/securearea{
@@ -76758,10 +77105,8 @@
 	name = "RADIOACTIVE AREA";
 	pixel_x = -32
 	},
-/turf/simulated/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/station/maintenance/engineering)
+/turf/simulated/floor/plating,
+/area/station/engineering/engine)
 "vaI" = (
 /turf/simulated/wall/r_wall,
 /area/station/medical/virology)
@@ -76824,7 +77169,9 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/black,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "vaU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -76983,6 +77330,10 @@
 	pixel_x = 28;
 	pixel_y = -5
 	},
+/obj/machinery/camera{
+	c_tag = "Gym East";
+	dir = 8
+	},
 /turf/simulated/floor{
 	icon_state = "wooden-2"
 	},
@@ -77120,7 +77471,9 @@
 	dir = 8;
 	icon_state = "vault"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "vff" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -77318,6 +77671,10 @@
 /obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2"
+	},
+/obj/machinery/camera{
+	c_tag = "Engineering Lobby";
+	network = list("SS13","Engineering")
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -77580,6 +77937,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/camera{
+	c_tag = "Quartermaster's Office";
+	dir = 6
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "darkbrown"
@@ -77774,25 +78135,6 @@
 	icon_state = "blue"
 	},
 /area/station/medical/reception)
-"vnN" = (
-/obj/machinery/power/solar_control{
-	id = "auxsolareast";
-	name = "Fore Port Solar Control"
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/item/device/radio/intercom{
-	name = "Station Intercom (General)";
-	pixel_x = 28;
-	pixel_y = -5
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating{
-	icon_state = "platebot"
-	},
-/area/station/maintenance/auxsolarport)
 "vnU" = (
 /turf/simulated/floor{
 	dir = 5;
@@ -78148,6 +78490,10 @@
 	},
 /obj/item/weapon/storage/toolbox/mechanical,
 /obj/structure/rack,
+/obj/machinery/camera{
+	c_tag = "Bridge EVA West";
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 10;
 	icon_state = "yellow"
@@ -78350,13 +78696,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/brig)
-"vxO" = (
-/obj/machinery/power/smes,
-/obj/structure/cable,
-/turf/simulated/floor/plating{
-	icon_state = "platebot"
-	},
-/area/space)
 "vxP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -78862,23 +79201,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/engineering/engine)
-"vDf" = (
-/obj/structure/stool{
-	pixel_y = 8
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/space)
 "vDg" = (
 /obj/machinery/door/airlock/glass{
 	name = "Hydroponics Pasture";
@@ -79230,7 +79552,9 @@
 	pixel_y = 5
 	},
 /turf/simulated/floor/carpet/black,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "vHL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -79441,25 +79765,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/medical/medbreak)
-"vKg" = (
-/obj/machinery/power/solar_control{
-	id = "auxsolareast";
-	name = "Fore Port Solar Control"
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/item/device/radio/intercom{
-	name = "Station Intercom (General)";
-	pixel_x = 28;
-	pixel_y = -5
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating{
-	icon_state = "platebot"
-	},
-/area/space)
 "vKA" = (
 /obj/item/trash/candle{
 	pixel_x = -3;
@@ -80178,6 +80483,10 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "vWl" = (
+/obj/machinery/camera{
+	c_tag = "Chapel Crematorium";
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -80493,6 +80802,11 @@
 /obj/machinery/ai_status_display{
 	pixel_y = -32
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay Surgery Operating West";
+	dir = 4;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "bot"
@@ -80681,7 +80995,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "wcv" = (
 /obj/structure/girder,
 /obj/item/stack/sheet/metal{
@@ -80827,6 +81143,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/camera{
+	c_tag = "Brig  Procedural";
+	dir = 9;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkred"
@@ -80907,6 +81228,11 @@
 	},
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/machinery/camera{
+	c_tag = "Engineering Break Room East";
+	dir = 8;
+	network = list("SS13","Engineering")
 	},
 /turf/simulated/floor{
 	dir = 6;
@@ -81026,6 +81352,11 @@
 	},
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -28
+	},
+/obj/machinery/camera{
+	c_tag = "Engineering Atmospherics Distribution Loop";
+	dir = 4;
+	network = list("SS13","Engineering")
 	},
 /turf/simulated/floor,
 /area/station/engineering/atmos)
@@ -81273,6 +81604,10 @@
 /obj/machinery/ai_status_display{
 	pixel_y = -32
 	},
+/obj/machinery/camera{
+	c_tag = "Escape Hallway East";
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "neutral"
 	},
@@ -81297,7 +81632,9 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "wja" = (
 /turf/simulated/wall/r_wall,
 /area/station/gateway)
@@ -82294,6 +82631,14 @@
 /area/station/maintenance/engineering)
 "wyJ" = (
 /obj/item/weapon/flora/pottedplant/orientaltree,
+/obj/machinery/camera{
+	c_tag = "Arrival Hallway North";
+	pixel_x = 20
+	},
+/obj/structure/sign/poster/official/nanotrasen_logo{
+	name = "Nanotrasen logo";
+	pixel_y = 32
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -82865,22 +83210,9 @@
 	dir = 5
 	},
 /turf/simulated/floor/carpet/black,
-/area/station/security/vacantoffice)
-"wIF" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/engineering)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "wIG" = (
 /obj/item/weapon/flora/random,
 /obj/structure/cable{
@@ -83460,6 +83792,11 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay Cryogenics";
+	dir = 8;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "warning"
@@ -83683,6 +84020,11 @@
 	dir = 1;
 	pixel_y = -22
 	},
+/obj/machinery/camera{
+	c_tag = "Engineering Atmospherics Access";
+	dir = 1;
+	network = list("SS13","Engineering")
+	},
 /turf/simulated/floor{
 	icon_state = "warning"
 	},
@@ -83717,6 +84059,11 @@
 	id = "Medical_Surgery";
 	name = "Privacy Shutters";
 	pixel_y = 28
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay Surgery Operating East";
+	dir = 9;
+	network = list("SS13","Medical")
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -83782,6 +84129,11 @@
 /area/station/rnd/mixing)
 "wUE" = (
 /obj/machinery/computer/arcade,
+/obj/machinery/camera{
+	c_tag = "Brig Lobby East";
+	dir = 8;
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -84079,7 +84431,9 @@
 	dir = 10
 	},
 /turf/simulated/floor/wood,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "wZf" = (
 /obj/item/weapon/reagent_containers/food/drinks/h_chocolate{
 	pixel_x = 7
@@ -84397,6 +84751,10 @@
 /obj/machinery/alarm{
 	pixel_x = -28;
 	pixel_y = -6
+	},
+/obj/machinery/camera{
+	c_tag = "Cargo Bay West";
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -85279,6 +85637,11 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -30
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay Reseption South";
+	dir = 1;
+	network = list("SS13","Medical")
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -85453,23 +85816,6 @@
 	icon_state = "dark"
 	},
 /area/station/security/interrogation)
-"xtN" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/station/maintenance/auxsolarport)
 "xtV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -85979,6 +86325,10 @@
 /obj/machinery/requests_console/bridge{
 	pixel_y = -28
 	},
+/obj/machinery/camera{
+	c_tag = "Bridge South";
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "darkbrown"
 	},
@@ -86048,7 +86398,9 @@
 /turf/simulated/floor{
 	icon_state = "vault"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "xDc" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor,
@@ -86564,23 +86916,6 @@
 	},
 /turf/simulated/floor/plating/airless,
 /area/station/maintenance/disposal)
-"xMu" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/space)
 "xMy" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
@@ -86730,13 +87065,6 @@
 	icon_state = "panelscorched"
 	},
 /area/station/maintenance/chapel)
-"xOz" = (
-/obj/machinery/power/smes,
-/obj/structure/cable,
-/turf/simulated/floor/plating{
-	icon_state = "platebot"
-	},
-/area/station/maintenance/auxsolarport)
 "xOF" = (
 /obj/machinery/space_heater,
 /turf/simulated/floor/plating,
@@ -86793,6 +87121,11 @@
 	name = "Station Intercom (General)";
 	pixel_x = 28;
 	pixel_y = -5
+	},
+/obj/machinery/camera{
+	c_tag = "Engineering Atmospherics North East";
+	dir = 8;
+	network = list("SS13","Engineering")
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -87173,6 +87506,10 @@
 /obj/machinery/status_display{
 	pixel_x = -32
 	},
+/obj/machinery/camera{
+	c_tag = "Arrival Dock's Center";
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "brown"
@@ -87222,7 +87559,9 @@
 	dir = 8;
 	icon_state = "vault"
 	},
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "xWz" = (
 /turf/simulated/floor{
 	dir = 1;
@@ -87426,8 +87765,6 @@
 	},
 /area/station/civilian/janitor)
 "xYU" = (
-/obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/maintenance/five,
 /obj/machinery/alarm{
 	pixel_x = -28;
 	pixel_y = -6
@@ -87939,7 +88276,9 @@
 /area/station/security/hos)
 "ygv" = (
 /turf/simulated/floor/carpet,
-/area/station/security/vacantoffice)
+/area/station/security/vacantoffice{
+	name = "Tribunal"
+	})
 "ygz" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	dir = 1;
@@ -88274,6 +88613,10 @@
 /area/station/maintenance/science)
 "ylq" = (
 /obj/machinery/computer/arcade,
+/obj/machinery/camera{
+	c_tag = "Arrival Hallway South";
+	dir = 8
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -102799,7 +103142,7 @@ iRy
 iRy
 iRy
 iRy
-tYG
+iRy
 cJy
 kWP
 uPR
@@ -103053,10 +103396,10 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-cJy
+fkk
+fkk
+fkk
+fkk
 xnx
 koe
 iHH
@@ -103307,13 +103650,13 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-cJy
+fkk
+fkk
+fkk
+fkk
+bsP
+bsP
+bsP
 xnx
 wLw
 vPk
@@ -103563,14 +103906,14 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-cJy
+fkk
+fkk
+bsP
+bsP
+bsP
+bsP
+bsP
+bsP
 xnx
 syg
 tFt
@@ -103820,14 +104163,14 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-cJy
+fkk
+bsP
+bsP
+bsP
+bsP
+bsP
+bsP
+bsP
 xnx
 xnx
 dQt
@@ -104077,14 +104420,14 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-cJy
-cJy
-cJy
-cJy
-cJy
+fkk
+bsP
+bsP
+bsP
+bsP
+bsP
+bsP
+bsP
 xnx
 pnr
 feK
@@ -104333,11 +104676,11 @@ iRy
 iRy
 iRy
 iRy
-cJy
-cJy
-cJy
-cJy
-cJy
+iRy
+fkk
+bsP
+bsP
+bsP
 dIw
 dIw
 dIw
@@ -104593,10 +104936,10 @@ cJy
 cJy
 dIw
 dIw
+feK
 dIw
 dIw
-dIw
-vvG
+dol
 pou
 dIw
 pSm
@@ -104850,7 +105193,7 @@ dIw
 dIw
 dIw
 pnr
-uvi
+bKe
 xYU
 feK
 kRI
@@ -105153,7 +105496,7 @@ dAY
 kpz
 cwu
 gSs
-bmW
+ivo
 pjj
 eWb
 kTb
@@ -105345,7 +105688,7 @@ cJy
 cJy
 cJy
 cJy
-pBX
+iRy
 iRy
 iRy
 iRy
@@ -105602,7 +105945,7 @@ cJy
 iRy
 cJy
 cJy
-pBX
+iRy
 iRy
 iRy
 iRy
@@ -105859,7 +106202,7 @@ cJy
 iRy
 cJy
 cJy
-iVj
+iRy
 iRy
 iRy
 iRy
@@ -105888,7 +106231,7 @@ vga
 xXb
 oFi
 bpd
-aqg
+ejP
 aqg
 vTD
 aqg
@@ -106116,7 +106459,7 @@ cJy
 cJy
 cJy
 cJy
-hTZ
+iRy
 iRy
 iRy
 iRy
@@ -106372,10 +106715,10 @@ iRy
 cJy
 iRy
 cJy
-nyv
-mtI
-hMK
-nyv
+iRy
+iRy
+iRy
+iRy
 iRy
 iRy
 iRy
@@ -106629,10 +106972,10 @@ iRy
 cJy
 iRy
 cJy
-hMK
-kOA
-iWh
-nyv
+iRy
+iRy
+iRy
+fkk
 dIw
 dIw
 dIw
@@ -106886,10 +107229,10 @@ iRy
 cJy
 cJy
 cJy
-hMK
-kmJ
-iWh
-nyv
+fkk
+fkk
+fkk
+fkk
 wLV
 lMg
 gXb
@@ -107142,11 +107485,11 @@ cJy
 cJy
 cJy
 cJy
-nyv
-nyv
-uBF
-hMK
-nyv
+fkk
+fkk
+bsP
+bsP
+fkk
 hpP
 qgW
 uYU
@@ -107399,12 +107742,12 @@ cJy
 cJy
 cJy
 cJy
-nyv
-coy
-uES
-obc
-nyv
-nyv
+fkk
+bsP
+bsP
+bsP
+fkk
+fkk
 qFT
 isd
 hkt
@@ -107656,12 +107999,12 @@ lCM
 qha
 qha
 qha
-nyv
-uQH
-seM
-ivo
-izl
-nyv
+fkk
+bsP
+bsP
+bsP
+bsP
+fkk
 svd
 aUi
 aVX
@@ -107913,12 +108256,12 @@ lCM
 vBS
 uvG
 fRq
-nyv
-vnN
-sAG
-pbb
-upx
-nyv
+fkk
+bsP
+bsP
+bsP
+bsP
+fkk
 vdb
 sGd
 hVf
@@ -108170,12 +108513,12 @@ qha
 rqR
 svS
 sFZ
-nyv
-nyv
-lDy
-xtN
-xOz
-nyv
+fkk
+fkk
+bsP
+bsP
+bsP
+fkk
 dIw
 dIw
 dIw
@@ -108428,11 +108771,11 @@ bhe
 hKm
 wEv
 sZs
-nyv
-nyv
+fkk
+fkk
 quM
-nyv
-nyv
+fkk
+fkk
 eJs
 ijS
 vVY
@@ -109011,7 +109354,7 @@ jgd
 gbL
 udi
 jgd
-eoZ
+izl
 oFh
 jgd
 jgd
@@ -109176,11 +109519,11 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+hGN
+hGN
+hGN
+hGN
+hGN
 iRy
 iRy
 iRy
@@ -109429,17 +109772,17 @@ iRy
 iRy
 iRy
 iRy
-cJy
-cJy
-gop
+iRy
+iRy
+hGN
+hGN
+hGN
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+hGN
+hGN
+hGN
 iRy
 iRy
 cJy
@@ -109686,11 +110029,9 @@ iRy
 iRy
 iRy
 iRy
-cJy
-fkk
-hhb
-pLv
-fkk
+iRy
+hGN
+hGN
 iRy
 iRy
 iRy
@@ -109698,6 +110039,8 @@ iRy
 iRy
 iRy
 iRy
+hGN
+hGN
 iRy
 dIw
 dIw
@@ -109943,18 +110286,18 @@ iRy
 iRy
 iRy
 iRy
-cJy
-pLv
-glR
-nWU
-fkk
-fkk
+iRy
+hGN
 iRy
 iRy
 iRy
 iRy
 iRy
 iRy
+iRy
+iRy
+iRy
+hGN
 iRy
 dIw
 kmK
@@ -110200,12 +110543,12 @@ iRy
 iRy
 iRy
 iRy
-cJy
-pLv
-hkr
-nWU
-fkk
-cEh
+hGN
+hGN
+iRy
+iRy
+iRy
+iRy
 iRy
 fkk
 fkk
@@ -110457,12 +110800,12 @@ iRy
 iRy
 iRy
 iRy
-fkk
-fkk
-srb
-pLv
-fkk
-pJP
+hGN
+iRy
+iRy
+iRy
+iRy
+iRy
 fkk
 fkk
 kxf
@@ -110714,12 +111057,12 @@ iRy
 iRy
 iRy
 iRy
-fkk
-gSM
-svP
-dHF
-fkk
-fkk
+hGN
+iRy
+iRy
+iRy
+iRy
+iRy
 fkk
 rYZ
 piI
@@ -110971,12 +111314,12 @@ cJy
 cJy
 cJy
 iRy
-fkk
-iPw
-shT
-mrI
-pzx
-fkk
+hGN
+iRy
+iRy
+iRy
+iRy
+iRy
 fkk
 ukj
 gnd
@@ -111228,12 +111571,12 @@ iRy
 iRy
 cJy
 iRy
-fkk
-vKg
-vDf
-ejP
-jzD
-fkk
+iRy
+iRy
+iRy
+iRy
+iRy
+iRy
 fkk
 veJ
 ykJ
@@ -111332,7 +111675,7 @@ uSx
 oDy
 oDy
 oDy
-pVv
+jzD
 tcD
 sLP
 mfE
@@ -111485,12 +111828,12 @@ cJy
 cJy
 cJy
 iRy
-fkk
-fkk
-cjj
-xMu
-vxO
-fkk
+iRy
+iRy
+iRy
+iRy
+iRy
+iRy
 fkk
 wOY
 ukE
@@ -111742,12 +112085,12 @@ iRy
 iRy
 iRy
 iRy
-dol
-fkk
-fkk
-klJ
-fkk
-fkk
+iRy
+iRy
+iRy
+iRy
+iRy
+iRy
 fkk
 fkk
 blY
@@ -112263,9 +112606,9 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
 dIw
 ugR
 tHp
@@ -112520,9 +112863,9 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
 dIw
 dIw
 miR
@@ -112779,7 +113122,7 @@ cJy
 cJy
 dIw
 dIw
-dIw
+feK
 dIw
 xcp
 etK
@@ -113878,7 +114221,7 @@ jWK
 kGM
 xBu
 nnz
-ivE
+hTZ
 viD
 kMH
 jWK
@@ -115161,7 +115504,7 @@ iXl
 iXl
 iXl
 iXl
-exA
+hMK
 jdk
 xsM
 pjI
@@ -115899,7 +116242,7 @@ saC
 kyN
 enf
 aTw
-eEW
+cEh
 wzt
 vJG
 vJG
@@ -117190,7 +117533,7 @@ dWx
 vMS
 cos
 iDK
-mcj
+dHF
 mcj
 mcj
 mcj
@@ -120497,7 +120840,7 @@ evp
 igY
 sac
 doO
-mIK
+cjj
 rPM
 sEP
 ouY
@@ -120996,7 +121339,7 @@ lUa
 lUa
 lUa
 cJy
-eCj
+icY
 wyJ
 rSg
 lMD
@@ -122654,7 +122997,7 @@ rJR
 sEc
 sEc
 sEc
-qUW
+pKw
 mfd
 lKX
 tIV
@@ -123074,7 +123417,7 @@ woH
 kjA
 qbx
 tBH
-nAb
+coy
 rzI
 hyK
 nrN
@@ -123370,7 +123713,7 @@ rVN
 nfH
 xQM
 ufU
-uCL
+hhb
 wSW
 iZi
 hRX
@@ -123682,7 +124025,7 @@ uyg
 afM
 nRi
 uwL
-qUW
+pKw
 dNZ
 lKX
 tIV
@@ -126195,7 +126538,7 @@ xXa
 quA
 efe
 qXE
-kqS
+gSM
 bXC
 fFP
 vyw
@@ -126452,7 +126795,7 @@ rRB
 efe
 efe
 amX
-eVd
+dSZ
 sfL
 fFP
 wik
@@ -126500,7 +126843,7 @@ mnM
 bNX
 nVk
 tye
-hMI
+klJ
 hMI
 hMI
 tye
@@ -126709,7 +127052,7 @@ duR
 hIK
 xRv
 cqB
-dSZ
+tpL
 bXC
 fFP
 wik
@@ -128289,8 +128632,8 @@ vdJ
 vdJ
 vdJ
 vdJ
-wIF
-vdJ
+kVn
+nZt
 tye
 hTr
 hvk
@@ -128546,8 +128889,8 @@ uXH
 vdJ
 jvC
 vdJ
-kVn
-kUk
+iPw
+iVj
 tye
 tye
 lLx
@@ -129061,8 +129404,8 @@ vdJ
 rvd
 hPU
 usv
-dpI
-dpI
+iVj
+iWh
 tye
 efa
 iZE
@@ -132110,7 +132453,7 @@ wWk
 fdG
 ctJ
 bAp
-lhZ
+hkr
 tnU
 afB
 tpE
@@ -132602,10 +132945,10 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
+bsP
 sQT
 sQT
 rMl
@@ -132859,11 +133202,11 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
+bsP
+bsP
 sQT
 sQT
 iem
@@ -133116,11 +133459,11 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
+bsP
+bsP
 sQT
 unO
 euL
@@ -133373,11 +133716,11 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+fkk
+bsP
+bsP
+bsP
 sQT
 nyk
 lDN
@@ -133631,10 +133974,10 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
+bsP
 sQT
 hHS
 efy
@@ -133888,10 +134231,10 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+fkk
+bsP
+bsP
 sQT
 euL
 sqy
@@ -134146,9 +134489,9 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
+fkk
+fkk
+fkk
 sQT
 kqE
 mqA
@@ -134403,9 +134746,9 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
 sQT
 sQT
 wir
@@ -134659,11 +135002,11 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+fkk
+bsP
+bsP
+bsP
 sQT
 rsC
 vaY
@@ -134916,11 +135259,11 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
+bsP
+bsP
 sQT
 dXY
 mqA
@@ -135173,11 +135516,11 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
+bsP
+bsP
 sQT
 lHi
 edH
@@ -135430,11 +135773,11 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
+bsP
+bsP
 sQT
 mqA
 qvt
@@ -135443,7 +135786,7 @@ wVb
 xvQ
 vCt
 goz
-jdK
+glR
 jdK
 xyO
 jdK
@@ -135687,11 +136030,11 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+fkk
+bsP
+bsP
+bsP
 sQT
 rUa
 sQT
@@ -135945,10 +136288,10 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
+bsP
 sQT
 xDt
 euL
@@ -136202,10 +136545,10 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+fkk
+bsP
+bsP
 sQT
 pXU
 xDt
@@ -136460,9 +136803,9 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
+fkk
+fkk
+fkk
 sQT
 sQT
 juo
@@ -136982,11 +137325,11 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
+bsP
+bsP
 sQT
 sQT
 sQT
@@ -137239,14 +137582,14 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
+bsP
+bsP
+bsP
+bsP
+bsP
 sQT
 hEZ
 etP
@@ -137496,14 +137839,14 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+bsP
+bsP
+bsP
+bsP
+bsP
+bsP
+bsP
 sQT
 nhK
 euL
@@ -137753,14 +138096,14 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+fkk
+bsP
+bsP
+fkk
+fkk
+fkk
+fkk
 sQT
 sQT
 cXt
@@ -138011,10 +138354,10 @@ iRy
 iRy
 iRy
 iRy
-iRy
-iRy
-iRy
-iRy
+fkk
+fkk
+fkk
+fkk
 iRy
 iRy
 iRy
