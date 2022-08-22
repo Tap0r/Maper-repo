@@ -816,8 +816,8 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "vault"
+	dir = 9;
+	icon_state = "darkred"
 	},
 /area/station/security/brig)
 "ajq" = (
@@ -4041,7 +4041,8 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "darkred"
 	},
 /area/station/security/brig)
 "bei" = (
@@ -12936,7 +12937,7 @@
 	pixel_y = 22
 	},
 /turf/simulated/floor{
-	dir = 1;
+	dir = 9;
 	icon_state = "darkred"
 	},
 /area/station/security/brig)
@@ -32641,7 +32642,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor{
-	dir = 9;
+	dir = 1;
 	icon_state = "darkred"
 	},
 /area/station/security/brig)
@@ -33322,6 +33323,7 @@
 	},
 /obj/structure/cable,
 /turf/simulated/floor{
+	dir = 10;
 	icon_state = "darkred"
 	},
 /area/station/security/brig)
@@ -35413,7 +35415,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor{
-	dir = 1;
+	dir = 9;
 	icon_state = "darkred"
 	},
 /area/station/security/brig)
@@ -66175,6 +66177,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/camera{
+	c_tag = "Brig North West";
+	network = list("SS13","Security")
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "darkred"
@@ -74042,6 +74048,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor{
+	dir = 10;
 	icon_state = "darkred"
 	},
 /area/station/security/brig)
@@ -79164,8 +79171,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "darkred"
+	icon_state = "dark"
 	},
 /area/station/security/brig)
 "vyw" = (
@@ -79377,7 +79383,7 @@
 	pixel_x = -28
 	},
 /turf/simulated/floor{
-	dir = 9;
+	dir = 8;
 	icon_state = "darkred"
 	},
 /area/station/security/brig)
@@ -79923,14 +79929,9 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
 "vHa" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "darkredcorners"
+	dir = 8;
+	icon_state = "darkred"
 	},
 /area/station/security/brig)
 "vHc" = (
@@ -83641,7 +83642,8 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "darkred"
 	},
 /area/station/security/brig)
 "wIO" = (
@@ -129022,7 +129024,7 @@ psT
 dnb
 wZz
 ajp
-lhZ
+vHa
 vAU
 rxF
 pVr
@@ -129280,7 +129282,7 @@ mCy
 vDG
 iCN
 vyg
-vHa
+wIX
 pQh
 wIX
 pLU
